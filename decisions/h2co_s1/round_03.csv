@@ -1,0 +1,12 @@
+kind,item,action,reason
+outlier,14,reject,"bootstrap anchor 15(5,10)->peak 14 inconsistent with Ka=5 K-doubling scaling (round 2) and dominant chi2: dropping it lowers weighted rms 732->73"
+outlier,161,unassign,"my round-2 error: Ka=4 R-branch K-doublet components are resolved above J~6 (Q-branch Ka=4 splitting reaches 120 MHz at J=13), blend assumption wrong; build-up fit Ka<=3 rms 0.85 vs Ka<=4 rms 73; unassign without blacklisting"
+outlier,202,unassign,"my round-2 error: Ka=4 R-branch K-doublet components are resolved above J~6 (Q-branch Ka=4 splitting reaches 120 MHz at J=13), blend assumption wrong; build-up fit Ka<=3 rms 0.85 vs Ka<=4 rms 73; unassign without blacklisting"
+outlier,223,unassign,"my round-2 error: Ka=4 R-branch K-doublet components are resolved above J~6 (Q-branch Ka=4 splitting reaches 120 MHz at J=13), blend assumption wrong; build-up fit Ka<=3 rms 0.85 vs Ka<=4 rms 73; unassign without blacklisting"
+outlier,236,unassign,"my round-2 error: Ka=4 R-branch K-doublet components are resolved above J~6 (Q-branch Ka=4 splitting reaches 120 MHz at J=13), blend assumption wrong; build-up fit Ka<=3 rms 0.85 vs Ka<=4 rms 73; unassign without blacklisting"
+outlier,260,unassign,"my round-2 error: Ka=4 R-branch K-doublet components are resolved above J~6 (Q-branch Ka=4 splitting reaches 120 MHz at J=13), blend assumption wrong; build-up fit Ka<=3 rms 0.85 vs Ka<=4 rms 73; unassign without blacklisting"
+outlier,287,unassign,"my round-2 error: Ka=4 R-branch K-doublet components are resolved above J~6 (Q-branch Ka=4 splitting reaches 120 MHz at J=13), blend assumption wrong; build-up fit Ka<=3 rms 0.85 vs Ka<=4 rms 73; unassign without blacklisting"
+param,60099,hold,"h3 value -1.11e-05 is 14x its order-of-magnitude scale: compensating for misassignments, not physics"
+all,outlier,keep,"other flagged lines: large t only because of the contaminated fit; what-if refit without peak 14 and the Ka=4 R-branch peaks has rms 1.21, |z|<=4"
+all,assign,defer,predictions of this round come from a fit contaminated by misassignments (rms 732); re-evaluate after the clean refit
+all,defaults,confirm,remaining parameters held

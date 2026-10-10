@@ -1,0 +1,4 @@
+kind,item,action,reason
+hyp,1,accept,"Best Z (24.3) and 5x the independent support (185 vs 35) of the runner-up; all anchors are low-freq Q-branch K-doublets so aliasing is possible -- monitor first refit"
+hyp,2,reject,"Z 20.3 with support 35; places 9(4,5)-9(4,6) on peak 15 instead of 16, inconsistent with rank 1 and weaker"
+all,defaults,confirm,"remaining lower-ranked clusters (Z<=18.8, support<=27) are weaker alternatives"

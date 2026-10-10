@@ -1,0 +1,4 @@
+kind,item,action,reason
+outlier,278,keep,"36(3,33)-36(3,34) t=+6.5 is explained by the missing octic l3: with l3 released its |z| drops below 2.3 and rms 1.01->0.77 (what-if)"
+assign,32 2 30 31 4 27@70,accept,"z=+0.00 (|obs-pred|<1 MHz) for a Delta-Ka=2 a-type line; the rival peak has P=0.10 only"
+all,defaults,confirm,"13(11) blend on its own peak 281 (z=-0.01) accepted (confirms the round-6 choice of 13(10) for peak 282); release l3 (dchi2 82, 0.46x scale); C0004 (z=-2.8) deferred"

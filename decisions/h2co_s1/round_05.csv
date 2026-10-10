@@ -1,0 +1,9 @@
+kind,item,action,reason
+param,60099,release,"h3: largest dchi2 (86000); what-if with h3+HK+HJK+h1+l4 gives rms 1.10 (from 23.6), value 0.01x its scale"
+param,3099,release,"HK: needed in the joint release (rms 2.36 without it vs 1.10 with); value -0.021 vs scale 0.022, plausible"
+param,1299,release,"HJK: joint release; value 1.1e-5 vs scale 5e-5, plausible"
+param,40299,release,"h1: joint release brings rms 4.6->1.8; value 3.9e-8 vs scale 7.9e-7, plausible"
+param,70099,release,"l4 (octic): high-J Ka=5-6 Q-branch K-doublets (J up to 41) need it; rms 1.76->1.10, value 0.2x scale"
+all,outlier,keep,"systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4"
+all,assign,defer,"predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted"
+all,defaults,confirm,"other parameters held (HJ adds nothing: rms 1.763 vs 1.764)"

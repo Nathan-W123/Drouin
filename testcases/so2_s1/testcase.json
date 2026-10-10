@@ -1,0 +1,28 @@
+{
+ "case": "so2",
+ "settings": {
+  "seed": 1,
+  "drop_frac": 0.15,
+  "noise_scale": 1.0,
+  "int_noise_dex": 0.15,
+  "det_quantile": 0.05,
+  "abc_lo": 0.005,
+  "abc_hi": 0.01,
+  "abc_prior": 0.01,
+  "q_lo": 0.1,
+  "q_hi": 0.3,
+  "q_prior": 0.5,
+  "absent_factor": 10.0
+ },
+ "detection_limit_lgint": -7.305735,
+ "n_peaks": 745,
+ "n_true": 467,
+ "n_distractors": 278,
+ "log": [
+  "true peaks in range: 540 (excluded 15 rows/blends: 25 22 4 24 21 3 label not in official catalog; 25 22 4 24 21 3 label not in official catalog; 25 22 4 24 21 3 label not in official catalog; 25 22 4 24 21 3 label not in official catalog; 25 22 4 24 21 3 label not in official catalog; 25 22 4 24 21 3 label not in official catalog; 25 22 4 24 21 3 label not in official catalog; 59 6 54 58 3 55 label not in official catalog; 57 8 50 56 5 51 label not in official catalog; 34 8 26 33 5 29 label not in official catalog; 55 16 40 54 15 39 label not in official catalog; 45 18 28 44 17 27 label not in official catalog; 50 17 33 49 16 34 label not in official catalog; 26 22 4 25 21 5 label not in official catalog; 47 24 24 46 23 23 label not in official catalog)",
+  "dropped 73 true peaks; kept 467",
+  "distractor SO2 v2=1 (measured): 341 candidates, 306 above detection limit, took 117 (wanted 117; skipped 0 unresolved from existing peaks)",
+  "distractor 34SO2: 2752 candidates, 1979 above detection limit, took 117 (wanted 117; skipped 0 unresolved from existing peaks)",
+  "distractor random: 47 candidates, 44 above detection limit, took 44 (wanted 47; skipped 0 unresolved from existing peaks)"
+ ]
+}

@@ -1,0 +1,2 @@
+kind,item,action,reason
+all,defaults,confirm,"converged: no candidate with P>=0.5 (remaining two are far/intensity-inconsistent), no parameter passes dchi2>=9; peak 61 (t=2.0, h=0.96) kept; stop"

@@ -1,0 +1,7 @@
+kind,item,action,reason
+outlier,182,keep,"30(3,27)-30(3,28) t=+9.5 is explained by the missing HKJ term: with HKJ released its z drops from 6.4 to <2.3 (what-if)"
+assign,12 11 1 11 11 0@253,accept,"peak 253 contested by two Doppler-unresolved K-doublet pairs: Ka=11 pair z=0.00 vs Ka=10 pair z=-1.93; Ka=11 wins"
+assign,12 11 2 11 11 1@253,accept,"partner of the 12(11) blend, same evidence"
+assign,13 10 3 12 10 2@282,accept,"peak 282: Ka=10 pair z=0.00 vs Ka=11 pair z=+1.33; Ka=10 wins"
+assign,13 10 4 12 10 3@282,accept,"partner of the 13(10) blend, same evidence"
+all,defaults,confirm,"24 default accepts reviewed (all |z|<1, single candidate, no flags; Delta-Ka=2 lines are a-type allowed); release HKJ per F-test (dchi2 95, value 0.01x scale); other flagged lines kept (|t|<=4.2)"
