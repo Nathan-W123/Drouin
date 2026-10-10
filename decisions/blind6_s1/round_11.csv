@@ -1,0 +1,8 @@
+kind,item,action,reason
+assign,52 3 49 53 2 52@515,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,78 22 56 79 21 59@538,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,79 7 73 80 4 76@506,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+param,2300,hold,PJJK at 13x scale - implausible
+outlier,656,keep,t=-4.0 (<5) on a high-Ka line after PKKKJ release; same transition is a top residual in sibling cases
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

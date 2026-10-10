@@ -1,0 +1,55 @@
+# blind5 seed 1 arm ai -- round 2
+
+assigned peaks 3, floating params 8, last rms (weighted) 0.010
+predictions considered 641, with candidates 403, unresolvable windows 215, p_have=0.80 (from 71 sharp predictions)
+candidate rows 1013: default accept 65 (of which flagged 0), deferred with P>=0.5: 134
+
+OUTLIERS (top 8):
+
+RELEASE forward selection (<=10x scale): none
+  other trials: []
+  current 3 lines: rms 0.010 with releases (without: 0.010)
+
+JOINT defaults: 65 added -> kept 29, removed 36, rms 1.986
+   removed   43 33 6 27 33 6 28        z=-2381.9
+   removed   27 27 6 21 27 6 22        z=-340.0
+   removed   89 27 4 23 27 4 24        z=-243.4
+   removed   73 24 4 20 24 4 21        z=-202.3
+   removed   78 25 4 21 25 4 22        z=-85.9
+   removed   67 23 4 19 23 4 20        z=-82.1
+   removed   92 19 3 16 19 3 17        z=-82.3
+   removed  121 24 3 21 24 3 22        z=-81.5
+   removed   82 17 3 14 17 3 15        z=-80.7
+   removed   54 20 4 16 20 4 17        z=-50.1
+
+JOINT defaults+P>=0.9: 79 added -> kept 44, removed 35, rms 1.486
+   removed   36 14 4 10 14 4 11        z=-2.1
+   removed   87 10 2 8 10 2 9          z=+4.0
+   removed   45 10 3 7 10 3 8          z=-5.1
+   removed   33 13 4 9 13 4 10         z=-5.6
+   removed  102 12 2 10 12 2 11        z=+5.9
+   removed   53 12 3 9 12 3 10         z=-5.2
+   removed   97 11 2 9 11 2 10         z=+5.4
+   removed   70 15 3 12 15 3 13        z=-10.4
+   removed   65 14 3 11 14 3 12        z=-11.9
+   removed   82 17 3 14 17 3 15        z=-5.2
+
+JOINT defaults+P>=0.5: 100 added -> kept 47, removed 53, rms 1.464
+   removed   36 14 4 10 14 4 11        z=-2.1
+   removed   87 10 2 8 10 2 9          z=+4.0
+   removed   45 10 3 7 10 3 8          z=-5.1
+   removed   33 13 4 9 13 4 10         z=-5.6
+   removed  102 12 2 10 12 2 11        z=+5.9
+   removed   53 12 3 9 12 3 10         z=-5.2
+   removed   97 11 2 9 11 2 10         z=+5.4
+   removed   70 15 3 12 15 3 13        z=-10.4
+   removed   65 14 3 11 14 3 12        z=-11.9
+   removed   82 17 3 14 17 3 15        z=-5.2
+
+SERIES (top 6):
+series dJ=1 Ka'=1 Ka"=1 parity=1,1: 9 coherent members, r0=+0.002217 tol=2.0e-04, expected by chance 0.09, P(chance)=8.9e-16
+series dJ=0 Ka'=8 Ka"=8 parity=0,1: 11 coherent members, r0=-0.986434 tol=1.0e-02, expected by chance 0.32, P(chance)=6.3e-14
+series dJ=1 Ka'=1 Ka"=1 parity=0,0: 7 coherent members, r0=+0.002084 tol=1.9e-04, expected by chance 0.07, P(chance)=1.2e-12
+series dJ=0 Ka'=4 Ka"=4 parity=0,1: 17 coherent members, r0=+0.000518 tol=3.5e-03, expected by chance 1.83, P(chance)=1.4e-11
+series dJ=1 Ka'=0 Ka"=0 parity=0,0: 9 coherent members, r0=+0.002164 tol=2.0e-04, expected by chance 0.33, P(chance)=1.1e-10
+series dJ=1 Ka'=3 Ka"=3 parity=0,0: 8 coherent members, r0=+0.002004 tol=2.0e-04, expected by chance 0.35, P(chance)=4.3e-09

@@ -1,0 +1,17 @@
+{
+ "n_accept": 15,
+ "n_reject": 0,
+ "released": [],
+ "overrides": 15,
+ "p_have": 0.5,
+ "n_candidates": 716,
+ "rms": 0.6663246296061088,
+ "chi2": 9.346826765546698,
+ "fit_ok": true,
+ "relaxed": [],
+ "n_broke_fit": 0,
+ "round": 3,
+ "n_assigned": 15,
+ "n_lines": 15,
+ "n_float": 8
+}

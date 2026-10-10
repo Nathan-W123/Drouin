@@ -1,0 +1,4 @@
+kind,item,action,reason
+stop,stop,yes,"nothing left to add, no supported release; converged"
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

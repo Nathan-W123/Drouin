@@ -1,0 +1,15 @@
+{
+ "n_accept": 3,
+ "n_reject": 0,
+ "released": [],
+ "overrides": 0,
+ "bootstrap": true,
+ "rms": 3149.94615,
+ "chi2": 2463986704.4956956,
+ "fit_ok": false,
+ "relaxed": [],
+ "round": 1,
+ "n_assigned": 3,
+ "n_lines": 3,
+ "n_float": 8
+}

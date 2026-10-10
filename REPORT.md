@@ -27,6 +27,21 @@ SO₂ results are identical at both settings.
 ¹ All 11 "wrong" H₂CO labels are the second component of a high-Ka K-doublet that is degenerate to
 <8 kHz (Doppler width 1.3–1.5 MHz) and that the CDMS list labels only once; see §4.3.
 
+**Blind test (added after the first version).** Six new cases were built by a script that draws the
+molecule (3 SO₂, 3 H₂CO, shuffled), a hidden overall scale factor s ∈ [0.80, 1.25] applied to every
+Hamiltonian parameter (so every frequency, and every constant, is unfamiliar), and a secret data seed,
+from OS randomness, and writes them only to hidden files. The decision-maker never saw the official
+or the true constants. All arms now run the same corrected code (300 MHz finite-difference step, the
+fixes listed in §3.3).
+
+| blind case (one seed each) | greedy | rules | rules+ | **AI-in-the-loop** |
+|---|---|---|---|---|
+| true lines correctly assigned, range over 6 cases | 0–2.9% | 0–32% | 0–100% (3 of 6 cases ≥ 99.8%) | **98.2–100%** (1876/1884 pooled) |
+| assignments that are correct (strict / physics-aware) | 0–2% | 98–100%³ | 37–100% | **97.6–100% / 99.6–100%** |
+
+³ where it assigned anything. Fitted constants agree with the oracle fit to ≤ 0.28σ in every AI blind
+case. The AI arm needed no human corrections. Details and limits of this blinding in §3.3.
+
 ![per-round results](figures/fig_rounds.png)
 
 *Figure 1. Seed 1: percentage of the true lines in the list correctly assigned (top) and percentage of
@@ -51,11 +66,16 @@ overrode the rule's "reject this outlier" kept correct lines: the rule mistook a
 Hamiltonian for a misassignment. Of 44 rejections and unassignments, 33 removed wrong lines or candidates and
 11 removed correct ones.
 
+![blind test](figures/fig_blind.png)
+
+*Figure 3. Blind test, every arm. Rules+ matches the AI arm on three cases and fails on three
+(blind2 and blind4: a wrong bootstrap hypothesis it never leaves; blind1: stalls at 65%).*
+
 **Honest caveats** (§5): a finite-difference step bug, found after the runs, handicapped some H₂CO automated runs (SO₂ unaffected; corrected re-runs reported); the line lists are catalog-derived (measured frequencies, not a raw
-spectrum) and sparse; both molecules are rigid asymmetric tops without internal rotation; the
-decision-maker (Claude, in this session) had seen the official constants while building the test
-cases; the tools the judgement relied on were developed during the H₂CO warm-up run; the AI arm was
-run on 2 seeds per molecule, not 5.
+spectrum) and sparse; both molecules are rigid asymmetric tops without internal rotation; in the
+original four runs the decision-maker (Claude, in this session) had seen the official constants (the blind test
+addresses this, but only partly: the molecule's identity was not hidden); the decision aids were developed during the runs, including
+during the blind test; the AI arm has 10 runs in total (4 original + 6 blind), one decision-maker.
 
 ## 2. What was built
 
@@ -191,6 +211,95 @@ constants differ from CDMS by several σ (e.g. P_K −17σ). That is a model dif
 difference: the CDMS fit also uses ν2=1 and infrared data, and includes S_K, S_KKKJ, P_KKJ and P_JJK,
 which this ground-state, ≤1 THz list could not justify. The oracle shows the same deviations.
 
+### 3.3 Blind test
+
+**Protocol.** `scripts/make_blind.py 3 3` builds `blind1`–`blind6`. For each it draws, from OS
+randomness, the molecule, a scale factor s ∈ U(0.80, 1.25) and a secret data/perturbation seed, and
+writes these only to `testcases/blindN_s1/truth_blind.json` (read only by `score.py`). The scale
+multiplies every Hamiltonian parameter. This is exact, because the rotational Hamiltonian is linear in
+its parameters, so frequencies scale by s and intensities stay physically consistent (T = 300 K
+unchanged). The decision-maker therefore never saw the true or official constant values, and the
+frequencies do not match any memorised catalog. Distractor catalogs are scaled by the same factor.
+
+| case | arm | rounds | true lines correctly assigned | strict precision | physics-aware | on distractors | wrong label on true line | max \|this−oracle\|/σ |
+|---|---|---|---|---|---|---|---|---|
+| blind1 | **AI** | 8 | **100.0%** (465/465) | 100.0% | 100.0% | 0 | 0 | 0.00 |
+| blind1 | rules+ | 13 | 64.7% (301/465) | 96.2% | 96.2% | 3 | 9 | – |
+| blind2 | **AI** | 9 | **99.4%** (158/159) | 97.6% | 100.0% | 0 | 4 | 0.28 |
+| blind2 | rules+ | 2 | 0.0% (0/159) | 0.0% | 0.0% | 0 | 3 | – |
+| blind3 | **AI** | 10 | **100.0%** (427/427) | 99.8% | 99.8% | 1 | 0 | 0.00 |
+| blind3 | rules+ | 16 | 100.0% (427/427) | 100.0% | 100.0% | 0 | 0 | 0.00 |
+| blind4 | **AI** | 8 | **98.2%** (219/223) | 97.6% | 99.6% | 0 | 6 | 0.11 |
+| blind4 | rules+ | 6 | 1.3% (3/223) | 37.5% | 37.5% | 0 | 5 | – |
+| blind5 | **AI** | 7 | **99.0%** (195/197) | 98.1% | 100.0% | 0 | 4 | 0.22 |
+| blind5 | rules+ | 12 | 100.0% (197/197) | 98.2% | 100.0% | 0 | 4 | 0.00 |
+| blind6 | **AI** | 12 | **99.8%** (412/413) | 100.0% | 100.0% | 0 | 0 | 0.01 |
+| blind6 | rules+ | 19 | 99.8% (412/413) | 100.0% | 100.0% | 0 | 0 | 1.75 |
+
+Plain rules reached 0–32% and greedy 0–2.9% (full table in `results/tables.md`). The molecules,
+revealed only for scoring, were: blind1, 3, 6 = SO₂ (s = 1.017, 1.187, 1.229); blind2, 4, 5 = H₂CO
+(s = 1.241, 0.802, 1.048). The only AI error that is not a degenerate K-doublet partner: one ³⁴SO₂
+distractor peak accepted in blind3, and one wrong label in blind4.
+
+**What happened where rules+ failed.** In blind2 and blind4 the top bootstrap hypothesis was wrong
+(3-line fits at rms 35 and 3150). Rules+ kept it and stalled at 3 lines. The AI arm unassigned the
+anchors without blacklisting them, restarted from the prior, and grew the assignment from coherent
+R-branch series. In blind1, rules+ accumulated 3 distractor and 9 wrong-label assignments, the fit
+reached rms 33, and the run stalled at 65%.
+
+**Replay.** Re-running blind2 from its decision files (`--fresh`) reproduces the final
+assignments, scores and rms exactly. The intermediate candidate lists differ slightly, because the engine changed
+during the blind runs, and so the count of formal overrides differs (35 as run, 33 on replay). The audit
+below uses the replayed run.
+
+**Departures from the defaults** (scored afterwards; all 6 cases pooled):
+* extra accepts: 378 of 381 correct;
+* "keep" overriding the rule's "reject": 16 of 17 kept lines were correct;
+* unassigned lines: 5 of 7 were wrong;
+* rejected candidates: 2 of 2 were wrong;
+* deferred default-accepts: 165 of 175 were correct lines. This is the main cost of the conservative joint-consistency
+  policy; most were accepted in later rounds.
+
+**Code changes made for this test (improvement items 2 and 3), applied to every arm:**
+* *Identical code for all arms.* Every blind run, AI included, uses the 300 MHz finite-difference
+  step. The original four AI runs still replay only with `--fd-step 3000` (§5).
+* *Reject only on converged fits.* `whatif.grow_consistent` adds candidates one at a time in order
+  of P, and keeps one only if the joint fit converges, its own |z| ≤ zmax, and the other lines' χ²
+  rises by < 9. A diverged test fit (`_bad_fit`: no convergence or max|z| > 10⁴) is never used to reject.
+  The SO₂ s4 and peak-424 errors in §4.3 came from exactly that.
+* *No permanent blacklist.* A rejected (label, peak) pair is no longer removed from later rounds. It
+  comes back flagged `prev-rejected` with default "defer", so the evidence can be re-weighed once the
+  model has improved.
+* *Weaker lines considered.* The intensity cut for matching is now 0.3 dex below the weakest observed
+  peak (`i_det_match`), instead of the detection quantile.
+* Smaller fixes: SPFIT crashed when the `.lin` held a single line (NLINE=1 heap corruption), so a margin
+  was added. Explicitly requested releases of any absent term are now allowed. With no assigned lines,
+  the posterior is reset to the prior. `run_automated.sh` failed for an empty tag (greedy and rules
+  arms; re-run).
+* New decision aids: `assign.review` runs a joint forward selection of releases (each step Δχ² ≥ 9,
+  ≤ 10× scale), grows the consistent set, and writes candidate sets. `assign.decide` writes a decision
+  file from one of those sets with reasons. `assign.seriesgrow` grows from coherent series.
+
+**Limits of this blinding (read before citing it):**
+* The *molecule* was not hidden. `cases/blindN.json` contains the molecule's configuration (mass,
+  Hamiltonian terms, distractor catalogs), and the decision-maker carried over knowledge from the
+  earlier SO₂/H₂CO runs, such as which terms each molecule tends to need. The blinding hides the constant values and
+  the data seed, not the physics.
+* The test cases were generated by a script I (Claude) wrote and ran, not by a separate person.
+  Nothing secret was printed, and `truth_blind.json` was read only when scoring.
+* Once, mid-run, a what-if call printed fitted constants for blind3. These are the loop's own fitted
+  values, not the truth. Without knowing s they do not reveal the official constants, but the printout
+  is a leak of information a strictly blind protocol would not show. Printing of fitted constants is now
+  off by default (`--show-params`).
+* The decision aids changed during the blind runs. The grow criterion gained the "other lines' χ²
+  < 9" condition, and the joint-release review and the `decide` helper were written then. Earlier blind
+  rounds therefore used weaker tools than later ones.
+* One seed per blind case, one decision-maker, and the AI rounds were mostly "accept the set the joint
+  consistency check keeps". The judgement went into the cases where that set was wrong or empty:
+  bootstrap recovery, releases at the edge of plausibility (e.g. P_KKKJ at 12× scale in blind6,
+  Δχ² = 1014), and keeping high-J/Ka lines at t ≈ 4–5 that the same transition shows across sibling cases.
+  All of those SO₂ keeps were correct; the one wrong "keep" was in blind4.
+
 ## 4. What the judgement step contributed
 
 ### 4.1 Where automation fails, concretely
@@ -247,8 +356,12 @@ How the judgement worked in practice: it formed physical hypotheses and tested t
   * one correct J=71 SO₂ line unassigned (re-assigned 2 rounds later);
   * on SO₂ s4, 8 correct candidates rejected because the joint test fit had diverged, making their
     |z| meaningless — a candidate should be rejected only on a fit that converged;
-  * on SO₂ s1 and H₂CO s2, one true line each was lost, because its peak had been blacklisted with a
-    different label.
+  * on SO₂ s1, one true line (peak 424, 68₈,₆₀–68₇,₆₁) was rejected *with its own correct label*
+    in round 10, because the joint test fit had diverged (z = −2×10⁸). This is the same mistake as on SO₂ s4. Under the old
+    code the rejected pair was never offered again. (An earlier version of this report said the peak was
+    "blacklisted with a different label", and said the same about H₂CO s2. Both statements were wrong: the
+    audit finds no rejected correct line in H₂CO s2.) Both causes, rejecting on a diverged fit and the permanent blacklist,
+    are fixed for the blind test (§3.3).
 * **Missed lines.**
   * SO₂: 12 of 13 missed lines are weak (log I ≈ −8 to −9), low-frequency (5–47 GHz) ΔJ = ±1, Ka = 10–15
     lines at J = 48–73.
@@ -286,8 +399,9 @@ paid off.
 
   SO₂ is unchanged. On H₂CO the plain rules arm does much better on two seeds (52%, 64%) and rules+
   changes seed by seed (mean 50% → 53%). Rules+ still fails where the AI arm succeeded: H₂CO seed 2
-  (0.5% at 300 MHz against 93.4% for the AI arm) and SO₂ seed 4 (25% against 95.8%). The AI runs were not
-  repeated at 300 MHz, because that would require new decisions. Replay them exactly with `--fd-step 3000`.
+  (0.5% at 300 MHz against 93.4% for the AI arm) and SO₂ seed 4 (25% against 95.8%). The original four
+  AI runs were not repeated at 300 MHz, because that would require new decisions; replay them exactly
+  with `--fd-step 3000`. The six blind AI runs (§3.3) use 300 MHz, the same code as every automated arm.
 * **Not a raw spectrum.**
   * The "observed" peaks are the catalog's measured frequencies plus distractors. The lists are
     *sparse*: only the lines experimenters chose to measure, about 20% of the predicted SO₂ lines above
@@ -298,7 +412,7 @@ paid off.
 * **Easy molecules.** SO₂ and H₂CO are rigid asymmetric tops with well-behaved Watson Hamiltonians.
   There is no internal rotation (methyl rotors), no hyperfine structure (ignored for H₂CO), and no
   perturbations between vibrational states. The ν2=1 lines were distractors only, not fitted.
-* **The decision-maker was not blind.** I (Claude) read the official `.par` files and printed the
+* **The original four runs were not blind** (the blind test in §3.3 partly fixes this). I (Claude) read the official `.par` files and printed the
   official constants while building the test cases, before the build step was changed to hide them.
   The decision tables show only line-level diagnostics, never comparisons with official constants, and
   every decision is grounded in a logged diagnostic. Still, this is not a blinded study.
@@ -306,9 +420,9 @@ paid off.
     run, so that run is a development run.
   * The later runs (SO₂ s1, H₂CO s2, SO₂ s4) used tools and physics knowledge accumulated earlier,
     e.g. which terms H₂CO needed. A spectroscopist would carry that over too, but it is prior knowledge.
-* **Small n for the AI arm**: 2 seeds per molecule, against 5 for the automated arms. The AI runs were
-  chosen to include the worst rules+ seeds, which favours showing robustness, but no AI run was done on
-  the remaining seeds.
+* **Small n for the AI arm**: 2 seeds per molecule in the original runs, against 5 for the automated
+  arms, plus 6 blind cases (3 per molecule) with one seed each. That is 10 AI runs, all by one
+  decision-maker in one session.
 * **Cost.** Each AI round took on the order of a few minutes of model time plus SPFIT/SPCAT refits.
   That was cheap here, but the "decision-maker" was a frontier LLM working interactively with full tool
   access, not a constrained API call. Nathan did not intervene (0 human corrections), so the
@@ -323,8 +437,8 @@ paid off.
    density in place of a sparse catalog list.
 2. A methyl-rotor molecule (e.g. acetaldehyde or methyl formate) with SPFIT's internal-rotation /
    Fourier options, or with ERHAM/XIAM-style codes. That is where human assignment takes a year.
-3. A blinded protocol: the test case is built by someone else, the decision-maker never sees the
-   reference constants, and there are more seeds.
+3. A fully blinded protocol. §3.3 hides constants and data seed but not the molecule. Next: test
+   cases built by someone else, from molecules the decision-maker has not worked on, with more seeds.
 4. Turn the decision aids into an API-driven agent with a fixed toolset (propose, what-if, series,
    release tests). Measure cost per round and the rate at which a human reviewer disagrees, i.e. make
    the human-in-the-loop part real.

@@ -1,0 +1,4 @@
+kind,item,action,reason
+assign,31 1 30 30 3 27@62,accept,"jointly consistent with the forward-selected release set (grown one at a time, converged fits only)"
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

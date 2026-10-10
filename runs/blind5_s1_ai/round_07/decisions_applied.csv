@@ -1,0 +1,105 @@
+kind,item,action,reason,source
+assign,C0001,defer,AI override (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai-override
+assign,C0002,defer,AI override (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai-override
+assign,C0003,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0004,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0005,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0006,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0007,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0008,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0009,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0010,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0011,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0012,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0013,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0014,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0015,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0016,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0017,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0018,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0019,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0020,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0021,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0022,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0023,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0024,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0025,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0026,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0027,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0028,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0029,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0030,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0031,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0032,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0033,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0034,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0035,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0036,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0037,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0038,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0039,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0040,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0041,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0042,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0043,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0044,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0045,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0046,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0047,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0048,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0049,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0050,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0051,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0052,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0053,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0054,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0055,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0056,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0057,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0058,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0059,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0060,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0061,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0062,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0063,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0064,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0065,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0066,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0067,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0068,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0069,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0070,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0071,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0072,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0073,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0074,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0075,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0076,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0077,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0078,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0079,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0080,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0081,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0082,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0083,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0084,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0085,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0086,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0087,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0088,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0089,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0090,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0091,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0092,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0093,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+assign,C0094,defer,AI (blanket): rejected by the joint consistency check (each raises chi2 of the assigned lines),ai
+outlier,285,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-0.9 h=0.81,ai-confirmed
+outlier,69,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-0.1 h=0.81,ai-confirmed
+outlier,80,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-0.3 h=0.96,ai-confirmed
+outlier,60,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+0.1 h=0.98,ai-confirmed
+param,399,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=2.0 |v/s|=1.4 |v|/scale=0.0035,ai-confirmed
+param,2299,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=1.8 |v/s|=1.3 |v|/scale=0.73,ai-confirmed
+param,4099,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=1.7 |v/s|=1.3 |v|/scale=3.4,ai-confirmed
+param,3199,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=0.9 |v/s|=1.0 |v|/scale=0.048,ai-confirmed
+param,50299,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=0.7 |v/s|=0.9 |v|/scale=0.15,ai-confirmed
+stop,stop,yes,AI: no candidate is jointly consistent with the assigned set and no release is supported (all dchi2<2); converged,ai

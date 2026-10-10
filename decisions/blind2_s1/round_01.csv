@@ -1,0 +1,4 @@
+kind,item,action,reason
+hyp,1,reject,"Z 18.7 but support only 5; conflicts with rank 2 on 9(4,5)"
+hyp,2,accept,"Z 17.3 (within 1.4 of the top) with support 268 vs 5: the robust solution"
+all,defaults,confirm,"other hypotheses weaker or conflicting; anchors to be verified by leave-one-out next round"

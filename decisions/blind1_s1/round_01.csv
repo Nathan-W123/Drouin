@@ -1,0 +1,4 @@
+kind,item,action,reason
+hyp,1,reject,"Z 3.3 with support 1, all hypotheses weak (Z~3)"
+hyp,2,accept,"weak evidence (Z 3.2): chosen by anchor votes -- 85 and 93 shared by ranks 1,2,4 and 40 shared by ranks 2,3"
+all,defaults,confirm,"other hypotheses weaker or conflicting; anchors to be verified by leave-one-out next round"

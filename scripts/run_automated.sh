@@ -14,7 +14,7 @@ for c in $CASES; do for s in $SEEDS; do
 done; done
 printf '%s\n' "${jobs[@]}" | xargs -P 4 -L 1 bash -c '
   c=$0; s=$1; arm=$2
-  if [ "$arm" = rules_plus ]; then extra="--arm rules --tag _plus$TAG --plus"; else extra="--arm $arm --tag $TAG"; fi
+  if [ "$arm" = rules_plus ]; then extra="--arm rules --tag _plus$TAG --plus"; else extra="--arm $arm${TAG:+ --tag $TAG}"; fi
   python3 -m assign.engine "$c" --seed "$s" $extra $EXTRA --fresh > "logs/${c}_s${s}_${arm}$TAG.log" 2>&1
   echo "$c s$s $arm$TAG: $(tail -1 logs/${c}_s${s}_${arm}$TAG.log)"'
 for c in $CASES; do for s in $SEEDS; do for d in runs/${c}_s${s}_greedy$TAG runs/${c}_s${s}_rules$TAG runs/${c}_s${s}_rules_plus$TAG; do

@@ -1,0 +1,9 @@
+kind,item,action,reason
+assign,10 5 5 10 5 6@1,accept,"jointly consistent without new terms (grown one at a time, converged fits only)"
+assign,22 7 15 22 7 16@1,accept,"jointly consistent without new terms (grown one at a time, converged fits only)"
+assign,36 5 31 36 5 32@77,accept,"jointly consistent without new terms (grown one at a time, converged fits only)"
+assign,39 6 33 39 6 34@50,accept,"jointly consistent without new terms (grown one at a time, converged fits only)"
+assign,31 1 30 30 3 27@51,accept,"jointly consistent without new terms (grown one at a time, converged fits only)"
+outlier,185,unassign,"Ka=4 R-branch doublet on one peak, t=-4.6 at leverage 0 -- likely resolved components (lesson from H2CO); unassign without blacklisting"
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

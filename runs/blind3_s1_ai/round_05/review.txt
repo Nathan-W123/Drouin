@@ -1,0 +1,54 @@
+# blind3 seed 1 arm ai -- round 5
+
+assigned peaks 245, floating params 19, last rms (weighted) 0.937
+predictions considered 1996, with candidates 752, unresolvable windows 6, p_have=0.19 (from 1042 sharp predictions)
+candidate rows 874: default accept 18 (of which flagged 0), deferred with P>=0.5: 161
+
+OUTLIERS (top 8):
+  peak  600 45 3 43 45 2 44              t=+3.1 h=0.02 default=keep
+  peak  496 41 7 35 42 4 38              t=-0.9 h=0.88 default=keep
+  peak    2 60 11 49 59 12 48            t=-0.5 h=1.00 default=keep
+  peak  536 61 5 57 62 2 60              t=-3.5 h=1.00 default=keep
+  peak    4 48 10 38 49 9 41             t=-0.7 h=0.91 default=keep
+  peak   22 63 13 51 64 12 52            t=-1.3 h=1.00 default=keep
+
+RELEASE forward selection (<=10x scale): none
+  other trials: [('LJK', np.float64(8.1), '0.52x'), ('lJ', np.float64(8.1), '0.94x'), ('lK', np.float64(7.8), '0.5x'), ('PJJK', np.float64(4.2), '59x'), ('PKKJ', np.float64(3.5), '15x'), ('LJJK', np.float64(3.5), '2.1x')]
+  current 245 lines: rms 0.937 with releases (without: 0.937)
+
+JOINT defaults: 18 added -> kept 17, removed 1, rms 0.941
+   removed  646 79 6 74 80 3 77        z=-1.5
+
+JOINT defaults+P>=0.9: 47 added -> kept 43, removed 4, rms 0.964
+   removed  646 79 6 74 80 3 77        z=-1.5
+   removed  405 39 12 28 40 11 29      z=-197.2
+   removed  621 77 6 72 78 3 75        z=-6.5
+   removed  599 75 6 70 76 3 73        z=-487.3
+
+JOINT defaults+P>=0.5: 114 added -> kept 77, removed 37, rms 0.996
+   removed  646 79 6 74 80 3 77        z=-1.5
+   removed  405 39 12 28 40 11 29      z=-197.2
+   removed  621 77 6 72 78 3 75        z=-6.5
+   removed  599 75 6 70 76 3 73        z=-487.3
+   removed  661 64 21 43 65 20 46      z=+0.1
+   removed  642 71 22 50 72 21 51      z=+0.2
+   removed  640 69 5 65 70 2 68        z=-1.4
+   removed  628 67 21 47 68 20 48      z=+0.1
+   removed  445 68 8 60 68 7 61        z=+0.3
+   removed  667 73 23 51 74 22 52      z=+0.4
+
+JOINT-RELEASE defaults: releases [('lJ', np.float64(263.1), '1.3x')] -> kept 18, removed 0, rms 0.927
+   RELEASE_IDS 40300
+
+JOINT-RELEASE defaults+P>=0.9: releases [('phiJK', np.float64(53418.7), '0.1x'), ('lJ', np.float64(12634.0), '7.1x'), ('LJK', np.float64(31847.4), '8.6x')] -> kept 45, removed 2, rms 0.922
+   RELEASE_IDS 41100,40300,2200
+   removed  405 39 12 28 40 11 29      z=-197.1
+   removed  599 75 6 70 76 3 73        z=-619.9
+
+SERIES (top 6):
+series dJ=1 Ka'=8 Ka"=9 parity=1,0: 6 coherent members, r0=+0.000000 tol=8.9e-06, expected by chance 0.05, P(chance)=1.2e-11
+series dJ=-1 Ka'=4 Ka"=1 parity=1,0: 6 coherent members, r0=+0.000000 tol=2.8e-06, expected by chance 0.05, P(chance)=1.3e-11
+series dJ=-1 Ka'=13 Ka"=12 parity=1,0: 6 coherent members, r0=-0.000001 tol=2.0e-06, expected by chance 0.08, P(chance)=2.7e-10
+series dJ=1 Ka'=10 Ka"=11 parity=1,0: 5 coherent members, r0=+0.000000 tol=1.8e-05, expected by chance 0.06, P(chance)=4.3e-09
+series dJ=-1 Ka'=5 Ka"=2 parity=1,0: 4 coherent members, r0=+0.000003 tol=6.0e-06, expected by chance 0.02, P(chance)=1.1e-08
+series dJ=-1 Ka'=21 Ka"=20 parity=1,0: 4 coherent members, r0=+0.000008 tol=5.8e-06, expected by chance 0.03, P(chance)=6.0e-08

@@ -1,0 +1,66 @@
+# blind6 seed 1 arm ai -- round 3
+
+assigned peaks 30, floating params 8, last rms (weighted) 0.886
+predictions considered 2110, with candidates 980, unresolvable windows 598, p_have=0.19 (from 370 sharp predictions)
+candidate rows 1634: default accept 64 (of which flagged 0), deferred with P>=0.5: 121
+
+OUTLIERS (top 8):
+  peak  312 26 4 22 26 3 23              t=-3.0 h=0.65 default=keep
+  peak  116 6 0 6 5 1 5                  t=+0.8 h=0.89 default=keep
+  peak  130 8 1 7 8 0 8                  t=+0.1 h=0.96 default=keep
+  peak  158 2 2 0 3 1 3                  t=-1.9 h=0.97 default=keep
+  peak   23 12 3 9 13 2 12               t=+0.0 h=1.00 default=keep
+
+RELEASE forward selection (<=10x scale): [('phiK', np.float64(12.7), '0.78x')]
+  other trials: [('PhiJK', np.float64(12.0), '0.17x'), ('PhiKJ', np.float64(6.1), '0.43x'), ('PhiK', np.float64(1.4), '0.15x'), ('phiJK', np.float64(0.8), '0.11x'), ('phiJ', np.float64(0.5), '0.055x'), ('PhiJ', np.float64(0.0), '0.13x')]
+  current 30 lines: rms 0.602 with releases (without: 0.886)
+
+JOINT defaults: 64 added -> kept 41, removed 23, rms 1.353
+   removed    3 15 2 14 14 3 11        z=+0.5
+   removed  133 8 3 5 9 2 8            z=+3.3
+   removed   87 9 3 7 10 2 8           z=+1.8
+   removed  265 7 4 4 8 3 5            z=+6.0
+   removed  240 8 4 4 9 3 7            z=+7.2
+   removed  128 13 4 10 14 3 11        z=+1.6
+   removed  222 10 4 6 11 3 9          z=+5.2
+   removed  591 13 5 9 12 4 8          z=+13.3
+   removed  483 23 6 18 23 5 19        z=+16.6
+   removed   54 15 4 12 16 3 13        z=+6.1
+
+JOINT defaults+P>=0.9: 83 added -> kept 46, removed 37, rms 1.457
+   removed    3 15 2 14 14 3 11        z=+0.5
+   removed  133 8 3 5 9 2 8            z=+3.3
+   removed   87 9 3 7 10 2 8           z=+1.8
+   removed  265 7 4 4 8 3 5            z=+6.0
+   removed  240 8 4 4 9 3 7            z=+7.2
+   removed  128 13 4 10 14 3 11        z=+1.6
+   removed  222 10 4 6 11 3 9          z=+5.2
+   removed  591 13 5 9 12 4 8          z=+13.3
+   removed  483 23 6 18 23 5 19        z=+16.6
+   removed   54 15 4 12 16 3 13        z=+6.1
+
+JOINT defaults+P>=0.5: 130 added -> kept 46, removed 84, rms 1.457
+   removed    3 15 2 14 14 3 11        z=+0.5
+   removed  133 8 3 5 9 2 8            z=+3.3
+   removed   87 9 3 7 10 2 8           z=+1.8
+   removed  265 7 4 4 8 3 5            z=+6.0
+   removed  240 8 4 4 9 3 7            z=+7.2
+   removed  128 13 4 10 14 3 11        z=+1.6
+   removed  222 10 4 6 11 3 9          z=+5.2
+   removed  591 13 5 9 12 4 8          z=+13.3
+   removed  483 23 6 18 23 5 19        z=+16.6
+   removed   54 15 4 12 16 3 13        z=+6.1
+
+JOINT-RELEASE defaults: releases [('PhiK', np.float64(7201.7), '0.14x'), ('phiJ', np.float64(3472.6), '0.071x'), ('PhiKJ', np.float64(2127.3), '0.51x'), ('phiK', np.float64(526.2), '0.41x'), ('PhiJ', np.float64(323.5), '0.18x')] -> kept 64, removed 0, rms 0.739
+   RELEASE_IDS 3000,40200,2100,42000,300
+
+JOINT-RELEASE defaults+P>=0.9: releases [('PhiJ', np.float64(55250.3), '0.57x'), ('phiJ', np.float64(9827.2), '0.085x'), ('PhiK', np.float64(27902.0), '0.13x'), ('PhiKJ', np.float64(19395.6), '0.43x'), ('phiK', np.float64(1942.3), '0.35x')] -> kept 83, removed 0, rms 0.750
+   RELEASE_IDS 300,40200,3000,2100,42000
+
+SERIES (top 6):
+series dJ=-1 Ka'=8 Ka"=7 parity=1,0: 6 coherent members, r0=+0.000153 tol=4.7e-05, expected by chance 0.06, P(chance)=8.6e-11
+series dJ=-1 Ka'=11 Ka"=10 parity=0,1: 8 coherent members, r0=+0.000552 tol=1.8e-04, expected by chance 0.30, P(chance)=1.1e-09
+series dJ=1 Ka'=8 Ka"=9 parity=1,0: 7 coherent members, r0=+0.000373 tol=1.3e-04, expected by chance 0.23, P(chance)=5.2e-09
+series dJ=-1 Ka'=7 Ka"=6 parity=1,0: 4 coherent members, r0=+0.000082 tol=2.0e-05, expected by chance 0.04, P(chance)=1.6e-07
+series dJ=-1 Ka'=12 Ka"=11 parity=1,0: 6 coherent members, r0=+0.000714 tol=1.5e-04, expected by chance 0.24, P(chance)=2.3e-07
+series dJ=1 Ka'=2 Ka"=3 parity=1,0: 6 coherent members, r0=+0.000032 tol=3.0e-05, expected by chance 0.30, P(chance)=7.8e-07

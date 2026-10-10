@@ -1,0 +1,22 @@
+{
+ "n_accept": 77,
+ "n_reject": 0,
+ "released": [
+  "LJ",
+  "LJK",
+  "lJK",
+  "lJ"
+ ],
+ "overrides": 36,
+ "p_have": 0.18176080276718612,
+ "n_candidates": 1027,
+ "rms": 0.8425646793172822,
+ "chi2": 176.76889446942562,
+ "fit_ok": true,
+ "relaxed": [],
+ "n_broke_fit": 0,
+ "round": 5,
+ "n_assigned": 249,
+ "n_lines": 249,
+ "n_float": 20
+}

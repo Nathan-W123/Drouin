@@ -1,0 +1,6 @@
+kind,item,action,reason
+param,5100,hold,SKKKJ at 30x scale - implausible
+outlier,2,keep,"t=4.0 high-J/Ka line; same transition is the top residual in other cases of this molecule, suggesting a missing high-order term, not a wrong label"
+stop,stop,yes,the one remaining candidate is inconsistent; only releases left are at >=9.6x scale; converged
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

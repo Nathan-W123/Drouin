@@ -2,6 +2,7 @@
 
   fig_rounds.png  : per-round % of true lines correctly assigned and precision, all arms, seed 1
   fig_seeds.png   : final coverage / precision of the automated arms over seeds (AI arm: seed 1)
+  fig_blind.png   : final coverage / precision of every arm on the blind cases
 """
 import glob
 import json
@@ -105,8 +106,38 @@ def fig_seeds(out):
     plt.close(fig)
 
 
+def fig_blind(out):
+    cases = sorted({os.path.basename(f).split("_s")[0] for f in glob.glob(os.path.join(ROOT, "results", "blind*_s1_*.json"))},
+                   key=lambda c: int(c[5:]))
+    if not cases:
+        return
+    fig, axes = plt.subplots(1, 2, figsize=(9.5, 3.4), sharey=True)
+    for ax, (metric, title) in zip(axes, [("coverage", "true lines correctly assigned (%)"),
+                                          ("precision", "assignments that are correct, strict (%)")]):
+        for i, (arm, lab, colr, mk) in enumerate(ARMS):
+            xs, ys = [], []
+            for j, c in enumerate(cases):
+                s = load(c, 1, arm)
+                if s and (metric == "coverage" or s["final"]["n_pairs"]):
+                    xs.append(j + (i - 1.5) * 0.15)
+                    ys.append(100 * s["final"][metric])
+            ax.scatter(xs, ys, color=colr, marker=mk, s=40, edgecolors="white", linewidths=1, zorder=3, label=lab)
+        ax.set_xticks(range(len(cases)))
+        ax.set_xticklabels(cases, fontsize=8)
+        ax.set_ylim(-5, 105)
+        ax.set_title(title)
+    axes[0].set_ylabel("final value (%)")
+    axes[1].legend(loc="lower right", fontsize=7.5, frameon=False)
+    fig.suptitle("Blind test: six cases built without the decision-maker seeing the molecule's constants (scale factor hidden)",
+                 color=INK, fontsize=10)
+    fig.tight_layout(rect=(0, 0, 1, 0.92))
+    fig.savefig(out)
+    plt.close(fig)
+
+
 if __name__ == "__main__":
     os.makedirs(os.path.join(ROOT, "figures"), exist_ok=True)
     fig_rounds(os.path.join(ROOT, "figures", "fig_rounds.png"))
     fig_seeds(os.path.join(ROOT, "figures", "fig_seeds.png"))
+    fig_blind(os.path.join(ROOT, "figures", "fig_blind.png"))
     print("figures written")

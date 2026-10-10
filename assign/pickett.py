@@ -216,7 +216,7 @@ def spfit(par: ParFile, lin_rows, workdir=None):
     own = workdir is None
     d = tempfile.mkdtemp(prefix="spfit_") if own else workdir
     try:
-        par.write(os.path.join(d, "x.par"), nline=max(len(lin_rows), 1))
+        par.write(os.path.join(d, "x.par"), nline=len(lin_rows) + 10)  # SPFIT crashes with NLINE=1
         write_lin(os.path.join(d, "x.lin"), lin_rows)
         log = _run(SPFIT, d, ["x.par", "x.lin"])
         fitp = os.path.join(d, "x.fit")

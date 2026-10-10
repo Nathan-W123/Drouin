@@ -50,6 +50,35 @@
 | SO2 | rules | 1,2,3,4,5 | 7.6% (0.4–19.3) | 86.4% (66.7–100.0) |
 | SO2 | greedy | 1,2,3,4,5 | 0.1% (0.0–0.2) | 0.2% (0.0–0.8) |
 
+## Blind cases
+
+| case | arm | rounds | true lines correctly assigned | precision (strict) | precision (physics-aware) | on distractors | wrong label on true line | max \|this−oracle\|/σ |
+|---|---|---|---|---|---|---|---|---|
+| blind1 | AI-in-the-loop | 8 | 100.0% (465/465) | 100.0% | 100.0% | 0 | 0 | 0.00 |
+| blind1 | rules+ | 13 | 64.7% (301/465) | 96.2% | 96.2% | 3 | 9 | – |
+| blind1 | rules | 19 | 22.2% (103/465) | 98.1% | 98.1% | 2 | 0 | – |
+| blind1 | greedy | 14 | 0.0% (0/465) | 0.0% | 0.0% | 263 | 430 | – |
+| blind2 | AI-in-the-loop | 9 | 99.4% (158/159) | 97.6% | 100.0% | 0 | 4 | 0.28 |
+| blind2 | rules+ | 2 | 0.0% (0/159) | 0.0% | 0.0% | 0 | 3 | – |
+| blind2 | rules | 2 | 0.0% (0/159) | 0.0% | 0.0% | 0 | 3 | – |
+| blind2 | greedy | 20 | 0.0% (0/159) | 0.0% | 0.0% | 8 | 20 | – |
+| blind3 | AI-in-the-loop | 10 | 100.0% (427/427) | 99.8% | 99.8% | 1 | 0 | 0.00 |
+| blind3 | rules+ | 16 | 100.0% (427/427) | 100.0% | 100.0% | 0 | 0 | 0.00 |
+| blind3 | rules | 15 | 32.1% (137/427) | 100.0% | 100.0% | 0 | 0 | – |
+| blind3 | greedy | 6 | 0.9% (4/427) | 0.6% | 0.6% | 245 | 398 | – |
+| blind4 | AI-in-the-loop | 8 | 98.2% (219/223) | 97.6% | 99.6% | 0 | 6 | 0.11 |
+| blind4 | rules+ | 6 | 1.3% (3/223) | 37.5% | 37.5% | 0 | 5 | – |
+| blind4 | rules | 2 | 0.0% (0/223) | 0.0% | 0.0% | 0 | 3 | – |
+| blind4 | greedy | 20 | 0.0% (0/223) | 0.0% | 0.0% | 77 | 114 | – |
+| blind5 | AI-in-the-loop | 7 | 99.0% (195/197) | 98.1% | 100.0% | 0 | 4 | 0.22 |
+| blind5 | rules+ | 12 | 100.0% (197/197) | 98.2% | 100.0% | 0 | 4 | 0.00 |
+| blind5 | rules | 8 | 28.4% (56/197) | 98.5% | 100.0% | 0 | 1 | – |
+| blind5 | greedy | 13 | 0.0% (0/197) | 0.0% | 0.0% | 19 | 32 | – |
+| blind6 | AI-in-the-loop | 12 | 99.8% (412/413) | 100.0% | 100.0% | 0 | 0 | 0.01 |
+| blind6 | rules+ | 19 | 99.8% (412/413) | 100.0% | 100.0% | 0 | 0 | 1.75 |
+| blind6 | rules | 13 | 27.6% (114/413) | 100.0% | 100.0% | 0 | 0 | – |
+| blind6 | greedy | 17 | 1.5% (6/413) | 1.3% | 1.3% | 187 | 282 | – |
+
 ## Constants: so2_s1_ai
 
 Run `so2_s1_ai`: unconstrained refit of the final assignments (25 free parameters, weighted rms 0.957); oracle = all true lines of the list with their true labels (weighted rms 1.039).

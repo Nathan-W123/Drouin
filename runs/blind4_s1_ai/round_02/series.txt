@@ -1,0 +1,85 @@
+series dJ=0 Ka'=9 Ka"=9 parity=0,1: 14 coherent members, r0=-0.981528 tol=2.5e-02, expected by chance 0.22, P(chance)=1.0e-300
+    C0018 44 9 35 44 9 36 peak    2  r=-0.959257  z=-1.16  P=0.99  default=defer
+    C0013 45 9 36 45 9 37 peak    2  r=-0.972695  z=-1.18  P=1.00  default=defer
+    C0012 46 9 37 46 9 38 peak    2  r=-0.981528  z=-1.19  P=1.00  default=defer
+    C0014 47 9 38 47 9 39 peak    2  r=-0.987391  z=-1.19  P=1.00  default=defer
+    C0019 48 9 39 48 9 40 peak    2  r=-0.991319  z=-1.20  P=0.99  default=defer
+    C0024 49 9 40 49 9 41 peak    2  r=-0.993973  z=-1.20  P=0.99  default=defer
+    C0028 50 9 41 50 9 42 peak    2  r=-0.995783  z=-1.20  P=0.97  default=defer
+    C0035 51 9 42 51 9 43 peak    2  r=-0.997026  z=-1.20  P=0.93  default=defer
+    C0046 52 9 43 52 9 44 peak    2  r=-0.997887  z=-1.20  P=0.86  default=defer
+    C0072 53 9 44 53 9 45 peak    2  r=-0.998488  z=-1.19  P=0.74  default=defer
+    C0111 54 9 45 54 9 46 peak    2  r=-0.998911  z=-1.19  P=0.61  default=defer
+    C1186 55 9 46 55 9 47 peak    7  r=-0.994313  z=-1.18  P=0.01  default=defer
+    C1133 56 9 47 56 9 48 peak    7  r=-0.995848  z=-1.18  P=0.02  default=defer
+    C1086 57 9 48 57 9 49 peak    7  r=-0.996950  z=-1.18  P=0.02  default=defer
+series dJ=1 Ka'=1 Ka"=1 parity=1,1: 11 coherent members, r0=-0.005721 tol=1.1e-04, expected by chance 0.15, P(chance)=1.0e-300
+    C0034 2 1 2 1 1 1    peak   97  r=-0.005721  z=-1.55  P=0.93  default=defer
+    C0091 3 1 3 2 1 2    peak  113  r=-0.005716  z=-1.55  P=0.67  default=defer
+    C0059 5 1 5 4 1 4    peak  138  r=-0.005702  z=-1.54  P=0.81  default=defer
+    C0102 6 1 6 5 1 5    peak  151  r=-0.005697  z=-1.54  P=0.64  default=defer
+    C0114 8 1 8 7 1 7    peak  175  r=-0.005679  z=-1.53  P=0.60  default=defer
+    C0142 9 1 9 8 1 8    peak  194  r=-0.005671  z=-1.52  P=0.51  default=defer
+    C0074 10 1 10 9 1 9  peak  211  r=-0.005663  z=-1.52  P=0.74  default=defer
+    C0070 12 1 12 11 1 11 peak  229  r=-0.005651  z=-1.51  P=0.75  default=defer
+    C0100 13 1 13 12 1 12 peak  250  r=-0.005647  z=-1.50  P=0.65  default=defer
+    C0101 15 1 15 14 1 14 peak  303  r=-0.005645  z=-1.49  P=0.65  default=defer
+    C0646 17 1 17 16 1 16 peak  322  r=-0.005657  z=-1.48  P=0.12  default=defer
+series dJ=0 Ka'=8 Ka"=8 parity=0,1: 15 coherent members, r0=-0.983183 tol=1.3e-02, expected by chance 0.76, P(chance)=5.6e-15
+    C0134 36 8 28 36 8 29 peak    1  r=-0.974015  z=-2.33  P=0.55  default=defer
+    C0087 37 8 29 37 8 30 peak    1  r=-0.983183  z=-2.35  P=0.68  default=defer
+    C0144 38 8 30 38 8 31 peak    1  r=-0.988983  z=-2.36  P=0.51  default=defer
+    C0249 39 8 31 39 8 32 peak    1  r=-0.992698  z=-2.37  P=0.31  default=defer
+    C0251 40 8 32 40 8 33 peak    4  r=-0.972503  z=-2.32  P=0.31  default=defer
+    C0284 41 8 33 41 8 34 peak    4  r=-0.981379  z=-2.33  P=0.28  default=defer
+    C0411 42 8 34 42 8 35 peak    4  r=-0.987262  z=-2.34  P=0.21  default=defer
+    C0312 43 8 35 43 8 36 peak    8  r=-0.983108  z=-2.33  P=0.26  default=defer
+    C0615 44 8 36 44 8 37 peak   10  r=-0.978207  z=-2.31  P=0.13  default=defer
+    C0487 45 8 37 45 8 38 peak   10  r=-0.984676  z=-2.32  P=0.19  default=defer
+    C0374 46 8 38 46 8 39 peak   12  r=-0.984464  z=-2.32  P=0.23  default=defer
+    C1104 47 8 39 47 8 40 peak   14  r=-0.986039  z=-2.31  P=0.02  default=defer
+    C1168 48 8 40 48 8 41 peak   17  r=-0.982455  z=-2.30  P=0.01  default=defer
+    C1076 49 8 41 49 8 42 peak   17  r=-0.987264  z=-2.30  P=0.02  default=defer
+    C0998 50 8 42 50 8 43 peak   17  r=-0.990687  z=-2.30  P=0.03  default=defer
+series dJ=1 Ka'=1 Ka"=1 parity=0,0: 8 coherent members, r0=-0.006536 tol=1.0e-04, expected by chance 0.12, P(chance)=9.3e-13
+    C0066 2 1 1 1 1 0    peak  102  r=-0.006584  z=-1.94  P=0.78  default=defer
+    C0063 3 1 2 2 1 1    peak  118  r=-0.006574  z=-1.94  P=0.79  default=defer
+    C0075 4 1 3 3 1 2    peak  132  r=-0.006575  z=-1.94  P=0.74  default=defer
+    C0124 5 1 4 4 1 3    peak  147  r=-0.006567  z=-1.94  P=0.58  default=defer
+    C0131 6 1 5 5 1 4    peak  164  r=-0.006558  z=-1.94  P=0.56  default=defer
+    C0130 8 1 7 7 1 6    peak  190  r=-0.006536  z=-1.93  P=0.56  default=defer
+    C0097 10 1 9 9 1 8   peak  219  r=-0.006497  z=-1.92  P=0.65  default=defer
+    C0361 12 1 11 11 1 10 peak  245  r=-0.006441  z=-1.90  P=0.23  default=defer
+series dJ=1 Ka'=2 Ka"=2 parity=1,1: 9 coherent members, r0=-0.006142 tol=1.1e-04, expected by chance 0.45, P(chance)=1.3e-09
+    C0223 3 2 2 2 2 1    peak  116  r=-0.006142  z=-1.74  P=0.34  default=defer
+    C0442 4 2 3 3 2 2    peak  129  r=-0.006144  z=-1.74  P=0.20  default=defer
+    C0712 5 2 4 4 2 3    peak  140  r=-0.006142  z=-1.74  P=0.10  default=defer
+    C0721 6 2 5 5 2 4    peak  156  r=-0.006139  z=-1.73  P=0.09  default=defer
+    C0735 8 2 7 7 2 6    peak  180  r=-0.006134  z=-1.73  P=0.09  default=defer
+    C0789 9 2 8 8 2 7    peak  201  r=-0.006128  z=-1.73  P=0.07  default=defer
+    C0912 12 2 11 11 2 10 peak  236  r=-0.006115  z=-1.72  P=0.04  default=defer
+    C0868 13 2 12 12 2 11 peak  257  r=-0.006110  z=-1.71  P=0.05  default=defer
+    C0837 14 2 13 13 2 12 peak  284  r=-0.006104  z=-1.71  P=0.06  default=defer
+series dJ=1 Ka'=4 Ka"=4 parity=1,1: 7 coherent members, r0=-0.006130 tol=1.1e-04, expected by chance 0.35, P(chance)=9.8e-08
+    C0285 5 4 2 4 4 1    peak  141  r=-0.006078  z=-1.70  P=0.28  default=defer
+    C0469 6 4 3 5 4 2    peak  157  r=-0.006094  z=-1.70  P=0.19  default=defer
+    C0515 8 4 5 7 4 4    peak  185  r=-0.006130  z=-1.71  P=0.17  default=defer
+    C0496 9 4 6 8 4 5    peak  205  r=-0.006148  z=-1.72  P=0.18  default=defer
+    C0546 10 4 7 9 4 6   peak  215  r=-0.006168  z=-1.72  P=0.16  default=defer
+    C0404 12 4 9 11 4 8  peak  242  r=-0.006204  z=-1.73  P=0.21  default=defer
+    C0531 13 4 10 12 4 9 peak  265  r=-0.006213  z=-1.73  P=0.17  default=defer
+series dJ=1 Ka'=4 Ka"=4 parity=0,0: 7 coherent members, r0=-0.006182 tol=1.1e-04, expected by chance 0.35, P(chance)=9.8e-08
+    C0286 5 4 1 4 4 0    peak  141  r=-0.006078  z=-1.70  P=0.28  default=defer
+    C0470 6 4 2 5 4 1    peak  157  r=-0.006094  z=-1.70  P=0.19  default=defer
+    C0516 8 4 4 7 4 3    peak  185  r=-0.006135  z=-1.71  P=0.17  default=defer
+    C0570 9 4 5 8 4 4    peak  204  r=-0.006159  z=-1.72  P=0.15  default=defer
+    C0548 10 4 6 9 4 5   peak  215  r=-0.006182  z=-1.72  P=0.16  default=defer
+    C0406 12 4 8 11 4 7  peak  242  r=-0.006243  z=-1.74  P=0.21  default=defer
+    C0538 13 4 9 12 4 8  peak  265  r=-0.006278  z=-1.75  P=0.17  default=defer
+series dJ=0 Ka'=1 Ka"=1 parity=0,1: 6 coherent members, r0=-0.018853 tol=2.1e-04, expected by chance 0.24, P(chance)=2.4e-07
+    C0180 3 1 2 3 1 3    peak   76  r=-0.018962  z=-2.70  P=0.44  default=defer
+    C0112 5 1 4 5 1 5    peak   90  r=-0.018971  z=-2.70  P=0.61  default=defer
+    C0334 7 1 6 7 1 7    peak   95  r=-0.018958  z=-2.71  P=0.25  default=defer
+    C0464 8 1 7 8 1 8    peak  108  r=-0.018947  z=-2.71  P=0.19  default=defer
+    C0385 10 1 9 10 1 10 peak  124  r=-0.018853  z=-2.69  P=0.22  default=defer
+    C0335 12 1 11 12 1 12 peak  146  r=-0.018664  z=-2.67  P=0.25  default=defer

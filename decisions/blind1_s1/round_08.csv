@@ -1,0 +1,5 @@
+kind,item,action,reason
+outlier,16,keep,t=5.1 but a high-J/Ka line where the only supported term (PJJK) is implausibly large; flagged as uncertain rather than rejected
+stop,stop,yes,nothing left that is jointly consistent; only releases on offer are at 18-56x scale (implausible)
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

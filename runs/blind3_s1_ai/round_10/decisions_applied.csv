@@ -1,0 +1,19 @@
+kind,item,action,reason,source
+assign,C0001,defer,AI override (blanket): not in the jointly consistent set,ai-override
+assign,C0002,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0003,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0004,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0005,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0006,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0007,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0008,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0009,defer,AI (blanket): not in the jointly consistent set,ai
+outlier,2,keep,"AI override: t=4.0 high-J/Ka line; same transition is the top residual in other cases of this molecule, suggesting a missing high-order term, not a wrong label",ai-override
+outlier,22,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.7 h=0.69,ai-confirmed
+outlier,670,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.6 h=0.35,ai-confirmed
+param,5100,hold,AI override: SKKKJ at 30x scale - implausible,ai-override
+param,2300,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=28.0 |v/s|=5.3 |v|/scale=19,ai-confirmed
+param,6000,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=16.8 |v/s|=4.1 |v|/scale=9.6,ai-confirmed
+param,1300,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=0.8 |v/s|=0.8 |v|/scale=0.041,ai-confirmed
+param,41299,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=0.1 |v/s|=0.2 |v|/scale=0.0045,ai-confirmed
+stop,stop,yes,AI: the one remaining candidate is inconsistent; only releases left are at >=9.6x scale; converged,ai

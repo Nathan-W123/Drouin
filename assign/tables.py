@@ -52,6 +52,26 @@ def seed_summary():
     return "\n".join(L)
 
 
+def blind_table():
+    """Blind cases: the decision-maker never saw the molecule's official constants or the scale factor."""
+    L = ["| case | arm | rounds | true lines correctly assigned | precision (strict) | precision (physics-aware) | on distractors | wrong label on true line | max \\|this−oracle\\|/σ |",
+         "|---|---|---|---|---|---|---|---|---|"]
+    for i in range(1, 100):
+        if not glob.glob(os.path.join(ROOT, "results", f"blind{i}_s1_*.json")):
+            break
+        for arm, lab in ARMS:
+            s = load(f"blind{i}_s1_{arm}")
+            if not s:
+                continue
+            f = s["final"]
+            dev = [abs(c["dev_from_oracle_sigma"]) for c in s.get("constants") or [] if c.get("dev_from_oracle_sigma") is not None]
+            L.append(f"| blind{i} | {lab} | {s['rounds']} | {pct(f['coverage'])} ({f['n_covered']}/{f['n_true']}) | "
+                     f"{pct(f['precision']) if f['n_pairs'] else '–'} | {pct(f.get('precision_phys')) if f['n_pairs'] else '–'} | "
+                     f"{f['wrong_on_distractors']} | {f['wrong_label_on_true']} | "
+                     f"{f'{max(dev):.2f}' if dev and s['final_fit_ok'] and f['coverage'] > 0.5 else '–'} |")
+    return "\n".join(L)
+
+
 def constants_table(name):
     s = load(name)
     L = [f"Run `{name}`: unconstrained refit of the final assignments ({s['n_free_params']} free parameters, "
@@ -79,6 +99,8 @@ if __name__ == "__main__":
     print(main_table())
     print("\n## Over seeds\n")
     print(seed_summary())
+    print("\n## Blind cases\n")
+    print(blind_table())
     for n in ("so2_s1_ai", "h2co_s1_ai", "so2_s1_rules_plus"):
         if load(n):
             print(f"\n## Constants: {n}\n")

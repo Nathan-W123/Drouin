@@ -1,0 +1,46 @@
+# blind5 seed 1 arm ai -- round 5
+
+assigned peaks 193, floating params 16, last rms (weighted) 0.831
+predictions considered 431, with candidates 96, unresolvable windows 0, p_have=0.45 (from 466 sharp predictions)
+candidate rows 97: default accept 2 (of which flagged 2), deferred with P>=0.5: 9
+
+OUTLIERS (top 8):
+  peak  283 36 3 33 36 3 34              t=+1.1 h=0.84 default=keep
+  peak  285 13 11 2 12 11 1;13 11 3 12 11 2 t=-0.4 h=0.80 default=keep
+  peak   80 44 6 38 44 6 39              t=+0.9 h=0.95 default=keep
+
+RELEASE forward selection (<=10x scale): none
+  other trials: [('LJJK', np.float64(7.4), '2.1x'), ('HJ', np.float64(5.3), '0.0072x'), ('LJK', np.float64(1.4), '0.63x'), ('LK', np.float64(0.8), '2.3x'), ('l2', np.float64(0.3), '0.07x'), ('LKKJ', np.float64(0.2), '0.023x')]
+  current 193 lines: rms 0.831 with releases (without: 0.831)
+
+JOINT defaults: 2 added -> kept 0, removed 2, rms 0.831
+   removed  290 13 5 8 12 5 7          z=-13.3
+   removed  290 13 5 9 12 5 8          z=+14.3
+
+JOINT defaults+P>=0.9: 4 added -> kept 1, removed 3, rms 0.839
+   removed  290 13 5 8 12 5 7          z=-13.3
+   removed  290 13 5 9 12 5 8          z=+14.3
+   removed   88 41 3 38 40 5 35        z=-41.6
+
+JOINT defaults+P>=0.5: 8 added -> kept 1, removed 7, rms 0.839
+   removed  290 13 5 8 12 5 7          z=-13.3
+   removed  290 13 5 9 12 5 8          z=+14.3
+   removed   88 41 3 38 40 5 35        z=-41.6
+   removed  184 54 4 50 53 6 47        z=+nan
+   removed  133 36 2 34 35 4 31        z=+19.0
+   removed  174 46 3 43 45 5 40        z=-189.7
+   removed  165 45 3 42 44 5 39        z=+nan
+
+JOINT-RELEASE defaults: releases [] -> kept 0, removed 2, rms 0.831
+   RELEASE_IDS 
+   removed  290 13 5 8 12 5 7          z=-13.3
+   removed  290 13 5 9 12 5 8          z=+14.3
+
+JOINT-RELEASE defaults+P>=0.9: releases [('HJ', np.float64(53138.5), '0.47x'), ('l2', np.float64(4470.3), '9.8x'), ('LKKJ', np.float64(924.1), '1.5x')] -> kept 1, removed 3, rms 0.812
+   RELEASE_IDS 399,50299,3199
+   removed  290 13 5 8 12 5 7          z=-12.9
+   removed  290 13 5 9 12 5 8          z=+13.8
+   removed   88 41 3 38 40 5 35        z=-39.1
+
+SERIES (top 6):
+

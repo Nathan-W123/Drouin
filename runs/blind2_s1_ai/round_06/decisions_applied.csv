@@ -1,0 +1,71 @@
+kind,item,action,reason,source
+assign,C0001,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0002,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0003,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0004,accept,"AI override: jointly consistent with the forward-selected release set (grown one at a time, converged fits only)",ai-override
+assign,C0005,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0006,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0007,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0008,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0009,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0010,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0011,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0012,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0013,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0014,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0015,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0016,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0017,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0018,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0019,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0020,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0021,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0022,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0023,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0024,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0025,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0026,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0027,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0028,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0029,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0030,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0031,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0032,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0033,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0034,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0035,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0036,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0037,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0038,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0039,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0040,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0041,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0042,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0043,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0044,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0045,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0046,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0047,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0048,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0049,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0050,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0051,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0052,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0053,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0054,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0055,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0056,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0057,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0058,defer,AI (blanket): not in the jointly consistent set,ai
+outlier,79,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.0 h=0.02,ai-confirmed
+outlier,117,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+0.5 h=0.86,ai-confirmed
+outlier,80,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-1.1 h=0.96,ai-confirmed
+outlier,93,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+0.1 h=0.92,ai-confirmed
+outlier,150,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+0.2 h=0.98,ai-confirmed
+outlier,71,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+0.2 h=0.95,ai-confirmed
+param,4099,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=0.2 |v/s|=0.5 |v|/scale=10,ai-confirmed
+param,399,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=0.1 |v/s|=0.2 |v|/scale=0.0013,ai-confirmed
+param,3199,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=0.1 |v/s|=0.3 |v|/scale=0.21,ai-confirmed
+param,2299,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=0.1 |v/s|=0.2 |v|/scale=0.26,ai-confirmed
+param,1399,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=0.0 |v/s|=0.2 |v|/scale=0.11,ai-confirmed
+param,50299,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=-0.0 |v/s|=0.2 |v|/scale=0.011,ai-confirmed

@@ -1,0 +1,4 @@
+kind,item,action,reason
+stop,stop,yes,no candidate is jointly consistent with the assigned set and no release is supported (all dchi2<2); converged
+all,assign,defer,rejected by the joint consistency check (each raises chi2 of the assigned lines)
+all,defaults,confirm,remaining rule defaults reviewed

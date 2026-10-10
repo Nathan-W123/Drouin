@@ -1,0 +1,46 @@
+# blind5 seed 1 arm ai -- round 6
+
+assigned peaks 194, floating params 16, last rms (weighted) 0.839
+predictions considered 430, with candidates 95, unresolvable windows 0, p_have=0.45 (from 466 sharp predictions)
+candidate rows 95: default accept 3 (of which flagged 2), deferred with P>=0.5: 7
+
+OUTLIERS (top 8):
+  peak  285 13 11 2 12 11 1;13 11 3 12 11 2 t=-0.2 h=0.80 default=keep
+  peak   80 44 6 38 44 6 39              t=+1.2 h=0.95 default=keep
+  peak   60 31 1 30 30 3 27              t=+1.8 h=0.96 default=keep
+
+RELEASE forward selection (<=10x scale): [('LJJK', np.float64(10.7), '2.1x')]
+  other trials: [('HJ', np.float64(8.4), '0.0062x'), ('l2', np.float64(2.2), '0.19x'), ('LJK', np.float64(1.4), '0.64x'), ('LK', np.float64(0.3), '1.5x'), ('LKKJ', np.float64(0.0), '0.0074x')]
+  current 194 lines: rms 0.805 with releases (without: 0.839)
+
+JOINT defaults: 3 added -> kept 1, removed 2, rms 0.803
+   removed  290 13 5 8 12 5 7          z=-13.5
+   removed  290 13 5 9 12 5 8          z=+14.1
+
+JOINT defaults+P>=0.9: 4 added -> kept 1, removed 3, rms 0.803
+   removed  290 13 5 8 12 5 7          z=-13.5
+   removed  290 13 5 9 12 5 8          z=+14.1
+   removed   88 41 3 38 40 5 35        z=-14.2
+
+JOINT defaults+P>=0.5: 8 added -> kept 1, removed 7, rms 0.803
+   removed  290 13 5 8 12 5 7          z=-13.5
+   removed  290 13 5 9 12 5 8          z=+14.1
+   removed   88 41 3 38 40 5 35        z=-14.2
+   removed  184 54 4 50 53 6 47        z=+nan
+   removed  133 36 2 34 35 4 31        z=+13.8
+   removed  174 46 3 43 45 5 40        z=-30.5
+   removed  165 45 3 42 44 5 39        z=+nan
+
+JOINT-RELEASE defaults: releases [('LJJK', np.float64(10.8), '2.2x')] -> kept 1, removed 2, rms 0.803
+   RELEASE_IDS 1399
+   removed  290 13 5 8 12 5 7          z=-13.5
+   removed  290 13 5 9 12 5 8          z=+14.1
+
+JOINT-RELEASE defaults+P>=0.9: releases [('HJ', np.float64(53078.4), '0.47x'), ('l2', np.float64(4391.0), '9.7x'), ('LKKJ', np.float64(919.5), '1.5x')] -> kept 1, removed 3, rms 0.810
+   RELEASE_IDS 399,50299,3199
+   removed  290 13 5 8 12 5 7          z=-12.9
+   removed  290 13 5 9 12 5 8          z=+13.9
+   removed   88 41 3 38 40 5 35        z=-39.3
+
+SERIES (top 6):
+

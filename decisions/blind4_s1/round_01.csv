@@ -1,0 +1,3 @@
+kind,item,action,reason
+hyp,1,accept,"highest Z (22.3, 33/43 matched); rank 3 has more support (166) but 2.9 lower Z and fewer matches"
+all,defaults,confirm,"other hypotheses weaker or conflicting; anchors to be verified by leave-one-out next round"

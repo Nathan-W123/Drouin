@@ -1,0 +1,3 @@
+kind,item,action,reason
+hyp,1,accept,"Z 6.6, support 40 vs <=2"
+all,defaults,confirm,"other hypotheses weaker or conflicting; anchors to be verified by leave-one-out next round"

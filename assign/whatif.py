@@ -57,6 +57,8 @@ def grow_consistent(run, base, zmax=4.0, order=None):
         rank = {pk: i for i, pk in enumerate(order)}
         added.sort(key=lambda pk: rank.get(pk, 1e9))
     removed = []
+    r0, res0, _ = run.fit(assign=cur) if cur else (None, {}, 0.0)
+    chi_cur = {q: v["z"] ** 2 for q, v in res0.items()}
     for p, k in added:
         trial = {q: list(v) for q, v in cur.items()}
         trial.setdefault(p, []).append(k)
@@ -64,11 +66,15 @@ def grow_consistent(run, base, zmax=4.0, order=None):
         if _bad_fit(r, res):
             removed.append((p, [k], float("nan")))
             continue
-        worst = max(abs(v["z"]) for v in res.values())
-        if worst > zmax:
-            removed.append((p, [k], res.get(p, {}).get("z", float("nan"))))
+        # keep the line if it fits (|z|<=zmax) and does not significantly degrade the lines already kept
+        # (their chi2 rises by < 9); robust to an existing line sitting near the |z| threshold
+        znew = res.get(p, {}).get("z", float("nan"))
+        d_others = sum(v["z"] ** 2 for q, v in res.items() if q != p and q in chi_cur) - sum(chi_cur[q] for q in chi_cur if q != p)
+        if not np.isfinite(znew) or abs(znew) > zmax or d_others > 9.0:
+            removed.append((p, [k], znew))
             continue
         cur = trial
+        chi_cur = {q: v["z"] ** 2 for q, v in res.items()}
     r, res, chi = run.fit(assign=cur)
     z = np.array([v["z"] for v in res.values()])
     kept = {p: [k for k in ks if k not in run.assign.get(p, [])] for p, ks in cur.items()}
@@ -141,6 +147,7 @@ def main():
     ap.add_argument("--subset", type=float, default=None, help="find the consistent subset of the additions (target rms)")
     ap.add_argument("--prune", type=float, default=None, help="remove added lines while any has |z| > this")
     ap.add_argument("--worst", type=int, default=8)
+    ap.add_argument("--show-params", action="store_true")
     ap.add_argument("--loo", action="store_true", help="leave-one-out: chi2 drop when each peak is removed")
     a = ap.parse_args()
     run = Run(a.case, a.seed, a.arm)
@@ -166,8 +173,9 @@ def main():
         return
     r, res, z, assign = whatif(run, drop, a.only_dJ, rel, base)
     print(f"lines {len(res)}  fit ok {r.ok}  weighted rms {np.sqrt(np.mean(z**2)):.3f}  median |z| {np.median(np.abs(z)):.2f}")
-    for p in r.params.params:
-        print(f"   {p.idpar:>8d} {p.label:8s} {p.value: .8e} +- {r.errors.get(p.idpar, float('nan')):.2e}")
+    if a.show_params:  # off by default: on blind cases fitted constants would hint at the hidden scale
+        for p in r.params.params:
+            print(f"   {p.idpar:>8d} {p.label:8s} {p.value: .8e} +- {r.errors.get(p.idpar, float('nan')):.2e}")
     worst = sorted(res.items(), key=lambda kv: -abs(kv[1]["z"]))[:a.worst]
     for pid, v in worst:
         print(f"   worst peak {pid:4d} {';'.join(' '.join(map(str, k)) for k in assign[pid]):<28s} res {v['res']:+.4f} MHz z {v['z']:+.1f}")

@@ -169,6 +169,14 @@ class Run:
         return relaxed
 
     # ------------------------------------------------------------ diagnostics
+    def _requested(self, kind):
+        if self.arm != "ai":
+            return set()
+        path = os.path.join(self.dec_dir, f"round_{self.round:02d}.csv")
+        if not os.path.exists(path):
+            return set()
+        return {int(d["item"]) for d in csv.DictReader(open(path)) if d["kind"] == kind}
+
     def _requested_outliers(self):
         """Peaks the decision file wants to act on, so they appear in the outlier table even if they
         are not flagged by the statistics."""
@@ -376,7 +384,11 @@ class Run:
 
     def _fit_and_update(self):
         r, resid, chi2 = self.fit()
-        if r is None:
+        if r is None:  # no assigned lines: the posterior is the prior
+            for p in self.model.floating():
+                if p.prior < 1e30:
+                    p.value = p.center
+            self.var_text, self.resid = "", {}
             return dict(rms=float("nan"), chi2=0.0, fit_ok=True, relaxed=[])
         if not r.ok:
             return dict(rms=r.rms, chi2=chi2, fit_ok=False, relaxed=[])
@@ -447,6 +459,12 @@ class Run:
 
         orows = self.outlier_table(pred, extra=self._requested_outliers())
         prows = self.param_table()
+        for idp in self._requested(kind="param"):  # explicit releases of any absent term are allowed
+            if idp not in {r["idpar"] for r in prows} and idp in {p.idpar for p in self.model.absent()}:
+                p = self.model.get(idp)
+                prows.append(dict(idpar=idp, label=p.label, order=order(idp), dchi2=float("nan"), value=0.0,
+                                  sigma=float("nan"), snr=0.0, scale=p.scale, ratio=float("nan"), default="hold",
+                                  reason="not in the automatic trial list (requested by the decision-maker)"))
         release_pending = any(r["default"] == "release" for r in prows)
         if self.s.get("release_before_reject") and release_pending:
             for r in orows:  # rules+ : an incomplete model is fixed before any line is rejected

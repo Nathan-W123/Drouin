@@ -1,0 +1,6 @@
+kind,item,action,reason
+outlier,15,unassign,anchors mutually inconsistent (3-line fit rms 35); restart from the prior
+outlier,20,unassign,see 15
+outlier,21,unassign,see 15
+all,assign,defer,predictions come from the inconsistent anchor fit; rebuild from the prior
+all,defaults,confirm,remaining rule defaults reviewed

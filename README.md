@@ -26,13 +26,16 @@ assign/          Python package
   series.py      series-coherence diagnostic (Loomis-Wood analysis in numbers)
   whatif.py      what-if refits for the decision-maker (drop/add lines, release terms, LOO, pruning)
   split.py       joint consistency of candidates split by branch / J range
+  review.py      per-round review: joint forward selection of releases + grown consistent candidate sets
+  decide.py      writes a decision file from a review set, every row with a reason
+  seriesgrow.py  grows a consistent set from coherent series (bootstrap recovery)
   override_audit.py  scores the AI arm's departures from the rule defaults (after the run)
   tables.py      markdown tables for the report (results/tables.md)
   engine.py      the round loop for all arms, decision files, outlier and parameter-release tests
   plots.py       per-round Loomis-Wood and residual plots
   score.py       scoring against the hidden truth (the only module that reads truth.csv)
   figures.py     result figures
-cases/           molecule configurations (so2.json, h2co.json)
+cases/           molecule configurations (so2.json, h2co.json, blind1-6.json)
 data/            CDMS ground-truth files (SO2, H2CO) and isotopologue catalogs used as distractors
 testcases/       generated test cases (peaks.csv is what the loop sees; truth*.json/csv are hidden)
 decisions/       the AI arm's decision files, one per round (the audit trail)
@@ -41,7 +44,8 @@ runs/            run directories (per-round proposals, plots, applied decisions)
 results/         scores (JSON) per run
 figures/         result figures
 tests/           validation of uncertainty propagation (vs SPFIT and vs Monte Carlo refits)
-scripts/         setup, sanity check, batch runs (run_automated.sh), round_review.sh (AI-round checklist)
+scripts/         setup, sanity check, batch runs (run_automated.sh), round_review.sh (AI-round checklist),
+                 make_blind.py (blind cases: hidden molecule order, scale factor and data seed)
 docs/            spinv.pdf and Kisiel's crib
 ```
 
@@ -76,12 +80,15 @@ python3 -m assign.whatif so2 1 ai --add-round runs/so2_s1_ai/round_05 --add-defa
 python3 -m assign.whatif so2 1 ai --add-round runs/so2_s1_ai/round_09 --add-p 0.6 --prune 4
 ```
 
-and writes `decisions/<case>_s1/round_NN.csv`:
+or, in one step, `python3 -m assign.review <case> 1` (writes `review.txt` and candidate sets), then
+`python3 -m assign.decide <case> --accept defaults --reason "..." [--release ids --release-reason ...]
+[--hold id:reason] [--outlier peak:action:reason] [--stop reason]`. Either way the result is
+`decisions/<case>_s1/round_NN.csv`:
 
 ```
 kind,item,action,reason
 assign,4 0 4 3 1 3@37,accept,"<one-line reason>"
-outlier,161,reject,"<reason>"          # reject = remove and blacklist; unassign = remove only
+outlier,161,reject,"<reason>"          # reject = remove; the pair returns flagged prev-rejected; unassign = remove only
 param,3000,release,"<reason>"
 all,assign,defer,"<reason>"            # blanket action for all rows of a kind not listed
 all,defaults,confirm,"<reason>"        # required: confirms the remaining rule-based defaults
@@ -91,7 +98,13 @@ stop,stop,yes,"<reason>"
 Rerunning the command applies it, refits and prepares the next round. Every applied decision, with
 its reason and whether it overrides the default, is logged in `runs/.../round_NN/decisions_applied.csv`.
 Runs are deterministic, so the whole AI run can be replayed from the decision files
-(`--fresh`).
+(`--fresh`; the original four AI runs need `--fd-step 3000`). Note: `all,defaults,confirm` also
+applies the default parameter releases, so hold any release you do not want explicitly.
+
+### Blind cases
+
+`python3 scripts/make_blind.py 3 3` builds six cases whose molecule order, frequency scale factor and
+data seed are hidden in `testcases/blindN_s1/truth_blind.json` (read only by `score.py`). See REPORT §3.3.
 
 ## File-format notes (learned the hard way)
 

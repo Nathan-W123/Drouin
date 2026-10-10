@@ -1,0 +1,30 @@
+kind,item,action,reason,source
+assign,C0001,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0002,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0003,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0004,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0005,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0006,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0007,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0008,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0009,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0010,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0011,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0012,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0013,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0014,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0015,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0016,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0017,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0018,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0019,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0020,defer,AI (blanket): not in the jointly consistent set,ai
+outlier,16,keep,AI override: t=5.1 but a high-J/Ka line where the only supported term (PJJK) is implausibly large; flagged as uncertain rather than rejected,ai-override
+outlier,1,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.9 h=0.50,ai-confirmed
+outlier,712,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.1 h=0.16,ai-confirmed
+outlier,29,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-1.1 h=0.83,ai-confirmed
+param,2300,release,AI confirmed default (remaining rule defaults reviewed); default: dchi2=41.3 |v/s|=6.4 |v|/scale=18,ai-confirmed
+param,5100,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=20.5 |v/s|=4.5 |v|/scale=56,ai-confirmed
+param,1300,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=0.8 |v/s|=0.9 |v|/scale=0.036,ai-confirmed
+param,41299,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=0.8 |v/s|=0.8 |v|/scale=0.02,ai-confirmed
+stop,stop,yes,AI: nothing left that is jointly consistent; only releases on offer are at 18-56x scale (implausible),ai

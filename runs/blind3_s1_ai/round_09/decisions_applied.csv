@@ -1,0 +1,35 @@
+kind,item,action,reason,source
+assign,C0001,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0002,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0003,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0004,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0005,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0006,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0007,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0008,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0009,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0010,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0011,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0012,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0013,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0014,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0015,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0016,defer,AI override (blanket): not in the jointly consistent set,ai-override
+assign,C0017,accept,"AI override: jointly consistent with the current model (grown one at a time, converged fits only)",ai-override
+assign,C0018,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0019,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0020,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0021,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0022,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0023,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0024,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0025,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0026,defer,AI (blanket): not in the jointly consistent set,ai
+outlier,2,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+4.0 h=0.53,ai-confirmed
+outlier,22,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.8 h=0.73,ai-confirmed
+outlier,670,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.6 h=0.39,ai-confirmed
+param,5100,hold,AI override: SKKKJ at 34x scale - implausible,ai-override
+param,2300,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=28.8 |v/s|=5.4 |v|/scale=22,ai-confirmed
+param,6000,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=17.5 |v/s|=4.2 |v|/scale=11,ai-confirmed
+param,1300,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=1.9 |v/s|=1.4 |v|/scale=0.074,ai-confirmed
+param,41299,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=0.4 |v/s|=0.6 |v|/scale=0.02,ai-confirmed

@@ -1,0 +1,11 @@
+kind,item,action,reason
+param,4100,release,PKKKJ: dchi2=1014 after the new high-Ka lines; 12x scale but the evidence is overwhelming and the forward selection that vetted those lines included it
+outlier,21,keep,release before reject
+outlier,2,keep,release before reject
+outlier,656,keep,release before reject
+outlier,513,keep,release before reject
+outlier,157,keep,release before reject
+outlier,4,keep,release before reject
+outlier,33,keep,release before reject
+all,assign,defer,wait until the PKKKJ release is in
+all,defaults,confirm,remaining rule defaults reviewed

@@ -1,0 +1,67 @@
+kind,item,action,reason,source
+assign,C0001,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0002,defer,AI override (blanket): wait until the PKKKJ release is in,ai-override
+assign,C0003,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0004,defer,AI override (blanket): wait until the PKKKJ release is in,ai-override
+assign,C0005,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0006,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0007,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0008,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0009,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0010,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0011,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0012,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0013,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0014,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0015,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0016,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0017,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0018,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0019,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0020,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0021,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0022,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0023,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0024,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0025,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0026,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0027,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0028,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0029,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0030,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0031,defer,AI (blanket): wait until the PKKKJ release is in,ai
+outlier,21,keep,AI override: release before reject,ai-override
+outlier,2,keep,AI override: release before reject,ai-override
+outlier,656,keep,AI override: release before reject,ai-override
+outlier,513,keep,AI override: release before reject,ai-override
+outlier,157,keep,AI override: release before reject,ai-override
+outlier,4,keep,AI override: release before reject,ai-override
+outlier,33,keep,AI override: release before reject,ai-override
+outlier,123,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-6.6 h=0.44,ai-confirmed
+outlier,31,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+6.6 h=0.63,ai-confirmed
+outlier,441,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-6.0 h=0.18,ai-confirmed
+outlier,29,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+5.8 h=0.45,ai-confirmed
+outlier,526,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-5.8 h=0.17,ai-confirmed
+outlier,490,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+5.5 h=0.56,ai-confirmed
+outlier,609,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-5.2 h=0.11,ai-confirmed
+outlier,32,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-5.0 h=0.28,ai-confirmed
+outlier,605,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-4.6 h=0.23,ai-confirmed
+outlier,522,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-4.5 h=0.15,ai-confirmed
+outlier,624,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-4.4 h=0.10,ai-confirmed
+outlier,469,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+4.2 h=0.10,ai-confirmed
+outlier,589,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-4.1 h=0.09,ai-confirmed
+outlier,22,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-4.0 h=0.46,ai-confirmed
+outlier,523,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.8 h=0.08,ai-confirmed
+outlier,491,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.7 h=0.42,ai-confirmed
+outlier,171,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.6 h=0.43,ai-confirmed
+outlier,161,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.6 h=0.08,ai-confirmed
+outlier,507,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.6 h=0.11,ai-confirmed
+outlier,183,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.5 h=0.14,ai-confirmed
+outlier,520,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.1 h=0.23,ai-confirmed
+outlier,541,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.1 h=0.16,ai-confirmed
+outlier,26,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.1 h=0.11,ai-confirmed
+param,4100,release,AI: PKKKJ: dchi2=1014 after the new high-Ka lines; 12x scale but the evidence is overwhelming and the forward selection that vetted those lines included it,ai
+param,5100,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=864.9 |v/s|=29.4 |v|/scale=1.4e+02,ai-confirmed
+param,2300,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=399.2 |v/s|=20.0 |v|/scale=36,ai-confirmed
+param,6000,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=267.0 |v/s|=16.3 |v|/scale=34,ai-confirmed
+param,1300,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=15.5 |v/s|=4.1 |v|/scale=0.24,ai-confirmed

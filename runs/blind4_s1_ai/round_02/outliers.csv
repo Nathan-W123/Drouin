@@ -1,0 +1,4 @@
+peak,keys,obs_freq,err,res,t,leverage,dI,round,how,default,reason
+20,9 4 5 9 4 6,11.9075,0.000567,nan,nan,nan,nan,1,bootstrap,keep,t=+nan h=nan (too few dof to test)
+16,10 4 6 10 4 7,4.98106,0.000227,nan,nan,nan,nan,1,bootstrap,keep,t=+nan h=nan (too few dof to test)
+15,16 5 11 16 5 12,3.6679,0.000227,nan,nan,nan,nan,1,bootstrap,keep,t=+nan h=nan (too few dof to test)

@@ -1,0 +1,5 @@
+kind,item,action,reason
+assign,8 4 5 7 4 4@185,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,8 4 4 7 4 3@186,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

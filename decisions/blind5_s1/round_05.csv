@@ -1,0 +1,4 @@
+kind,item,action,reason
+assign,31 1 30 30 3 27@60,accept,"default or P>=0.9; jointly consistent (grown one at a time, converged fits)"
+all,assign,defer,inconsistent in the joint fit
+all,defaults,confirm,remaining rule defaults reviewed

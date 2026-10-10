@@ -1,0 +1,13 @@
+kind,item,action,reason
+assign,14 8 6 15 7 9@433,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,79 6 74 80 3 77@646,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,39 10 30 40 9 31@253,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+param,40300,release,"joint forward selection: each step dchi2>=9 at <=10x scale (lJ 1.2x, PKKKJ 4.6x); rms 1.54->0.94"
+param,4100,release,"joint forward selection: each step dchi2>=9 at <=10x scale (lJ 1.2x, PKKKJ 4.6x); rms 1.54->0.94"
+param,41100,release,"joint forward selection: each step dchi2>=9 at <=10x scale (lJ 1.2x, PKKKJ 4.6x); rms 1.54->0.94"
+outlier,537,keep,t=-11 measured before the releases that drop rms 1.54->0.94; release before reject
+outlier,183,keep,same - re-test after releases
+outlier,4,keep,same
+outlier,541,keep,same
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

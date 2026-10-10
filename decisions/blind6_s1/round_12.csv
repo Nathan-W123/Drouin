@@ -1,0 +1,6 @@
+kind,item,action,reason
+param,2300,hold,PJJK at 13x scale - implausible
+outlier,21,keep,t=4.1 (<5) high-J/Ka; same transition is a top residual in sibling cases (likely model truncation)
+stop,stop,yes,"nothing left to add; only marginal releases (SK dchi2=9.8 at 7x, PJJK 13x); converged"
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed
