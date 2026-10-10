@@ -109,6 +109,9 @@ def main():
     if a.add_round:
         base = add_candidates(run.assign, a.add_round, a.add_p, [x for x in a.add.split(";") if x], a.add_defaults)
     if (a.subset is not None or a.prune is not None) and base is not None:
+        from .engine import _with_trial
+        for idp in rel:  # pruning must use the same trial model as the plain what-if fit
+            run.model = _with_trial(run.model, run.model.get(idp))
         kept, removed, rms = (consistent_subset(run, base, a.subset) if a.subset is not None
                               else prune_inconsistent(run, base, a.prune))
         print(f"consistent subset: kept {sum(len(v) for v in kept.values())} added lines, removed {len(removed)}, rms {rms:.3f}")

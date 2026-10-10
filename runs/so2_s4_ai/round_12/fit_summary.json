@@ -1,0 +1,19 @@
+{
+ "n_accept": 1,
+ "n_reject": 0,
+ "released": [
+  "PJJK"
+ ],
+ "overrides": 0,
+ "p_have": 0.1788740871746634,
+ "n_candidates": 5,
+ "rms": 0.8274770536762108,
+ "chi2": 296.48301279816695,
+ "fit_ok": true,
+ "relaxed": [],
+ "n_broke_fit": 0,
+ "round": 12,
+ "n_assigned": 433,
+ "n_lines": 433,
+ "n_float": 27
+}

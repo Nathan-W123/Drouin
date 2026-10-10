@@ -21,10 +21,11 @@
 | 1 | 1 | MHz (pure rotation, v2=1) | 356 |
 | 1 | 0 | cm-1 (v2 band, IR) | 1392 |
 
-Ground-state rows: 662 ordinary lines (1.0–3198 GHz, J ≤ 92, Ka ≤ 28; 12 rows in true blends) plus
-18 rows below 1 GHz that are *difference* pseudo-lines: pairs of rows with identical freq/error where one
-transition is written reversed, so SPFIT fits the difference of two transitions. These are not
-spectral peaks and will be excluded from the assignment test.
+Ground-state rows include *difference* pseudo-lines: pairs of rows with identical freq/error where one
+transition is written reversed, so SPFIT fits the difference of two transitions (some below 1 GHz, some
+near 68 GHz). They are not spectral peaks; the test-case builder excludes them by checking every label
+against the official constants (15 groups in 0-1 THz). [Corrected: an earlier note said "18 rows below
+1 GHz"; the frequency cut missed the ~68 GHz ones.]
 
 ### Ground-state-only reference fit
 680 v=0 MW rows + the 30 v=0 parameters (NVIB=1) → weighted RMS 0.720, MW RMS 0.0736 MHz; constants agree

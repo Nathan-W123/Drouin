@@ -1,0 +1,3 @@
+kind,item,action,reason
+param,2300,release,"PJJK: dchi2 51, 7.2 sigma, at the 10x plausibility cap (in seed 1 it was held at 37-52x, i.e. compensating; here the value is stable)"
+all,defaults,confirm,"default accept 90(11,79)-89(12,78) consistent in the joint fit (rms 0.90); SK held (3.3 sigma); flagged lines kept"

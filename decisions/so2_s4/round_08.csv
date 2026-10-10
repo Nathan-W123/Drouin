@@ -1,0 +1,8 @@
+kind,item,action,reason
+outlier,489,keep,"55(17,39)-56(16,40) t=+5.6 explained by PKKKJ (worst |z| 3.1 after release)"
+param,4100,release,"PKKKJ: 7.7 sigma, 4.3x scale; rms 0.95->0.86 (dchi2~59)"
+param,3200,hold,"PKKJ adds dchi2~4 only after PKKKJ"
+assign,14 8 6 15 7 9@410,accept,"survives pruning of the P>=0.3 tier with PKKKJ released; joint rms 0.85"
+assign,52 11 41 53 10 44@45,accept,"survives pruning of the P>=0.3 tier with PKKKJ released; joint rms 0.85"
+all,assign,defer,"other candidates inconsistent (|z|>4) or P<0.3"
+all,defaults,confirm,"other flagged lines kept"

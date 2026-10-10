@@ -1,0 +1,44 @@
+h2co_s1_ai                 rounds  8  coverage  96.5%  precision  97.2% (phys 100.0%)  pairs  215 wrong: distractors   0 {} wrong-label   6  final rms 0.776  overrides 286
+h2co_s1_greedy             rounds 20  coverage   0.0%  precision   0.0% (phys   0.0%)  pairs   35 wrong: distractors   7 {'H2C(18)O': 2, 'H2(13)CO': 5} wrong-label  28  final rms 8605.879  overrides 0
+h2co_s1_rules              rounds  2  coverage   1.0%  precision  66.7% (phys  66.7%)  pairs    3 wrong: distractors   0 {} wrong-label   1  final rms 0.000  overrides 0
+h2co_s1_rules_p0.5         rounds  9  coverage   0.0%  precision   0.0% (phys   0.0%)  pairs   11 wrong: distractors   5 {'H2(13)CO': 2, 'H2C(18)O': 1, 'random': 2} wrong-label   6  final rms 27.129  overrides 0
+h2co_s1_rules_p0.7         rounds  4  coverage   0.5%  precision  20.0% (phys  20.0%)  pairs    5 wrong: distractors   1 {'H2(13)CO': 1} wrong-label   3  final rms -0.000  overrides 0
+h2co_s1_rules_p0.8         rounds  3  coverage   1.5%  precision  42.9% (phys  42.9%)  pairs    7 wrong: distractors   0 {} wrong-label   4  final rms -0.000  overrides 0
+h2co_s1_rules_p0.9         rounds  4  coverage   1.5%  precision  50.0% (phys  50.0%)  pairs    6 wrong: distractors   0 {} wrong-label   3  final rms 0.000  overrides 0
+h2co_s1_rules_plus         rounds 15  coverage  96.5%  precision  98.1% (phys 100.0%)  pairs  212 wrong: distractors   0 {} wrong-label   4  final rms 0.747  overrides 0
+h2co_s1_rules_plus         rounds 15  coverage  96.5%  precision  98.1% (phys 100.0%)  pairs  212 wrong: distractors   0 {} wrong-label   4  final rms 0.747  overrides 0
+h2co_s1_rules_series       rounds  6  coverage   4.0%  precision  61.5% (phys  69.2%)  pairs   13 wrong: distractors   0 {} wrong-label   5  final rms 4.572  overrides 0
+h2co_s2_ai                 rounds  7  coverage  93.4%  precision  97.5% (phys 100.0%)  pairs  203 wrong: distractors   0 {} wrong-label   5  final rms 0.803  overrides 165
+h2co_s2_greedy             rounds  6  coverage   0.0%  precision   0.0% (phys   0.0%)  pairs  221 wrong: distractors  85 {'H2(13)CO': 42, 'H2C(18)O': 27, 'random': 16} wrong-label 136  final rms 165324.959  overrides 0
+h2co_s2_rules              rounds  7  coverage  16.2%  precision  91.4% (phys  91.4%)  pairs   35 wrong: distractors   2 {'random': 2} wrong-label   1  final rms 0.922  overrides 0
+h2co_s2_rules_plus         rounds  7  coverage   1.5%  precision  33.3% (phys  33.3%)  pairs    9 wrong: distractors   1 {'H2C(18)O': 1} wrong-label   5  final rms 0.000  overrides 0
+h2co_s3_greedy             rounds 20  coverage   0.0%  precision   0.0% (phys   0.0%)  pairs   13 wrong: distractors   3 {'H2(13)CO': 1, 'random': 1, 'H2C(18)O': 1} wrong-label  10  final rms -0.000  overrides 0
+h2co_s3_rules              rounds  2  coverage   1.0%  precision  66.7% (phys  66.7%)  pairs    3 wrong: distractors   0 {} wrong-label   1  final rms 0.000  overrides 0
+h2co_s3_rules_plus         rounds 14  coverage  40.2%  precision  94.6% (phys  96.7%)  pairs   92 wrong: distractors   0 {} wrong-label   5  final rms 38.484  overrides 0
+h2co_s4_greedy             rounds 11  coverage   1.0%  precision   0.9% (phys   0.9%)  pairs  215 wrong: distractors  79 {'H2(13)CO': 41, 'H2C(18)O': 22, 'random': 16} wrong-label 134  final rms 165789.095  overrides 0
+h2co_s4_rules              rounds  3  coverage   2.0%  precision  50.0% (phys  50.0%)  pairs    8 wrong: distractors   0 {} wrong-label   4  final rms 0.000  overrides 0
+h2co_s4_rules_plus         rounds 15  coverage  15.3%  precision  88.9% (phys  91.7%)  pairs   36 wrong: distractors   2 {'H2(13)CO': 2} wrong-label   2  final rms 1.071  overrides 0
+h2co_s5_greedy             rounds 20  coverage   0.0%  precision   0.0% (phys   0.0%)  pairs   23 wrong: distractors   6 {'H2(13)CO': 5, 'H2C(18)O': 1} wrong-label  17  final rms 4427.852  overrides 0
+h2co_s5_rules              rounds  2  coverage   1.1%  precision  66.7% (phys  66.7%)  pairs    3 wrong: distractors   0 {} wrong-label   1  final rms 0.000  overrides 0
+h2co_s5_rules_plus         rounds 10  coverage  96.3%  precision  98.0% (phys 100.0%)  pairs  201 wrong: distractors   0 {} wrong-label   4  final rms 0.802  overrides 0
+so2_s1_ai                  rounds 13  coverage  97.2%  precision 100.0% (phys 100.0%)  pairs  454 wrong: distractors   0 {} wrong-label   0  final rms 0.957  overrides 124
+so2_s1_greedy              rounds  8  coverage   0.0%  precision   0.0% (phys   0.0%)  pairs  629 wrong: distractors 245 {'SO2 v2=1 (measured)': 93, 'random': 40, '34SO2': 112} wrong-label 384  final rms 108739.664  overrides 0
+so2_s1_rules               rounds  4  coverage   0.4%  precision 100.0% (phys 100.0%)  pairs    2 wrong: distractors   0 {} wrong-label   0  final rms 0.000  overrides 0
+so2_s1_rules_p0.5          rounds  7  coverage   1.9%  precision  75.0% (phys  75.0%)  pairs   12 wrong: distractors   3 {'random': 1, '34SO2': 2} wrong-label   0  final rms 2.336  overrides 0
+so2_s1_rules_p0.8          rounds  6  coverage   2.4%  precision  84.6% (phys  84.6%)  pairs   13 wrong: distractors   1 {'random': 1} wrong-label   1  final rms 44.757  overrides 0
+so2_s1_rules_plus          rounds 30  coverage  90.6%  precision 100.0% (phys 100.0%)  pairs  423 wrong: distractors   0 {} wrong-label   0  final rms 1.010  overrides 0
+so2_s1_rules_plus          rounds 30  coverage  90.6%  precision 100.0% (phys 100.0%)  pairs  423 wrong: distractors   0 {} wrong-label   0  final rms 1.010  overrides 0
+so2_s1_rules_series        rounds  4  coverage   0.4%  precision 100.0% (phys 100.0%)  pairs    2 wrong: distractors   0 {} wrong-label   0  final rms 0.000  overrides 0
+so2_s2_greedy              rounds 18  coverage   0.2%  precision   0.8% (phys   0.8%)  pairs  124 wrong: distractors  70 {'SO2 v2=1 (measured)': 22, '34SO2': 35, 'random': 13} wrong-label  53  final rms 16200.142  overrides 0
+so2_s2_rules               rounds  5  coverage   1.1%  precision  71.4% (phys  71.4%)  pairs    7 wrong: distractors   1 {'34SO2': 1} wrong-label   1  final rms 0.000  overrides 0
+so2_s2_rules_plus          rounds 15  coverage  90.9%  precision  98.8% (phys  98.8%)  pairs  416 wrong: distractors   3 {'random': 1, '34SO2': 2} wrong-label   2  final rms 3.298  overrides 0
+so2_s3_greedy              rounds 20  coverage   0.0%  precision   0.0% (phys   0.0%)  pairs  301 wrong: distractors 134 {'random': 27, '34SO2': 58, 'SO2 v2=1 (measured)': 49} wrong-label 167  final rms 33358.140  overrides 0
+so2_s3_rules               rounds 14  coverage  19.3%  precision 100.0% (phys 100.0%)  pairs   90 wrong: distractors   0 {} wrong-label   0  final rms 0.691  overrides 0
+so2_s3_rules_plus          rounds 15  coverage  89.7%  precision  97.4% (phys  97.4%)  pairs  429 wrong: distractors   1 {'34SO2': 1} wrong-label  10  final rms 15.454  overrides 0
+so2_s4_ai                  rounds 14  coverage  95.8%  precision 100.0% (phys 100.0%)  pairs  434 wrong: distractors   0 {} wrong-label   0  final rms 0.813  overrides 173
+so2_s4_greedy              rounds 12  coverage   0.2%  precision   0.2% (phys   0.2%)  pairs  609 wrong: distractors 246 {'SO2 v2=1 (measured)': 98, '34SO2': 106, 'random': 42} wrong-label 362  final rms 77158.772  overrides 0
+so2_s4_rules               rounds  4  coverage   0.4%  precision  66.7% (phys  66.7%)  pairs    3 wrong: distractors   1 {'random': 1} wrong-label   0  final rms -0.000  overrides 0
+so2_s4_rules_plus          rounds 10  coverage  24.9%  precision  86.9% (phys  86.9%)  pairs  130 wrong: distractors   4 {'SO2 v2=1 (measured)': 3, '34SO2': 1} wrong-label  13  final rms 312.557  overrides 0
+so2_s5_greedy              rounds 20  coverage   0.0%  precision   0.0% (phys   0.0%)  pairs   38 wrong: distractors  17 {'34SO2': 8, 'SO2 v2=1 (measured)': 8, 'random': 1} wrong-label  21  final rms 247.225  overrides 0
+so2_s5_rules               rounds 32  coverage  16.9%  precision  93.8% (phys  93.8%)  pairs   81 wrong: distractors   2 {'SO2 v2=1 (measured)': 1, '34SO2': 1} wrong-label   3  final rms 0.889  overrides 0
+so2_s5_rules_plus          rounds  7  coverage  16.7%  precision  92.6% (phys  92.6%)  pairs   81 wrong: distractors   2 {'random': 1, '34SO2': 1} wrong-label   4  final rms 15.653  overrides 0

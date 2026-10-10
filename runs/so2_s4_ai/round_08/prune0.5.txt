@@ -1,0 +1,5 @@
+consistent subset: kept 2 added lines, removed 3, rms 0.950
+   removed peak  611 64 21 43 65 20 46            z -960.1
+   removed peak  630 65 22 44 66 21 45            z +1015.8
+   removed peak   38 47 10 38 48 9 39             z -20.8
+KEPT 14 8 6 15 7 9@410;52 11 41 53 10 44@45

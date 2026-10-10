@@ -1,0 +1,26 @@
+consistent subset: kept 3 added lines, removed 24, rms 0.969
+   removed peak  645 81 9 73 81 8 74              z +27120.4
+   removed peak  629 75 5 71 76 2 74              z -107900575.7
+   removed peak  719 58 1 57 58 0 58              z -222299405.5
+   removed peak  493 70 5 65 71 4 68              z -166141881.8
+   removed peak  427 72 8 64 72 7 65              z -101566691.8
+   removed peak  497 66 8 58 65 9 57              z +64806962.6
+   removed peak  558 57 4 54 58 1 57              z +20868.1
+   removed peak  581 51 3 49 52 0 52              z +9916.6
+   removed peak  628 80 7 73 80 6 74              z -8457.9
+   removed peak  386 63 7 57 62 8 54              z -5732.3
+   removed peak  641 59 4 56 59 3 57              z +4597.4
+   removed peak  650 80 9 71 79 10 70             z -4100.2
+   removed peak  255 54 13 41 55 12 44            z +2274.1
+   removed peak  118 47 4 44 46 5 41              z -2026.1
+   removed peak  376 48 5 43 48 4 44              z -1986.5
+   removed peak  392 56 7 49 55 8 48              z +1963.5
+   removed peak  499 80 6 74 81 5 77              z -1667.4
+   removed peak  534 51 7 45 51 6 46              z +1404.1
+   removed peak  415 66 7 59 66 6 60              z -1306.7
+   removed peak  611 64 21 43 65 20 46            z -970.8
+   removed peak  406 67 8 60 66 9 57              z +722.2
+   removed peak  300 47 6 42 48 3 45              z -494.3
+   removed peak   38 47 10 38 48 9 39             z -20.8
+   removed peak  630 65 22 44 66 21 45            z +18.4
+KEPT 92 11 81 92 10 82@584;53 9 45 52 10 42@121;78 8 70 78 7 71@503

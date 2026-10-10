@@ -1,0 +1,6 @@
+kind,item,action,reason
+outlier,471,keep,"51(8,44)-52(5,47) t=+4.1 explained by lKJ (worst |z| 3.4 after release)"
+param,42199,release,"lKJ: 8.6 sigma, 0.35x scale; rms 0.98->0.89"
+assign,92 11 81 92 10 82@584,accept,"survives pruning of the P>=0.2 tier with lKJ released; joint rms 0.90"
+all,assign,defer,"remaining candidates inconsistent (|z|>4)"
+all,defaults,confirm,"PJJK (8.9x scale, compensating in seed 1) held; flagged lines kept"

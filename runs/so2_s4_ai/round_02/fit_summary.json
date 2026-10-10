@@ -1,0 +1,26 @@
+{
+ "n_accept": 22,
+ "n_reject": 0,
+ "released": [],
+ "overrides": 1,
+ "p_have": 0.5,
+ "n_candidates": 2916,
+ "rms": 0.6875986886017439,
+ "chi2": 14.021501650777594,
+ "fit_ok": true,
+ "relaxed": [
+  "A",
+  "B",
+  "C",
+  "-DelK",
+  "-DelJK",
+  "-DelJ",
+  "-delK",
+  "-delJ"
+ ],
+ "n_broke_fit": 0,
+ "round": 2,
+ "n_assigned": 25,
+ "n_lines": 25,
+ "n_float": 8
+}

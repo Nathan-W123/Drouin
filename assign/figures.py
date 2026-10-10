@@ -32,12 +32,13 @@ def load(case, seed, arm):
 
 
 def fig_rounds(out):
-    cases = [("h2co", "H$_2$CO (warm-up)"), ("so2", "SO$_2$ (main test, blind)")]
+    cases = [("h2co", "H$_2$CO (warm-up)"), ("so2", "SO$_2$ (main test)")]
     fig, axes = plt.subplots(2, 2, figsize=(9.5, 6.2), sharex="col")
     for col, (case, title) in enumerate(cases):
         for row, (metric, ylab) in enumerate([("coverage", "true lines correctly assigned (%)"),
                                               ("precision", "assignments that are correct (%)")]):
             ax = axes[row][col]
+            ends = []
             for arm, lab, colr, mk in ARMS:
                 s = load(case, 1, arm)
                 if not s:
@@ -50,7 +51,14 @@ def fig_rounds(out):
                     x = [r["round"] for r in pr if r["n_pairs"]]
                     y = [100 * r["precision"] for r in pr if r["n_pairs"]]
                 ax.plot(x, y, color=colr, lw=2, marker=mk, ms=5, mec="white", mew=1.0, label=lab, zorder=3)
-                ax.annotate(lab, (x[-1], y[-1]), xytext=(6, 0), textcoords="offset points", fontsize=7.5,
+                if metric == "coverage":
+                    ends.append([y[-1], x[-1], f"{lab} {y[-1]:.0f}%"])
+            ends.sort()
+            for i in range(1, len(ends)):  # nudge direct labels apart (min 7 points of the 0-100 scale)
+                ends[i][0] = max(ends[i][0], ends[i - 1][0] + 7)
+            xmax = max([e[1] for e in ends] or [1])
+            for yv, xv, txt in ends:
+                ax.annotate(txt, (xmax, yv), xytext=(8, 0), textcoords="offset points", fontsize=7.5,
                             color=INK2, va="center", annotation_clip=False)
             ax.set_ylim(-3, 103)
             if row == 0:
@@ -59,10 +67,11 @@ def fig_rounds(out):
                 ax.set_ylabel(ylab)
             if row == 1:
                 ax.set_xlabel("round")
-    axes[0][0].legend(loc="center left", fontsize=8, frameon=False)
+    h, l = axes[0][0].get_legend_handles_labels()
+    fig.legend(h, l, loc="upper center", ncol=4, fontsize=8.5, frameon=False, bbox_to_anchor=(0.5, 0.95))
     fig.suptitle("Line assignment from 1%-perturbed constants: AI-in-the-loop vs automated baselines (seed 1)",
                  color=INK, fontsize=10.5)
-    fig.tight_layout(rect=(0, 0, 0.93, 0.96))
+    fig.tight_layout(rect=(0, 0, 0.87, 0.92))
     fig.savefig(out)
     plt.close(fig)
 
@@ -89,7 +98,7 @@ def fig_seeds(out):
         ax.set_title(title)
     axes[0].set_ylabel("final value (%)")
     axes[0].legend(loc="center right", fontsize=8, frameon=False)
-    fig.suptitle("Robustness over test-case seeds (filled = coverage, open = precision; AI arm run on seed 1 only)",
+    fig.suptitle("Robustness over test-case seeds (filled = coverage, open = strict precision; AI arm: 2 seeds per molecule)",
                  color=INK, fontsize=10)
     fig.tight_layout(rect=(0, 0, 1, 0.93))
     fig.savefig(out)

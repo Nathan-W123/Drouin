@@ -1,0 +1,4 @@
+kind,item,action,reason
+param,6000,hold,"SK (12th order) only just passes (3.0 sigma, dchi2 9.2) and no candidates remain that need it"
+stop,stop,yes,"converged: one weak candidate left, nothing passes the consistency checks"
+all,defaults,confirm,"-"

@@ -1,0 +1,43 @@
+kind,item,action,reason
+assign,49 11 39 50 10 40@139,accept,"P>=0.4 tier, survives pruning (|z|>4) with lJK+LJJK+LJ released; joint rms ~0.9"
+assign,57 17 41 58 16 42@455,accept,"P>=0.4 tier, survives pruning (|z|>4) with lJK+LJJK+LJ released; joint rms ~0.9"
+assign,43 4 40 42 5 37@222,accept,"P>=0.4 tier, survives pruning (|z|>4) with lJK+LJJK+LJ released; joint rms ~0.9"
+assign,55 17 39 56 16 40@489,accept,"P>=0.4 tier, survives pruning (|z|>4) with lJK+LJJK+LJ released; joint rms ~0.9"
+assign,49 4 46 48 5 43@30,accept,"P>=0.4 tier, survives pruning (|z|>4) with lJK+LJJK+LJ released; joint rms ~0.9"
+assign,53 4 50 54 1 53@513,accept,"P>=0.4 tier, survives pruning (|z|>4) with lJK+LJJK+LJ released; joint rms ~0.9"
+assign,55 6 50 54 7 47@356,accept,"P>=0.4 tier, survives pruning (|z|>4) with lJK+LJJK+LJ released; joint rms ~0.9"
+assign,50 5 45 51 4 48@46,accept,"P>=0.4 tier, survives pruning (|z|>4) with lJK+LJJK+LJ released; joint rms ~0.9"
+assign,51 4 48 52 1 51@486,accept,"P>=0.4 tier, survives pruning (|z|>4) with lJK+LJJK+LJ released; joint rms ~0.9"
+assign,59 4 56 60 1 59@577,accept,"P>=0.4 tier, survives pruning (|z|>4) with lJK+LJJK+LJ released; joint rms ~0.9"
+assign,63 4 60 64 1 63@613,accept,"P>=0.4 tier, survives pruning (|z|>4) with lJK+LJJK+LJ released; joint rms ~0.9"
+assign,45 4 42 44 5 39@177,accept,"P>=0.4 tier, survives pruning (|z|>4) with lJK+LJJK+LJ released; joint rms ~0.9"
+assign,43 3 41 44 0 44@495,accept,"P>=0.4 tier, survives pruning (|z|>4) with lJK+LJJK+LJ released; joint rms ~0.9"
+assign,53 5 49 52 6 46@262,accept,"P>=0.4 tier, survives pruning (|z|>4) with lJK+LJJK+LJ released; joint rms ~0.9"
+assign,60 18 42 61 17 45@491,accept,"P>=0.4 tier, survives pruning (|z|>4) with lJK+LJJK+LJ released; joint rms ~0.9"
+assign,57 12 46 58 11 47@50,accept,"P>=0.4 tier, survives pruning (|z|>4) with lJK+LJJK+LJ released; joint rms ~0.9"
+assign,54 7 47 54 6 48@411,accept,"P>=0.4 tier, survives pruning (|z|>4) with lJK+LJJK+LJ released; joint rms ~0.9"
+assign,71 7 65 72 4 68@385,reject,z=7.5e+08 in the joint fit: wrong peak
+assign,52 5 47 53 4 50@141,reject,z=-1.67e+04 in the joint fit: wrong peak
+assign,69 6 64 70 3 67@480,reject,z=-1.71e+04 in the joint fit: wrong peak
+assign,62 6 56 63 5 59@123,reject,z=-1.88e+08 in the joint fit: wrong peak
+assign,79 6 74 80 3 77@596,reject,z=-6.27e+07 in the joint fit: wrong peak
+assign,70 8 62 70 7 63@420,reject,z=-3.34e+08 in the joint fit: wrong peak
+assign,64 5 59 64 4 60@605,reject,z=-3.4e+07 in the joint fit: wrong peak
+assign,90 10 80 90 9 81@510,reject,z=-2.33e+07 in the joint fit: wrong peak
+assign,51 7 45 50 8 42@289,reject,z=6.18e+03 in the joint fit: wrong peak
+assign,87 11 77 86 12 74@509,reject,z=-5.12e+03 in the joint fit: wrong peak
+assign,69 10 60 68 11 57@338,reject,z=-1.06e+07 in the joint fit: wrong peak
+assign,71 8 64 71 7 65@612,reject,z=-1.2e+06 in the joint fit: wrong peak
+assign,48 2 46 48 1 47@588,reject,z=-4.28e+03 in the joint fit: wrong peak
+assign,57 6 52 57 5 53@562,reject,z=-7.47e+06 in the joint fit: wrong peak
+assign,56 5 51 56 4 52@477,reject,z=9.09e+06 in the joint fit: wrong peak
+assign,55 7 49 56 4 52@297,reject,z=1.6e+03 in the joint fit: wrong peak
+assign,64 9 55 63 10 54@346,reject,z=1.83e+03 in the joint fit: wrong peak
+assign,53 5 49 54 2 52@393,reject,z=-1.53e+03 in the joint fit: wrong peak
+outlier,609,keep,"62(3,59)-63(2,62) t=+8.4 explained by lJK (worst |z| 3.3 after release)"
+param,41299,release,"lJK: 9.2 sigma, 0.56x scale; rms 1.02->0.89, explains peak 609"
+param,1300,release,"LJJK: dchi2~10, 0.32x scale"
+param,400,release,LJ: dchi2~12
+param,41100,hold,phiJK adds dchi2~4 only
+all,assign,defer,P<0.4 or moderately inconsistent
+all,defaults,confirm,"other flagged lines kept (|t|<=5, high leverage at J/Ka frontier)"

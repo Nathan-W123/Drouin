@@ -1,0 +1,2 @@
+consistent subset: kept 1 added lines, removed 0, rms 1.156
+KEPT 79 6 74 80 3 77@596

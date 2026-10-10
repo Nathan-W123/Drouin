@@ -72,7 +72,7 @@ def score_assignments(assign, truth, cfg=None):
     if cfg is not None:
         n_degen = sum(1 for p, k in pairs if (p, k) not in correct and truth[p][0] == "true"
                       and degenerate_partner(k, truth[p][1], cfg))
-    return dict(n_true=n_true, n_pairs=len(pairs), n_correct=len(correct), n_degenerate_partner=n_degen,
+    return dict(n_true=n_true, n_pairs=len(pairs), n_correct=len(correct), n_covered=len(covered), n_degenerate_partner=n_degen,
                 precision_phys=(len(correct) + n_degen) / len(pairs) if pairs else float("nan"),
                 coverage=len(covered) / n_true, precision=len(correct) / len(pairs) if pairs else float("nan"),
                 wrong_on_distractors=sum(wrong_dis.values()), wrong_by_source=wrong_dis,

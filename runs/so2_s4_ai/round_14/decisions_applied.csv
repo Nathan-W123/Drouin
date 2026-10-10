@@ -1,0 +1,10 @@
+kind,item,action,reason,source
+assign,C0001,defer,AI confirmed default (-); default: P=0.000 z=-2.66 dI=-1.86 n_win=1,ai-confirmed
+outlier,331,keep,AI confirmed default (-); default: t=-3.3 h=0.00,ai-confirmed
+outlier,31,keep,AI confirmed default (-); default: t=-0.4 h=0.82,ai-confirmed
+outlier,33,keep,AI confirmed default (-); default: t=-1.4 h=0.90,ai-confirmed
+outlier,30,keep,AI confirmed default (-); default: t=-0.4 h=0.92,ai-confirmed
+outlier,493,keep,AI confirmed default (-); default: t=-12.3 h=1.00,ai-confirmed
+param,6000,hold,"AI override: SK (12th order) only just passes (3.0 sigma, dchi2 9.2) and no candidates remain that need it",ai-override
+param,5100,hold,AI confirmed default (-); default: dchi2=4.7 |v/s|=2.2 |v|/scale=12,ai-confirmed
+stop,stop,yes,"AI: converged: one weak candidate left, nothing passes the consistency checks",ai

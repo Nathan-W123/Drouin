@@ -1,0 +1,40 @@
+kind,item,action,reason,source
+assign,C0001,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+assign,C0002,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+assign,C0003,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+assign,C0004,accept,AI override: survives pruning of the P>=0.2 tier with lKJ released; joint rms 0.90,ai-override
+assign,C0005,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+assign,C0006,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+assign,C0007,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+assign,C0008,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+assign,C0009,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+assign,C0010,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+assign,C0011,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+assign,C0012,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+assign,C0013,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+assign,C0014,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+assign,C0015,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+assign,C0016,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+assign,C0017,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+assign,C0018,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+assign,C0019,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+assign,C0020,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+assign,C0021,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+assign,C0022,defer,AI (blanket): remaining candidates inconsistent (|z|>4),ai
+outlier,471,keep,"AI override: 51(8,44)-52(5,47) t=+4.1 explained by lKJ (worst |z| 3.4 after release)",ai-override
+outlier,613,keep,"AI confirmed default (PJJK (8.9x scale, compensating in seed 1) held; flagged lines kept); default: t=+3.8 h=0.22",ai-confirmed
+outlier,512,keep,"AI confirmed default (PJJK (8.9x scale, compensating in seed 1) held; flagged lines kept); default: t=-3.5 h=0.53",ai-confirmed
+outlier,31,keep,"AI confirmed default (PJJK (8.9x scale, compensating in seed 1) held; flagged lines kept); default: t=+3.5 h=0.78",ai-confirmed
+outlier,26,keep,"AI confirmed default (PJJK (8.9x scale, compensating in seed 1) held; flagged lines kept); default: t=-3.4 h=0.17",ai-confirmed
+outlier,495,keep,"AI confirmed default (PJJK (8.9x scale, compensating in seed 1) held; flagged lines kept); default: t=-3.3 h=0.19",ai-confirmed
+outlier,331,keep,"AI confirmed default (PJJK (8.9x scale, compensating in seed 1) held; flagged lines kept); default: t=-3.2 h=0.00",ai-confirmed
+outlier,422,keep,"AI confirmed default (PJJK (8.9x scale, compensating in seed 1) held; flagged lines kept); default: t=+3.2 h=0.17",ai-confirmed
+outlier,479,keep,"AI confirmed default (PJJK (8.9x scale, compensating in seed 1) held; flagged lines kept); default: t=+3.2 h=0.39",ai-confirmed
+outlier,33,keep,"AI confirmed default (PJJK (8.9x scale, compensating in seed 1) held; flagged lines kept); default: t=-2.3 h=0.90",ai-confirmed
+outlier,30,keep,"AI confirmed default (PJJK (8.9x scale, compensating in seed 1) held; flagged lines kept); default: t=-0.4 h=0.92",ai-confirmed
+outlier,493,keep,"AI confirmed default (PJJK (8.9x scale, compensating in seed 1) held; flagged lines kept); default: t=-44.6 h=1.00",ai-confirmed
+param,42199,release,"AI: lKJ: 8.6 sigma, 0.35x scale; rms 0.98->0.89",ai
+param,2300,hold,"AI confirmed default (PJJK (8.9x scale, compensating in seed 1) held; flagged lines kept); default: dchi2=38.0 |v/s|=6.2 |v|/scale=8.9",ai-confirmed
+param,5100,hold,"AI confirmed default (PJJK (8.9x scale, compensating in seed 1) held; flagged lines kept); default: dchi2=13.0 |v/s|=3.6 |v|/scale=18",ai-confirmed
+param,6000,hold,"AI confirmed default (PJJK (8.9x scale, compensating in seed 1) held; flagged lines kept); default: dchi2=12.0 |v/s|=3.5 |v|/scale=6.4",ai-confirmed
+param,3200,hold,"AI confirmed default (PJJK (8.9x scale, compensating in seed 1) held; flagged lines kept); default: dchi2=7.2 |v/s|=2.7 |v|/scale=0.89",ai-confirmed

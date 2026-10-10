@@ -1,0 +1,15 @@
+kind,item,action,reason,source
+assign,C0001,defer,"AI confirmed default (default accept 90(11,79)-89(12,78) consistent in the joint fit (rms 0.90); SK held (3.3 sigma); flagged lines kept); default: P=1.000 z=+0.07 dI=-0.02 n_win=1 contest=0.18",ai-confirmed
+assign,C0002,accept,"AI confirmed default (default accept 90(11,79)-89(12,78) consistent in the joint fit (rms 0.90); SK held (3.3 sigma); flagged lines kept); default: P=0.999 z=-0.15 dI=+0.35 n_win=1",ai-confirmed
+assign,C0003,defer,"AI confirmed default (default accept 90(11,79)-89(12,78) consistent in the joint fit (rms 0.90); SK held (3.3 sigma); flagged lines kept); default: P=0.179 z=-3.97 dI=-0.16 n_win=1 contest=1.00",ai-confirmed
+assign,C0004,defer,"AI confirmed default (default accept 90(11,79)-89(12,78) consistent in the joint fit (rms 0.90); SK held (3.3 sigma); flagged lines kept); default: P=0.069 z=+3.74 dI=+0.77 n_win=1",ai-confirmed
+assign,C0005,defer,"AI confirmed default (default accept 90(11,79)-89(12,78) consistent in the joint fit (rms 0.90); SK held (3.3 sigma); flagged lines kept); default: P=0.000 z=-2.65 dI=-1.86 n_win=1",ai-confirmed
+outlier,471,keep,"AI confirmed default (default accept 90(11,79)-89(12,78) consistent in the joint fit (rms 0.90); SK held (3.3 sigma); flagged lines kept); default: t=+3.4 h=0.53",ai-confirmed
+outlier,331,keep,"AI confirmed default (default accept 90(11,79)-89(12,78) consistent in the joint fit (rms 0.90); SK held (3.3 sigma); flagged lines kept); default: t=-3.4 h=0.00",ai-confirmed
+outlier,33,keep,"AI confirmed default (default accept 90(11,79)-89(12,78) consistent in the joint fit (rms 0.90); SK held (3.3 sigma); flagged lines kept); default: t=-2.1 h=0.90",ai-confirmed
+outlier,30,keep,"AI confirmed default (default accept 90(11,79)-89(12,78) consistent in the joint fit (rms 0.90); SK held (3.3 sigma); flagged lines kept); default: t=+1.5 h=0.92",ai-confirmed
+outlier,493,keep,"AI confirmed default (default accept 90(11,79)-89(12,78) consistent in the joint fit (rms 0.90); SK held (3.3 sigma); flagged lines kept); default: t=-18.1 h=1.00",ai-confirmed
+param,2300,release,"AI: PJJK: dchi2 51, 7.2 sigma, at the 10x plausibility cap (in seed 1 it was held at 37-52x, i.e. compensating; here the value is stable)",ai
+param,6000,hold,"AI confirmed default (default accept 90(11,79)-89(12,78) consistent in the joint fit (rms 0.90); SK held (3.3 sigma); flagged lines kept); default: dchi2=10.9 |v/s|=3.3 |v|/scale=6.2",ai-confirmed
+param,5100,hold,"AI confirmed default (default accept 90(11,79)-89(12,78) consistent in the joint fit (rms 0.90); SK held (3.3 sigma); flagged lines kept); default: dchi2=10.8 |v/s|=3.3 |v|/scale=16",ai-confirmed
+param,3200,hold,"AI confirmed default (default accept 90(11,79)-89(12,78) consistent in the joint fit (rms 0.90); SK held (3.3 sigma); flagged lines kept); default: dchi2=3.8 |v/s|=1.9 |v|/scale=0.64",ai-confirmed

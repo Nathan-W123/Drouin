@@ -1,0 +1,4 @@
+kind,item,action,reason
+param,41100,release,"phiJK: dchi2 12.9, 3.6 sigma, 0.001x scale; in seed 1 this term unlocked the high-J frontier"
+all,assign,defer,"no P>=0.5 candidate survives pruning; three P>=0.2 survivors raise the joint rms 0.86->0.97 -> wait for the extended model"
+all,defaults,confirm,"PJJK 12x scale held; flagged lines kept"
