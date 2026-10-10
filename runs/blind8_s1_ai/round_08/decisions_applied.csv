@@ -1,0 +1,27 @@
+kind,item,action,reason,source
+assign,C0001,accept,"AI override: jointly consistent with the current model (grown one at a time, converged fits only)",ai-override
+assign,C0002,accept,"AI override: jointly consistent with the current model (grown one at a time, converged fits only)",ai-override
+assign,C0003,accept,"AI override: jointly consistent with the current model (grown one at a time, converged fits only)",ai-override
+assign,C0004,accept,"AI override: jointly consistent with the current model (grown one at a time, converged fits only)",ai-override
+assign,C0005,accept,"AI override: jointly consistent with the current model (grown one at a time, converged fits only)",ai-override
+assign,C0006,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0007,accept,"AI override: jointly consistent with the current model (grown one at a time, converged fits only)",ai-override
+assign,C0008,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0009,accept,"AI override: jointly consistent with the current model (grown one at a time, converged fits only)",ai-override
+assign,C0010,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0011,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0012,accept,"AI override: jointly consistent with the current model (grown one at a time, converged fits only)",ai-override
+assign,C0013,accept,"AI override: jointly consistent with the current model (grown one at a time, converged fits only)",ai-override
+assign,C0014,accept,"AI override: jointly consistent with the current model (grown one at a time, converged fits only)",ai-override
+assign,C0015,defer,AI (blanket): not in the jointly consistent set,ai
+outlier,540,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.6 h=0.03,ai-confirmed
+outlier,151,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.5 h=0.15,ai-confirmed
+outlier,585,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.5 h=0.43,ai-confirmed
+outlier,22,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.2 h=0.36,ai-confirmed
+outlier,29,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.0 h=0.30,ai-confirmed
+outlier,28,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-0.7 h=0.85,ai-confirmed
+outlier,27,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+0.4 h=0.87,ai-confirmed
+param,2300,hold,AI override: PJJK at 49x scale - implausible,ai-override
+param,5100,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=19.1 |v/s|=4.4 |v|/scale=1.1e+02,ai-confirmed
+param,6000,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=14.4 |v/s|=3.8 |v|/scale=37,ai-confirmed
+param,3200,release,"AI override: joint forward selection on the candidate set: each step dchi2>=9, value <=10x its magnitude scale (PKKJ 7.3x)",ai-override

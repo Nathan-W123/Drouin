@@ -1,0 +1,2 @@
+cid,key,pred_freq,pred_sigma,pred_lgint,peak,obs_freq,obs_err,obs_lgint,z,dI,P,n_win,rival,contest,blend_with,flags,default,reason
+C0001,84 8 76 85 7 79,100487,0.0853729,-9.4512,155,100488,0.002892,-5.207,1.42468,4.2442,8.30367e-41,1,0,0,,intensity,defer,P=0.000 z=+1.42 dI=+4.24 n_win=1

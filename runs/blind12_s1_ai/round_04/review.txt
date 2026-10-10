@@ -1,0 +1,42 @@
+# blind12 seed 1 arm ai -- round 4
+
+assigned peaks 111, floating params 15, last rms (weighted) 0.768
+predictions considered 439, with candidates 149, unresolvable windows 2, p_have=0.46 (from 366 sharp predictions)
+candidate rows 152: default accept 49 (of which flagged 0), deferred with P>=0.5: 8
+
+OUTLIERS (top 8):
+  peak  212 9 8 1 8 8 0;9 8 2 8 8 1      t=-1.7 h=0.86 default=keep
+  peak  149 27 4 23 28 2 26              t=-0.3 h=0.90 default=keep
+  peak  172 26 4 22 27 2 25              t=+0.3 h=0.90 default=keep
+  peak  122 20 3 17 21 1 20              t=-0.5 h=0.98 default=keep
+  peak   90 26 1 25 25 3 22              t=-0.5 h=0.97 default=keep
+
+RELEASE forward selection (<=10x scale): none
+  other trials: [('LKKJ', np.float64(3.3), '3.9x'), ('l2', np.float64(0.5), '0.33x'), ('LJK', np.float64(0.1), '2.6x'), ('l3', np.float64(0.1), '0.047x'), ('LJJK', np.float64(0.1), '1x'), ('HJ', np.float64(0.1), '0.0015x')]
+  current 111 lines: rms 0.768 with releases (without: 0.768)
+
+JOINT defaults: 49 added -> kept 48, removed 1, rms 0.926
+   removed   65 31 5 26 31 5 27        z=-1.6
+
+JOINT defaults+P>=0.9: 52 added -> kept 50, removed 2, rms 0.923
+   removed   65 31 5 26 31 5 27        z=-1.6
+   removed   82 46 2 44 45 4 41        z=+3.2
+
+JOINT defaults+P>=0.5: 54 added -> kept 51, removed 3, rms 0.942
+   removed   65 31 5 26 31 5 27        z=-1.6
+   removed   82 46 2 44 45 4 41        z=+3.2
+   removed  107 45 2 43 44 4 40        z=-26.3
+
+JOINT-RELEASE defaults: releases [('l3', np.float64(27.2), '0.12x')] -> kept 49, removed 0, rms 0.827
+   RELEASE_IDS 60199
+
+JOINT-RELEASE defaults+P>=0.9: releases [('HJ', np.float64(246.3), '0.058x')] -> kept 50, removed 2, rms 0.916
+   RELEASE_IDS 399
+   removed   65 31 5 26 31 5 27        z=-1.6
+   removed   82 46 2 44 45 4 41        z=+2.7
+
+SERIES (top 6):
+series dJ=0 Ka'=3 Ka"=3 parity=0,1: 4 coherent members, r0=+0.000000 tol=2.0e-06, expected by chance 0.71, P(chance)=6.2e-03
+series dJ=0 Ka'=5 Ka"=5 parity=0,1: 13 coherent members, r0=+0.017319 tol=2.5e-02, expected by chance 13.00, P(chance)=5.4e-01
+series dJ=0 Ka'=6 Ka"=6 parity=0,1: 10 coherent members, r0=+0.016406 tol=1.2e-01, expected by chance 10.00, P(chance)=5.4e-01
+series dJ=0 Ka'=4 Ka"=4 parity=0,1: 9 coherent members, r0=+0.000003 tol=6.7e-04, expected by chance 9.00, P(chance)=5.4e-01

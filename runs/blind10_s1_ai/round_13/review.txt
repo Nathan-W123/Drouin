@@ -1,0 +1,76 @@
+# blind10 seed 1 arm ai -- round 13
+
+assigned peaks 387, floating params 25, last rms (weighted) 0.995
+predictions considered 1745, with candidates 26, unresolvable windows 0, p_have=0.19 (from 2131 sharp predictions)
+candidate rows 26: default accept 19 (of which flagged 0), deferred with P>=0.5: 5
+
+OUTLIERS (top 8):
+  peak  473 57 17 41 58 16 42            t=+4.3 h=0.40 default=reject
+  peak  510 66 8 58 65 9 57              t=-3.8 h=0.33 default=keep
+  peak  452 64 18 46 65 17 49            t=-3.5 h=0.21 default=keep
+  peak  491 72 9 63 71 10 62             t=+3.1 h=0.48 default=keep
+
+RELEASE forward selection (<=10x scale): [('PKKJ', np.float64(24.1), '4.5x')]
+  other trials: [('PKKKJ', np.float64(48.5), '12x'), ('SKKKJ', np.float64(20.9), '3.8e+02x'), ('SK', np.float64(4.7), '91x'), ('PJJK', np.float64(3.2), '3.8x')]
+  current 387 lines: rms 0.963 with releases (without: 0.995)
+
+JOINT defaults: 19 added -> kept 5, removed 14, rms 0.985
+   removed  524 54 17 37 55 16 40      z=+5.7
+   removed  505 60 18 42 61 17 45      z=+8.0
+   removed  506 65 19 47 66 18 48      z=+7.1
+   removed  536 78 22 56 79 21 59      z=+2.1
+   removed  504 70 20 50 71 19 53      z=+4.0
+   removed  540 73 21 53 74 20 54      z=+3.7
+   removed  522 74 21 53 75 20 56      z=+2.3
+   removed  523 69 20 50 70 19 51      z=+3.5
+   removed  609 77 23 55 78 22 56      z=+2.2
+   removed  591 73 22 52 74 21 53      z=+2.8
+
+JOINT defaults+P>=0.9: 20 added -> kept 5, removed 15, rms 0.985
+   removed  524 54 17 37 55 16 40      z=+5.7
+   removed  505 60 18 42 61 17 45      z=+8.0
+   removed  506 65 19 47 66 18 48      z=+7.1
+   removed  536 78 22 56 79 21 59      z=+2.1
+   removed  504 70 20 50 71 19 53      z=+4.0
+   removed  540 73 21 53 74 20 54      z=+3.7
+   removed  522 74 21 53 75 20 56      z=+2.3
+   removed  523 69 20 50 70 19 51      z=+3.5
+   removed  609 77 23 55 78 22 56      z=+2.2
+   removed  591 73 22 52 74 21 53      z=+2.8
+
+JOINT defaults+P>=0.5: 24 added -> kept 5, removed 19, rms 0.985
+   removed  524 54 17 37 55 16 40      z=+5.7
+   removed  505 60 18 42 61 17 45      z=+8.0
+   removed  506 65 19 47 66 18 48      z=+7.1
+   removed  536 78 22 56 79 21 59      z=+2.1
+   removed  504 70 20 50 71 19 53      z=+4.0
+   removed  540 73 21 53 74 20 54      z=+3.7
+   removed  522 74 21 53 75 20 56      z=+2.3
+   removed  523 69 20 50 70 19 51      z=+3.5
+   removed  609 77 23 55 78 22 56      z=+2.2
+   removed  591 73 22 52 74 21 53      z=+2.8
+
+JOINT-RELEASE defaults: releases [] -> kept 4, removed 15, rms 0.997
+   RELEASE_IDS 
+   removed  524 54 17 37 55 16 40      z=+6.2
+   removed  505 60 18 42 61 17 45      z=+10.1
+   removed  476 62 18 44 63 17 47      z=+4.2
+   removed  506 65 19 47 66 18 48      z=+11.5
+   removed  536 78 22 56 79 21 59      z=+3.8
+   removed  504 70 20 50 71 19 53      z=+7.1
+   removed  540 73 21 53 74 20 54      z=+7.4
+   removed  522 74 21 53 75 20 56      z=+4.4
+
+JOINT-RELEASE defaults+P>=0.9: releases [] -> kept 4, removed 16, rms 0.997
+   RELEASE_IDS 
+   removed  524 54 17 37 55 16 40      z=+6.2
+   removed  505 60 18 42 61 17 45      z=+10.1
+   removed  476 62 18 44 63 17 47      z=+4.2
+   removed  506 65 19 47 66 18 48      z=+11.5
+   removed  536 78 22 56 79 21 59      z=+3.8
+   removed  504 70 20 50 71 19 53      z=+7.1
+   removed  540 73 21 53 74 20 54      z=+7.4
+   removed  522 74 21 53 75 20 56      z=+4.4
+
+SERIES (top 6):
+

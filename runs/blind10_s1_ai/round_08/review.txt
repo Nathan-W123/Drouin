@@ -1,0 +1,40 @@
+# blind10 seed 1 arm ai -- round 8
+
+assigned peaks 8, floating params 8, last rms (weighted) 1.486
+predictions considered 2083, with candidates 1021, unresolvable windows 460, p_have=0.05 (from 323 sharp predictions)
+candidate rows 1303: default accept 5 (of which flagged 0), deferred with P>=0.5: 19
+
+OUTLIERS (top 8):
+
+RELEASE forward selection (<=10x scale): none
+  other trials: []
+  current 8 lines: rms 1.486 with releases (without: 1.486)
+
+JOINT defaults: 5 added -> kept 3, removed 2, rms 1.457
+   removed  594 13 5 9 12 4 8          z=+0.5
+   removed  487 23 6 18 23 5 19        z=+0.2
+
+JOINT defaults+P>=0.9: 5 added -> kept 3, removed 2, rms 1.457
+   removed  594 13 5 9 12 4 8          z=+0.5
+   removed  487 23 6 18 23 5 19        z=+0.2
+
+JOINT defaults+P>=0.5: 14 added -> kept 4, removed 10, rms 1.558
+   removed  594 13 5 9 12 4 8          z=+0.5
+   removed  487 23 6 18 23 5 19        z=+0.2
+   removed  643 11 6 6 10 5 5          z=+0.9
+   removed  557 22 7 15 22 6 16        z=+0.7
+   removed  159 16 2 14 15 3 13        z=+nan
+   removed  558 21 7 15 21 6 16        z=+0.6
+   removed  562 19 7 13 19 6 14        z=+0.4
+   removed  560 20 7 13 20 6 14        z=+0.5
+   removed  564 18 7 11 18 6 12        z=+0.4
+   removed  108 14 4 10 15 3 13        z=+0.0
+
+JOINT-RELEASE defaults: releases [('PhiK', np.float64(20.4), '0.78x')] -> kept 5, removed 0, rms 1.328
+   RELEASE_IDS 3000
+
+JOINT-RELEASE defaults+P>=0.9: releases [('PhiK', np.float64(20.4), '0.78x')] -> kept 5, removed 0, rms 1.328
+   RELEASE_IDS 3000
+
+SERIES (top 6):
+

@@ -1,0 +1,16 @@
+kind,item,action,reason
+outlier,86,unassign,weak bootstrap (Z<=5) converged to a self-consistent but likely false solution: p_have fell 0.5->0.05 once fitted (0.18 in a working case) and every extension diverges (rms 14-37); restart from the prior
+outlier,157,unassign,weak bootstrap (Z<=5) converged to a self-consistent but likely false solution: p_have fell 0.5->0.05 once fitted (0.18 in a working case) and every extension diverges (rms 14-37); restart from the prior
+outlier,206,unassign,weak bootstrap (Z<=5) converged to a self-consistent but likely false solution: p_have fell 0.5->0.05 once fitted (0.18 in a working case) and every extension diverges (rms 14-37); restart from the prior
+outlier,268,unassign,weak bootstrap (Z<=5) converged to a self-consistent but likely false solution: p_have fell 0.5->0.05 once fitted (0.18 in a working case) and every extension diverges (rms 14-37); restart from the prior
+outlier,192,unassign,weak bootstrap (Z<=5) converged to a self-consistent but likely false solution: p_have fell 0.5->0.05 once fitted (0.18 in a working case) and every extension diverges (rms 14-37); restart from the prior
+outlier,255,unassign,weak bootstrap (Z<=5) converged to a self-consistent but likely false solution: p_have fell 0.5->0.05 once fitted (0.18 in a working case) and every extension diverges (rms 14-37); restart from the prior
+outlier,228,unassign,weak bootstrap (Z<=5) converged to a self-consistent but likely false solution: p_have fell 0.5->0.05 once fitted (0.18 in a working case) and every extension diverges (rms 14-37); restart from the prior
+outlier,315,unassign,weak bootstrap (Z<=5) converged to a self-consistent but likely false solution: p_have fell 0.5->0.05 once fitted (0.18 in a working case) and every extension diverges (rms 14-37); restart from the prior
+outlier,112,unassign,weak bootstrap (Z<=5) converged to a self-consistent but likely false solution: p_have fell 0.5->0.05 once fitted (0.18 in a working case) and every extension diverges (rms 14-37); restart from the prior
+outlier,197,unassign,weak bootstrap (Z<=5) converged to a self-consistent but likely false solution: p_have fell 0.5->0.05 once fitted (0.18 in a working case) and every extension diverges (rms 14-37); restart from the prior
+outlier,382,unassign,weak bootstrap (Z<=5) converged to a self-consistent but likely false solution: p_have fell 0.5->0.05 once fitted (0.18 in a working case) and every extension diverges (rms 14-37); restart from the prior
+outlier,458,unassign,weak bootstrap (Z<=5) converged to a self-consistent but likely false solution: p_have fell 0.5->0.05 once fitted (0.18 in a working case) and every extension diverges (rms 14-37); restart from the prior
+outlier,392,unassign,weak bootstrap (Z<=5) converged to a self-consistent but likely false solution: p_have fell 0.5->0.05 once fitted (0.18 in a working case) and every extension diverges (rms 14-37); restart from the prior
+all,assign,defer,predictions come from the suspect solution; rebuild from the prior
+all,defaults,confirm,remaining rule defaults reviewed

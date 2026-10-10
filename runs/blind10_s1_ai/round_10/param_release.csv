@@ -1,0 +1,6 @@
+idpar,label,order,dchi2,value,sigma,snr,scale,ratio,default,reason
+40200,phiJ,6,nan,0,nan,0,8.00525e-08,nan,hold,not in the automatic trial list (requested by the decision-maker)
+41100,phiJK,6,nan,0,nan,0,3.34466e-06,nan,hold,not in the automatic trial list (requested by the decision-maker)
+300,PhiJ,6,nan,0,nan,0,8.00525e-08,nan,hold,not in the automatic trial list (requested by the decision-maker)
+1200,PhiJK,6,nan,0,nan,0,3.34466e-06,nan,hold,not in the automatic trial list (requested by the decision-maker)
+2100,PhiKJ,6,nan,0,nan,0,4.26685e-05,nan,hold,not in the automatic trial list (requested by the decision-maker)

@@ -1,0 +1,47 @@
+# blind8 seed 1 arm ai -- round 8
+
+assigned peaks 441, floating params 26, last rms (weighted) 0.945
+predictions considered 2316, with candidates 15, unresolvable windows 0, p_have=0.16 (from 2754 sharp predictions)
+candidate rows 15: default accept 4 (of which flagged 0), deferred with P>=0.5: 10
+
+OUTLIERS (top 8):
+  peak  540 20 11 9 21 10 12             t=+3.6 h=0.03 default=keep
+  peak  151 38 6 32 37 7 31              t=-3.5 h=0.15 default=keep
+  peak  585 92 11 81 92 10 82            t=+3.5 h=0.43 default=keep
+  peak   22 24 4 20 23 5 19              t=+3.2 h=0.36 default=keep
+  peak   29 8 1 7 7 2 6                  t=-3.0 h=0.30 default=keep
+  peak   28 49 4 46 48 5 43              t=-0.7 h=0.85 default=keep
+  peak   27 42 9 33 43 8 36              t=+0.4 h=0.87 default=keep
+
+RELEASE forward selection (<=10x scale): none
+  other trials: [('PJJK', np.float64(46.1), '49x'), ('SKKKJ', np.float64(19.1), '1.1e+02x'), ('SK', np.float64(14.4), '37x'), ('PKKJ', np.float64(5.0), '5x')]
+  current 441 lines: rms 0.945 with releases (without: 0.945)
+
+JOINT defaults: 4 added -> kept 0, removed 4, rms 0.945
+   removed  613 64 21 43 65 20 46      z=+1.1
+   removed  583 67 21 47 68 20 48      z=+2.3
+   removed  619 68 22 46 69 21 49      z=+1.6
+   removed  603 65 21 45 66 20 46      z=+1.1
+
+JOINT defaults+P>=0.9: 14 added -> kept 9, removed 5, rms 0.964
+   removed   16 63 13 51 64 12 52      z=+3.4
+   removed  613 64 21 43 65 20 46      z=+1.1
+   removed  583 67 21 47 68 20 48      z=+2.3
+   removed  619 68 22 46 69 21 49      z=+1.7
+   removed  603 65 21 45 66 20 46      z=+1.2
+
+JOINT defaults+P>=0.5: 14 added -> kept 9, removed 5, rms 0.964
+   removed   16 63 13 51 64 12 52      z=+3.4
+   removed  613 64 21 43 65 20 46      z=+1.1
+   removed  583 67 21 47 68 20 48      z=+2.3
+   removed  619 68 22 46 69 21 49      z=+1.7
+   removed  603 65 21 45 66 20 46      z=+1.2
+
+JOINT-RELEASE defaults: releases [('PKKJ', np.float64(19.8), '6.2x')] -> kept 4, removed 0, rms 0.945
+   RELEASE_IDS 3200
+
+JOINT-RELEASE defaults+P>=0.9: releases [('PKKJ', np.float64(47.3), '7.3x')] -> kept 14, removed 0, rms 0.975
+   RELEASE_IDS 3200
+
+SERIES (top 6):
+

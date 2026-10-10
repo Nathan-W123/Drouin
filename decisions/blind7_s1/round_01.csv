@@ -1,0 +1,3 @@
+kind,item,action,reason
+hyp,1,accept,"Z 17.1, support 38 - clearly ahead of the next hypothesis (support 3)"
+all,defaults,confirm,"other hypotheses weaker or conflicting; anchors verified by leave-one-out next round"

@@ -1,0 +1,32 @@
+# blind7 seed 1 arm ai -- round 3
+
+assigned peaks 0, floating params 8, last rms (weighted) nan
+predictions considered 729, with candidates 290, unresolvable windows 435, p_have=0.50 (from 28 sharp predictions)
+candidate rows 1171: default accept 0 (of which flagged 0), deferred with P>=0.5: 63
+
+OUTLIERS (top 8):
+
+RELEASE forward selection (<=10x scale): none
+  other trials: []
+  current 0 lines: rms nan with releases (without: nan)
+
+JOINT defaults: nothing to add
+
+JOINT defaults+P>=0.9: nothing to add
+
+JOINT defaults+P>=0.5: 15 added -> kept 14, removed 1, rms 0.609
+   removed  210 4 2 2 5 0 5            z=-290.5
+
+JOINT-RELEASE defaults: releases [] -> kept 0, removed 0, rms nan
+   RELEASE_IDS 
+
+JOINT-RELEASE defaults+P>=0.9: releases [] -> kept 0, removed 0, rms nan
+   RELEASE_IDS 
+
+SERIES (top 6):
+series dJ=0 Ka'=8 Ka"=8 parity=0,1: 10 coherent members, r0=-0.993227 tol=4.0e-02, expected by chance 0.09, P(chance)=1.0e-300
+series dJ=0 Ka'=7 Ka"=7 parity=0,1: 13 coherent members, r0=-0.930363 tol=2.9e-02, expected by chance 0.74, P(chance)=1.7e-12
+series dJ=0 Ka'=5 Ka"=5 parity=0,1: 9 coherent members, r0=+0.941266 tol=1.3e-02, expected by chance 0.44, P(chance)=1.2e-09
+series dJ=0 Ka'=3 Ka"=3 parity=0,1: 6 coherent members, r0=+0.470767 tol=9.6e-03, expected by chance 0.17, P(chance)=2.6e-08
+series dJ=0 Ka'=6 Ka"=6 parity=0,1: 9 coherent members, r0=-0.937226 tol=2.3e-02, expected by chance 0.65, P(chance)=3.1e-08
+series dJ=1 Ka'=3 Ka"=3 parity=1,1: 7 coherent members, r0=-0.001859 tol=2.1e-04, expected by chance 0.34, P(chance)=7.2e-08

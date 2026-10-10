@@ -1,0 +1,165 @@
+kind,item,action,reason,source
+assign,C0001,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0002,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0003,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0004,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0005,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0006,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0007,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0008,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0009,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0010,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0011,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0012,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0013,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0014,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0015,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0016,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0017,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0018,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0019,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0020,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0021,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0022,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0023,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0024,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0025,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0026,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0027,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0028,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0029,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0030,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0031,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0032,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0033,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0034,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0035,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0036,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0037,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0038,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0039,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0040,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0041,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0042,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0043,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0044,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0045,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0046,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0047,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0048,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0049,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0050,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0051,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0052,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0053,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0054,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0055,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0056,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0057,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0058,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0059,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0060,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0061,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0062,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0063,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0064,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0065,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0066,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0067,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0068,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0069,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0070,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0071,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0072,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0073,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0074,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0075,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0076,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0077,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0078,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0079,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0080,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0081,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0082,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0083,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0084,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0085,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0086,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0087,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0088,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0089,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0090,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0091,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0092,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0093,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0094,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0095,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0096,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0097,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0098,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0099,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0100,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0101,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0102,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0103,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0104,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0105,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0106,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0107,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0108,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0109,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0110,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0111,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0112,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0113,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0114,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0115,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0116,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0117,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0118,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0119,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0120,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0121,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0122,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0123,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0124,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0125,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0126,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0127,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0128,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0129,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0130,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0131,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0132,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0133,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0134,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0135,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0136,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0137,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0138,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0139,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0140,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0141,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0142,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0143,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0144,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0145,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0146,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0147,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0148,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0149,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0150,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0151,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0152,defer,AI (blanket): not in the jointly consistent set,ai
+outlier,212,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-1.7 h=0.86,ai-confirmed
+outlier,149,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-0.3 h=0.90,ai-confirmed
+outlier,172,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+0.3 h=0.90,ai-confirmed
+outlier,122,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-0.5 h=0.98,ai-confirmed
+outlier,90,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-0.5 h=0.97,ai-confirmed
+param,3199,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=3.3 |v/s|=1.8 |v|/scale=3.9,ai-confirmed
+param,50299,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=0.5 |v/s|=0.8 |v|/scale=0.33,ai-confirmed
+param,2299,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=0.1 |v/s|=0.3 |v|/scale=2.6,ai-confirmed
+param,60199,release,"AI override: joint forward selection on the candidate set: each step dchi2>=9, value <=10x its magnitude scale",ai-override
+param,1399,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=0.1 |v/s|=0.3 |v|/scale=1,ai-confirmed
+param,399,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=0.1 |v/s|=0.3 |v|/scale=0.0015,ai-confirmed
+param,4099,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=-0.1 |v/s|=0.1 |v|/scale=5,ai-confirmed

@@ -1,0 +1,6 @@
+kind,item,action,reason,source
+hyp,1,accept,"AI: Z 19.9, support 233; note two anchors share peak 15 (K-doublet lines can overlap) - test next round",ai
+hyp,2,reject,"AI confirmed default (other hypotheses weaker or conflicting; anchors verified by leave-one-out next round); default: Z=19.8 (25/33 matched, 1.5 by chance), support=17",ai-confirmed
+hyp,3,reject,"AI confirmed default (other hypotheses weaker or conflicting; anchors verified by leave-one-out next round); default: Z=19.8 (25/33 matched, 1.5 by chance), support=28",ai-confirmed
+hyp,4,reject,"AI confirmed default (other hypotheses weaker or conflicting; anchors verified by leave-one-out next round); default: Z=8.4 (12/34 matched, 1.6 by chance), support=1",ai-confirmed
+hyp,5,reject,"AI confirmed default (other hypotheses weaker or conflicting; anchors verified by leave-one-out next round); default: Z=8.1 (11/31 matched, 1.5 by chance), support=1",ai-confirmed

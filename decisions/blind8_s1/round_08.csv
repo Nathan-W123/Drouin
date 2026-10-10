@@ -1,0 +1,19 @@
+kind,item,action,reason
+assign,48 10 38 49 9 41@3,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,37 8 30 38 7 31@17,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,42 4 38 43 3 41@172,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,61 11 51 60 12 48@30,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,63 13 51 64 12 52@16,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,64 21 43 65 20 46@613,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,72 20 52 73 19 55@458,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,67 21 47 68 20 48@583,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,30 16 14 31 15 17@699,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,68 22 46 69 21 49@619,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,65 21 45 66 20 46@603,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,51 8 44 52 5 47@472,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,75 23 53 76 22 54@596,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,70 22 48 71 21 51@600,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+param,3200,release,"joint forward selection on the candidate set: each step dchi2>=9, value <=10x its magnitude scale (PKKJ 7.3x)"
+param,2300,hold,PJJK at 49x scale - implausible
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

@@ -1,0 +1,54 @@
+# blind8 seed 1 arm ai -- round 7
+
+assigned peaks 451, floating params 25, last rms (weighted) 2.622
+predictions considered 2306, with candidates 12, unresolvable windows 0, p_have=0.16 (from 2741 sharp predictions)
+candidate rows 12: default accept 4 (of which flagged 0), deferred with P>=0.5: 0
+
+OUTLIERS (top 8):
+  peak  494 66 8 58 65 9 57              t=-22.7 h=0.39 default=reject
+  peak  593 71 22 50 72 21 51            t=+19.8 h=0.31 default=reject
+  peak  516 78 22 56 79 21 59            t=-16.6 h=0.13 default=reject
+  peak  502 74 21 53 75 20 56            t=-15.6 h=0.18 default=reject
+  peak  159 59 13 47 60 12 48            t=+14.0 h=0.19 default=reject
+  peak    3 48 10 38 49 9 41             t=-13.4 h=0.69 default=reject
+  peak  600 70 22 48 71 21 51            t=+12.6 h=0.10 default=reject
+  peak   17 37 8 30 38 7 31              t=+12.0 h=0.59 default=reject
+
+RELEASE forward selection (<=10x scale): none
+  other trials: [('PKKKJ', np.float64(2651.1), '18x'), ('PKKJ', np.float64(2310.4), '20x'), ('SKKKJ', np.float64(2180.7), '5.3e+02x'), ('PJJK', np.float64(1463.3), '1.1e+02x'), ('SK', np.float64(461.7), '1.6e+02x')]
+  current 451 lines: rms 2.622 with releases (without: 2.622)
+
+JOINT defaults: 4 added -> kept 0, removed 4, rms 2.622
+   removed  613 64 21 43 65 20 46      z=+8.2
+   removed  583 67 21 47 68 20 48      z=+14.6
+   removed  603 65 21 45 66 20 46      z=+9.1
+   removed  619 68 22 46 69 21 49      z=+18.4
+
+JOINT defaults+P>=0.9: 4 added -> kept 0, removed 4, rms 2.622
+   removed  613 64 21 43 65 20 46      z=+8.2
+   removed  583 67 21 47 68 20 48      z=+14.6
+   removed  603 65 21 45 66 20 46      z=+9.1
+   removed  619 68 22 46 69 21 49      z=+18.4
+
+JOINT defaults+P>=0.5: 4 added -> kept 0, removed 4, rms 2.622
+   removed  613 64 21 43 65 20 46      z=+8.2
+   removed  583 67 21 47 68 20 48      z=+14.6
+   removed  603 65 21 45 66 20 46      z=+9.1
+   removed  619 68 22 46 69 21 49      z=+18.4
+
+JOINT-RELEASE defaults: releases [] -> kept 0, removed 4, rms 2.622
+   RELEASE_IDS 
+   removed  613 64 21 43 65 20 46      z=+8.2
+   removed  583 67 21 47 68 20 48      z=+14.6
+   removed  603 65 21 45 66 20 46      z=+9.1
+   removed  619 68 22 46 69 21 49      z=+18.4
+
+JOINT-RELEASE defaults+P>=0.9: releases [] -> kept 0, removed 4, rms 2.622
+   RELEASE_IDS 
+   removed  613 64 21 43 65 20 46      z=+8.2
+   removed  583 67 21 47 68 20 48      z=+14.6
+   removed  603 65 21 45 66 20 46      z=+9.1
+   removed  619 68 22 46 69 21 49      z=+18.4
+
+SERIES (top 6):
+

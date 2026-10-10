@@ -1,0 +1,30 @@
+# blind11 seed 1 arm ai -- round 14
+
+assigned peaks 436, floating params 27, last rms (weighted) 0.927
+predictions considered 1825, with candidates 1, unresolvable windows 0, p_have=0.19 (from 2261 sharp predictions)
+candidate rows 1: default accept 0 (of which flagged 0), deferred with P>=0.5: 0
+
+OUTLIERS (top 8):
+  peak  683 63 21 43 64 20 44            t=-5.1 h=0.35 default=reject
+  peak   20 63 13 51 64 12 52            t=+3.7 h=0.64 default=keep
+  peak   34 35 6 30 34 7 27              t=+3.5 h=0.63 default=keep
+  peak  546 87 11 77 86 12 74            t=-3.0 h=0.10 default=keep
+
+RELEASE forward selection (<=10x scale): none
+  other trials: [('PJJK', np.float64(49.1), '30x'), ('SKKKJ', np.float64(35.5), '2.7e+02x'), ('SK', np.float64(23.7), '84x')]
+  current 436 lines: rms 0.927 with releases (without: 0.927)
+
+JOINT defaults: nothing to add
+
+JOINT defaults+P>=0.9: nothing to add
+
+JOINT defaults+P>=0.5: nothing to add
+
+JOINT-RELEASE defaults: releases [] -> kept 0, removed 0, rms 0.927
+   RELEASE_IDS 
+
+JOINT-RELEASE defaults+P>=0.9: releases [] -> kept 0, removed 0, rms 0.927
+   RELEASE_IDS 
+
+SERIES (top 6):
+

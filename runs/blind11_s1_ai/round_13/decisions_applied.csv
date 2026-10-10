@@ -1,0 +1,17 @@
+kind,item,action,reason,source
+assign,C0001,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0002,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0003,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0004,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0005,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0006,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0007,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0008,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0009,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0010,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0011,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0012,defer,AI (blanket): not in the jointly consistent set,ai
+outlier,546,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.0 h=0.11,ai-confirmed
+param,2300,hold,AI override: PJJK at 30x scale - implausible,ai-override
+param,5100,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=16.1 |v/s|=4.0 |v|/scale=2.4e+02,ai-confirmed
+param,6000,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=11.3 |v/s|=3.4 |v|/scale=96,ai-confirmed

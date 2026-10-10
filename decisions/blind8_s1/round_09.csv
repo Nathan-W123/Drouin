@@ -1,0 +1,6 @@
+kind,item,action,reason
+param,2300,hold,PJJK at 59x scale - implausible
+outlier,540,keep,t=4.0 (<5) at leverage 0.02; not evidence enough to remove
+stop,stop,yes,nothing left to add; only releases on offer are 34-110x scale; converged
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

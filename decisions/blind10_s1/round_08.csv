@@ -1,0 +1,9 @@
+kind,item,action,reason
+assign,4 2 2 4 1 3@224,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,13 4 10 13 3 11@378,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,13 5 9 12 4 8@594,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,8 1 7 8 0 8@130,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,23 6 18 23 5 19@487,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+param,3000,release,"joint forward selection on the candidate set: each step dchi2>=9, value <=10x its magnitude scale (PhiK 0.78x)"
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

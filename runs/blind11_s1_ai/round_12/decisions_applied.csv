@@ -1,0 +1,35 @@
+kind,item,action,reason,source
+assign,C0001,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0002,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0003,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0004,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0005,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0006,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0007,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0008,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0009,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0010,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0011,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0012,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0013,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0014,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0015,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0016,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0017,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0018,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0019,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0020,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0021,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0022,accept,"AI: jointly consistent (all 22, rms 0.88) once PKKKJ and PKKJ are released; high-Ka series",ai
+assign,C0023,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0024,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0025,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0026,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0027,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0028,defer,AI (blanket): not in the jointly consistent set,ai
+outlier,20,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-2.0 h=0.82,ai-confirmed
+param,4100,release,"AI: what-if: without them 20 of 22 high-Ka candidates fail; with them all fit at rms 0.88. PKKKJ is 16x its scale estimate, the same pattern as two other SO2-like cases (12x, 18x), so the estimate for this term is probably too small",ai
+param,5100,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=9.4 |v/s|=3.1 |v|/scale=8.2e+02,ai-confirmed
+param,3200,release,"AI override: what-if: without them 20 of 22 high-Ka candidates fail; with them all fit at rms 0.88. PKKKJ is 16x its scale estimate, the same pattern as two other SO2-like cases (12x, 18x), so the estimate for this term is probably too small",ai-override
+param,2300,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=1.1 |v/s|=1.1 |v|/scale=4.5,ai-confirmed
+param,6000,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=0.3 |v/s|=0.6 |v|/scale=2.2e+02,ai-confirmed

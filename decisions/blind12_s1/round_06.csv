@@ -1,0 +1,4 @@
+kind,item,action,reason
+stop,stop,yes,nothing jointly consistent left to add; only offered release (HJ) removes the one candidate; converged
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

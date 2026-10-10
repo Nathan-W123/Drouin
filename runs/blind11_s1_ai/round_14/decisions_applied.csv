@@ -1,0 +1,10 @@
+kind,item,action,reason,source
+assign,C0001,defer,AI (blanket): not in the jointly consistent set,ai
+outlier,683,keep,"AI override: t=-5.1 on 63(21,43), a high-Ka line that is a top residual in sibling cases - model truncation, not a wrong label",ai-override
+outlier,20,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.7 h=0.64,ai-confirmed
+outlier,34,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.5 h=0.63,ai-confirmed
+outlier,546,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.0 h=0.10,ai-confirmed
+param,2300,hold,AI override: PJJK 30x - implausible by the scale rule,ai-override
+param,5100,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=35.5 |v/s|=6.0 |v|/scale=2.7e+02,ai-confirmed
+param,6000,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=23.7 |v/s|=4.9 |v|/scale=84,ai-confirmed
+stop,stop,yes,AI: nothing left to add; only releases on offer are >=30x scale; converged,ai

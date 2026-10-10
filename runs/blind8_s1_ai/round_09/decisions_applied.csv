@@ -1,0 +1,12 @@
+kind,item,action,reason,source
+assign,C0001,defer,AI (blanket): not in the jointly consistent set,ai
+outlier,540,keep,AI: t=4.0 (<5) at leverage 0.02; not evidence enough to remove,ai
+outlier,151,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.7 h=0.12,ai-confirmed
+outlier,699,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.5 h=0.16,ai-confirmed
+outlier,585,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.2 h=0.41,ai-confirmed
+outlier,16,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.1 h=0.71,ai-confirmed
+outlier,28,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-0.4 h=0.84,ai-confirmed
+param,2300,hold,AI override: PJJK at 59x scale - implausible,ai-override
+param,5100,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=24.0 |v/s|=4.9 |v|/scale=1.1e+02,ai-confirmed
+param,6000,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=16.4 |v/s|=4.0 |v|/scale=34,ai-confirmed
+stop,stop,yes,AI: nothing left to add; only releases on offer are 34-110x scale; converged,ai

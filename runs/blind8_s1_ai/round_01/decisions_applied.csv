@@ -1,0 +1,16 @@
+kind,item,action,reason,source
+hyp,1,accept,"AI: Z 8.2, support 57 vs 5 for rank 2",ai
+hyp,2,reject,"AI confirmed default (other hypotheses weaker or conflicting; anchors verified by leave-one-out next round); default: Z=8.0 (36/148 matched, 10.9 by chance), support=5",ai-confirmed
+hyp,3,reject,"AI confirmed default (other hypotheses weaker or conflicting; anchors verified by leave-one-out next round); default: Z=6.8 (32/147 matched, 10.8 by chance), support=2",ai-confirmed
+hyp,4,reject,"AI confirmed default (other hypotheses weaker or conflicting; anchors verified by leave-one-out next round); default: Z=6.6 (31/145 matched, 10.5 by chance), support=2",ai-confirmed
+hyp,5,reject,"AI confirmed default (other hypotheses weaker or conflicting; anchors verified by leave-one-out next round); default: Z=4.5 (20/103 matched, 7.9 by chance), support=2",ai-confirmed
+hyp,6,reject,"AI confirmed default (other hypotheses weaker or conflicting; anchors verified by leave-one-out next round); default: Z=4.4 (10/34 matched, 2.9 by chance), support=1",ai-confirmed
+hyp,7,reject,"AI confirmed default (other hypotheses weaker or conflicting; anchors verified by leave-one-out next round); default: Z=4.4 (10/34 matched, 2.9 by chance), support=1",ai-confirmed
+hyp,8,reject,"AI confirmed default (other hypotheses weaker or conflicting; anchors verified by leave-one-out next round); default: Z=4.3 (10/34 matched, 2.9 by chance), support=1",ai-confirmed
+hyp,9,reject,"AI confirmed default (other hypotheses weaker or conflicting; anchors verified by leave-one-out next round); default: Z=4.3 (24/147 matched, 10.6 by chance), support=3",ai-confirmed
+hyp,10,reject,"AI confirmed default (other hypotheses weaker or conflicting; anchors verified by leave-one-out next round); default: Z=3.9 (23/147 matched, 10.7 by chance), support=2",ai-confirmed
+hyp,11,reject,"AI confirmed default (other hypotheses weaker or conflicting; anchors verified by leave-one-out next round); default: Z=3.9 (23/148 matched, 10.7 by chance), support=3",ai-confirmed
+hyp,12,reject,"AI confirmed default (other hypotheses weaker or conflicting; anchors verified by leave-one-out next round); default: Z=3.9 (13/62 matched, 4.8 by chance), support=1",ai-confirmed
+hyp,13,reject,"AI confirmed default (other hypotheses weaker or conflicting; anchors verified by leave-one-out next round); default: Z=3.9 (9/36 matched, 2.8 by chance), support=1",ai-confirmed
+hyp,14,reject,"AI confirmed default (other hypotheses weaker or conflicting; anchors verified by leave-one-out next round); default: Z=3.8 (9/34 matched, 2.9 by chance), support=1",ai-confirmed
+hyp,15,reject,"AI confirmed default (other hypotheses weaker or conflicting; anchors verified by leave-one-out next round); default: Z=3.7 (9/34 matched, 2.9 by chance), support=1",ai-confirmed

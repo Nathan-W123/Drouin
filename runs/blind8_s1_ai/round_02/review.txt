@@ -1,0 +1,50 @@
+# blind8 seed 1 arm ai -- round 2
+
+assigned peaks 3, floating params 8, last rms (weighted) 0.001
+predictions considered 2753, with candidates 1198, unresolvable windows 1381, p_have=0.43 (from 37 sharp predictions)
+candidate rows 2961: default accept 27 (of which flagged 0), deferred with P>=0.5: 159
+
+OUTLIERS (top 8):
+
+RELEASE forward selection (<=10x scale): none
+  other trials: []
+  current 3 lines: rms 0.001 with releases (without: 0.001)
+
+JOINT defaults: 27 added -> kept 27, removed 0, rms 0.597
+
+JOINT defaults+P>=0.9: 34 added -> kept 33, removed 1, rms 0.790
+   removed  625 14 6 8 13 5 9          z=+12.0
+
+JOINT defaults+P>=0.5: 51 added -> kept 37, removed 14, rms 0.953
+   removed  625 14 6 8 13 5 9          z=+12.0
+   removed  459 9 4 6 10 1 9           z=-277.9
+   removed  274 12 5 7 13 4 10         z=+12.1
+   removed  281 17 6 12 18 5 13        z=+18.8
+   removed   93 20 3 17 19 4 16        z=+0.2
+   removed  140 25 3 23 24 4 20        z=+0.4
+   removed  142 18 5 13 19 4 16        z=+0.8
+   removed   94 27 4 24 26 5 21        z=+1.5
+   removed  229 20 6 14 21 5 17        z=+18.4
+   removed  330 13 6 8 14 5 9          z=+22.3
+
+JOINT-RELEASE defaults: releases [] -> kept 27, removed 0, rms 0.597
+   RELEASE_IDS 
+
+JOINT-RELEASE defaults+P>=0.9: releases [('PhiK', np.float64(698.0), '0.36x'), ('PhiKJ', np.float64(20.9), '0.99x')] -> kept 26, removed 8, rms 0.785
+   RELEASE_IDS 3000,2100
+   removed   77 2 1 1 2 0 2            z=+nan
+   removed  185 8 0 8 7 1 7            z=+nan
+   removed   38 4 0 4 3 1 3            z=+nan
+   removed  235 10 0 10 9 1 9          z=+nan
+   removed  130 8 1 7 8 0 8            z=+nan
+   removed  102 6 1 5 6 0 6            z=+nan
+   removed  286 11 1 11 10 0 10        z=+nan
+   removed  254 9 1 9 8 0 8            z=+nan
+
+SERIES (top 6):
+series dJ=-1 Ka'=6 Ka"=5 parity=0,1: 5 coherent members, r0=-0.000667 tol=1.5e-04, expected by chance 0.16, P(chance)=6.7e-07
+series dJ=-1 Ka'=4 Ka"=3 parity=0,1: 4 coherent members, r0=-0.000290 tol=5.4e-05, expected by chance 0.08, P(chance)=1.4e-06
+series dJ=-1 Ka'=6 Ka"=3 parity=1,0: 4 coherent members, r0=-0.002828 tol=4.6e-05, expected by chance 0.10, P(chance)=4.2e-06
+series dJ=-1 Ka'=5 Ka"=4 parity=0,1: 5 coherent members, r0=-0.000533 tol=2.6e-04, expected by chance 0.28, P(chance)=1.1e-05
+series dJ=1 Ka'=4 Ka"=5 parity=1,0: 6 coherent members, r0=-0.000418 tol=6.5e-04, expected by chance 0.64, P(chance)=5.4e-05
+series dJ=0 Ka'=8 Ka"=7 parity=0,0: 6 coherent members, r0=+0.005487 tol=2.4e-04, expected by chance 0.65, P(chance)=6.0e-05

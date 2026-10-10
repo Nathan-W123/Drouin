@@ -1,0 +1,2 @@
+idpar,label,order,dchi2,value,sigma,snr,scale,ratio,default,reason
+3000,PhiK,6,nan,0,nan,0,0.00082688,nan,hold,not in the automatic trial list (requested by the decision-maker)

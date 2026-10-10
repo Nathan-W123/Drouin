@@ -1,0 +1,5 @@
+kind,item,action,reason
+assign,31 1 30 30 3 27@60,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,32 2 30 31 4 27@68,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

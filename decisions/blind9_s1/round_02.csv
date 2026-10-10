@@ -1,0 +1,6 @@
+kind,item,action,reason
+outlier,12,unassign,bootstrap anchors mutually inconsistent (3-line fit rms 392); restart from the prior
+outlier,21,unassign,see 12
+outlier,22,unassign,see 12
+all,assign,defer,predictions come from the inconsistent anchor fit; rebuild from the prior
+all,defaults,confirm,remaining rule defaults reviewed

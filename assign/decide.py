@@ -18,6 +18,7 @@ def main():
     ap.add_argument("--release", default=""); ap.add_argument("--release-reason", default="")
     ap.add_argument("--hold", nargs="*", default=[]); ap.add_argument("--reject", nargs="*", default=[])
     ap.add_argument("--outlier", nargs="*", default=[]); ap.add_argument("--stop", default=None)
+    ap.add_argument("--reboot", default=None, help="reason: rerun the bootstrap search (needs no lines assigned)")
     ap.add_argument("--defer-reason", default="not in the jointly consistent set")
     ap.add_argument("--confirm", default="remaining rule defaults reviewed")
     a = ap.parse_args()
@@ -39,6 +40,8 @@ def main():
     for x in a.outlier:
         p, act, why = x.split(":", 2)
         out.append(dict(kind="outlier", item=p, action=act, reason=why))
+    if a.reboot:
+        out.append(dict(kind="boot", item="restart", action="yes", reason=a.reboot))
     if a.stop:
         out.append(dict(kind="stop", item="stop", action="yes", reason=a.stop))
     out.append(dict(kind="all", item="assign", action="defer", reason=a.defer_reason))

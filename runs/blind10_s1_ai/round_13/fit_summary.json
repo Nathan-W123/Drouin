@@ -1,0 +1,20 @@
+{
+ "n_accept": 24,
+ "n_reject": 0,
+ "released": [
+  "PKKKJ",
+  "PKKJ"
+ ],
+ "overrides": 7,
+ "p_have": 0.18907069917273506,
+ "n_candidates": 26,
+ "rms": 0.964326886736006,
+ "chi2": 382.1997275820846,
+ "fit_ok": true,
+ "relaxed": [],
+ "n_broke_fit": 0,
+ "round": 13,
+ "n_assigned": 411,
+ "n_lines": 411,
+ "n_float": 27
+}

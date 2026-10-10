@@ -1,0 +1,30 @@
+kind,item,action,reason
+assign,79 7 73 80 4 76@503,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,52 3 49 53 2 52@514,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,74 9 65 74 8 66@513,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,72 4 68 73 3 71@652,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,54 17 37 55 16 40@524,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,60 18 42 61 17 45@505,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,62 18 44 63 17 47@476,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,65 19 47 66 18 48@506,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,78 22 56 79 21 59@536,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,70 20 50 71 19 53@504,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,73 21 53 74 20 54@540,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,74 21 53 75 20 56@522,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,69 20 50 70 19 51@523,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,77 23 55 78 22 56@609,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,73 22 52 74 21 53@591,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,75 23 53 76 22 54@631,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,67 21 47 68 20 48@613,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,71 22 50 72 21 51@626,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,70 22 48 71 21 51@633,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,65 21 45 66 20 46@634,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,64 21 43 65 20 46@649,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,73 23 51 74 22 52@653,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,68 22 46 69 21 49@654,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+assign,63 21 43 64 20 44@656,accept,"jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released"
+param,4100,release,what-if: without them 19 of 24 high-Ka candidates fail; with them all fit. PKKKJ 12x its scale estimate - same pattern as the other SO2-like cases
+param,3200,release,what-if: without them 19 of 24 high-Ka candidates fail; with them all fit. PKKKJ 12x its scale estimate - same pattern as the other SO2-like cases
+outlier,473,keep,t=4.3 (<5) measured before the PKKKJ release
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

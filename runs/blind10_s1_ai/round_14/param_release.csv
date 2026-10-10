@@ -1,0 +1,4 @@
+idpar,label,order,dchi2,value,sigma,snr,scale,ratio,default,reason
+2300,PJJK,10,70.5094,3.03307e-15,3.6115e-16,8.39838,8.89766e-17,34.0885,release,dchi2=70.5 |v/s|=8.4 |v|/scale=34
+5100,SKKKJ,12,22.1403,-2.61326e-16,5.55559e-17,4.70383,1.5811e-18,165.281,hold,dchi2=22.1 |v/s|=4.7 |v|/scale=1.7e+02
+6000,SK,12,10.255,-1.55538e-15,4.83821e-16,3.21478,3.06403e-17,50.7626,hold,dchi2=10.3 |v/s|=3.2 |v|/scale=51

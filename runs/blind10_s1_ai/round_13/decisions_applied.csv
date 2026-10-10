@@ -1,0 +1,36 @@
+kind,item,action,reason,source
+assign,C0001,accept,"AI: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai
+assign,C0002,accept,"AI: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai
+assign,C0003,accept,"AI: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai
+assign,C0004,accept,"AI: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai
+assign,C0005,accept,"AI: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai
+assign,C0006,accept,"AI: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai
+assign,C0007,accept,"AI: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai
+assign,C0008,accept,"AI: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai
+assign,C0009,accept,"AI: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai
+assign,C0010,accept,"AI: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai
+assign,C0011,accept,"AI: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai
+assign,C0012,accept,"AI: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai
+assign,C0013,accept,"AI: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai
+assign,C0014,accept,"AI: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai
+assign,C0015,accept,"AI: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai
+assign,C0016,accept,"AI: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai
+assign,C0017,accept,"AI: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai
+assign,C0018,accept,"AI: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai
+assign,C0019,accept,"AI: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai
+assign,C0020,accept,"AI override: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai-override
+assign,C0021,accept,"AI override: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai-override
+assign,C0022,accept,"AI override: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai-override
+assign,C0023,accept,"AI override: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai-override
+assign,C0024,accept,"AI override: jointly consistent (24/24, rms 0.96) once PKKKJ and PKKJ are released",ai-override
+assign,C0025,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0026,defer,AI (blanket): not in the jointly consistent set,ai
+outlier,473,keep,AI override: t=4.3 (<5) measured before the PKKKJ release,ai-override
+outlier,510,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.8 h=0.33,ai-confirmed
+outlier,452,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.5 h=0.21,ai-confirmed
+outlier,491,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.1 h=0.48,ai-confirmed
+param,4100,release,AI: what-if: without them 19 of 24 high-Ka candidates fail; with them all fit. PKKKJ 12x its scale estimate - same pattern as the other SO2-like cases,ai
+param,3200,release,AI override: what-if: without them 19 of 24 high-Ka candidates fail; with them all fit. PKKKJ 12x its scale estimate - same pattern as the other SO2-like cases,ai-override
+param,5100,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=20.9 |v/s|=4.6 |v|/scale=3.8e+02,ai-confirmed
+param,6000,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=4.7 |v/s|=2.2 |v|/scale=91,ai-confirmed
+param,2300,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=3.2 |v/s|=1.8 |v|/scale=3.8,ai-confirmed

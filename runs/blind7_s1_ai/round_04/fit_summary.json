@@ -1,0 +1,32 @@
+{
+ "n_accept": 37,
+ "n_reject": 0,
+ "released": [
+  "h3",
+  "h1",
+  "HJK",
+  "h2",
+  "HKJ"
+ ],
+ "overrides": 55,
+ "p_have": 0.4189359381822734,
+ "n_candidates": 465,
+ "rms": 1.1241786809223324,
+ "chi2": 177.69804532992006,
+ "fit_ok": true,
+ "relaxed": [
+  "A",
+  "B",
+  "C",
+  "-DK",
+  "-DJK",
+  "-DJ",
+  "d1",
+  "d2"
+ ],
+ "n_broke_fit": 0,
+ "round": 4,
+ "n_assigned": 51,
+ "n_lines": 51,
+ "n_float": 13
+}

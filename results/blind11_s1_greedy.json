@@ -1,0 +1,210 @@
+{
+ "run": "blind11_s1_greedy",
+ "case": "blind11",
+ "seed": 1,
+ "arm": "greedy",
+ "rounds": 8,
+ "per_round": [
+  {
+   "n_true": 436,
+   "n_pairs": 695,
+   "n_correct": 11,
+   "n_covered": 11,
+   "n_degenerate_partner": 0,
+   "precision_phys": 0.015827338129496403,
+   "coverage": 0.02522935779816514,
+   "precision": 0.015827338129496403,
+   "wrong_on_distractors": 259,
+   "wrong_by_source": {
+    "SO2 v2=1 (measured)": 109,
+    "random": 41,
+    "34SO2": 109
+   },
+   "wrong_label_on_true": 425,
+   "n_peaks_assigned": 695,
+   "round": 1,
+   "rms": 5095932.590055889,
+   "n_float": 9,
+   "overrides": 0
+  },
+  {
+   "n_true": 436,
+   "n_pairs": 631,
+   "n_correct": 1,
+   "n_covered": 1,
+   "n_degenerate_partner": 0,
+   "precision_phys": 0.001584786053882726,
+   "coverage": 0.0022935779816513763,
+   "precision": 0.001584786053882726,
+   "wrong_on_distractors": 239,
+   "wrong_by_source": {
+    "SO2 v2=1 (measured)": 95,
+    "random": 40,
+    "34SO2": 104
+   },
+   "wrong_label_on_true": 391,
+   "n_peaks_assigned": 631,
+   "round": 2,
+   "rms": 333816.8254392955,
+   "n_float": 10,
+   "overrides": 0
+  },
+  {
+   "n_true": 436,
+   "n_pairs": 626,
+   "n_correct": 0,
+   "n_covered": 0,
+   "n_degenerate_partner": 0,
+   "precision_phys": 0.0,
+   "coverage": 0.0,
+   "precision": 0.0,
+   "wrong_on_distractors": 239,
+   "wrong_by_source": {
+    "SO2 v2=1 (measured)": 94,
+    "random": 40,
+    "34SO2": 105
+   },
+   "wrong_label_on_true": 387,
+   "n_peaks_assigned": 626,
+   "round": 3,
+   "rms": 303097.2927098301,
+   "n_float": 11,
+   "overrides": 0
+  },
+  {
+   "n_true": 436,
+   "n_pairs": 628,
+   "n_correct": 0,
+   "n_covered": 0,
+   "n_degenerate_partner": 0,
+   "precision_phys": 0.0,
+   "coverage": 0.0,
+   "precision": 0.0,
+   "wrong_on_distractors": 243,
+   "wrong_by_source": {
+    "SO2 v2=1 (measured)": 97,
+    "random": 41,
+    "34SO2": 105
+   },
+   "wrong_label_on_true": 385,
+   "n_peaks_assigned": 628,
+   "round": 4,
+   "rms": 254294.56129254142,
+   "n_float": 12,
+   "overrides": 0
+  },
+  {
+   "n_true": 436,
+   "n_pairs": 624,
+   "n_correct": 0,
+   "n_covered": 0,
+   "n_degenerate_partner": 0,
+   "precision_phys": 0.0,
+   "coverage": 0.0,
+   "precision": 0.0,
+   "wrong_on_distractors": 241,
+   "wrong_by_source": {
+    "SO2 v2=1 (measured)": 96,
+    "random": 41,
+    "34SO2": 104
+   },
+   "wrong_label_on_true": 383,
+   "n_peaks_assigned": 624,
+   "round": 5,
+   "rms": 259909.62906350018,
+   "n_float": 13,
+   "overrides": 0
+  },
+  {
+   "n_true": 436,
+   "n_pairs": 625,
+   "n_correct": 1,
+   "n_covered": 1,
+   "n_degenerate_partner": 0,
+   "precision_phys": 0.0016,
+   "coverage": 0.0022935779816513763,
+   "precision": 0.0016,
+   "wrong_on_distractors": 240,
+   "wrong_by_source": {
+    "SO2 v2=1 (measured)": 96,
+    "random": 40,
+    "34SO2": 104
+   },
+   "wrong_label_on_true": 384,
+   "n_peaks_assigned": 625,
+   "round": 6,
+   "rms": 254158.38621862791,
+   "n_float": 13,
+   "overrides": 0
+  },
+  {
+   "n_true": 436,
+   "n_pairs": 624,
+   "n_correct": 1,
+   "n_covered": 1,
+   "n_degenerate_partner": 0,
+   "precision_phys": 0.0016025641025641025,
+   "coverage": 0.0022935779816513763,
+   "precision": 0.0016025641025641025,
+   "wrong_on_distractors": 240,
+   "wrong_by_source": {
+    "SO2 v2=1 (measured)": 96,
+    "random": 40,
+    "34SO2": 104
+   },
+   "wrong_label_on_true": 383,
+   "n_peaks_assigned": 624,
+   "round": 7,
+   "rms": 110955.13686,
+   "n_float": 13,
+   "overrides": 0
+  },
+  {
+   "n_true": 436,
+   "n_pairs": 624,
+   "n_correct": 1,
+   "n_covered": 1,
+   "n_degenerate_partner": 0,
+   "precision_phys": 0.0016025641025641025,
+   "coverage": 0.0022935779816513763,
+   "precision": 0.0016025641025641025,
+   "wrong_on_distractors": 240,
+   "wrong_by_source": {
+    "SO2 v2=1 (measured)": 96,
+    "random": 40,
+    "34SO2": 104
+   },
+   "wrong_label_on_true": 383,
+   "n_peaks_assigned": 624,
+   "round": 8,
+   "rms": 110955.13686,
+   "n_float": 13,
+   "overrides": 0
+  }
+ ],
+ "final": {
+  "n_true": 436,
+  "n_pairs": 624,
+  "n_correct": 1,
+  "n_covered": 1,
+  "n_degenerate_partner": 0,
+  "precision_phys": 0.0016025641025641025,
+  "coverage": 0.0022935779816513763,
+  "precision": 0.0016025641025641025,
+  "wrong_on_distractors": 240,
+  "wrong_by_source": {
+   "34SO2": 104,
+   "random": 40,
+   "SO2 v2=1 (measured)": 96
+  },
+  "wrong_label_on_true": 383,
+  "n_peaks_assigned": 624
+ },
+ "final_fit_ok": false,
+ "final_rms": 110955.13686,
+ "oracle_rms": 1282.17561,
+ "n_free_params": 13,
+ "constants": [],
+ "ai_overrides": 0,
+ "human_corrections": 0
+}

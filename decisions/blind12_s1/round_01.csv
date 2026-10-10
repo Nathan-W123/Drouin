@@ -1,0 +1,3 @@
+kind,item,action,reason
+hyp,1,accept,"Z 19.9, support 233; note two anchors share peak 15 (K-doublet lines can overlap) - test next round"
+all,defaults,confirm,"other hypotheses weaker or conflicting; anchors verified by leave-one-out next round"

@@ -1,0 +1,3 @@
+kind,item,action,reason
+hyp,1,accept,"Z 8.2, support 57 vs 5 for rank 2"
+all,defaults,confirm,"other hypotheses weaker or conflicting; anchors verified by leave-one-out next round"

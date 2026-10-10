@@ -1,0 +1,47 @@
+kind,item,action,reason,source
+assign,C0001,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0002,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0003,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0004,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0005,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0006,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0007,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0008,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0009,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0010,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0011,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0012,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0013,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0014,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0015,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0016,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0017,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0018,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0019,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0020,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0021,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0022,defer,AI override (blanket): not in the jointly consistent set,ai-override
+assign,C0023,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0024,defer,AI override (blanket): not in the jointly consistent set,ai-override
+assign,C0025,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0026,defer,AI override (blanket): not in the jointly consistent set,ai-override
+assign,C0027,accept,"AI: jointly consistent with the current model (grown one at a time, converged fits only)",ai
+assign,C0028,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0029,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0030,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0031,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0032,defer,AI (blanket): not in the jointly consistent set,ai
+assign,C0033,defer,AI (blanket): not in the jointly consistent set,ai
+outlier,151,keep,"AI override: t=-4.3 (<5), low leverage; re-test later",ai-override
+outlier,459,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+4.2 h=0.21,ai-confirmed
+outlier,431,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-4.0 h=0.22,ai-confirmed
+outlier,30,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.8 h=0.59,ai-confirmed
+outlier,472,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.7 h=0.55,ai-confirmed
+outlier,540,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.2 h=0.02,ai-confirmed
+outlier,28,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-0.8 h=0.84,ai-confirmed
+outlier,516,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-0.6 h=0.94,ai-confirmed
+param,4100,hold,AI override: PKKKJ 9.4x scale and the release shrinks the consistent set (24->10); wait,ai-override
+param,3200,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=27.2 |v/s|=5.2 |v|/scale=5.3,ai-confirmed
+param,5100,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=24.3 |v/s|=4.9 |v|/scale=2e+02,ai-confirmed
+param,2300,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=4.7 |v/s|=2.2 |v|/scale=9.2,ai-confirmed
+param,6000,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=0.1 |v/s|=0.2 |v|/scale=4,ai-confirmed

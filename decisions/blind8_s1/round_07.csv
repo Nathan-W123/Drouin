@@ -1,0 +1,9 @@
+kind,item,action,reason
+param,4100,release,"PKKKJ: dchi2=2651 after the new high-Ka lines; 18x its scale, but the joint check that vetted those lines included it (my hold last round was the mistake)"
+outlier,494,keep,release before reject
+outlier,593,keep,release before reject
+outlier,516,keep,release before reject
+outlier,502,keep,release before reject
+outlier,159,keep,release before reject
+all,assign,defer,wait until the PKKKJ release is in
+all,defaults,confirm,remaining rule defaults reviewed

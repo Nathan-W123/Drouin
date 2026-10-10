@@ -1,0 +1,16 @@
+kind,item,action,reason,source
+hyp,1,reject,"AI override: its 5(1,5)-4(0,4) anchor on peak 211 is inconsistent with the other top-hypothesis anchors (z=-123); the rest fit at rms 0.17 without it",ai-override
+hyp,2,reject,"AI confirmed default (other hypotheses contain the inconsistent 5(1,5) anchor or are weaker); default: Z=5.1 (25/139 matched, 9.8 by chance), support=4",ai-confirmed
+hyp,3,reject,"AI confirmed default (other hypotheses contain the inconsistent 5(1,5) anchor or are weaker); default: Z=4.8 (25/145 matched, 10.3 by chance), support=4",ai-confirmed
+hyp,4,accept,"AI override: best-supported hypothesis entirely inside the mutually consistent anchor family {161,123,44,90,98,116} (what-if: 6 lines rms 0.169)",ai-override
+hyp,5,reject,"AI confirmed default (other hypotheses contain the inconsistent 5(1,5) anchor or are weaker); default: Z=4.4 (24/145 matched, 10.4 by chance), support=4",ai-confirmed
+hyp,6,reject,"AI confirmed default (other hypotheses contain the inconsistent 5(1,5) anchor or are weaker); default: Z=4.4 (23/140 matched, 9.9 by chance), support=7",ai-confirmed
+hyp,7,reject,"AI confirmed default (other hypotheses contain the inconsistent 5(1,5) anchor or are weaker); default: Z=4.1 (23/146 matched, 10.4 by chance), support=3",ai-confirmed
+hyp,8,reject,"AI confirmed default (other hypotheses contain the inconsistent 5(1,5) anchor or are weaker); default: Z=3.3 (8/31 matched, 2.8 by chance), support=1",ai-confirmed
+hyp,9,reject,"AI confirmed default (other hypotheses contain the inconsistent 5(1,5) anchor or are weaker); default: Z=2.8 (11/59 matched, 5.0 by chance), support=1",ai-confirmed
+hyp,10,reject,"AI confirmed default (other hypotheses contain the inconsistent 5(1,5) anchor or are weaker); default: Z=2.7 (7/31 matched, 2.8 by chance), support=1",ai-confirmed
+hyp,11,reject,"AI confirmed default (other hypotheses contain the inconsistent 5(1,5) anchor or are weaker); default: Z=2.5 (17/133 matched, 9.6 by chance), support=2",ai-confirmed
+hyp,12,reject,"AI confirmed default (other hypotheses contain the inconsistent 5(1,5) anchor or are weaker); default: Z=2.5 (17/124 matched, 9.7 by chance), support=1",ai-confirmed
+hyp,13,reject,"AI confirmed default (other hypotheses contain the inconsistent 5(1,5) anchor or are weaker); default: Z=2.5 (17/138 matched, 9.7 by chance), support=1",ai-confirmed
+hyp,14,reject,"AI confirmed default (other hypotheses contain the inconsistent 5(1,5) anchor or are weaker); default: Z=2.4 (18/148 matched, 10.6 by chance), support=1",ai-confirmed
+hyp,15,reject,"AI confirmed default (other hypotheses contain the inconsistent 5(1,5) anchor or are weaker); default: Z=2.3 (14/98 matched, 7.8 by chance), support=1",ai-confirmed

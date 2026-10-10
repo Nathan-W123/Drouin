@@ -1,0 +1,3 @@
+kind,item,action,reason
+hyp,1,accept,"Z 3.3 weak but highest; support 19; anchors to be tested next round"
+all,defaults,confirm,"other hypotheses weaker or conflicting; anchors verified by leave-one-out next round"

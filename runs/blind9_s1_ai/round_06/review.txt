@@ -1,0 +1,31 @@
+# blind9 seed 1 arm ai -- round 6
+
+assigned peaks 161, floating params 16, last rms (weighted) 0.752
+predictions considered 386, with candidates 109, unresolvable windows 0, p_have=0.48 (from 330 sharp predictions)
+candidate rows 114: default accept 0 (of which flagged 0), deferred with P>=0.5: 12
+
+OUTLIERS (top 8):
+  peak  175 5 3 3 4 3 2                  t=-3.1 h=0.02 default=keep
+  peak  135 20 3 17 21 1 20              t=-0.1 h=0.84 default=keep
+  peak  231 9 7 2 8 7 1;9 7 3 8 7 2      t=-0.5 h=0.98 default=keep
+  peak   77 32 2 30 31 4 27              t=+0.8 h=0.92 default=keep
+
+RELEASE forward selection (<=10x scale): none
+  other trials: [('l2', np.float64(0.8), '0.087x'), ('HJ', np.float64(0.4), '0.0025x'), ('HKJ', np.float64(0.3), '0.012x'), ('LJJK', np.float64(0.1), '0.28x'), ('LJK', np.float64(0.1), '0.8x'), ('LK', np.float64(0.1), '11x')]
+  current 161 lines: rms 0.752 with releases (without: 0.752)
+
+JOINT defaults: nothing to add
+
+JOINT defaults+P>=0.9: 1 added -> kept 1, removed 0, rms 0.751
+
+JOINT defaults+P>=0.5: 3 added -> kept 2, removed 1, rms 0.748
+   removed  200 47 3 44 46 5 41        z=+nan
+
+JOINT-RELEASE defaults: releases [] -> kept 0, removed 0, rms 0.752
+   RELEASE_IDS 
+
+JOINT-RELEASE defaults+P>=0.9: releases [] -> kept 1, removed 0, rms 0.751
+   RELEASE_IDS 
+
+SERIES (top 6):
+

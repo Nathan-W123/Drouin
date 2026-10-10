@@ -1,0 +1,4 @@
+kind,item,action,reason
+hyp,1,reject,"its 5(1,5)-4(0,4) anchor on peak 211 is inconsistent with the other top-hypothesis anchors (z=-123); the rest fit at rms 0.17 without it"
+hyp,4,accept,"best-supported hypothesis entirely inside the mutually consistent anchor family {161,123,44,90,98,116} (what-if: 6 lines rms 0.169)"
+all,defaults,confirm,"other hypotheses contain the inconsistent 5(1,5) anchor or are weaker"

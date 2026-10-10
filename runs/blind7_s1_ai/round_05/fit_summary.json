@@ -1,0 +1,20 @@
+{
+ "n_accept": 15,
+ "n_reject": 0,
+ "released": [
+  "HJ",
+  "l4"
+ ],
+ "overrides": 15,
+ "p_have": 0.20442038595163547,
+ "n_candidates": 203,
+ "rms": 1.2403982171440835,
+ "chi2": 101.54679064821858,
+ "fit_ok": true,
+ "relaxed": [],
+ "n_broke_fit": 0,
+ "round": 5,
+ "n_assigned": 66,
+ "n_lines": 66,
+ "n_float": 15
+}

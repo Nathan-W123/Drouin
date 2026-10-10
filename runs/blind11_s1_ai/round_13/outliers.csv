@@ -1,0 +1,2 @@
+peak,keys,obs_freq,err,res,t,leverage,dI,round,how,default,reason
+546,87 11 77 86 12 74,707008,0.167115,-0.476719,-3.02069,0.108168,0.1486,10,ai,keep,t=-3.0 h=0.11

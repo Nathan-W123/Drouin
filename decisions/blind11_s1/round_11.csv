@@ -1,0 +1,16 @@
+kind,item,action,reason
+assign,61 4 58 62 1 61@652,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,53 4 50 54 1 53@555,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,63 4 60 64 1 63@675,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,70 4 66 71 3 69@655,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,52 3 49 53 2 52@532,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,50 2 48 51 1 51@618,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,52 2 50 53 1 53@647,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,51 3 49 52 0 52@634,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,43 3 41 44 0 44@528,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,87 9 79 86 10 76@539,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+param,5000,release,"joint forward selection on the candidate set: each step dchi2>=9, value <=10x its magnitude scale (PK, also selected on the current lines: dchi2 63)"
+outlier,34,keep,t=5.8 measured before the supported PK release; release before reject
+outlier,20,keep,"t=4.9 (<5), high-J/Ka; release first"
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

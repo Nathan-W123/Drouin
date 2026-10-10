@@ -1,0 +1,6 @@
+kind,item,action,reason
+param,2300,hold,PJJK 34x - implausible by the scale rule (though it recurs across SO2-like cases)
+outlier,21,keep,"t=5.1 on 63(13,51); this exact transition is a top residual in sibling cases and fits once higher-order terms are present - model truncation, not a wrong label"
+stop,stop,yes,nothing left to add; only releases on offer are >=34x scale; converged
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

@@ -1,0 +1,15 @@
+kind,item,action,reason
+assign,77 23 55 78 22 56@633,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,73 22 52 74 21 53@620,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,75 23 53 76 22 54@653,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,71 22 50 72 21 51@651,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,67 21 47 68 20 48@637,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,68 22 46 69 21 49@682,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,73 23 51 74 22 52@681,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,70 22 48 71 21 51@657,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,64 21 43 65 20 46@673,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,63 21 43 64 20 44@683,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,65 21 45 66 20 46@658,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+param,2300,hold,PJJK at 30x scale - implausible
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

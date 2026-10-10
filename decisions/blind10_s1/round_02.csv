@@ -1,0 +1,9 @@
+kind,item,action,reason
+assign,3 2 2 2 1 1@268,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,12 2 10 12 1 11@192,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,22 3 19 22 2 20@255,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,2 2 0 2 1 1@228,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,15 3 13 15 2 14@315,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,4 2 2 5 1 5@112,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+all,assign,defer,not in the jointly consistent set; PhiJK release on 5 lines is premature
+all,defaults,confirm,remaining rule defaults reviewed

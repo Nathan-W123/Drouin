@@ -1,0 +1,6 @@
+kind,item,action,reason
+param,2300,hold,PJJK 30x - implausible by the scale rule
+outlier,683,keep,"t=-5.1 on 63(21,43), a high-Ka line that is a top residual in sibling cases - model truncation, not a wrong label"
+stop,stop,yes,nothing left to add; only releases on offer are >=30x scale; converged
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

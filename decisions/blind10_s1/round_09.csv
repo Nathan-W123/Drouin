@@ -1,0 +1,4 @@
+kind,item,action,reason
+outlier,157,unassign,leave-one-out: removing it drops rms 1.33->0.31 (dchi2 22); rank-3 hypothesis put this transition on peak 156 - let the evidence re-decide (no blacklist)
+all,assign,defer,wait for the refit without peak 157
+all,defaults,confirm,remaining rule defaults reviewed

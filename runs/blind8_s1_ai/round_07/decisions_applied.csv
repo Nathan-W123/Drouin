@@ -1,0 +1,68 @@
+kind,item,action,reason,source
+assign,C0001,defer,AI override (blanket): wait until the PKKKJ release is in,ai-override
+assign,C0002,defer,AI override (blanket): wait until the PKKKJ release is in,ai-override
+assign,C0003,defer,AI override (blanket): wait until the PKKKJ release is in,ai-override
+assign,C0004,defer,AI override (blanket): wait until the PKKKJ release is in,ai-override
+assign,C0005,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0006,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0007,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0008,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0009,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0010,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0011,defer,AI (blanket): wait until the PKKKJ release is in,ai
+assign,C0012,defer,AI (blanket): wait until the PKKKJ release is in,ai
+outlier,494,keep,AI override: release before reject,ai-override
+outlier,593,keep,AI override: release before reject,ai-override
+outlier,516,keep,AI override: release before reject,ai-override
+outlier,502,keep,AI override: release before reject,ai-override
+outlier,159,keep,AI override: release before reject,ai-override
+outlier,3,reject,AI confirmed default (remaining rule defaults reviewed); default: t=-13.4 h=0.69,ai-confirmed
+outlier,600,reject,AI confirmed default (remaining rule defaults reviewed); default: t=+12.6 h=0.10,ai-confirmed
+outlier,17,reject,AI confirmed default (remaining rule defaults reviewed); default: t=+12.0 h=0.59,ai-confirmed
+outlier,472,reject,AI confirmed default (remaining rule defaults reviewed); default: t=+11.2 h=0.53,ai-confirmed
+outlier,172,reject,AI confirmed default (remaining rule defaults reviewed); default: t=-10.3 h=0.43,ai-confirmed
+outlier,458,reject,AI confirmed default (remaining rule defaults reviewed); default: t=-10.0 h=0.10,ai-confirmed
+outlier,699,reject,AI confirmed default (remaining rule defaults reviewed); default: t=-9.9 h=0.11,ai-confirmed
+outlier,16,reject,AI confirmed default (remaining rule defaults reviewed); default: t=+9.5 h=0.62,ai-confirmed
+outlier,596,reject,AI confirmed default (remaining rule defaults reviewed); default: t=+8.6 h=0.22,ai-confirmed
+outlier,30,reject,AI confirmed default (remaining rule defaults reviewed); default: t=+8.3 h=0.55,ai-confirmed
+outlier,507,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+7.8 h=0.14,ai-confirmed
+outlier,656,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-7.8 h=0.06,ai-confirmed
+outlier,517,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+7.5 h=0.20,ai-confirmed
+outlier,151,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-7.3 h=0.11,ai-confirmed
+outlier,485,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-7.3 h=0.16,ai-confirmed
+outlier,590,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+6.6 h=0.27,ai-confirmed
+outlier,186,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+6.1 h=0.13,ai-confirmed
+outlier,28,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-6.0 h=0.84,ai-confirmed
+outlier,19,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-5.9 h=0.44,ai-confirmed
+outlier,424,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-5.5 h=0.23,ai-confirmed
+outlier,614,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+5.4 h=0.28,ai-confirmed
+outlier,25,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-5.3 h=0.16,ai-confirmed
+outlier,580,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-5.2 h=0.24,ai-confirmed
+outlier,487,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-5.2 h=0.10,ai-confirmed
+outlier,453,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-5.2 h=0.17,ai-confirmed
+outlier,443,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-5.0 h=0.02,ai-confirmed
+outlier,10,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+4.9 h=0.13,ai-confirmed
+outlier,608,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-4.7 h=0.02,ai-confirmed
+outlier,509,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-4.7 h=0.21,ai-confirmed
+outlier,150,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+4.6 h=0.10,ai-confirmed
+outlier,540,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+4.4 h=0.02,ai-confirmed
+outlier,426,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-4.3 h=0.12,ai-confirmed
+outlier,162,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-4.0 h=0.09,ai-confirmed
+outlier,92,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.9 h=0.02,ai-confirmed
+outlier,82,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.9 h=0.06,ai-confirmed
+outlier,430,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.8 h=0.05,ai-confirmed
+outlier,504,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.7 h=0.32,ai-confirmed
+outlier,571,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.6 h=0.46,ai-confirmed
+outlier,505,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.5 h=0.18,ai-confirmed
+outlier,488,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.5 h=0.10,ai-confirmed
+outlier,29,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.5 h=0.26,ai-confirmed
+outlier,27,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.4 h=0.42,ai-confirmed
+outlier,511,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.2 h=0.17,ai-confirmed
+outlier,106,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.1 h=0.03,ai-confirmed
+outlier,111,keep,AI confirmed default (remaining rule defaults reviewed); default: t=+3.0 h=0.06,ai-confirmed
+param,4100,release,"AI: PKKKJ: dchi2=2651 after the new high-Ka lines; 18x its scale, but the joint check that vetted those lines included it (my hold last round was the mistake)",ai
+param,3200,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=2310.4 |v/s|=48.2 |v|/scale=20,ai-confirmed
+param,5100,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=2180.7 |v/s|=47.0 |v|/scale=5.3e+02,ai-confirmed
+param,2300,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=1463.3 |v/s|=38.3 |v|/scale=1.1e+02,ai-confirmed
+param,6000,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=461.7 |v/s|=21.5 |v|/scale=1.6e+02,ai-confirmed

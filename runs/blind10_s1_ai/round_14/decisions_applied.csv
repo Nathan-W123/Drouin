@@ -1,0 +1,9 @@
+kind,item,action,reason,source
+assign,C0001,defer,AI (blanket): not in the jointly consistent set,ai
+outlier,21,keep,"AI override: t=5.1 on 63(13,51); this exact transition is a top residual in sibling cases and fits once higher-order terms are present - model truncation, not a wrong label",ai-override
+outlier,656,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-4.0 h=0.35,ai-confirmed
+outlier,640,keep,AI confirmed default (remaining rule defaults reviewed); default: t=-3.5 h=0.03,ai-confirmed
+param,2300,hold,AI override: PJJK 34x - implausible by the scale rule (though it recurs across SO2-like cases),ai-override
+param,5100,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=22.1 |v/s|=4.7 |v|/scale=1.7e+02,ai-confirmed
+param,6000,hold,AI confirmed default (remaining rule defaults reviewed); default: dchi2=10.3 |v/s|=3.2 |v|/scale=51,ai-confirmed
+stop,stop,yes,AI: nothing left to add; only releases on offer are >=34x scale; converged,ai

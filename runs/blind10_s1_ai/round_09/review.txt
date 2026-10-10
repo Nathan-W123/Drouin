@@ -1,0 +1,35 @@
+# blind10 seed 1 arm ai -- round 9
+
+assigned peaks 13, floating params 9, last rms (weighted) 1.328
+predictions considered 2077, with candidates 963, unresolvable windows 346, p_have=0.05 (from 461 sharp predictions)
+candidate rows 1159: default accept 0 (of which flagged 0), deferred with P>=0.5: 20
+
+OUTLIERS (top 8):
+
+RELEASE forward selection (<=10x scale): none
+  other trials: []
+  current 13 lines: rms 1.328 with releases (without: 1.328)
+
+JOINT defaults: nothing to add
+
+JOINT defaults+P>=0.9: nothing to add
+
+JOINT defaults+P>=0.5: 13 added -> kept 4, removed 9, rms 1.258
+   removed  558 21 7 15 21 6 16        z=+23.0
+   removed  568 13 7 7 13 6 8          z=-0.5
+   removed  567 14 7 7 14 6 8          z=-7.2
+   removed  560 20 7 13 20 6 14        z=+24.2
+   removed   39 25 4 22 24 5 19        z=+0.1
+   removed  578 44 2 42 44 1 43        z=-0.0
+   removed  597 40 3 37 39 4 36        z=-0.1
+   removed  254 36 5 31 35 6 30        z=-0.2
+   removed  465 32 12 20 33 11 23      z=-114.8
+
+JOINT-RELEASE defaults: releases [] -> kept 0, removed 0, rms 1.328
+   RELEASE_IDS 
+
+JOINT-RELEASE defaults+P>=0.9: releases [] -> kept 0, removed 0, rms 1.328
+   RELEASE_IDS 
+
+SERIES (top 6):
+series dJ=-1 Ka'=5 Ka"=4 parity=0,1: 5 coherent members, r0=+0.011926 tol=4.9e-03, expected by chance 1.09, P(chance)=5.2e-03

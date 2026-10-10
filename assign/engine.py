@@ -325,10 +325,10 @@ class Run:
                     blanket[item] = (action, reason)
                 continue
             kind, item = alias.get((kind, item), (kind, item))
-            if (kind, item) not in out and kind not in ("stop",):
+            if (kind, item) not in out and kind not in ("stop", "boot"):
                 raise ValueError(f"decision for unknown item {kind} {item} in {path}")
-            if kind == "stop":
-                out[("stop", "stop")] = (action, "AI: " + reason, "ai")
+            if kind in ("stop", "boot"):  # boot,restart,yes: rerun the hypothesis search next round
+                out[(kind, item)] = (action, "AI: " + reason, "ai")
                 continue
             if action != out[(kind, item)][0]:
                 n_over += 1
@@ -537,6 +537,8 @@ class Run:
             elif a == "reject":
                 self.rejected.add((pid, k))
         stop = dec.get(("stop", "stop"), ("no",))[0] == "yes"
+        if dec.get(("boot", "restart"), ("no",))[0] == "yes" and not self.assign:
+            self.boot = False  # e.g. the accepted hypothesis was self-consistent but false: search again
         snapshot = (self.model.to_json(), self.var_text, dict(self.resid))
         fit = self._fit_and_update()
         n_broke = 0
@@ -572,7 +574,7 @@ class Run:
         fit["n_broke_fit"] = n_broke
         self._record(rdir, dict(n_accept=n_acc, n_reject=n_rej, released=released, overrides=n_over,
                                 p_have=info["p_have"], n_candidates=len(crows), **fit))
-        if stop or (n_acc == 0 and n_rej == 0 and not released) or self.round >= self.s["max_rounds"]:
+        if stop or (n_acc == 0 and n_rej == 0 and not released and self.boot) or self.round >= self.s["max_rounds"]:
             self.done = True
 
     def _apply_series_rule(self, crows):

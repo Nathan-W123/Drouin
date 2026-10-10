@@ -1,0 +1,6 @@
+kind,item,action,reason
+param,1399,hold,LJJK at 920x scale - implausible
+outlier,28,keep,"t=4.4 (<5) amid systematic K-doublet residuals - a model problem, not evidence this label is wrong"
+stop,stop,yes,"stuck: all 10 remaining candidates (Ka=3-5 K-doublets) fail with systematic same-sign residuals; no release <=10x scale (incl. HK, l3 tried) and no single bad line (LOO) explains it. Reported as a partial result"
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

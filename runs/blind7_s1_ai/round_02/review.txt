@@ -1,0 +1,69 @@
+# blind7 seed 1 arm ai -- round 2
+
+assigned peaks 3, floating params 8, last rms (weighted) 53.186
+predictions considered 726, with candidates 349, unresolvable windows 288, p_have=0.65 (from 59 sharp predictions)
+candidate rows 744: default accept 6 (of which flagged 0), deferred with P>=0.5: 153
+
+OUTLIERS (top 8):
+
+RELEASE forward selection (<=10x scale): none
+  other trials: []
+  current 3 lines: rms 1.220 with releases (without: 53.186)
+
+JOINT defaults: 6 added -> kept 0, removed 6, rms 1.220
+   removed   18 17 5 12 17 5 13        z=+nan
+   removed   45 5 2 3 5 2 4            z=-237.8
+   removed   75 18 3 15 18 3 16        z=+nan
+   removed  265 12 1 11 11 1 10        z=+nan
+   removed  181 6 2 4 5 2 3            z=+nan
+   removed  206 8 2 6 7 2 5            z=+nan
+
+JOINT defaults+P>=0.9: 11 added -> kept 0, removed 11, rms 1.220
+   removed   18 17 5 12 17 5 13        z=+nan
+   removed   45 5 2 3 5 2 4            z=-237.8
+   removed   75 18 3 15 18 3 16        z=+nan
+   removed  265 12 1 11 11 1 10        z=+nan
+   removed  181 6 2 4 5 2 3            z=+nan
+   removed  206 8 2 6 7 2 5            z=+nan
+   removed  165 5 2 3 4 2 2            z=+nan
+   removed   65 35 5 30 35 5 31        z=+nan
+   removed   99 31 4 27 31 4 28        z=+nan
+   removed   90 30 4 26 30 4 27        z=+nan
+
+JOINT defaults+P>=0.5: 40 added -> kept 0, removed 40, rms 1.220
+   removed   18 17 5 12 17 5 13        z=+nan
+   removed   45 5 2 3 5 2 4            z=-237.8
+   removed   75 18 3 15 18 3 16        z=+nan
+   removed  265 12 1 11 11 1 10        z=+nan
+   removed  181 6 2 4 5 2 3            z=+nan
+   removed  206 8 2 6 7 2 5            z=+nan
+   removed  165 5 2 3 4 2 2            z=+nan
+   removed   65 35 5 30 35 5 31        z=+nan
+   removed   99 31 4 27 31 4 28        z=+nan
+   removed   90 30 4 26 30 4 27        z=+nan
+
+JOINT-RELEASE defaults: releases [] -> kept 0, removed 6, rms 1.220
+   RELEASE_IDS 
+   removed   18 17 5 12 17 5 13        z=+nan
+   removed   45 5 2 3 5 2 4            z=-237.8
+   removed   75 18 3 15 18 3 16        z=+nan
+   removed  265 12 1 11 11 1 10        z=+nan
+   removed  181 6 2 4 5 2 3            z=+nan
+   removed  206 8 2 6 7 2 5            z=+nan
+
+JOINT-RELEASE defaults+P>=0.9: releases [] -> kept 0, removed 11, rms 1.220
+   RELEASE_IDS 
+   removed   18 17 5 12 17 5 13        z=+nan
+   removed   45 5 2 3 5 2 4            z=-237.8
+   removed   75 18 3 15 18 3 16        z=+nan
+   removed  265 12 1 11 11 1 10        z=+nan
+   removed  181 6 2 4 5 2 3            z=+nan
+   removed  206 8 2 6 7 2 5            z=+nan
+   removed  165 5 2 3 4 2 2            z=+nan
+   removed   65 35 5 30 35 5 31        z=+nan
+
+SERIES (top 6):
+series dJ=0 Ka'=8 Ka"=8 parity=0,1: 12 coherent members, r0=-0.990322 tol=2.4e-02, expected by chance 0.12, P(chance)=1.0e-300
+series dJ=0 Ka'=7 Ka"=7 parity=0,1: 13 coherent members, r0=-0.968186 tol=1.1e-02, expected by chance 0.90, P(chance)=1.7e-11
+series dJ=0 Ka'=6 Ka"=6 parity=0,1: 10 coherent members, r0=+0.119457 tol=1.3e-01, expected by chance 7.83, P(chance)=2.6e-01
+series dJ=0 Ka'=4 Ka"=4 parity=0,1: 20 coherent members, r0=+0.080102 tol=1.3e-01, expected by chance 23.88, P(chance)=8.1e-01

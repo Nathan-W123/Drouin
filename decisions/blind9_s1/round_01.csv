@@ -1,0 +1,3 @@
+kind,item,action,reason
+hyp,1,accept,"Z 19.0, tied with rank 2, which differs only in the 4(3,1) anchor peak; rank 1 has the same core; LOO next round decides"
+all,defaults,confirm,"other hypotheses weaker or conflicting; anchors verified by leave-one-out next round"

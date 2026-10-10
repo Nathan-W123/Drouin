@@ -1,0 +1,4 @@
+kind,item,action,reason
+boot,restart,yes,"from the prior every window is unresolvable (2000+ of 2200); return to the hypothesis search and test the next-ranked hypotheses, since rank 1 proved self-consistent but false"
+all,assign,defer,prior-only predictions; candidates not resolvable
+all,defaults,confirm,remaining rule defaults reviewed

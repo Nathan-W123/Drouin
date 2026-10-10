@@ -1,0 +1,11 @@
+kind,item,action,reason
+assign,3 3 0 3 3 1@5,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,20 3 17 21 1 20@122,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,45 4 41 46 2 44@61,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,12 5 7 12 5 8@6,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,13 11 2 12 11 1@276,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,13 11 3 12 11 2@276,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+param,1399,hold,"LJJK at 1500x its scale - implausible, absorbing errors"
+outlier,32,keep,t=-4.1 (<5) while the model is still incomplete (rms 1.24)
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

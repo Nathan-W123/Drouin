@@ -92,6 +92,7 @@ outlier,161,reject,"<reason>"          # reject = remove; the pair returns flagg
 param,3000,release,"<reason>"
 all,assign,defer,"<reason>"            # blanket action for all rows of a kind not listed
 all,defaults,confirm,"<reason>"        # required: confirms the remaining rule-based defaults
+boot,restart,yes,"<reason>"            # with no lines assigned: rerun the bootstrap hypothesis search
 stop,stop,yes,"<reason>"
 ```
 
@@ -103,7 +104,7 @@ applies the default parameter releases, so hold any release you do not want expl
 
 ### Blind cases
 
-`python3 scripts/make_blind.py 3 3` builds six cases whose molecule order, frequency scale factor and
+`python3 scripts/make_blind.py 3 3 [first_index]` builds six cases whose molecule order, frequency scale factor and
 data seed are hidden in `testcases/blindN_s1/truth_blind.json` (read only by `score.py`). See REPORT §3.3.
 
 ## File-format notes (learned the hard way)

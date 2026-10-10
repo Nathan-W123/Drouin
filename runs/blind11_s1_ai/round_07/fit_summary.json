@@ -1,0 +1,29 @@
+{
+ "n_accept": 36,
+ "n_reject": 0,
+ "released": [
+  "PhiK",
+  "PhiKJ"
+ ],
+ "overrides": 6,
+ "p_have": 0.5,
+ "n_candidates": 2486,
+ "rms": 0.8861388139530579,
+ "chi2": 33.390871452406195,
+ "fit_ok": true,
+ "relaxed": [
+  "A",
+  "B",
+  "C",
+  "-DelK",
+  "-DelJK",
+  "-DelJ",
+  "-delK",
+  "-delJ"
+ ],
+ "n_broke_fit": 0,
+ "round": 7,
+ "n_assigned": 39,
+ "n_lines": 39,
+ "n_float": 10
+}

@@ -1,0 +1,20 @@
+kind,item,action,reason
+assign,15 5 10 15 5 11@14,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,9 4 5 9 4 6@15,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,20 6 14 20 6 15@9,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,19 6 13 19 6 14@7,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,21 6 15 21 6 16@12,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,25 7 18 25 7 19@4,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,11 5 6 11 5 7@3,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,16 6 10 16 6 11@2,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,22 6 16 22 6 17@16,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,23 6 17 23 6 18@17,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,12 4 8 12 4 9@26,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,28 7 21 28 7 22@10,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,19 5 14 19 5 15@27,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,20 5 15 20 5 16@28,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+assign,10 4 7 9 4 6@236,accept,"jointly consistent with the current model (grown one at a time, converged fits only)"
+param,399,release,"joint forward selection on the candidate set: each step dchi2>=9, value <=10x its magnitude scale"
+param,70099,release,"joint forward selection on the candidate set: each step dchi2>=9, value <=10x its magnitude scale"
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed
