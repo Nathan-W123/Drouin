@@ -4,6 +4,9 @@
   python -m assign.whatif <case> <seed> <arm> [--drop 14,27] [--only-dJ 1]
 """
 import argparse
+import csv
+import os
+
 import numpy as np
 from .engine import Run
 
@@ -38,12 +41,50 @@ def whatif(run, drop=(), only_dJ=None, release=(), base=None):
     return r, res, z, assign
 
 
-def prune_inconsistent(run, base, zmax=4.0, max_steps=300):
-    """Remove *added* lines one at a time (largest |z| first) while any added line has |z| > zmax."""
+def _bad_fit(r, res):
+    """A trial fit whose z values cannot be trusted: not converged, or non-physical residuals."""
+    return r is None or not r.ok or not res or max(abs(v["z"]) for v in res.values()) > 1e4
+
+
+def grow_consistent(run, base, zmax=4.0, order=None):
+    """Robust alternative used when the joint trial fit diverges: start from the current assignments and
+    add the trial lines one at a time (in the given order), keeping a line only if the fit converges and
+    every line stays within |z| <= zmax. A line is reported as removed only with the z of a *converged*
+    fit (z=nan if its own addition made the fit diverge)."""
+    cur = {p: list(ks) for p, ks in run.assign.items()}
+    added = [(p, k) for p, ks in base.items() for k in ks if k not in run.assign.get(p, [])]
+    if order:
+        rank = {pk: i for i, pk in enumerate(order)}
+        added.sort(key=lambda pk: rank.get(pk, 1e9))
+    removed = []
+    for p, k in added:
+        trial = {q: list(v) for q, v in cur.items()}
+        trial.setdefault(p, []).append(k)
+        r, res, chi = run.fit(assign=trial)
+        if _bad_fit(r, res):
+            removed.append((p, [k], float("nan")))
+            continue
+        worst = max(abs(v["z"]) for v in res.values())
+        if worst > zmax:
+            removed.append((p, [k], res.get(p, {}).get("z", float("nan"))))
+            continue
+        cur = trial
+    r, res, chi = run.fit(assign=cur)
+    z = np.array([v["z"] for v in res.values()])
+    kept = {p: [k for k in ks if k not in run.assign.get(p, [])] for p, ks in cur.items()}
+    return {p: ks for p, ks in kept.items() if ks}, removed, float(np.sqrt(np.mean(z ** 2)))
+
+
+def prune_inconsistent(run, base, zmax=4.0, max_steps=300, order=None):
+    """Remove *added* lines one at a time (largest |z| first) while any added line has |z| > zmax.
+    Only z values of converged fits are used: if a trial fit diverges, switch to grow_consistent."""
     cur = {p: list(ks) for p, ks in base.items()}
     removed = []
     for _ in range(max_steps):
         r, res, chi = run.fit(assign=cur)
+        if _bad_fit(r, res):
+            kept, rem, rms = grow_consistent(run, base, zmax, order)
+            return kept, removed + rem, rms
         added = [p for p in cur if any(k not in run.assign.get(p, []) for k in cur[p])]
         bad = [p for p in added if p in res and abs(res[p]["z"]) > zmax]
         if not bad:
@@ -108,12 +149,16 @@ def main():
     base = None
     if a.add_round:
         base = add_candidates(run.assign, a.add_round, a.add_p, [x for x in a.add.split(";") if x], a.add_defaults)
+    order = None
+    if a.add_round:
+        rows = sorted(csv.DictReader(open(os.path.join(a.add_round, "proposal.csv"))), key=lambda r: -float(r["P"]))
+        order = [(int(r["peak"]), tuple(int(x) for x in r["key"].split())) for r in rows]
     if (a.subset is not None or a.prune is not None) and base is not None:
         from .engine import _with_trial
         for idp in rel:  # pruning must use the same trial model as the plain what-if fit
             run.model = _with_trial(run.model, run.model.get(idp))
         kept, removed, rms = (consistent_subset(run, base, a.subset) if a.subset is not None
-                              else prune_inconsistent(run, base, a.prune))
+                              else prune_inconsistent(run, base, a.prune, order=order))
         print(f"consistent subset: kept {sum(len(v) for v in kept.values())} added lines, removed {len(removed)}, rms {rms:.3f}")
         for p, ks, z in removed:
             print(f"   removed peak {p:4d} {';'.join(' '.join(map(str, k)) for k in ks):<28s} z {z:+.1f}")

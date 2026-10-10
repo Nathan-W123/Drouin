@@ -76,6 +76,7 @@ class Run:
         self.s["i_det"] = meta["detection_limit_lgint"]
         self.s["fwhm_factor"] = 7.162e-7 * math.sqrt(self.cfg.get("temperature_K", 300.0) / self.cfg["mass_amu"])
         self.peaks = Peaks.load(os.path.join(self.tc, "peaks.csv"))
+        self.s.setdefault("i_det_match", float(self.peaks.lgint.min()) - 0.3)
         self.dir = os.path.join(pk.ROOT, "runs", f"{self.case}_s{seed}_{arm}{tag}")
         self.dec_dir = os.path.join(pk.ROOT, "decisions", f"{self.case}_s{seed}{tag}")
         # finite-difference step (target 99th-percentile line shift, MHz). 300 is the validated value; the

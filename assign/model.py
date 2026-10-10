@@ -27,7 +27,15 @@ def load_case(name):
     with open(path) as f:
         cfg = json.load(f)
     cfg["key"] = os.path.splitext(os.path.basename(path))[0]
+    # blind cases: every Hamiltonian parameter (hence every frequency) is multiplied by a hidden factor;
+    # the code reads it, the decision-maker never sees it
+    if cfg.get("blind_truth") and os.path.exists(rel(cfg["blind_truth"])):
+        cfg["_scale"] = json.load(open(rel(cfg["blind_truth"])))["scale"]
     return cfg
+
+
+def scale(cfg):
+    return cfg.get("_scale", 1.0)
 
 
 def rel(path):
@@ -73,7 +81,9 @@ def official_params(cfg):
         out[p.idpar] = (p.value, p.prior, p.label)
     if cfg.get("official_sigma_var"):  # fitted uncertainties from a re-run of the official fit
         sig = {q.idpar: q.prior for q in pk.read_par(rel(cfg["official_sigma_var"]), cfg["official_nopt"]).params}
-        out = {k: (v, sig.get(k, s), lab) for k, (v, s, lab) in out.items()}
+        out = {k: (v, sig.get(k, s_), lab) for k, (v, s_, lab) in out.items()}
+    f = scale(cfg)
+    out = {k: (v * f, s_ * f, lab) for k, (v, s_, lab) in out.items()}
     if cfg.get("official_symmetric_form"):
         x1, s1, _ = out.pop(1099)
         x2, s2, _ = out.pop(199)

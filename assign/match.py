@@ -57,8 +57,10 @@ def _density(peaks, free_mask, f, half=5000.0):
 
 
 def usable(pred, settings):
-    """Predictions that are in range and above the detection limit (with margin)."""
-    return np.where(pred.lgint >= settings["i_det"] - settings["int_margin"])[0]
+    """Predictions that are in range and above the detection limit (with margin). The matching limit is
+    the weakest observed peak when available (i_det_match), so very weak true lines are not excluded."""
+    lim = settings.get("i_det_match", settings["i_det"])
+    return np.where(pred.lgint >= lim - settings["int_margin"])[0]
 
 
 def sep_sigma(pred, i, k):
@@ -104,7 +106,7 @@ def candidates(pred, peaks, assigned_peaks, assigned_keys, rejected, settings):
     for i in idx:
         s0 = math.hypot(pred.sigma[i], med_err)
         a, b = peaks.window(pred.freq[i] - nwin * s0 * 1.5, pred.freq[i] + nwin * s0 * 1.5)
-        js = [j for j in range(a, b) if free[j] and (int(peaks.id[j]), pred.keys[i]) not in rejected]
+        js = [j for j in range(a, b) if free[j]]  # previously rejected pairs are re-proposed (flagged)
         if len(js) > settings["max_in_window"]:
             n_unres += 1
             continue
@@ -164,11 +166,14 @@ def candidates(pred, peaks, assigned_peaks, assigned_keys, rejected, settings):
                 flags.append("intensity")
             if abs(c["z"]) > 3:
                 flags.append("far")
+            prev_rej = (int(peaks.id[j]), pred.keys[i]) in rejected
+            if prev_rej:
+                flags.append("prev-rejected")
             Pb = c["P"]
             if blend_with:  # re-evaluate intensity with the summed blend intensity
                 tot_int = math.log10(sum(10 ** pred.lgint[k] for k in [i] + blend_with))
                 c["dI_blend"] = peaks.lgint[j] - tot_int
-            ok = (rank == 0 and Pb >= settings["p_accept"] and contest <= 0.05 and abs(c["z"]) <= 3)
+            ok = (rank == 0 and Pb >= settings["p_accept"] and contest <= 0.05 and abs(c["z"]) <= 3 and not prev_rej)
             if ok and blend_with:
                 ok = all(by_pred[k][0]["j"] == j and by_pred[k][0]["P"] >= settings["p_accept"] for k in blend_with) \
                     and abs(c.get("dI_blend", 0)) < 0.75

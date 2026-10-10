@@ -30,7 +30,7 @@ import zlib
 import numpy as np
 
 from . import pickett as pk
-from .model import load_case, rel, starting_model, official_params
+from .model import load_case, rel, starting_model, official_params, scale
 
 DEFAULTS = dict(
     seed=1,
@@ -69,6 +69,7 @@ def read_lin_rows(cfg, v):
             continue
         if e < 0:  # wavenumber units
             f, e = f * pk.MHZ_PER_CM, -e * pk.MHZ_PER_CM
+        f, e = f * scale(cfg), e * scale(cfg)  # blind cases: hidden overall scale
         rows.append((tuple(q[i] for i in lay["up"]) + tuple(q[i] for i in lay["lo"]), f, e))
     return rows
 
@@ -104,6 +105,7 @@ def official_catalog_v(cfg, dipoles, vib):
         p = par.copy()
         for q in p.params:
             q.prior = 0.0
+            q.value *= scale(cfg)
         p.write(os.path.join(d, "x.var"))
         open(os.path.join(d, "x.int"), "w").write(int_text(cfg, dipoles))
         pk._run(pk.SPCAT, d, ["x.var", "x.int"])
@@ -115,7 +117,8 @@ def official_catalog_v(cfg, dipoles, vib):
 def build(case, **kw):
     cfg = load_case(case)
     s = dict(DEFAULTS, **{k: v for k, v in kw.items() if v is not None})
-    ss = np.random.SeedSequence([s["seed"], zlib.crc32(cfg["key"].encode())])
+    secret = s.pop("secret_seed", None)  # blind cases: data/perturbation seed not known to the decision-maker
+    ss = np.random.SeedSequence([secret if secret is not None else s["seed"], zlib.crc32(cfg["key"].encode())])
     rng_data, rng_const = [np.random.default_rng(x) for x in ss.spawn(2)]
     fmin, fmax = cfg["fmin_mhz"], cfg["fmax_mhz"]
     log = []
@@ -173,7 +176,7 @@ def build(case, **kw):
                     cand.append(p)
         elif d["kind"] == "catalog":
             cat = pk.read_cat(rel(d["path"]))
-            for k, f, li in zip(cat.keys(), cat.freq, cat.lgint):
+            for k, f, li in zip(cat.keys(), cat.freq * scale(cfg), cat.lgint):
                 if fmin <= f <= fmax:
                     cand.append(dict(freq=float(f), err=float(rng_data.choice(errs_true)), labels=[k],
                                      lgint=float(li + np.log10(d["abundance"]))))
