@@ -1,0 +1,4 @@
+runs/
+external/pickett_src/
+__pycache__/
+*.pyc

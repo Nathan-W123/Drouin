@@ -1,0 +1,71 @@
+HTML-Title|SO2, v2=1
+Species tag|064503
+Species name|SO<sub>2</sub>, <font color="red"><i>v</i><sub>2</sub> = 1</font>
+Species state|Sulfur dioxide, <i>v</i><sub>2</sub> = 1
+image|PNG/SO2_cat.png
+Version|2*
+Date of Entry|July 2005
+Contributors|H. S. P. M&uuml;ller
+comments|With respect to the Dec. 1999 entry, a combined fit of the
+comments|<i>v</i><sub>2</sub> = 0 and 1 data has been performed.
+comments|Details of the fit have been published in<br><font color="#064898">
+comments|(1) H. S. P. M&uuml;ller and S. Br&uuml;nken,
+comments|2005, <i>J. Mol. Spectrosc.</i>, <b>232</b>, 213</font>.<br>
+comments|A considerable number of rotational transitions was taken from that
+comments|work. Additional <i>v</i><sub>2</sub> = 0, 1 transition frequencies
+comments|were taken from the compilation of<br><font color="#064898">
+comments|(2) F. J. Lovas 1985, <i>J. Phys. Chem. Ref. Data</i>
+comments|<b>14</b>, 395</font>; from<br><font color="#064898">
+comments|(3) S. C. Mehrotra, G. Bestmann, H. Dreizler, and H. M&auml;der,
+comments|1984, <i>Z. Naturforsch.</i> <b>39a</b>, 633</font>; from<br><font color="#064898">
+comments|(4) S. C. Mehrotra, H. Dreizler, and H. M&auml;der,
+comments|1984, <i>Z. Naturforsch.</i> <b>40a</b>, 683</font>; from<br><font color="#064898">
+comments|(5) P. A. Helminger and F. C. De Lucia
+comments|1985, <i>J. Mol. Spectrosc.</i> <b>111</b>, 66</font>; from<br><font color="#064898">
+comments|(6) E. A. Alekseev, S. F. Dyubko, V. V. Ilyushin, and S. V. Podnos
+comments|1996, <i>J. Mol. Spectrosc.</i> <b>176</b>, 316;</font> and from<br><font color="#064898">
+comments|(7) H. S. P. M&uuml;ller, J. Farhoomand, E. A. Cohen,
+comments|B. Brupbacher-Gatehouse, M. Sch&auml;fer, A. Bauder, and G. Winnewisser,
+comments|2000, <i>J. Mol. Spectrosc.</i>, <b>201</b>, 1</font>.<br>
+comments|Further <i>v</i> = 0 data were taken from<br><font color="#064898">
+comments|(8) S. P. Belov, M. Y. Tretyakov, I. N. Kozin, E. Klisch,
+comments|G. Winnewisser, W. J. Lafferty, and J.-M. Flaud,
+comments|1998, <i>J. Mol. Spectrosc.</i> <b>191</b>, 17</font>.<br>
+comments|The <i>v</i><sub>2</sub> = 1 &#150; 0 energy difference was
+comments|determined by including &nu;<sub>2</sub> infrared transitions
+comments|from<br><font color="#064898">
+comments|J.-M. Flaud, A. Perrin, L. M. Salah, and W. J. Lafferty,
+comments|1993, <i>J. Mol. Spectrosc.</i> <b>160</b>, 272</font>.<br>
+comments|Transitions with uncertainties much larger than those at
+comments|similar frequencies and with similar quantum numbers have not
+comments|been merged.<br>
+comments|Predicted uncertainties of the transition frequencies should be
+comments|reliable up to about 3<i>K"<sub>a</sub></i> + <i>J"</i>
+comments|&asymp; 100.<br>
+comments|The dipole moment is from<br><font color="#064898">
+comments|(10) D. Patel D. Margolese, and T. R. Dyke
+comments|1979, <i>J. Chem. Phys.</i> <b>70</b>, 2740</font>.<br>
+comments|The partition function includes both vibrational states.
+comments|The individual contributions (> 0) are given in parentheses.<br>
+Lines Listed|9808
+Frequency / GHz|&lt; 6053
+Max. <i>J</i>|107
+log STR0|-10.0
+log STR1|-9.7
+Isotope Corr.|-0.022
+Egy / (cm<sup>&#150;1</sup>)|517.872
+&nbsp;<i>&micro;<sub>a</sub></i> / D|&nbsp;
+&nbsp;<i>&micro;<sub>b</sub></i> / D|1.6261
+&nbsp;<i>&micro;<sub>c</sub></i> / D|&nbsp;
+&nbsp;<i>A</i> / MHz|61954.816
+&nbsp;<i>B</i> / MHz|10320.397
+&nbsp;<i>C</i> / MHz|8783.856
+&nbsp;Q(500.0)|15611.7483 (12760.7317, 2851.0166)
+&nbsp;Q(300.0)|6408.3217 (5918.7218, 489.5998)
+&nbsp;Q(225.0)|3980.5709 (3841.7136, 138.8572)
+&nbsp;Q(150.0)|2104.4840 (2090.0601, 14.4239)
+&nbsp;Q(75.00)|739.0517 (739.0162, 0.0355)
+&nbsp;Q(37.50)|261.6622 (261.6622)
+&nbsp;Q(18.75)|92.8412 (92.8412)
+&nbsp;Q(9.375)|33.0703 (33.0703)
+detected in ISM/CSM|yes

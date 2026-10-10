@@ -1,0 +1,1939 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>CRIB sheet for SPFIT/SPCAT</title>
+  <link rel="SHORTCUT ICON" href="../../gifs/prospe.ico">
+</head>
+<body style="color: rgb(0, 0, 0); background-color: rgb(239, 239, 214); background-image: url(../../prospebk.gif);" vlink="#0080c0" link="#0000ff" leftmargin="0" alink="#ff0000" topmargin="0">
+<div align="center">
+<center>
+<table width="770" cellspacing="0" cellpadding="10" border="0">
+  <tbody>
+    <tr>
+      <td valign="top">
+      <table bordercolordark="#808080" bordercolorlight="#FFFFFF" width="100%" cellspacing="0" cellpadding="15" bordercolor="#008080" border="0" bgcolor="#008080">
+        <tbody>
+          <tr>
+            <td bordercolor="#008080" bordercolordark="#008080" bordercolorlight="#008080" width="30%" bgcolor="#008080" align="center" valign="top"><font size="5" face="Comic Sans MS" color="#ffffff"><em>Crib-Sheet</em></font></td>
+            <td bordercolor="#008080" bordercolordark="#008080" bordercolorlight="#008080" width="70%" bgcolor="#e1e1b3"><font size="5">to
+
+            </font><font size="5" face="Courier New">SPFIT</font><font size="5"> and </font><font size="5" face="Courier New">SPCAT</font><font size="5"> of Herbert Pickett</font></td>
+          </tr>
+        </tbody>
+      </table>
+      <pre>  <br></pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>
+      	The SPFIT/SPCAT program suite of Pickett (available from <a href="http://spec.jpl.nasa.gov/">JPL Molecular Spectroscopy</a>)
+ is currently the most widely used tool for analysis of high-resolution 
+spectra and for their prediction, most notably for spectroscopy 
+databases for atmospheric and astrophysical applications.&nbsp; The 
+appeal of the package lies in flexible construction of the molecular 
+Hamiltonian and in very efficient internal matrix factorization.&nbsp; 
+This allows a single package to deal with widely varying molecular 
+problems and for very fast operation.&nbsp; The package is well known 
+for its steep learning curve so that various help documents (such as 
+this one) are available.<br><br><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T</font>his Crib-Sheet contains loose notes based only on applications of Pickett's SPFIT/SPCAT (or
+CALFIT/CALCAT) program package tried by <a href="mailto:kisiel@ifpan.edu.pl">kisiel@ifpan.edu.pl</a> and dating back to the 1990s. These notes
+should only be used once you are familiar with the documentation of the package:<br>
+</p>
+<ul>
+  <li>'official'
+documentation of the package is contained in <a href="http://spec.jpl.nasa.gov/ftp/pub/calpgm/spinv.pdf">http://spec.jpl.nasa.gov/ftp/pub/calpgm/spinv.pdf</a>.
+
+      </li>
+  <li>annotated version of the above<a href="http://info.ifpan.edu.pl/%7Ekisiel/asym/pickett/spinv15_annotated.pdfm/spinv.pdf"> </a>is available on the PROSPE website at <a href="http://info.ifpan.edu.pl/%7Ekisiel/asym/pickett/spinv15_annotated.pdf">http://info.ifpan.edu.pl/~kisiel/asym/pickett/spinv15_annotated.pdf</a>.</li>
+</ul>
+<p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Several
+versions
+of
+ the programs have been published by HMP since these notes
+started. Some comments may therefore have been superseded by
+developments, and may not apply to the latest program versions. The
+doublet PI subroutine set has not yet been used and statistical weights
+on intensities have generally been disregarded.&nbsp; Many years have 
+passed since these note were started and I currently find that I most 
+often tend to jump directly to the <a href="#app1">Parameter indices and names</a> section.&nbsp; I also recommend the <a href="#spfith">SPFIT Notes and Hints</a> and <a href="#spcath">SPCAT Notes and Hints</a>, since these cover points that either pose difficulties or are not obvious to the users.<br></p>
+      <p align="right">updated: 29.VIII.2024</p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Notes:</p>
+      <ul type="disc">
+        <li>The use of SPFIT/SPCAT should be
+acknowledged in publications by citing: H.M.Pickett, <em>J.Mol.Spectrosc.</em>
+          <strong>148</strong>,371-377(1991).<br>
+        </li>
+        <li>Current versions of the programs are available from <a href="http://spec.jpl.nasa.gov">http://spec.jpl.nasa.gov</a> and are
+collected at <a href="http://spec.jpl.nasa.gov/ftp/pub/calpgm/">http://spec.jpl.nasa.gov/ftp/pub/calpgm/</a></li>
+<li>Tested 64-bit executables for both Windows and Unix are available in the <a href="http://info.ifpan.edu.pl/%7Ekisiel/asym/asym.htm#64bit">PICKETT section</a> of the PROSPE website<br>
+</li>
+
+        <li>The jpl site contains data files for many molecules, which
+can be treated as worked examples of the use of these programs and are
+collected in <a class="moz-txt-link-freetext" href="http://spec.jpl.nasa.gov/ftp/pub/catalog/archive/archive_index.html">http://spec.jpl.nasa.gov/ftp/pub/catalog/archive/archive_index.html</a>
+
+        </li>
+        <li>You can also browse the <i>Fitting Spectra</i> section of the CDMS site at <a href="https://zeus.ph1.uni-koeln.de/cdms/pickett">https://zeus.ph1.uni-koeln.de/cdms/pickett</a> for more information/clarifications/examples on SPFIT/SPCAT</li><li>Two scientific papers on the use of SPFIT/SPCAT are now available: S.E.Novick, "A beginner's guide to Pickett's SPCAT/SPFIT", <a href="https://doi.org/10.1016/j.jms.2016.08.015"><i>J.Mol.Spectrosc</i>. <b>329</b>,1(2016)</a> and B.J.Drouin, "Practical uses of SPFIT", <a href="https://doi.org/10.1016/j.jms.2017.07.009"><i>J.Mol.Spectrosc</i>. <b>340</b>,1(2017)</a>.
+ The first is written from the perspective of an often frustrated less 
+experienced user, the second by an advanced user familiar with the 
+internals of the package.<br></li>
+      </ul>
+      <p><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></p>
+      <div align="center">
+      <center>
+      <table width="770" cellspacing="0" cellpadding="5" border="1">
+        <tbody>
+          <tr>
+            <td bgcolor="#e1e1b3">
+            <p align="center"><font size="4" face="Arial"><strong>SPFIT</strong></font></p>
+            </td>
+            <td bgcolor="#e1e1b3">
+            <p align="center"><font size="4" face="Arial"><strong>SPCAT</strong></font></p>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#efefd6">&nbsp;</td>
+            <td bgcolor="#efefd6">&nbsp;</td>
+          </tr>
+          <tr>
+            <td bgcolor="#efefd6"><a href="#spfit">Introduction</a></td>
+            <td bgcolor="#efefd6"><a href="#spcat">Introduction</a></td>
+          </tr>
+          <tr>
+            <td bgcolor="#efefd6"><a href="#lin">Linear top</a></td>
+            <td bgcolor="#efefd6"><a href="#spcatint">Partition
+function and intensities</a></td>
+          </tr>
+          <tr>
+            <td bgcolor="#efefd6"><a href="#symh">Symmetric top with <em>h</em>3
+term</a></td>
+            <td bgcolor="#efefd6"><font face="Arial"><b><a href="#spcath">Notes and Hints</a></b></font></td>
+          </tr>
+          <tr>
+            <td bgcolor="#efefd6"><a href="#syme">Symmetric top, <em>E</em>-states</a></td>
+            <td bgcolor="#efefd6"><a href="#spcatc">Compilation
+(FORTRAN only)</a></td>
+          </tr>
+          <tr>
+            <td bgcolor="#efefd6"><a href="#asym">Asymmetric top</a></td>
+            <td bgcolor="#efefd6">&nbsp;</td>
+          </tr>
+          <tr>
+            <td bgcolor="#efefd6"><a href="#asymc">Asymmetric top,
+Coriolis</a></td>
+            <td bgcolor="#e1e1b3" align="center">
+            <p align="center"><font face="Arial"><strong>APPENDICES</strong></font></p>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#efefd6"><a href="#asymvr">Asymmetric top,
+vibration rotation transitions</a></td>
+            <td bgcolor="#efefd6">&nbsp;</td>
+          </tr>
+          <tr>
+            <td bgcolor="#efefd6"><a href="#asymvrc">Asymmetric top,
+Coriolis+vib-rot transitions</a></td>
+            <td bgcolor="#efefd6"><b><font face="Arial"><a href="#app1">I. Parameter indices and names</a></font></b></td>
+          </tr>
+          <tr>
+            <td bgcolor="#efefd6"><a href="#asymq">Asymmetric top +
+quadrupolar nucleus</a></td>
+            <td bgcolor="#efefd6"><a href="#app2">II. Postprocessing
+programs</a>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#efefd6"><a href="#asym2q">Asymmetric top +
+two quadrupolar nuclei</a></td>
+            <td bgcolor="#efefd6"><a href="#app3">III. SPFIT/SPCAT and
+Windows Vista</a></td>
+          </tr>
+          <tr>
+            <td bgcolor="#efefd6"><a href="#ss">Addition of spin-spin
+terms</a></td>
+            <td bgcolor="#efefd6"><a href="#app4">IV. Increasing
+internal limits (legacy FORTRAN only)</a></td>
+          </tr>
+          <tr>
+            <td bgcolor="#efefd6"><a href="#sr">Addition of
+spin-rotation terms</a></td>
+            <td bgcolor="#efefd6"><a href="#app4">V. Some modifications
+(legacy FORTRAN only)</a></td>
+          </tr>
+          <tr>
+            <td bgcolor="#efefd6"><a href="#errors">SPFIT parameter errors</a> and <a href="#frac">negative <font face="Courier New, Courier, monospace">FRAC</font></a><br>
+</td>
+            <td bgcolor="#efefd6">&nbsp;</td>
+          </tr>
+          <tr>
+            <td bgcolor="#efefd6"><font face="Arial" color="#ff0000"><b><a href="#spfith">Notes and Hints</a></b></font></td>
+            <td bgcolor="#efefd6">&nbsp;</td>
+          </tr>
+          <tr>
+            <td bgcolor="#efefd6"><a href="#spfitc">Compilation
+(FORTRAN only)</a></td>
+            <td bgcolor="#efefd6">&nbsp;</td>
+          </tr>
+          <tr>
+            <td bgcolor="#efefd6">&nbsp;</td>
+            <td bgcolor="#efefd6">&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p><font size="1">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</font></p>
+      <p><font size="1">&nbsp;&nbsp; &nbsp;</font></p>
+      <p><a name="spfit"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="10" border="0">
+        <tbody>
+          <tr>
+            <td bgcolor="#008080">
+            <p align="center"><font size="6" face="Courier New" color="#ffffff"><strong>SPFIT</strong></font><font size="5" color="#ffffff">
+= the fitting program</font></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <div align="center">
+      <center>
+      <table width="100%" cellpadding="0" border="0">
+        <tbody>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td valign="top">input:</td>
+            <td>&nbsp;</td>
+            <td valign="top"><a href="spinv15_annotated.pdf#page=3"><font face="Arial"><em><strong>.par</strong></em></font></a></td>
+            <td>&nbsp;</td>
+            <td valign="top">-</td>
+            <td>&nbsp;</td>
+            <td>control flags and declarations + values of constants</td>
+          </tr>
+          <tr>
+            <td valign="top">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td valign="top"><a href="spinv15_annotated.pdf#page=2"><font face="Arial"><em><strong>.lin</strong></em></font></a></td>
+            <td>&nbsp;</td>
+            <td valign="top">-</td>
+            <td>&nbsp;</td>
+            <td>transition listing</td>
+          </tr>
+          <tr>
+            <td valign="top">output:<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></td>
+            <td>&nbsp;</td>
+            <td valign="top"><font face="Arial"><em><strong>.bak</strong></em></font></td>
+            <td>&nbsp;</td>
+            <td valign="top">-</td>
+            <td>&nbsp;</td>
+            <td>backup of the original <font face="Arial"><em><strong>.par</strong></em></font>
+file created at the beginning of each fitting run<br>
+</td>
+          </tr>
+          <tr>
+            <td valign="top">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td valign="top"><font face="Arial"><em><strong>.par</strong></em></font></td>
+            <td>&nbsp;</td>
+            <td valign="top">-</td>
+            <td>&nbsp;</td>
+            <td>modified <font face="Arial"><em><strong>.par</strong></em></font>
+file with constants resulting from the fit</td>
+          </tr>
+          <tr>
+            <td valign="top">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td valign="top"><font face="Arial"><em><strong>.var</strong></em></font></td>
+            <td>&nbsp;</td>
+            <td valign="top">-</td>
+            <td>&nbsp;</td>
+            <td>as <font face="Arial"><em><strong>.par</strong></em></font>
+but with errors and Cholesky decomposition of correlation matrix for
+use in SPCAT</td>
+          </tr>
+          <tr>
+            <td valign="top">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td valign="top"><font face="Arial"><em><strong>.fit</strong></em></font></td>
+            <td>&nbsp;</td>
+            <td valign="top">-</td>
+            <td>&nbsp;</td>
+            <td>main output file</td>
+          </tr>
+          <tr>
+            <td valign="top">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td valign="top"><font face="Arial"><em><strong>.bin</strong></em></font></td>
+            <td>&nbsp;</td>
+            <td valign="top">-</td>
+            <td>&nbsp;</td>
+            <td>binary output file containing parameters and variances
+for use by the predictive program (obsolete)<br>
+</td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>SPFIT
+in
+the 1994 version worked only for <em>J</em> up to 100, since the
+March1997 version the <em>J</em> limits are (<font face="Symbol">-</font>270,369)
+for
+SPCAT, (<font face="Symbol">-</font>99,999) for SPFIT</p>
+      <p><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></p>
+      <p><a name="lin"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="10" border="0" bgcolor="#e1e1b3">
+        <tbody>
+          <tr>
+            <td><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000"><strong>Linear top</strong></font></td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Third
+line
+in the <a href="spinv15_annotated.pdf#page=3"><font face="Arial"><em><strong>.par</strong></em></font></a>&nbsp;
+file (single quadrupolar nucleus, <em>I</em>=3/2):</p>
+      <pre>       s -4 1 0 ,0 , , , , , , ,</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>(three
+quadrupolar
+nuclei, <em>I</em><sub>1</sub>=3/2, <em>I</em><sub>2</sub>=1, <em>I</em><sub>3</sub>=1,
+and <em>F</em><sub>1</sub>,<em>F</em><sub>2</sub>,<em>F</em>
+coupling):</p>
+      <pre>       s -334 1 0 ,0 , , , , , , ,</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>(three
+quadrupolar
+nuclei, <em>I</em><sub>1</sub>=3/2, <em>I</em><sub>2</sub>=1, <em>I</em><sub>3</sub>=1,
+and <em>I</em>,<em>I</em><sub>1</sub>,F
+coupling):</p>
+      <pre>       s -334 1 0 ,0 , , -1 , , , , ,</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>Remember
+to
+set KNMAX explicitly to zero. Also in case of symmetry equivalent
+nuclei use WTPL and WTML. For example for A<sub>1</sub> and A<sub>2</sub>
+states of <sup>14</sup>N<sub>2</sub>...H<sub>2</sub>O the third lines
+of the&nbsp; <a href="spinv15_annotated.pdf#page=3"><font face="Arial"><em><strong>.par</strong></em></font></a><font face="Arial"><em><strong></strong></em></font>&nbsp;
+file
+are:</p>
+      <pre>       s -33 1   0 , 0 , , -1 , 1. , 0. ,,,,,,,,,,,    &lt;---- A1<br>       s -33 1   0 , 0 , , -1 , 0. , 1. ,,,,,,,,,,,    &lt;---- A2</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>Important
+constants:</p>
+      <pre>        100   B   or</pre>
+      <pre>      20000   B<br>     -30000   C (set to follow the value of B)</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>Note
+that
+other similar fitted constants (i.e. those that have identical
+values by symmetry) all have to be declared in this way. If this is not
+done the resulting constant will be equal to the conventional value
+multiplied by its degeneracy. For spin-rotation, for example, use</p>
+      <pre>   10020000  -M.bb<br>  -10030000  -M.cc</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>In
+case
+of coupled constants the deviation of the second constant gives
+the overall deviation for both constants in the fit i.e. the deviation
+and value of constant 100 is the same as that of <font face="Symbol">-</font>30000
+if
+the pair (20000, <font face="Symbol">-</font>30000) is used; since
+the Dec1996 version only the combined deviation is printed for both
+constants.</p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Line
+in
+the <a href="spinv15_annotated.pdf#page=2"><font face="Arial"><em><strong>.lin</strong></em></font></a><font face="Arial"><em><strong></strong></em></font>&nbsp;
+file (single
+quadrupolar nucleus):</p>
+      <pre>     J' F' J'' F'' 0 0 0 0 0 0 0 0  freq  error  weight</pre>
+      <pre><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></pre>
+      <p><a name="symh"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="10" border="0" bgcolor="#e1e1b3">
+        <tbody>
+          <tr>
+            <td><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><strong>Symmetric
+top,
+with fitting of </strong><em><strong>h</strong></em><sub><strong>3</strong></sub><strong>
+and effects of near-sphericity</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>Third
+line
+in the <a href="spinv15_annotated.pdf#page=3"><font face="Arial"><em><strong>.par</strong></em></font></a><font face="Arial"><em><strong></strong></em></font>&nbsp;
+file(<font face="Symbol">-</font>1 defines symmetric top, 1 is for
+prolate
+symmetry, change to <font face="Symbol">-</font>1 for oblate top):</p>
+      <pre>       s -1 1 0   ,,,,,,,,,,,,,,,,,,</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>I</small></font>mportant
+constants
+(prolate):</p>
+      <pre>      10000   A<br>      20000   B<br>     -30000   C (set to follow the value of B)<br>      60000   h3<br></pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>A</small></font>lternatively:</p>
+      <pre>       1000  A-B      :prolate<br>       3000  B-C      :oblate<br>        100  B</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Line
+in
+the <a href="spinv15_annotated.pdf#page=2"><font face="Arial"><em><strong>.lin</strong></em></font></a><font face="Arial"><em><strong></strong></em></font>&nbsp;
+file:</p>
+      <pre>     J' K' J'' K'' 0 0 0 0 0 0 0 0  freq  error  weight</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Note
+that
+      <em>K</em>=3 (<em>K</em>=6 etc.) doublets are to be specified as</p>
+      <pre>     J+1 -3 J  3   0 0 0 0 0 0 0 0<br>     J+1  3 J -3   0 0 0 0 0 0 0 0     etc.<br>   </pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>The
+sign
+of <em>K</em> alternates between odd and even values of <em>J</em>.
+For a positive value of <em>h</em><sub>3</sub> and even <em>J </em>it
+is
+the <em>K</em><font face="Symbol">=</font><font face="Symbol"> &#8722;</font>3
+&#8592;
+3 component in SPFIT that is the higher frequency component, and 3 &#8592; <font face="Symbol">&#8722;</font>3 is the
+higher frequency component for odd <em>J</em>. Also note that due to
+this cross type of declaration it is necessary to explicitly declare
+both components of unresolved <em>K</em><font face="Symbol">=</font>3,
+      <em>K</em><font face="Symbol">=</font>6 doublets earlier than in
+other programs.</p>
+      <p><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></p>
+      <p><a name="syme"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="10" border="0" bgcolor="#e1e1b3">
+        <tbody>
+          <tr>
+            <td><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><strong>Doubly
+degenerate
+v=1 excited state in a C</strong><sub><strong>3v</strong></sub><strong>
+symmetric top</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>Treatment
+of
+      <em>l</em>-doubled <font face="Courier New"><em>v</em></font><font face="Symbol">=</font>1 states became possible in the March1997
+version of the program. The declaration for this problem has evolved
+with SPFIT and is currently (2008) somewhat different than originally
+used.&nbsp; The key change is that many different tops are recognised
+and a C3v top is now declared by using <span style="font-family: Courier New,Courier,monospace;">IAX=6</span>.<br>
+      <font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>A
+doubly degenerate state is specified as two
+states by using the flag <font size="4" face="Courier New">EWT1</font>
+in thethird line of the <a href="spinv15_annotated.pdf#page=3"><font face="Arial"><em><strong>.par</strong></em></font></a><font face="Arial"><em><strong></strong></em></font> file: <font size="4" face="Courier New">EWT1</font><font face="Symbol">=</font>1
+is <em>l</em><font face="Symbol">=+</font>1, <font size="4" face="Courier New">EWT1</font><font face="Symbol">=</font>2 is <em>l</em><font face="Symbol">=</font><font face="Symbol">&#8722;</font>1. Singly degenerate
+states are specified with <font size="4" face="Courier New">EWT1</font><font face="Symbol">=</font>0
+for <em>l</em><font face="Symbol">=</font>0. The <font size="4" face="Courier New">EWT1</font><font face="Symbol">=</font>1,2
+states should be declared on adjacent cards. It is also
+useful to include the ground state in the declaration and the example
+below
+is for such a case. The third line in the <a href="spinv15_annotated.pdf#page=3"><font face="Arial"><em><strong>.par</strong></em></font></a><font face="Arial"><em><strong></strong></em></font>&nbsp;
+file
+is to have two continuation lines (the settings of <span style="font-family: Courier New,Courier,monospace;">WTPL</span>,<span style="font-family: Courier New,Courier,monospace;"> WTMN</span> and <span style="font-family: Courier New,Courier,monospace;">EWT0</span> ensure
+correct relative intensities for a case with off-axis protons)<em></em>:</p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>Prolate
+top:</p>
+      <pre>  s -1, 3, , , , 6,  2,  2,   -1,   1, 1,      ; this is the g.s.<br>      , 1, , , , 6,  2,  2,   -1, 101,  ,      ; this is l=+1<br>      , 2, , , , 6,  2,  2,     , 201,  ,      ; this is l=-1</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>Oblate
+top:</p>
+      <pre>  s -1,-3, , , , 6,  2,  2,   -1,   1, 1,<br>      , 1, , , , 6,  2,  2,   -1, 101,  ,<br>      , 2, , , , 6,  2,  2,     , 200,  ,</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>Note
+that
+the diagonalization option <font face="Courier New">DIAG</font>
+(twelfth parameter on the first of these lines) is to be set to 1 i.e.
+for
+a full projection assignment. Of the pair of doubled states the
+diagonal constants are to be declared only for the state <font size="4" face="Courier New">EWT1</font><font face="Symbol">=</font>1
+and the relevant constants are then:</p>
+      <pre>           prolate                oblate</pre>
+      <pre>            1011  A-B               3011  B-C<br>             111  B                  100  B<br> or:<br>           10011  A                10011  A<br>           20011  B               -20011  B<br>          -30011  C                30011  C</pre>
+      <pre>          200011 -2 A zeta.EE     600011 -2 C zeta.EE<br>          200111  eta.J           600111  eta.J<br>          201011  eta.K           601011  eta.K<br>          200211  eta.JJ          600211  eta.JJ<br>          201111  eta.JK          601111  eta.JK<br>          202011  eta.KK          602011  eta.KK<br>           40012  q/2              40012  q/2<br>           40112 -q.j/2            40112 -q.j/2<br> or:<br>          210012  q               610012  q<br>          210112 -q.J             610112 -q.J<br></pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>for
+off-diagonal
+elements in the form 0.25[<em>q</em><font face="Symbol">-</font><em>q</em><sub><em>J</em></sub><em>
+J</em>(<em>J</em>+1)..]. The second definition for <em>q</em> involves
+much more diagonalization and is therefore not recommended.</p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>Transitions
+which
+are normally degenerate are best specified by using positive <em>K</em>.
+Those
+for <em>l</em><font face="Symbol">=+</font>1 are declared as
+state <font size="4" face="Courier New">EWT1</font><font face="Symbol">=</font>1,
+while
+those for <em>l</em><font face="Symbol">=</font><font face="Symbol">&#8722;</font>1
+as <font size="4" face="Courier New">EWT1</font><font face="Symbol">=</font>2.
+The
+      <em>K</em><font face="Symbol">=</font>0 (<em>Kl</em><font face="Symbol">&#8722;</font>1<font face="Symbol">=</font><font face="Symbol">&#8722;</font>1)
+is
+      <font size="4" face="Courier New">EWT1</font><font face="Symbol">=</font>2.
+The
+two <em>K</em><font face="Symbol">=</font><em>l</em><font face="Symbol">=±</font><font face="Symbol"></font>1 doublets
+are both <font size="4" face="Courier New">EWT1</font><font face="Symbol">=</font>1 and their <em>K</em>
+assignment alternates with parity of <em>J</em>:</p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Prolate
+(positive
+      <em>q</em> and <em>A&#950;</em>) and
+EVEN <em>J</em>'':</p>
+      <pre> J' -1  1  J''  1  1 .......     A+ i.e. upper freq. component<br> J'  1  1  J'' -1  1 .......     A- i.e. lower freq. component</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Prolate
+(positive
+      <em>q</em> and <em>A&#950;</em>) and
+ODD <em>J</em>'':</p>
+      <pre> J'  1  1  J'' -1  1 .......     A+ i.e. upper freq. component<br> J' -1  1  J''  1  1 .......     A- i.e. lower freq. component</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Oblate
+(positive
+      <em>q</em>, negative <em>C&#950;</em>):</p>
+      <pre> J' -1  1  J'' -1  1 .......     A+<br> J'  1  1  J''  1  1 .......     A-</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Oblate
+(positive
+      <em>q</em>, positive <em>C&#950;</em><font face="Symbol"></font>):</p>
+      <pre> J' -1  1  J'' -1  1 .......     A-<br> J'  1  1  J''  1  1 .......     A+</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>If
+the
+      <em>E</em>-symmetry states declared as <font face="Courier New"><em>v</em></font>=1
+and
+      <font face="Courier New"><em>v</em></font>=2 undergo Coriolis
+coupling with the <em>A</em>-symmetry state declared as <font face="Courier New"><em>v</em></font>=0 then connecting constants are:</p>
+      <pre>           prolate                oblate</pre>
+      <pre>          600001                  200001  w = 2 root2 Omega B zeta.EA<br>          600101                  200101  w.J<br>          601001                  201001  w.K<br>          600201                  200201  w.JJ<br>          601101                  201101  w.JK<br>          602001                  202001  w.KK   etc.</pre>
+      <p>where &#937; =<em></em> [sqrt(<em>&#969;<sub>a</sub></em>/<em>&#969;<sub>e</sub></em>)
++
+sqrt(<em>&#969;<sub>e</sub></em>/<em>&#969;<sub>a</sub></em>)]/2 and <em>&#950;</em><sup><em>EA</em></sup>
+is the Coriolis constant
+connecting the <em>E</em> and <em>A</em> states.&nbsp; The oblate
+case has been extensively tested in Kisiel et al.&nbsp; <span style="font-style: italic;">J.Mol.Spectrosc.</span> <span style="font-weight: bold;">251</span>(2008)235-240, which contains a
+more extensive table of parameter identifiers and their translation
+into Hamiltonian terms.<br>
+      </p>
+      <p><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></p>
+      <p><a name="asym"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="10" border="0">
+        <tbody>
+          <tr>
+            <td bgcolor="#e1e1b3"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><strong>Straightforward
+asymmetric
+top fit</strong> </td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>Third
+line
+in the <a href="spinv15_annotated.pdf#page=3"><font face="Arial"><em><strong>.par</strong></em></font></a>&nbsp;
+file:</p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>Reduction-<em>A</em>,
+prolate
+(representation I<sup><em>r</em></sup>):</p>
+      <pre>       a 1  1 0   ,,,,,,,,,,,,,,,,,,</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>Reduction-<em>A</em>,
+oblate
+(representation III<sup><em>l</em></sup>):</p>
+      <pre>       a 1 -1 0   ,,,,,,,,,,,,,,,,,,</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>Reduction-<em>S</em>,
+prolate
+(representation I<sup><em>r</em></sup>):</p>
+      <pre>       s 1  1 0   ,,,,,,,,,,,,,,,,,,</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>Reduction-<em>S</em>,
+oblate
+(representation III<sup><em>l</em></sup>):</p>
+      <pre>       s 1 -1 0   ,,,,,,,,,,,,,,,,,,</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>Standard
+constants
+are as given in <a href="#app1">APPENDIX I</a>. The
+difference in the third <a href="spinv15_annotated.pdf#page=3"><font face="Arial"><em><strong>.par</strong></em></font></a><font face="Arial"><em><strong></strong></em></font>
+line between the
+use of <em>A</em>- and <em>S</em>-reductions is only in declaring
+different <font face="Arial"><em><strong>.nam</strong></em></font>
+files for constant names (and these files are currently optional). It
+is also possible to fit linear combinations of
+constants such as prolate (<em>B</em>+<em>C</em>), (<em>B</em><font face="Symbol">&#8722;</font><em>C</em>) declared
+using:</p>
+      <pre>  20000  value   /(B+C)/2<br> -30000  value<br>  40000  value1  /(B-C)/4</pre>
+      <p>or, in an alternative way, using:<br>
+      </p>
+      <pre>  20000  value    /(B+C)/2<br> -30000  value<br>  20000  value1   /(B-C)/2<br> -30000 -value1<br></pre>
+      <p>which is analogous to the way nuclear quadrupole coupling
+constants are declared in the 'simple examples' at the end of <a href="spinv15_annotated.pdf#page=16">SPINV.PDF</a>.&nbsp;
+This
+type of declaration is possible since values from successive
+instances of a parameter with the same index are <span style="font-style: italic;">additive</span>.<br>
+In a similar way it is possible to deal with values of rotational
+constants in different vibrational states, for example:<br>
+      </p>
+      <pre>  10000  value    /(A0+A1)/2<br> -10011  value<br>  10000  value1   /(A0-A1)/2<br> -10011 -value1<br></pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Line
+in
+the <a href="spinv15_annotated.pdf#page=2"><font face="Arial"><em><strong>.lin</strong></em></font></a><font face="Arial"><em><strong></strong></em></font>&nbsp;
+file:</p>
+      <pre>  J' K-1' K+1' J'' K-1'' K+1'' 0 0 0 0 0 0   freq  error  weight</pre>
+      <pre><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></pre>
+      <p><a name="asymc"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="10" border="0" bgcolor="#e1e1b3">
+        <tbody>
+          <tr>
+            <td><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><strong>Coriolis
+coupling
+between two asymmetric rotor vibrational levels</strong> </td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>The
+lower
+of the two levels is to be given the identifier <font face="Courier New"><em>v</em></font>=0, the upper <font face="Courier New"><em>v</em></font>=1. The constants are then:</p>
+      <pre>    10000 A rotational constant for state v=0 etc.<br>    10011 A rotational constant for state v=1 etc.<br>       11 Delta E i.e. difference in vibrational energies of<br>          the two states<br>   200001 i G.a      P.a<br>   210001   F.a     (P.b P.c + P.c P.b)<br>   400001 i G.b      P.b<br>   410001   F.b     (P.c P.a + P.a P.c)<br>   600001 i G.c      P.c<br>   610001   F.c     (P.a P.b + P.b P.a)</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Third
+line
+in the <a href="spinv15_annotated.pdf#page=3"><font face="Arial"><em><strong>.par</strong></em></font></a>&nbsp;
+file (<em>A</em>-type,
+prolate):</p>
+      <pre> a 1 2 0   ,,,,,,,,,,,,,,,,,,</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Line
+in
+the <a href="spinv15_annotated.pdf#page=2"><font face="Arial"><em><strong>.lin</strong></em></font></a>&nbsp;
+file:</p>
+      <pre> J' K-1' K+1' v' J'' K-1'' K+1'' v'' 0 0 0 0   freq  error  weight</pre>
+      <pre><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></pre>
+      <p><a name="asymvr"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="10" border="0" bgcolor="#e1e1b3">
+        <tbody>
+          <tr>
+            <td><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><strong>Vibration-rotation
+transition
+between two vibrational states</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>Specification
+is
+identical to the case above with the exception that only <font face="Courier New"><em>v</em></font>''=0 to <font face="Courier New"><em>v</em></font>'=1
+transitions
+are specified (for absorption) and of the coupling terms
+only the energy difference term:</p>
+      <pre>       11 Delta E</pre>
+      <p>is used. Transition frequency and its error can be specified
+in cm<font size="3" face="Courier New"><sup>-</sup></font><font face="Symbol"><sup>1</sup></font> if the error is made negative.</p>
+      <p><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></p>
+      <p><a name="asymvrc"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="10" border="0" bgcolor="#e1e1b3">
+        <tbody>
+          <tr>
+            <td><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><strong>Coriolis
+coupling
+between two excited vibrational states with use of
+vibration-rotation and rotational spectra</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Three
+states
+need to be specified, ground state <font face="Courier New"><em>v</em></font>=0,
+and
+the two excited states <font face="Courier New"><em>v</em></font>=1
+and <font face="Courier New"><em>v</em></font>=2. The third line in
+the <a href="spinv15_annotated.pdf#page=3"><font face="Arial"><em><strong>.par</strong></em></font></a> file is
+then</p>
+      <pre>     a 1 3 0   ,,,,,,,,,,,,,,,,,,</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>and
+some
+pertinent constants are:</p>
+      <pre>      20000   B for the ground state etc.<br>      20011   B for first excited state etc.<br>         11   vibrational energy E for first excited state<br>      20022   B for the second excited state etc.<br>         22   vibrational energy E for the second excited state<br>     600012   G.c coupling constant<br>     610012   F.c coupling constant<br>     200012   G.a coupling constant</pre>
+      <pre><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></pre>
+      <p><a name="asymq"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="10" border="0" bgcolor="#e1e1b3">
+        <tbody>
+          <tr>
+            <td><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><strong>Asymmetric
+rotor
+with a single quadrupolar nucleus</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>Values
+of
+the spin quantum number have to be rounded up to the nearest
+integer, so that the odd half integral spins are declared as: 1/2&#8594;1,
+3/2&#8594;2,
+etc. The independent quadrupolar constants are specified as:</p>
+      <pre> 110010000  1.5 Chi.aa             :Prolate<br> 110040000  0.25 (Chi.bb-Chi.cc)</pre>
+      <pre> 110030000  1.5 Chi.cc             :Oblate<br> 110040000  0.25 (Chi.bb-Chi.aa)</pre>
+      <pre> 110610000  Chi.ab                 :Prolate and oblate<br> 110210000  Chi.bc<br> 110410000  Chi.ac</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Third
+line
+in the <a href="spinv15_annotated.pdf#page=3"><font face="Arial"><em><strong>.par</strong></em></font></a><font face="Arial"><em><strong></strong></em></font>&nbsp;
+file (<em>A</em>-type,
+prolate, spin 3/2):</p>
+      <pre> a 4  1 0   ,,,,,,,,,,,,,,,,,,</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Third
+line
+in the <a href="spinv15_annotated.pdf#page=3"><font face="Arial"><em><strong>.par</strong></em></font></a><font face="Arial"><em><strong></strong></em></font>&nbsp;
+file (<em>S</em>-type,
+oblate, spin 3/2):</p>
+      <pre> s 4 -1 0   ,,,,,,,,,,,,,,,,,,</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Line
+in
+the <a href="spinv15_annotated.pdf#page=2"><font face="Arial"><em><strong>.lin</strong></em></font></a><font face="Arial"><em><strong></strong></em></font>&nbsp;
+file:</p>
+      <pre> J' K-1' K+1' F' J'' K-1'' K+1'' F'' 0 0 0 0   freq  error  weight</pre>
+      <pre><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></pre>
+      <p><a name="asym2q"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="10" border="0" bgcolor="#e1e1b3">
+        <tbody>
+          <tr>
+            <td><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><strong>Asymmetric
+rotor
+with two quadrupolar nuclei</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>Notes
+from
+the single nucleus case above are applicable. Prolate rotor
+constants:</p>
+      <pre> 110010000  1.5 Chi.aa                 \<br> 110040000  0.25 (Chi.bb-Chi.cc)        |<br> 110610000  Chi.ab                      |   nucleus 1<br> 110210000  Chi.bc                      |<br> 110410000  Chi.ac                     /<br> 220010000  1.5 Chi.aa                 \<br> 220040000  0.25 (Chi.bb-Chi.cc)        |<br> 220610000  Chi.ab                      |   nucleus 2<br> 220210000  Chi.bc                      |<br> 220410000  Chi.ac                     /</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Third
+line
+in the <a href="spinv15_annotated.pdf#page=3"><font face="Arial"><em><strong>.par</strong></em></font></a><font face="Arial"><em><strong></strong></em></font>&nbsp;
+file (<em>A</em>-type,
+prolate, spin1=3/2, spin2=1, and <em>I</em>,<em>F</em> coupling):</p>
+      <pre> a 34 1 0   , , , -1 ,,,,,,,,,,,,,,,</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Line
+in
+the <a href="spinv15_annotated.pdf#page=2"><font face="Arial"><em><strong>.lin</strong></em></font></a>&nbsp;
+file (for <em>I</em>,<em>F</em>
+coupling):</p>
+      <pre> J' K-1' K+1' I' F' J'' K-1'' K+1'' I'' F'' 0 0   freq  error  weight</pre>
+      <pre><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></pre>
+      <p><a name="ss"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="10" border="0" bgcolor="#e1e1b3">
+        <tbody>
+          <tr>
+            <td><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><strong>Spin-spin</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>The
+
+      <span style="font-style: italic;">D</span> coefficients are for <em>H</em><sub><em>ss</em></sub>
+= <font face="Arial"><strong>I</strong></font><sub>1</sub>.<font face="Arial"><strong>D</strong></font>.<font face="Arial"><strong>I</strong></font><sub>2</sub>
+and are (prolate): </p>
+      <pre> 120010000  1.5 D.aa<br> 120040000  0.25 (D.bb-D.cc)<br> 120610000  D.ab              etc.</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3">The f</font>irst two digits define interacting nuclei. Note
+that the constant <em>c</em><sub>3</sub> for diatomics in
+Landolt-Bornstein vol.II/6,table 2.9.1.2 is <em>D</em><sub><em>bb</em></sub><font face="Symbol">=</font><font face="Symbol">&#8722;</font><span style="font-family: Symbol;">(</span>1/2) <em>D</em><sub><em>aa</em></sub>,
+as
+only <em>D</em><sub><em>bb</em></sub>
+is spectroscopically determinable for linear and diatomic molecules.</p>
+      <p><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></p>
+      <p><a name="sr"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="10" border="0" bgcolor="#e1e1b3">
+        <tbody>
+          <tr>
+            <td><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><strong>Spin-rotation</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>The
+
+      <em>M</em> coefficients are for <em>H</em><sub><em>sr</em></sub>
+= + <font face="Arial"><strong>I</strong></font>.<font face="Arial"><strong>M</strong></font>.<font face="Arial"><strong>J</strong></font> and thus:</p>
+      <pre>  10010000  M.aa for nucleus 1<br>  10020000  M.bb for nucleus 1<br>  10030000  M.cc for nucleus 1<br>  20010000  M.aa for nucleus 2 etc.</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>For
+linear
+molecules the use of:</p>
+      <pre>  10000000  M for nucleus 1</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>is
+equivalent
+to the declaration:</p>
+      <pre>  10020000  M.bb for nucleus 1<br> -10030000  M.cc for nucleus 1 set equal to that of M.bb</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>Note
+that,
+following Flygare, a reverse Hamiltonian definition is often used
+i.e. <em>H</em><sub><em>sr</em></sub> <font face="Symbol">= &#8722;</font><font face="Arial"><strong>I</strong></font>.<font face="Arial"><strong>M</strong></font>.<font face="Arial"><strong>J</strong></font> and the resulting <em>M</em>'s
+have reversed signs relative to those above.</p>
+      <p><font size="1">&nbsp;&nbsp; </font></p>
+      <p><a name="errors"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="10" border="0">
+        <tbody>
+          <tr>
+            <td bgcolor="#e0e0b1"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            </font><font size="5">SPFIT parameter errors</font></td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p align="left"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </font><font size="3">There are two relatively subtle points
+associated with understanding the errors in fitted parameters that are
+printed by SPFIT when you use the default </font><font size="3" face="Courier New">FRAC</font><font size="3">=1 parameter
+(the seventh parameter in the second line of the </font><a href="spinv15_annotated.pdf#page=3"><font face="Arial"><em><strong>.par</strong></em></font></a><font size="3">
+file). These points are primarily of relevance for small datasets, and
+diminish in importance for large datasets fitted to close to RMS
+deviation of 1. Nevertheless if one wants to obtain exact
+correspondence between the results of SPFIT and those from other
+fitting programs then some corrections may be necessary.</font></p>
+      <p align="left"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </font><font size="3">Since weighted least-squares fitting
+programs all use the same basic statistical treatment it is useful to
+refer to the seminal paper on the subject (referred to below as ASZ): </font></p>
+      <p align="left"><font size="3">D.L.Albritton, A.L.Schmeltekopf,
+R.N.Zare, <em>"An introduction to the Least-Squares Fitting of
+Spectroscopic Data"</em>, in Molecular Spectroscopy: Modern Research,
+Ed. K.N.Rao, Academic Press, 1976, Chapter.1, p.1-67.</font></p>
+      <p align="left"><font size="3"><em><strong>POINT I:</strong></em></font></p>
+      <p align="left"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </font>The two RMS quantities in the <font face="Arial"><em><strong>.fit</strong></em></font>
+output of SPFIT are:</p>
+      <div align="left">
+      <pre>       (MICROWAVE RMS) = sqrt ( Sum[(obs-calc)**2]/Nlines )<br>           (RMS ERROR) = sqrt ( Sum[((obs-calc)/error)**2]/Nlines )</pre>
+      </div>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Thus
+the
+deviations are worked out on the basis of a straightforward
+number
+of lines in the dataset, <font face="Courier New">Nlines</font>, and
+not the degrees of freedom <font face="Courier New">Ndegf=Nlines-Nconst</font>,
+where
+      <font face="Courier New">Nconst</font> is the number of fitted
+constants. In ASZ, say Eq.31, the degrees of freedom, <font face="Courier New">(n-m)</font>, are used. As a consequence, the
+deviations evaluated for small datasets by using <font face="Courier New">Nlines</font> instead of <font face="Courier New">Ndegf</font>
+may differ appreciably. Of course, as HMP points out, one can readily
+construct data sets with pathologies that make the assumption <font face="Courier New">Ndegf=Nlines-Nconst</font> inadequate, but it is
+nonetheless an assumption that is generally made. Even more suspicious
+is the statistics of relatively small numbers when <font face="Courier New">Ndegf</font>/<font face="Courier New">Nlines</font>
+is significantly less than unity, but this has never stopped
+spectroscopists from working in that regime!</p>
+      <p><font size="3"><em><strong>POINT II:</strong></em></font></p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3">In </font><font size="4">t</font>he standard application of
+weighted least-squares (section E5 of ASZ) only <em><u>relative</u></em>
+values of assumed experimental errors are of importance, and the
+estimated errors on parameters of fit (square roots of diagonal
+elements of the variance-covariance matrix Eq.33 ASZ) are insensitive
+to multiplication of assumed measurement errors by a constant factor <em>c</em>.
+If
+statistics are sufficient then the errors are standard <font size="3">errors</font>
+(i.e. for <font size="3">67% confidence
+level). </font>For a fit with equal weights (same assumed error for
+all frequencies) you should get the same result irrespective of the
+value of the assumed error. This is not the case for SPFIT in which: </p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3" color="#ff0000"><em>"The printed error in fitted constants is
+at the level of confidence assumed in declaring the uncertainties in
+experimental measurements in the </em></font><font size="3" face="Arial" color="#ff0000"><em><strong>.lin</strong></em></font><font size="3" color="#ff0000"><em> file"</em></font><font size="3">. </font></p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3">In this case the <em><u>absolute</u></em><em>,</em> and not
+only <em><u>relative</u></em> values of such measurement errors are of
+importance, and the printed errors cannot be automatically assumed to
+be standard errors. The choice made in SPFIT has been to forego the </font><font size="3" face="Symbol">&#963;</font><font size="3"><sup>2</sup> term in
+Eq.32 of ASZ. This has the consequence that even for an equally
+weighted fit changes in the values of the assumed measurement error
+will lead to changes in evaluated parameter errors. </font></p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3">The two points above are illustrated by fits made for </font><a href="d2s_errors.pdf"><font size="3">D<sub>2</sub>S</font></a><font size="3">, where the results from the original publication (as
+reproduced in Table 8.24 of the 3rd Edition of the Gordy&amp;Cook
+textbook) are used as the basis for the comparison. In the original
+work the cited errors are at the 95% confidence level, and were
+obtained by straightforward doubling of the derived standard errors.
+Those numbers can be seen to be in good correspondence with doubled
+errors from the </font><a href="../asym.htm#asfit"><font size="3" face="Arial"><strong>ASFIT</strong></font></a><font size="3"> fit, which
+returns standard errors. The comparison is not exactly 100% only due to
+different rounding at the last digit and the possibility of typos (such
+as in the published error on <em>C</em>: 71 instead of possibly 61).
+On the other hand you can see that the SPFIT errors are directly
+dependent on the assumed measurement error even for (as in this case)
+equally weighted lines. The primary data files are collected in </font><a href="d2s_errors.zip"><font size="3">this archive</font></a><font size="3">. A similar exercise with an even more exact correspondence
+with the published data is possible for </font><a href="../asym.htm#t2o"><font size="3">T<sub>2</sub>O</font></a><font size="3">, for which </font><font face="Courier New">Ndegf</font>/<font face="Courier New">Nlines </font><font size="3">is even more
+pathological.</font></p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3">What you can see is that with SPFIT the values of assumed
+measurement errors are more important than with many other fitting
+programs, in which only relative magnitudes of such errors are
+relevant. In addition, once RMS ERROR deviates significantly from
+unity, you have to think about what is the confidence interval that the
+errors correspond to. Fortunately, if you were to care about actual
+standard errors then it is very easy to apply a suitable correction,
+see below.</font></p>
+      <p><font size="3"><em><strong>What you can do:</strong></em></font></p>
+      <p><font size="4">1/&nbsp; </font>If you want to cite standard <font size="3">(1*sigma = 67% confidence level) </font>errors on parameters
+fitted as a result of running SPFIT then you need to multiply the
+printed errors in parameters by</p>
+      <pre>          (RMS ERROR)*SQRT( N.lines/ (N.lines-N.fittedconsts) )</pre>
+      <p><font size="3">This can be done automatically with program </font><a href="../asym.htm#piform"><font size="3" face="Arial"><strong>PIFORM</strong></font></a><font size="3">, which reformats the </font><font face="Arial"><em><strong>.fit</strong></em></font><font size="3"> output and, among other things, converts SPFIT errors to
+standard errors.</font></p>
+      <p><font size="4">2/&nbsp; </font>An equivalent procedure is to
+multiply the assumed errors in frequencies by the same factor as above
+and to refit, whence you will obtain <font size="3" face="Courier New">RMS
+ERROR</font> of </p>
+      <pre>          SQRT( (N.lines-N.fittedconsts)/N.lines )</pre>
+      <p>which will be equivalent to RMS error of unity if <font face="Courier New">Ndegf</font> was used in the statistics. The
+printed errors on fitted parameters will then be standard (67%) errors.
+If the dataset is large and the fitting model adequate then this
+procedure is in fact the way to establish the experimental error of the
+spectrometer used to make the measurements, and the RMS error will
+approach unity. For the D<sub>2</sub>S example with 0.2 MHz errors on
+frequencies, this procedure will correspond to resetting the
+measurement errors to:</p>
+      <pre>          0.2 * 0.46794 sqrt(66/44) = 1.14602</pre>
+      <p>resulting in SPFIT RMS ERROR of </p>
+      <pre>          sqrt(44/66) = 0.81650</pre>
+      <p><font size="4">3/&nbsp; </font><font size="3">For large
+datasets you may just set the </font><font size="3" face="Courier New">FRAC</font><font size="3"> parameter (the seventh parameter in the second line of the </font><font face="Arial"><em><strong>.par</strong></em></font><font size="3">
+file) to the </font><font size="3" face="Courier New">RMS ERROR</font><font size="3"> from a converged fit and then refit. The resulting parameter
+errors will only differ from standard errors by the factor </font><font face="Courier New">SQRT(Ndegf/Nlines).</font> You can of course also
+account for this factor in <font size="3" face="Courier New">FRAC</font>
+and for the D<sub>2</sub>S example with 0.1 MHz errors on frequencies
+you will obtain actual standard errors by setting </p>
+      <pre>          FRAC = 0.93588 / sqrt(44/66) = 1.14602.</pre>
+      <p><font face="Times New Roman">This procedure, as well as point
+(2), allow you to obtain standard errors on transition frequencies
+calculated by SPCAT, as printed in the second column of the </font><font face="Arial"><em><strong>.cat</strong></em></font><font face="Times New Roman"> file. On the other hand, you have to take
+care, since it might be rather easy to forget that </font><font size="3" face="Courier New">FRAC</font><font face="Times New Roman">
+was set to some nonstandard value that was only valid for a specific
+fit.</font></p>
+      <p><a name="frac"></a><font size="4">4/&nbsp; </font><font size="4" face="Arial" color="#ff0000"><strong></strong></font><font size="3">As of
+July 2007 you can use negative values of the </font><font size="3" face="Courier New">FRAC</font><font size="3"> parameter in
+SPFIT, in which case parameter errors will be equal to the multiple of
+standard error that corresponds to the magnitude of </font><font size="3" face="Courier New">FRAC</font><font size="3">. Hence </font><font size="3" face="Courier New">FRAC=-1</font><font size="3"> will rescale
+SPFIT errors internally using the relationship in point (1) above, so
+that you will now get standard errors in the </font><font face="Arial"><em><strong>.fit</strong></em></font><font size="3"> output. Similarly </font><font size="3" face="Courier New">FRAC=-2
+
+      </font><font size="3">will produce 2sigma (95% errors) and </font><font size="3" face="Courier New">FRAC=-3 </font><font size="3">will lead
+to 3sigma (99%) errors. Furthermore, the use of </font><font size="3" face="Courier New">FRAC=-1</font><font size="3">, for
+example, ensures that the errors in frequencies calculated by SPCAT
+will also be standard errors etc.<br><font color="#ff0000"><br></font></font></p><p><font size="3"><font color="#ff0000">WARNING:</font> It has been discovered (March2016) that the negative </font><font size="3"><font size="3"><font size="3" face="Courier New">FRAC</font></font> mechanism, such as </font><font size="3"><font size="3" face="Courier New">FRAC=-1</font><font size="3">, is not without some issues that are relevant to small datasets.&nbsp; In fact, the values of <font face="Courier New, Courier, monospace">NDFREE</font> in the multiplier<br><font face="Courier New, Courier, monospace">&nbsp;&nbsp;&nbsp; -FRAC*RMS*SQRT(NLINE/NDFREE)</font> <br>used to correct the parameter errors (see the <a href="spinv15_annotated.pdf#page=3">documentation</a>) are somewhat specific:<br></font></font></p><ol><li><font size="3"><font size="3">when <font face="Courier New, Courier, monospace">ERPAR&gt;1.E+015</font> on <u>all</u> fitted parameters then </font></font><font size="3"><font size="3"><font size="3"><font size="3"><font face="Courier New, Courier, monospace">NDFREE</font></font></font>=</font></font><font size="3"><font size="3"><font size="3"><font size="3"><font face="Courier New, Courier, monospace">NLINE-</font></font></font>(the number of free parameters)+1</font></font><font size="3"><font size="3"></font></font></li><li><font size="3"><font size="3">when<font face="Courier New, Courier, monospace"> ERPAR&lt;=1.E+015</font> on <u>all</u> fitted parameters then </font></font><font size="3"><font size="3"><font size="3"><font size="3"><font face="Courier New, Courier, monospace">NDFREE</font></font></font>=</font></font><font size="3"><font size="3"><font size="3"><font size="3"><font face="Courier New, Courier, monospace">NLINE</font></font></font></font></font></li><li><font size="3"><font size="3">intermediate values of </font></font><font size="3"><font size="3"><font size="3"><font size="3"><font size="3"><font size="3"><font face="Courier New, Courier, monospace">NDFREE</font></font></font></font></font> between those arising in the two cases above will occur if some, but not all, </font></font><font size="3"><font size="3"><font size="3"><font size="3"><font face="Courier New, Courier, monospace">ERPAR</font></font></font> are greater than </font></font><font size="3"><font size="3"><font size="3"><font size="3"><font face="Courier New, Courier, monospace">1.E+015</font></font></font></font></font></li></ol>
+      <p align="center"><font size="3">- - - </font></p>
+      <p><font size="3">The bottom line is that whatever you do: </font><font size="3" color="#ff0000"><em>"Do not automatically assume that the
+parameter errors printed by SPFIT are standard errors, especially when
+your RMS &gt; 1, since you are then in danger of seriously
+underestimating your actual errors".</em></font></p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+      <p><a name="spfith"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="10" border="0">
+        <tbody>
+          <tr>
+            <td bgcolor="#e0e0b1"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            </font><font size="5">SPFIT Notes and Hints</font></td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+      </font><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3"><big><small>Be warned:</small></big></font><font size="4"><span style="font-style: italic;"> </span></font><font size="3"><big><span style="color: rgb(255, 0, 0); font-weight: bold; font-style: italic;">SPFIT
+poses
+multiple
+traps for unwary users!</span><small>&nbsp; I have seen some problems
+crop up regularly over the years.&nbsp; A determined scientific
+detective
+would find their unintended consequences in a surprisingly large number
+of published scientific papers. There is now a new danger resulting
+from the use of SPFIT in the "under the hood" mode in spectral analysis
+packages.&nbsp; Some issues may, therefore, escape human inspection
+altogether.&nbsp; You are&nbsp; strongly advised to check against the
+various known traps:</small></big><br>
+      </font></p>
+      <p align="center"><font size="3">- - - </font></p>
+      <p><font style="font-weight: bold;" size="4"><span style="color: rgb(255, 0, 0);">TRAP 1</span> </font><font size="3">results
+from
+the
+specific meaning of the parameter errors obtained from the fit and the
+associated subtleties are discussed in the section <a href="#errors">immediately
+above</a>.&nbsp; <br>
+      </font></p>
+      <p align="center"><font size="3">- - - </font></p>
+      <p><font size="3"><big style="font-weight: bold; color: rgb(255, 0, 0);">TRAP 2 </big>is due
+to the premature
+assumption that a fit has converged.&nbsp; Note that a given fit can be
+considered to be properly converged only if two
+conditions are satisfied:<br>
+      </font></p>
+      <p><font size="3">1/ The current and the predicted values of the <span style="font-family: Courier New,Courier,monospace;">RMS ERROR</span>
+are identical and you get screen output terminating in something
+like:&nbsp;<br>
+      <small><span style="font-family: Courier New,Courier,monospace;">END
+OF
+ITERATION&nbsp; 1 OLD, NEW RMS ERROR=&nbsp; 1.19353&nbsp;&nbsp;
+1.19353</span></small></font></p>
+      <p><font size="3">2/ The <span style="font-family: Courier New,Courier,monospace;">THRESH</span>
+parameter (the fifth parameter in the second line of the </font><a href="spinv15_annotated.pdf#page=3"><font face="Arial"><em><strong>.par</strong></em></font></a><font size="3" face="Arial"><em><strong></strong></em></font><font size="3"> file) is zero.&nbsp; When the fit is properly converged
+SPFIT will normally reset </font><font size="3"><span style="font-family: Courier New,Courier,monospace;">THRESH</span></font><font size="3"> to <span style="font-family: Courier New,Courier,monospace;">0.0000E+000</span>.&nbsp;
+If
+this is not the case then you can try zeroing this parameter by
+hand. <br>
+&nbsp;&nbsp;&nbsp; </font><font size="3"><span style="font-family: Courier New,Courier,monospace;">THRESH</span></font><font size="3">&nbsp; &gt; 1 is especially dangerous since it indicates that
+the data set does not contain sufficient information to unambiguously
+fit the desired parameters and SPFIT has kicked in the singular value
+decomposition procedure in order to arrive at some plausible, but not
+necessarily unique solution.</font><font size="3"><br>
+&nbsp;&nbsp;&nbsp; </font><font size="3"><span style="font-family: Courier New,Courier,monospace;">THRESH</span></font><font size="3">&nbsp; &lt; 1 indicates that the search range for new
+parameters has been artificially constrained. The parameter errors
+obtained with any non-zero value of </font><font size="3"><span style="font-family: Courier New,Courier,monospace;">THRESH</span></font>
+      <font size="3">should not be used.<br>
+      </font></p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <small>A
+confident
+sign of final convergence is that </small></font><font size="4"><small>the
+fit terminates in one iteration and <span style="font-family: Courier New,Courier,monospace;">THRESH=</span></small></font><font size="3"><span style="font-family: Courier New,Courier,monospace;">0.0000E+000</span></font><font size="4"><small>, irrespective of the number of iterations declared in
+the parameter <font face="Courier New, Courier, monospace">NITR</font> in the second line of the </small></font><a href="spinv15_annotated.pdf#page=3"><font face="Arial"><em><strong>.par</strong></em></font></a><font size="3" face="Arial"><em><strong></strong></em></font><font size="3"> </font><font size="4"><small> file.</small></font></p>
+      <p align="center"><font size="3">- - - </font></p>
+      <font style="color: rgb(255, 0, 0); font-weight: bold;" size="3"><big>TRAP
+3
+      </big></font><font size="3"><span style="color: rgb(255, 0, 0);"></span>is
+posed
+by the use of <span style="font-style: italic;">a priori</span>
+parameter uncertainties, <span style="font-family: Courier New,Courier,monospace;">ERPAR</span>, as
+declared next to the parameter values in the </font><a href="spinv15_annotated.pdf#page=5"><font face="Arial"><em><strong>.par</strong></em></font></a><font size="3" face="Arial"><em><strong></strong></em></font><font size="3">
+file.&nbsp; In some situations, like cases with strong
+intercorrelations between
+several constants, it is useful to reduce the search range for selected
+parameters with
+suitably chosen values of&nbsp; </font><font size="3"><span style="font-family: Courier New,Courier,monospace;">ERPAR</span></font><font size="3">. </font><font size="3">Nevertheless, in the final fit such
+errors should be reset to be at least an order of magnitude
+greater than the
+resulting errors in the fitted constants.&nbsp; Otherwise the solution
+may be
+artificially
+constrained and appear more precise than it really is.</font>
+      <p><font size="3"><span style="font-family: Courier New,Courier,monospace;"></span></font><font size="3"> </font></p>
+      <p align="center"><font size="3">- - - </font></p>
+      <font style="color: rgb(255, 0, 0); font-weight: bold;" size="3"><big>TRAP
+4
+      </big></font><font size="3">results from the fact that</font><font size="3"> almost all quartic
+centrifugal distortion constants in the </font><font size="3"> </font><font size="3" face="Arial"><em><strong>.par</strong></em></font><font size="3"> </font><font size="3">file are </font><font style="color: rgb(255, 0, 0); font-style: italic;" size="3" color="#ff0000">negative</font><font size="3"> relative to
+the usual convention, as you can check in <a href="crib.htm#app1">this
+table</a>.</font><font size="3"> The only exception are the two
+off-diagonal <em>S</em>-reduction
+constants, <span style="font-style: italic;">d</span><sub>1</sub> and <span style="font-style: italic;">d</span><sub>2</sub>. The recommended
+solution is </font>to write the parameter descriptions explicitly in
+the <font size="3" face="Arial"><em><strong>.par</strong></em></font>
+file:<br>
+      <br>
+      <small><span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;
+200
+-5.007436030889545E-004 1.00000000E+000 /-DJ</span><br style="font-family: Courier New,Courier,monospace;">
+      <span style="font-family: Courier New,Courier,monospace;"></span><span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;
+1100 -3.854253318510433E-003 1.00000000E+000 /-DJK</span><br style="font-family: Courier New,Courier,monospace;">
+      <span style="font-family: Courier New,Courier,monospace;"></span><span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp;&nbsp;
+2000 -9.473858803517874E-003 1.00000000E+000 /-DK</span><br style="font-family: Courier New,Courier,monospace;">
+      <span style="font-family: Courier New,Courier,monospace;"></span><span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp; 40100
+-9.570171396103077E-005 1.00000000E+000 /d1</span><br style="font-family: Courier New,Courier,monospace;">
+      <span style="font-family: Courier New,Courier,monospace;"></span><span style="font-family: Courier New,Courier,monospace;">&nbsp;&nbsp; 50000
+-1.774207632318250E-005 1.00000000E+000 /d2</span><br style="font-family: Courier New,Courier,monospace;">
+      <span style="font-family: Courier New,Courier,monospace;"></span></small><br>
+      <font size="3">You can then optionally use the </font><font size="3">program </font><a href="crib.htm#app3"><font size="3" face="Arial"><strong>PIFORM</strong></font></a><font size="3"> </font><font size="3">to automatically recover the values of fitted
+parameters and of their errors in the form normally used for
+publication.</font><br>
+      <p align="center"><font size="3">- - - </font></p>
+      <font style="color: rgb(255, 0, 0); font-weight: bold;" size="3"><big>TRAP
+5
+      </big></font><font size="3">is associated with impoper use of the
+      <span style="font-family: Courier New,Courier,monospace;">DIAG</span>
+parameter (twelfth parameter in third line of </font><font size="3" face="Arial"><em><strong>.par</strong></em></font><font size="3">). The
+use of a suitable value of </font><font size="3"><span style="font-family: Courier New,Courier,monospace;">DIAG</span></font><font size="3"> is crucial when there is a high density of states and
+complex quantisation.&nbsp; There is, regrettably, no universal
+solution and for this reason there are many alternative settings of </font><font size="3"> <span style="font-family: Courier New,Courier,monospace;">DIAG</span></font><font size="3">.&nbsp; Conversely, the use of an inapropriate </font><font size="3"> <span style="font-family: Courier New,Courier,monospace;">DIAG</span>
+, especially in simple cases, may lead to spurious quantisation and </font><font size="3">spurious (sometimes very strong) transition
+series.&nbsp;&nbsp; I</font><font size="3">t is usually best</font><font size="3"> to commence a new problem with </font><font size="3"> <span style="font-family: Courier New,Courier,monospace;">DIAG=0</span>.</font><font size="3"><br>
+      <br>
+      </font>
+      <hr style="width: 100%; height: 4px;" size="1" width="100%">
+      <hr style="width: 100%; height: 4px;" size="1" width="100%"><br>
+      <font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3">If the fit goes haywire make sure to
+recover the original </font><font size="3" face="Arial"><em><strong>.par</strong></em></font><font size="3"> by copying from the </font><font size="3" face="Arial"><em><strong>.bak</strong></em></font><font size="3"> version automatically saved by SPFIT at the beginning of
+this fitting run, using the command: </font><font size="3" face="Courier New">copy xxx.bak xxx.par</font><font size="3">. It is also good
+practice to keep good </font><font size="3" face="Arial"><em><strong>.par</strong></em></font><font size="3"> and </font><font size="3" face="Arial"><em><strong>.fit</strong></em></font><font size="3"> files under different names such as </font><font size="3" face="Courier New">xxx.good.par<br>
+      <br>
+      </font>
+      <hr size="1" width="100%" color="#c0c0c0">
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3">In order to fix the value <font face="Courier New">PAR</font> of a parameter set its <em>a priori </em>error
+
+      <span style="font-family: Courier New,Courier,monospace;">ERPAR</span>
+to well below the least significant digit of </font><font size="3"><font size="3"><font face="Courier New">PAR</font></font>.&nbsp; The
+smallest value that can be used is </font><font size="3" face="Courier New">1.E-37</font><font size="3">.<br>
+      <br>
+      </font></p>
+      <p><font size="3">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; It
+is also possible to actually zero the value of a parameter by using the
+following for the value and
+the error (<span style="font-family: Courier New,Courier,monospace;">PAR</span>
+and <span style="font-family: Courier New,Courier,monospace;">ERPAR</span>):<br>
+      </font><font size="4"></font><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </font><font size="2" face="Courier New">0.000000000000000E+000
+1.00000000E-037<br>
+      </font><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>This
+value
+of <font size="3"><span style="font-family: Courier New,Courier,monospace;">PAR</span></font>
+stays fixed in straightforward fits, but in complex fits may
+become incremented to some value in the 10<sup><span style="font-family: Courier New,Courier,monospace;">-</span>60</sup>
+range, which is still pretty low, and will usually be reset to an
+actual zero on
+final convergence.&nbsp; <br>
+      <font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>An
+older alternative
+has been to use something like<span style="font-family: Courier New;">:</span><br>
+      <font size="4"></font><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </font><font size="2" face="Courier New">1.000000000000000E-025
+1.00000000E-037<br>
+      </font>providing that this was not too large for your application.
+      <br>
+      </p>
+      <hr size="1" width="100%" color="#c0c0c0">
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3">In order to omit a line from the fit or to predict a line
+carrying
+zero frequency: </font></p>
+      <ul type="disc">
+        <li><font size="3">Use the </font><font size="3" face="Courier New">ERRTST</font><font size="3"> parameter (sixth parameter in
+second line of </font><font size="3" face="Arial"><em><strong>.par</strong></em></font><font size="3">) but make sure that the (obs-calc)/error for such lines will
+not fall below </font><font size="3" face="Courier New">ERRTST</font></li>
+        <li><font size="3">Assign a very large error to this line e.g. </font><font size="3" face="Courier New">1.E+20</font><font size="3"> (but remember
+to remove such lines from the final fit since their presence
+artificially lowers the deviation of fit)</font></li>
+      </ul>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3">It is possible to assign a zero error to a line and such a
+line will
+most of the time be rejected from the fit. This mechanism is not safe,
+however, since if accidentally the obs-calc deviation for this line
+falls below a certain threshold (of the order of 0.001) then this line
+can be captured into the fit and in consequence will distort it.</font></p>
+      <hr size="1" color="#c0c0c0">
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3">In order to run a prediction from known constants but without any
+lines set up a dummy </font><font size="3" face="Arial"><em><strong>.lin</strong></em></font><font size="3"> file with just one line carrying legal quantum numbers and
+fix all constants in the </font><font size="3" face="Arial"><em><strong>.par</strong></em></font><font size="3"> file. Then run SPFIT, which will generatethe</font><font size="3"> </font><font size="3" face="Arial"><em><strong>.var</strong></em></font><font size="3"> file, allowing SPCAT to be run.</font></p>
+      <hr size="1" color="#c0c0c0">
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>The<font size="3"> </font><font size="3"><a href="spinv15_annotated.pdf#page=2"><font face="Arial"><em><strong>.lin</strong></em></font></a> file is read either to the
+number of </font>lines declared in the <font size="3" face="Arial"><em><strong>.par</strong></em></font>
+file or to the first blank line, whichever comes first. There is thus
+no need to count the number of lines manually: just set an excessively
+large number in the <font size="3" face="Arial"><em><strong>.par</strong></em></font>
+file. </p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Uncertain
+lines/additional
+information can be kept at the end of the <a href="spinv15_annotated.pdf#page=2"><font face="Arial"><em><strong>.lin</strong></em></font></a><font size="3"> file, after at least one blank line, and will not interfere
+with running of the program. Furthermore, it is possible to place
+comments at the end of each line, and this is used for example in the
+annotation scheme used by the </font><a href="#app3"><font size="3" face="Arial"><strong>PIFORM</strong></font></a><font size="3"> program.</font></p>
+      <hr size="1" width="100%" color="#c0c0c0">
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3">The </font><font size="3" face="Arial"><em><strong>.par</strong></em></font><font size="3"> file is acted on up to the number of declared parameters, or to
+the first blank line, whichever comes first.&nbsp; </font><font size="3">However, if there are
+non-blank lines after the declared parameters, then those will be
+echoed to the </font><font size="3" face="Arial"><em><strong>.par</strong></em></font><font size="3"> file resulting from the fit. </font><font size="3">This </font><font size="3"><font size="3">mechanism provides a very useful way of keeping an annotated history of fits in
+the </font><font size="3" face="Arial"><em><strong>.par</strong></em></font><font size="4"> <small>file, including previous versions of this
+file.&nbsp;</small></font>&nbsp; </font><font size="3">There is a limitation in that
+only the first 80 columns of such lines are copied over.<br></font></p><p><font size="3"><b><span style="color: rgb(255, 0, 0);">WARNINGS:</span></b> <br></font></p><ul><li><font size="3">For
+ the 'official' 32-bit SPFIT executable the optional text after the end 
+of the parameter block should not extend beyond 82 columns (even spaces)
+ as this will </font><font size="3">generally cause SPFIT to crash.<br>
+</font></li>
+<li><font size="3">There should be no comma before SPIND in the third line of&nbsp;</font><font size="3"><font size="3"> </font><font size="3" face="Arial"><em><strong>.par</strong></em></font>
+ and in its possible continuation lines, and the consequence is a 
+difficult to understand crash.&nbsp; It is good form, however, to 
+separate all further fields explicitly with commas (especially if those 
+are left blank)<br>
+  </font></li>
+<li><font size="3">A</font><font size="4"><small>n accidental empty line in the </small></font><font size="4"><small><font size="3" face="Arial"><em><strong>.par</strong></em></font> file will cause
+a loss of all of the information that was stored below it in the file.</small><br>
+      </font></li></ul>
+      <hr style="width: 100%; height: 2px;" size="1" width="100%">
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3">SPFIT no longer requires access to
+descriptive names of constants that were taken from the </font><font size="3" face="Arial"><em><strong>.nam</strong></em></font><font size="3"> files. It is sufficient to place an appropriate alphanumeric
+comment at the end of the parameter declaration line and this will be
+carried over to resulting </font><font size="3" face="Arial"><em><strong>.par</strong></em></font><font size="3"> files. Note that this comment has to be separated by a space
+and a slash, and cannot be longer than 10 characters:</font></p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="2" face="Courier New">1200 2.095827797711319E-007
+1.00000000E+000 /HJK</font></p>
+      <hr size="1" width="100%" color="#c0c0c0">
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3">The use of a negative parameter identifier in the </font><font size="3" face="Arial"><em><strong>.par</strong></em></font><font size="3"> file has, as the primary function, the declaration of a
+parameter for which the value follows that of an immediately preceding
+parameter by a fixed ratio. </font></p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3">A second feature is that it is also possible to construct a
+dependent parameter in such a way that it is a <em>linear combination</em>
+of independent parameters. This is because the values corresponding to
+the same negative parameter identifier following several different
+positive identifiers are <em>additive</em>. An example of this is
+given by HMP in his documentation, as the last of the 'simple examples'.</font></p>
+      <hr size="1" width="100%" color="#c0c0c0">
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3">In fitting of problems with strong intercorrelations between
+several constants it is useful to reduce their search range with
+suitably chosen <em>a priori</em> errors. </font><font size="3"><span style="color: rgb(255, 0, 0);">WARNING:</span></font><font size="3">
+in the final fit such errors should be at least an order of magnitude
+greater than the
+errors in the fitted constants.&nbsp; Otherwise the solution may be
+artificially
+constrained and appear more precise than it really is.</font></p>
+      <p><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></p>
+      <p><a name="spfitc"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="10" border="0">
+        <tbody>
+          <tr>
+            <td bgcolor="#e0e0b1"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font size="5"> Compilation</font><font size="4"> </font><font size="3">(only
+for
+the FORTRAN legacy versions)</font><font size="1"> </font></td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3">Compilation with NDP-F-486 3.1:</font></p>
+      <pre>   mf77 -exp -phar2 -OLM -onrc -nomap calfit.for subfit.for<br>              ulib.for blas.for slib.for spinv.for</pre>
+      <p align="left"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </font>The dimensioning in the top PARAMETER statement in CALFIT
+may be changed as required, and the original versions of routines ULIB,
+SLIB, SPINV which contain SAVE calls by name of COMMON block are
+necessary.</p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3">Compilation with SG Fortran:</font></p>
+      <pre>   f77 -O2 -static -o spfit calfit.for subfit.for ulib.for blas.for<br>              slib.for spinv.for</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3">Compilation with MS Power-Fortran:</font></p>
+      <pre>   fl32 -G4 -Ox calfit.for subfit.for ulib.for blas.for slib.for<br>                spinv.for</pre>
+      <pre><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></pre>
+      <p><a name="spcat"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="10" border="0" bgcolor="#008080">
+        <tbody>
+          <tr>
+            <td bgcolor="#008080">
+            <p align="center"><font size="6" face="Courier New" color="#ffffff"><strong>SPCAT</strong></font><font size="5" color="#ffffff">
+= the predictive program</font></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p align="center"><br>
+      </p>
+      <div align="center">
+      <center>
+      <table width="100%" cellpadding="0" border="0">
+        <tbody>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;It is best to run SPFIT before running SPCAT,
+even if only on dummy data, as this automatically
+generates the <font face="Arial"><em><strong>.var</strong></em></font>
+file required for an SPCAT run.<br>
+            </td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td valign="top">input:</td>
+            <td>&nbsp;</td>
+            <td valign="top"><a href="spinv15_annotated.pdf#page=3"><font face="Arial"><em><strong>.var</strong></em></font></a></td>
+            <td>&nbsp;</td>
+            <td valign="top">-</td>
+            <td>&nbsp;</td>
+            <td>constants, errors + correlation matrix from SPFIT</td>
+          </tr>
+          <tr>
+            <td valign="top">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td valign="top"><a href="spinv15_annotated.pdf#page=7"><font face="Arial"><em><strong>.int</strong></em></font></a></td>
+            <td>&nbsp;</td>
+            <td valign="top">-</td>
+            <td>&nbsp;</td>
+            <td>information for intensity calculation</td>
+          </tr>
+          <tr>
+            <td valign="top">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td valign="top"><font face="Arial" color="#808080"><em><strong>.bin</strong></em></font></td>
+            <td>&nbsp;</td>
+            <td valign="top">-</td>
+            <td>&nbsp;</td>
+            <td>binary version of parameters and variances generated by
+a previous run of SPFIT (this is now obsolete and no longer used) </td>
+          </tr>
+          <tr>
+            <td valign="top">output:<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></td>
+            <td>&nbsp;</td>
+            <td valign="top"><font face="Arial"><em><strong>.out</strong></em></font></td>
+            <td>&nbsp;</td>
+            <td valign="top">-</td>
+            <td>&nbsp;</td>
+            <td>main output file with block by block listing of
+energies and transition frequencies</td>
+          </tr>
+          <tr>
+            <td valign="top">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td valign="top"><a href="spinv15_annotated.pdf#page=9"><font face="Arial"><em><strong>.cat</strong></em></font></a></td>
+            <td>&nbsp;</td>
+            <td valign="top">-</td>
+            <td>&nbsp;</td>
+            <td>catalogue file, calculated transitions only, 80-column
+format. The file serves as input for the merging program and is now
+sorted in frequency. </td>
+          </tr>
+          <tr>
+            <td valign="top">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td valign="top"><font face="Arial"><em><strong>.str</strong></em></font></td>
+            <td>&nbsp;</td>
+            <td valign="top">-</td>
+            <td>&nbsp;</td>
+            <td>output of transition dipoles</td>
+          </tr>
+          <tr>
+            <td valign="top">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td valign="top"><a href="spinv15_annotated.pdf#page=10"><font face="Arial"><em><strong>.egy</strong></em></font></a></td>
+            <td>&nbsp;</td>
+            <td valign="top">-</td>
+            <td>&nbsp;</td>
+            <td>output of energy levels, derivatives, and eigenvectors</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <hr size="2" width="100%">
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><a name="spcatint"></a><font size="3">The </font><a href="spinv15_annotated.pdf#page=7"><font face="Arial"><em><strong>.int</strong></em></font></a><font size="3"> file
+requires the rotational partition function <em>Q</em><sub><em>r</em></sub>
+which should by default be calculated for 300K. Intensities for other
+temperatures, such as those of supersonic expansion, could earlier only
+be recalculated externally, which can be done with PISORT. <br>
+</font></p>
+<p><font size="3"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>However,
+ it has been possible since at least 2007 to directly calculate 
+intensities for a specified temperature (as this is the ninth parameter 
+in the second line of t</font><font size="3"><font size="3">he </font><a href="file:///D:/papers/web/asym/pickett/spinv15_annotated.pdf#page=7"><font face="Arial"><em><strong>.int</strong></em></font></a><font size="3" face="Arial"><em><strong></strong></em></font><font size="3"> file</font>).&nbsp; <u>Remember</u> that it is necessary </font><font size="3">to not only specify the temperature explicitly but also t</font><font size="3">he <em>Q</em><sub><em>r</em></sub>
+value for this temperature. A preliminary run of SPCAT with the desired temperature will precalculate the needed </font><font size="3"><font size="3"><em>Q</em><sub><em>r</em></sub> value.&nbsp; </font>Some commonly used approximations for <em>Q</em><sub><em>r</em></sub>
+are given below.</font></p>
+
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>For
+a
+linear top (Gordy &amp; Cook, ed.3 p.57, Eq.3.64):</p>
+      <pre>   <em>Q</em><sub><em>r</em></sub> = <em>kT</em>/(<em>hB</em>) = 2.0837<font size="1" face="Arial">x</font>10<sup><sup>4</sup></sup> <em>T</em>/<em>B</em>             ; <em>B</em>/MHz, <em>T</em>/K</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>For
+a
+(prolate) symmetric top (G&amp;C, Eq.3.68):</p>
+      <pre>   <em>Q</em><sub><em>r</em></sub> = 5.3311<font size="1" face="Arial">x</font>10<sup><sup>6</sup></sup> <font size="5">(</font><em>T</em><font face="Times New Roman"><sup> 3</sup></font>/(<em>B</em><font face="Times New Roman"><sup> 2</sup></font> <em>A</em>)<font size="4">)</font><font face="Times New Roman"><sup><sup>1/2</sup></sup></font> /sigma      ; <em>A</em>,<em>B</em>/MHz, <em>T</em>/K</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>For
+an
+asymmetric top (G&amp;C, Eq.3.69):</p>
+      <pre>   <em>Q</em><sub><em>r</em></sub> = 5.3311<font size="1" face="Arial">x</font>10<sup><sup>6</sup></sup> <font size="4">(</font><em>T</em><font face="Times New Roman"><sup> 3</sup></font>/(<em>A B C</em>)<font size="4">)</font><font face="Times New Roman"><sup><sup>1/2</sup></sup></font> /sigma     ; <em>A</em>,<em>B</em>,<em>C</em>/MHz, <em>T</em>/K</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>The
+line
+intensity (i.e. <font face="Courier New">LGSTR.</font>) tabulated
+in the SPCAT output is the logarithm of intensity <em>I</em><sub><em>ba</em></sub>(<em>T</em>)
+as
+defined in Eq.(1,2) of the <a href="http://spec.jpl.nasa.gov/ftp/pub/catalog/doc/catdoc.pdf">catdoc.pdf</a>
+documentation file for the jpl catalogue, and is in units of nm<sup>2</sup>MHz.
+Conversion
+to peak absorption coefficient &#945;<sub>max</sub>
+in cm<font size="3" face="Courier New"><sup>-</sup></font><sup>1</sup>
+is made with Eq.(5) of the documentation, i.e.</p>
+      <pre>   &#945;<sub>max</sub> = 102.458<font size="1" face="Arial"> x</font><em>I</em><sub><em>ba</em></sub>(<em>T</em>)/&#916;&#957;<em>,</em></pre>
+      <p>where &#916;&#957; is the HWHH in MHz at 1
+Torr pressure. If the symmetry factor <font face="Symbol">&#963;</font> and
+the nuclear spin weight <em>g</em><sub><em>I</em></sub> are both unity
+then <em>I</em><sub><em>ba</em></sub>(<em>T</em>) is a factor of
+(102.458/20)<font size="1" face="Arial">x</font>0.95=4.87 smaller than &#945;<sub>max</sub>
+calculated by <a href="../asym.htm#asrot"><b><font face="Arial">ASROT</font></b></a>, which uses
+Eq.7.73, p.263 G&amp;C, and assumes &#916;&#957;<font face="Symbol">=20</font>MHz,
+
+      <em>F</em><font face="Courier New"><sub><em>v</em></sub></font>=0.95.
+For
+prediction of intensities for a vibrational state with <em>F</em><font face="Courier New"><sub><em>v</em></sub></font> lower than 1, use <font size="3"><em>Q</em><sub><em>r</em></sub></font>/<em>F</em><font face="Courier New"><sub><em>v</em></sub></font> for <font size="3"><em>Q</em><sub><em>r</em></sub></font>.</p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>Dipole
+moments
+are to be specified as:</p>
+      <pre>   1  x.xxx     mua/D for state v=0<br>   2  x.xxx     mub/D for state v=0<br>   3  x.xxx     muc/D for state v=0<br> 111  x.xxx     mua/D for state v=1<br> 112  x.xxx     mub/D for state v=1 etc.</pre>
+      <p><font size="4">&nbsp;&nbsp;</font></p>
+      <p><a name="spcath"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="10" border="0">
+        <tbody>
+          <tr>
+            <td bgcolor="#e0e0b1"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            </font><font size="5">SPCAT Notes and Hints</font></td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p><font size="4"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>I<font size="3">f parameters in the </font><font size="3" face="Arial"><em><strong>.par</strong></em></font><font size="3"> file are in MHz and if you want the energies in the </font><font size="3" face="Arial"><em><strong>.egy</strong></em></font><font size="3"> file to also be in MHz (and not in the default cm</font><font size="3" face="Courier New"><sup>-</sup></font><font size="3" face="Symbol"><sup>1</sup></font><font size="3">) then in the </font><a href="spinv15_annotated.pdf#page=7"><font size="3" face="Arial"><em><strong>.int</strong></em></font></a><font size="3"> file set </font><font size="3" face="Courier New">FLAGS</font><font size="3">=1101, for example. The trick is to set the most significant
+digit, </font><font size="3" face="Courier New">IRFLG</font><font size="3">=1. Even though this involves pretending that the parameters
+are in cm</font><font size="3" face="Courier New"><sup>-</sup></font><font size="3" face="Symbol"><sup>1</sup></font><font size="3">, the result
+of associated conversions is that numerical values for the energies
+come out in MHz.<br>
+<br>
+</font></p><font size="4"><font size="3"><font size="4">
+</font></font></font>
+<hr size="1" width="100%"><font size="4"><font size="3"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></font></font>Since it is the <font size="4"><font size="3"><font size="4"><font size="3" face="Arial"><em><strong>.var</strong></em></font><font size="3"> file and not the </font></font></font></font><font size="4"><font size="3"><font size="4"><font size="3"><font size="3" face="Arial"><em><strong>.par</strong></em></font><font size="3"> file that is used by SPCAT it is possible to change predictions by editing </font></font></font>some control parameters in the </font></font><font size="4"><font size="3"><font size="4"><font size="3"><font size="4"> </font></font></font><font size="4"><font size="3"><font size="4"><font size="3" face="Arial"><em><strong>.var</strong></em></font><font size="3"> file without the need for a new fit.<br>
+<br>
+</font></font></font></font></font></font><font size="4"><font size="3"><font size="4"><font size="3"><font size="4"><font size="3"><font size="4"><font size="3"><font size="4"><font size="4"><font size="3"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></font></font></font></font></font></font></font></font></font></font></font>One useful possibility is evaluation of hyperfine-free <font size="3">transition frequencies from results of a complete hyperfine-resolved fit. </font><font size="4"><font size="3"><font size="4"><font size="3"><font size="4"><font size="3">The </font></font></font></font></font></font><font size="4"><font size="3"><font size="4"><font size="3"><font size="4"><font size="3"><font size="4"><font size="3"><font size="4"><font size="3" face="Arial"><em><strong>.int</strong></em></font></font></font></font> file does not need to be edited and only minimal changes in the </font></font></font></font></font></font><font size="4"><font size="3"><font size="4"><font size="3"><font size="4"><font size="3"><font size="4"><font size="3"><font size="4"><font size="3" face="Arial"><em><strong>.var</strong></em></font></font></font></font> file are necessary, specifically:<br>
+          </font></font></font></font></font></font>
+<ul>
+  <li><font size="4"><font size="3"><font size="4"><font size="3"><font size="4"><font size="3">line
+ 2: there is no need to change the value of NPAR (first parameter) but 
+it is necessary to delete all declared hyperfine parameters (it is best 
+to have these as the last of the declared parameters). SPCAT seems to 
+recognise the end of legal parameter declarations.<br>
+              </font></font></font></font></font></font></li>
+  <li><font size="4"><font size="3"><font size="4"><font size="3"><font size="4"><font size="3">line 3: change SPIND (second parameter) to 1</font></font></font></font></font></font></li>
+  <li><font size="4"><font size="3"><font size="4"><font size="3"><font size="4"><font size="3">line
+ 3: IXX (seventh parameter) does not need to be changed but its value 
+determines the number of quanta per energy level in the output.&nbsp; 
+For an asymmetric top a blank value results in just J,Ka,Kc.</font></font></font></font></font></font></li>
+  <li>Note that transition uncertainties evaluated following these 
+modifications will not be useful since no care has been taken of the  
+Choleski decomposition of the correlation matrix available after the parameter declarations at the end of
+ the<font size="4"><font size="3"><font size="4"><font size="3"><font size="4"><font size="3"> </font></font></font></font></font></font><font size="4"><font size="3"><font size="4"><font size="3"><font size="4"><font size="3"><font size="4"><font size="3"><font size="4"><font size="3" face="Arial"><em><strong>.var</strong></em></font></font></font></font></font></font></font></font></font></font> file.</li>
+</ul>
+&nbsp;<br>
+<hr size="1" width="100%" color="#c0c0c0"><br>
+<font size="4"><font size="3"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></font></font>
+ It is possible to use more than six quantum numbers to describe energy 
+levels.&nbsp; The examples are asymmetric top cases Q=54 and Q=43 (see 
+the "Format of Quantum Numbers" section in <a href="http://info.ifpan.edu.pl/%7Ekisiel/asym/pickett/spinv15_annotated.pdf">SPINV.PDF</a>).&nbsp; In such cases all spin quantum numbers preceding <i>F</i> are lumped into an aggregate quantum number <i>nn</i>.&nbsp; All non-aggregated quantum numbers are only printed in the <font size="4"><font size="3"><font size="4"><font size="3" face="Arial"><em><strong>.egy</strong></em></font><font size="3"> file, while <i>nn</i>,<i>F</i> are used in the </font></font></font></font><font size="4"><font size="3"><font size="4"><font size="3"><font size="3" face="Arial"><em><strong>.lin</strong></em></font><font size="3"> and </font></font></font></font></font><font size="4"><font size="3"><font size="4"><font size="3"><font size="3"><font size="4"><font size="3"><font size="4"><font size="3"><font size="3" face="Arial"><em><strong>.cat</strong></em></font></font></font></font></font> files, so that the situation is compatible with </font></font></font></font></font><font size="4"><font size="3"><font size="4"><font size="3"><font size="3"><a href="http://info.ifpan.edu.pl/%7Ekisiel/aabs/aabs.htm#aabs"><font face="Arial"><strong>ASCP_L</strong></font></a>. Conversion between all spin quantum numbers and </font></font></font></font></font><font size="4"><font size="3"><font size="4"><font size="3"><font size="3"><font size="4"><font size="3"><font size="4"><font size="3"><i>nn</i>,<i>F</i></font></font></font></font> has not been defined. </font></font></font></font></font><font size="4"><font size="3"><font size="4"><font size="3"><font size="4"><font size="3"><br>
+</font></font></font></font></font></font><font size="4"><font size="3"><br></font>
+</font><hr size="1" width="100%" color="#c0c0c0"><font size="4"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>Partition function, hyperfine structure and state multiplicity:</i></font><br><p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="3">The SPFIT/SPCAT package provides several ways of dealing with predictions for higher-<i>J</i> transitions for a molecule with a quadrupolar atom.&nbsp; The lowest-<i>J</i> rotational transitions will show nuclear quadrupole hyperfine structure, but in higher-<i>J</i>
+ transitions this will be completely collapsed and is usually 
+ignored.&nbsp; Databases set up for astrophysicists use several possible
+ approaches so it is useful to discuss the differences.&nbsp; The HCCCN 
+molecule is used as an example, and it contains a single <sup>14</sup>N nucleus, nuclear spin <i>I</i>=1.&nbsp; The various possibilities for generating line lists are:<br><br></font><font size="3"><font size="3"><b><font color="#cc33cc">CASE 1:</font></b> Hyperfine structure is ignored.&nbsp; The molecule is 
+treated as a standard linear rotor, as in the <a href="http://www.astro.uni-koeln.de/cgi-bin/cdmsinfo?file=e051501.cat">051501 species</a> entry in the&nbsp; CDMS database.&nbsp; Spin is assumed to be zero,
+ hence the spin degeneracy parameter <font face="Courier New">SPIND</font> in the </font></font><font size="3"><font size="3"><font size="3"> </font><a href="spinv15_annotated.pdf#page=3"><font size="3" face="Arial"><em><strong>.var</strong></em></font></a> file is set to 1 (its value is 2<i>I</i>+1).&nbsp; Each rotational level is also declared to have multiplicity of 1 (<font face="Courier New">WTPL=1</font>, <font face="Courier New">WTMN=1</font> in the </font></font><font size="3"><font size="3"><font size="3"><font size="3"><font size="3"> </font><a href="spinv15_annotated.pdf#page=3"><font size="3" face="Arial"><em><strong>.var</strong></em></font></a> file</font></font>).&nbsp; The partition function value <font face="Courier New">QROT</font> in the </font></font><font size="3"><font size="3"><a href="spinv15_annotated.pdf#page=7"><font size="3" face="Arial"><em><strong>.int</strong></em></font></a> file is then compatible with the linear top formula discussed above and is <i>Q</i>(300K)=1374.9098.<br></font></font></p><p><font size="3"><font size="3"><font size="3"><font color="#cc33cc"><b>CASE 2:</b></font> Hyperfine structure is implicit, as treated in the <a href="http://spec.jpl.nasa.gov/ftp/pub/catalog/doc/d051001.pdf">51001 species</a> entry in the jpl database.&nbsp; Explicit nuclear spin is ignored as in CASE 1, so that spin degeneracy </font></font></font><font size="3"><font size="3"><font size="3"><font size="3"><font size="3"><font face="Courier New">SPIND</font></font></font>
+ is also declared as 1.&nbsp; But each rotational level is declared to be triply degenerate, using </font></font></font><font size="3"><font size="3"><font size="3"><font size="3"><font size="3"><font face="Courier New">WTPL=3</font>, <font face="Courier New">WTMN=3</font>.&nbsp;
+ In consequence, there are three times more levels to be counted in 
+evaluation of the partition function and its room temperature value 
+required </font></font></font></font></font><font size="3"><font size="3"><font size="3"><font size="3"><font size="3"><font size="3"><font size="3">in the </font></font><font size="3"><font size="3"><a href="spinv15_annotated.pdf#page=7"><font size="3" face="Arial"><em><strong>.int</strong></em></font></a> file </font></font>is therefore </font></font></font></font></font><font size="3"><font size="3"><font size="3"><font size="3"><font size="3"><font size="3"><font size="3"><font size="3"><i>Q</i>(300K)=4124.495.</font></font></font>&nbsp; Nevertheless, the&nbsp; calculated transition intensities as given by the <font face="Courier New">LGINT</font> values in the </font></font></font></font></font><font size="3"><font size="3"><font size="3"><font size="3"><font size="3"><a href="spinv15_annotated.pdf#page=9"><font face="Arial"><em><strong>.cat</strong></em></font></a> file are identical to those from CASE 1.</font></font><br>
+<br></font></font><font color="#cc33cc"><b>CASE 3:</b></font> Hyperfine structure is explicit.&nbsp; Nuclear spin degeneracy parameter is set to </font><font size="3"><font size="3"><font size="3"><font face="Courier New">SPIND=3 </font></font></font>as required for nuclear spin <i>I</i>=1. Each rotational level is an explicit hyperfine level so that there is no hidden degeneracy and </font><font size="3"><font size="3"><font size="3"><font face="Courier New">WTPL=1</font>, <font face="Courier New">WTMN=1</font></font></font>.
+ There are still three times the number of rotational levels to be 
+counted than in CASE 1, so that the partition function is three times 
+larger, and is <i>Q</i>(300K)=4124.7294 (as specified at the bottom of <a href="http://www.astro.uni-koeln.de/site/vorhersagen/catalog/archive/HC3N/HC3N.Q">this partition functions listing</a>
+ for species 051501 in CDMS).&nbsp; The predicted transitions will now 
+contain the hyperfine components explicitly.&nbsp; For each higher-<i>J</i>
+ rotational transition there will usually be three overlapped 
+components, each of intensity roughly a third of those in CASE 1 and 
+CASE 2, and summing up to those from the first two cases.<br><br></font></p>
+      <p><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></p>
+      <p><a name="spcatc"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="10" border="0">
+        <tbody>
+          <tr>
+            <td bgcolor="#e0e0b1"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            </font><font size="5">Compilation</font><font size="4"> </font><font size="3">(only for the FORTRAN legacy versions)</font><font size="1"> </font></td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p align="left"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </font><font size="3">Compilation with NDP-F-486 3.1:</font></p>
+      <pre>   mf77 -exp -phar2 -OLM -onrc -nomap calcat.for ulib.for<br>              blas.for slib.for spinv.for</pre>
+      <p align="left"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </font><font size="3">Compilation with MS-Power Fortran:</font></p>
+      <pre>   fl32 -G4 -Ox calcat.for ulib.for blas.for slib.for spinv.for</pre>
+      <p align="left"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </font><font size="3">The dimensioning in the top PARAMETER
+statement in CALCAT may be changed as required and other notes for
+compilation of SPFIT are also applicable.</font></p>
+      <pre><font size="4">&nbsp;&nbsp;&nbsp;</font></pre>
+      <pre><font size="4">&nbsp;&nbsp;&nbsp;</font></pre>
+      <p align="left"><a name="app1"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="5" border="1">
+        <tbody>
+          <tr>
+            <td width="25%" bgcolor="#e0e0b1" valign="top"><strong>APPENDIX
+I</strong></td>
+            <td width="75%" bgcolor="#efefd6" valign="top">Parameter indices and names</td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <pre><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></pre>
+      <pre> projection type TYP_  _KSQ = power of K^2<br>                     || _NSQ1 = power of N(N+1)  <br>        (I2&gt;=I1) I2  ||| _V2<br>                 |I1 |||| _V1 &gt;= V2<br>                 || _|||||<br>               <strong>XX</strong>x<strong>X</strong>x<strong>XX</strong>x<strong>X</strong>x<strong>X</strong><br>               --  |      <br>                |  NS = power of N.S<br>                FF = Fourier flag<br>      </pre>
+      <ul>
+        <li>For NVIB&gt;9 V1 and V2 become two digit numbers</li>
+        <li>Setting V1=V2=9 for NVIB&lt;10, or V1=V2=99 otherwise,
+enforces the same value of this parameter for all vibrational states. If
+the same parameter is then declared with a different specification of
+V1,V2, the declared value is the <em>difference</em> relative to the
+global specification e.g. <em>B</em><font face="Courier New"><sub><em>v</em></sub></font><font face="Symbol">&#8722;</font><em>B</em></li>
+        <li>Negative parameter identifier specifies that this parameter
+is to follow the value for the immediately preceding parameter with a
++ve identifier, at the ratio defined by their initial values. This
+allows fitting of simple two component linear combinations, as well as
+of blocks of linked values</li>
+      </ul>
+      <pre>----------------------------------------------------------------------<br>Watson-A       Watson-S       Hyperfine              Coriolis (0&lt;-&gt;1)<br>----------------------------------------------------------------------</pre>
+      <pre>10000 A         10000 A       spin 1:                    11 E1<br>20000 B         20000 B       110010000chi.aa*3/2    200001 Ga<br>30000 C         30000 C       110020000chi.bb*3/2    210001 Fbc<br>                              110030000chi.cc*3/2    400001 Gb<br>  200-DeltaJ      200-DJ      110040000chi(b-c)/4    410001 Fca<br> 1100-DeltaJK    1100-DJK     110610000chi.ab        600001 Gc<br> 2000-DeltaK     2000-DK      110210000chi.bc        610001 Fab<br>40100-deltaJ    40100 d1      110410000chi.ac<br>41000-deltaK    50000 d2      110011000chi.k*3/2    -----------------<br>                              110010100chi.J*3/2     Fermi (0&lt;-&gt;1)<br>  300 PhiJ        300 HJ                            -----------------<br> 1200 PhiJK      1200 HJK     spin 2:                    01 F<br> 2100 PhiKJ      2100 HKJ     220010000chi.aa*3/2<br> 3000 PhiK       3000 HK      220020000chi.bb*3/2   -----------------<br>40200 phiJ      40200 h1      220030000chi.cc*3/2    Internal rotation<br>41100 phiJK     50100 h2      etc.                  -----------------<br>42000 phiK      60000 h3                             200000 D_a<br>                              spin-spin:             200100 D_aJ<br>  400 LJ          400 LJ      120010000 D.aa*3/2     201000 D_aK etc.<br> 1300 LJJK       1300 LJJK    120040000 D(b-c)/4<br> 2200 LJK        2200 LJK     120610000 Dab          400000 D_b<br> 3100 LKKJ       3100 LKKJ                           600000 D_c<br> 4000 LK         4000 LK      spin-rotation (nucl.1):<br>40300 lJ        40300 l1      10010000M.aa {+IMJ<br>41200 lJK       50200 l2      10020000M.bb {+IMJ<br>42100 lKJ       60100 l3      10030000M.cc {+IMJ<br>43000 lK        70000 l4       </pre>
+      <pre>  500 PJ          500 PJ       <br> 1400 PJJK       1400 PJJK     <br> 2300 PJK        2300 PJK      <br> 3200 PKJ        3200 PKJ      <br> 4100 PKKJ       4100 PKKJ     <br> 5000 PK         5000 PK       <br>40400 pJ        40400 p1       <br>41300 pJJK      50300 p2       <br>42200 pJK       60200 p3      &lt;- A: up to sextics G&amp;C p.331, <br>43100 pKKJ      70100 p4            octics+decadics p.333<br>44000 pK        80000 p5      &lt;- S: up to sextics p.334, octics p.335<br>----------------------------------------------------------------------</pre>
+      <p>&nbsp;</p>
+      <pre><font size="4">&nbsp;&nbsp;&nbsp;</font></pre>
+      <p><a name="app2"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="5" border="1">
+        <tbody>
+          <tr>
+            <td width="25%" bgcolor="#e0e0b1" valign="top"><strong>APPENDIX
+II</strong></td>
+            <td width="75%" bgcolor="#efefd6" valign="top">Various
+postprocessing programs for manipulation of data and output for SPFIT
+and SPCAT available from the <a href="http://info.ifpan.edu.pl/%7Ekisiel/prospe.htm">PROSPE</a> web
+site in its asymmetric top programs section at:
+            <pre><a href="http://info.ifpan.edu.pl/%7Ekisiel/asym/asym.htm#pickett"><font size="2">http://info.ifpan.edu.pl/~kisiel/asym/asym.htm#pickett</font></a></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="5" border="0">
+        <tbody>
+          <tr>
+  <td valign="top"><br>
+  </td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top"><br>
+  </td>
+</tr>
+<tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><b><font color="#339999"><i>Most often used:</i></font></b><br>
+</td>
+          </tr>
+          <tr>
+            <td valign="top"><a href="http://info.ifpan.edu.pl/%7Ekisiel/asym/asym.htm#piform"><font size="3" face="Arial"><strong>PIFORM</strong></font></a></td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">-</td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">Formatting of the <font face="Arial"><em><strong>.fit</strong></em></font>
+output into a form closer to that customarily used in publications</td>
+          </tr>
+          <tr>
+            <td valign="top"><a href="../asym.htm#pisort"><font size="3" face="Arial"><strong></strong></font></a><a href="http://info.ifpan.edu.pl/%7Ekisiel/asym/asym.htm#pisort"><font size="3" face="Arial"><strong></strong></font></a><a href="http://info.ifpan.edu.pl/%7Ekisiel/asym/asym.htm#pislin"><font size="3" face="Arial"><strong>PISLIN</strong></font></a></td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">-</td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">1/ Checks for line duplication and split blends in a <font face="Arial"><em><strong>.lin</strong></em></font>
+file.&nbsp; 2/ Sorts the  <font face="Arial"><em><strong>.lin</strong></em></font>
+file according to any quantum number, frequency and magnitude of
+error (also possible to subsort according to a second criterion within a
+previous sorting criterion).</td>
+          </tr>
+          <tr>
+  <td valign="top"><a href="http://info.ifpan.edu.pl/%7Ekisiel/asym/asym.htm#linfil"><font size="3" face="Arial"><strong>LINFIL</strong></font></a></td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top">-</td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top">Filtering and global modifications of a  <font face="Arial"><em><strong>.lin</strong></em></font>
+file according to many different criteria.<br>
+  </td>
+</tr>
+<tr>
+  <td valign="top"><a href="http://info.ifpan.edu.pl/%7Ekisiel/asym/asym.htm#catfil"><font size="3" face="Arial"><strong>CATFIL</strong></font></a></td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top">-</td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top">Filtering of a  <font face="Arial"><em><strong>.cat</strong></em></font>
+file according to a combination of user specified options.</td>
+</tr>
+
+          <tr>
+  <td valign="top"><br>
+  </td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top"><br>
+  </td>
+</tr>
+<tr>
+            <td style="vertical-align: top;"><br>
+</td>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;">-</td>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><font color="#339999"><b><i>Less frequenctly used:</i></b></font><br>
+</td>
+          </tr>
+          <tr>
+            <td valign="top"><b><a href="http://info.ifpan.edu.pl/%7Ekisiel/asym/asym.htm#picham"><font face="Arial">PICHAM</font></a></b></td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">-</td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top"><font size="3">Reformatting
+of
+the </font><font face="Arial"><em><strong>.egy</strong></em></font><font size="3"> file to make it easier to check the </font><font size="3">actual
+Hamiltonian
+matrix
+elements set up for a given parameter in the </font><font face="Arial"><em><strong>.par</strong></em></font><font size="3"> file.</font></td>
+          </tr>
+          <tr>
+  <td valign="top"><a href="http://info.ifpan.edu.pl/%7Ekisiel/asym/asym.htm#pmix"><font size="3" face="Arial"><strong>PMIX</strong></font></a><br>
+    <a href="http://info.ifpan.edu.pl/%7Ekisiel/asym/asym.htm#pmix"><font size="3" face="Arial"><strong>PMIXC</strong></font></a></td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top">-</td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top">Graphical identification of resonances between energy levels in interacting vibrational states using mixing coefficients from<font size="3"> the </font><font face="Arial"><em><strong>.egy</strong></em></font><font size="3"> file.</font></td>
+</tr>
+<tr>
+            <td valign="top"><a href="http://info.ifpan.edu.pl/%7Ekisiel/asym/asym.htm#pisort"><font size="3" face="Arial"><strong>PISORT</strong></font></a> <br>
+</td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">Sorting of predictions in <font face="Arial"><em><strong>.out</strong></em></font> file according to
+frequency and optional conversion into .ASR format for the legacy graphics
+viewer ASCP <br>
+</td>
+          </tr>
+          <tr>
+  <td valign="top"><a href="http://info.ifpan.edu.pl/%7Ekisiel/asym/asym.htm#linasf"><font size="3" face="Arial"><strong>LINASF</strong></font></a></td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top">Converter of a <font face="Arial"><em><strong>.lin</strong></em></font>
+file to frequency block in <font face="Arial"><em><strong>.asf</strong></em></font> standard of the <a href="http://info.ifpan.edu.pl/%7Ekisiel/asym/asym.htm#asfit"><font size="3" face="Arial"><strong>ASFIT</strong></font></a> program.<br>
+  </td>
+</tr>
+<tr>
+  <td valign="top"><a href="http://info.ifpan.edu.pl/%7Ekisiel/asym/asym.htm#catband"><font size="3" face="Arial"><strong>CATBAND</strong></font></a></td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top">Generation of line sequence/band markers on diagrams drawn with <a href="http://info.ifpan.edu.pl/%7Ekisiel/prospe.htm#gle">gle</a>.<br>
+  </td>
+</tr>
+<tr>
+  <td valign="top"><br>
+  </td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top"><br>
+  </td>
+</tr>
+<tr>
+  <td valign="top"><br>
+  </td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top"><br>
+  </td>
+  <td valign="top"><font color="#339999"><b><i>Indispensible:</i></b></font><br>
+  </td>
+</tr>
+<tr>
+            <td valign="top"><a href="http://info.ifpan.edu.pl/%7Ekisiel/aabs/aabs.htm#aabs"><font face="Arial"><strong>ASCP_L</strong></font></a>
+            <p><a href="http://info.ifpan.edu.pl/%7Ekisiel/asym/asym.htm#ascp"><font face="Arial"><strong><br>
+</strong></font></a><font face="Arial"><strong>
+            </strong></font></p>
+            </td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">-</td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">Graphics viewer of SPCAT predictions as
+stick diagrams: multiple data sets, various types of highlighting,
+scrolling etc., reads <font face="Arial"><em><strong>.cat</strong></em></font>
+files directly</td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <pre><font size="4">&nbsp;&nbsp;&nbsp;</font></pre>
+      
+<p><a name="app3"></a></p>
+<div align="center">
+<center>
+      <table width="100%" cellspacing="0" cellpadding="5" border="1">
+        <tbody>
+          <tr>
+            <td width="25%" bgcolor="#e0e0b1" valign="top"><strong>APPENDIX
+II</strong></td>
+            <td width="75%" bgcolor="#efefd6" valign="top">SPFIT/SPCAT
+and Windows Vista (as of July 2008)</td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </font>Windows Vista introduced a new protective software layer
+called User Account Control (UAC). Under default settings the launching
+of some programs triggers UAC and you are asked to explicitly confirm
+that they are <em>bona fide</em>, even if you are an administrator.
+Large (but not small) runs of SPFIT/SPCAT trigger UAC. The problem is
+that you do not get the chance to do anything and the programs either
+hang up or crash. Both SPFIT and SPCAT are subject to this, and the
+objectionable action seems to be the generation of a scratch memory
+area for larger sorting operations:</p>
+
+<p><font size="4" face="Courier New">SPFIT</font><font size="4">:</font>
+crashes while reading in the .LIN file with the console message
+"scratch file write error"</p>
+
+      
+<p><font size="4" face="Courier New">SPCAT</font><font size="4">:</font>
+hangs after the final "STARTING QUANTUM xx" message at the stage when
+it would commence sorting the .CAT file in frequency</p>
+      
+<p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </font>Switching off UAC altogether cures this problem but it is <u>not
+recommended</u>. There are various ways of dealing with the problem at
+the system configuration level, but those also depend on which version
+of Vista you might have. The simplest and noninvasive way of
+circumventing this problem is to:</p>
+
+<ul type="disc">
+<li>place the "Command Prompt" icon on the desktop</li><li>right-click on the icon and open "Properties" </li><li>in the "Shortcut" tab click on "Advanced" and tick the box
+"Run as administrator"</li>
+</ul>
+
+<p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </font>Launching of this "Command Prompt" window still requires
+one confirmatory click from UAC, but any programs run from within this
+window will not be subject to further UAC scrutiny. This special window
+is identified by the word "Administrator:" at the beginning of the text
+on the top bar. The same technique should work also for programs that
+use SPFIT/SPCAT in some batch mode, or you can just run such programs
+from the prepared "Command Prompt" window.</p>
+
+<p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </font>If you run your programs from a file manager, such as
+Total Commander, then an even better solution is to launch the file
+manager itself in the "Run as administrator" mode. You can read more
+about UAC <a href="http://en.wikipedia.org/wiki/User_Account_Control">here</a>
+and <a href="http://www.computerperformance.co.uk/vista/vista_security.htm">here</a>.</p>
+<pre><font size="4"><br><br>&nbsp;&nbsp; </font></pre>
+
+      <p><a name="app4"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="5" border="1">
+        <tbody>
+          <tr>
+            <td width="25%" bgcolor="#e0e0b1" valign="top"><strong>APPENDIX
+IV</strong></td>
+            <td width="75%" bgcolor="#efefd6" valign="top">The story of
+how the FORTRAN programs were extended to deal with CH<sub>2</sub>I<sub>2</sub>(and
+NOBr)
+- this was done on a purely phenomenological basis, some
+guidelines and explanation of key parameterized variables are now given
+by HMP at the bottom of <a href="http://spec.jpl.nasa.gov/ftp/pub/calpgm/legacy/spinv.txt">SPINV.TXT</a></td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </font>(none of this should be necessary with C-versions of the
+programs although the largest cases dealt with using the manually
+extended versions did not want to run with those)</p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>With
+standard
+parameter values (i.e. program with dimensioning as obtained
+in 1994 from H.M.Pickett) there was a diagnostic</p>
+      <pre>     "spin states truncated in SETSP 18 36"</pre>
+      <p>and for I,F double quadrupole formulation the energy levels
+for F&lt;I were not calculated.</p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font face="Symbol">--&gt;</font> this diagnostic was traced to limit on
+parameter NX which was set to NX=17 in several parameter statements in
+SPINV.FOR. When this was changed to NX=36 there was a diagnostic</p>
+      <pre>     "total number of sub-blocks per F is too large"</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font face="Symbol">--&gt;</font> this was identified to be associated with
+MAXQ=100 in several parameter statements in SPINV. On change to
+MAXQ=200 there was a diagnostic</p>
+      <pre>     "GETQQ: too many subblocks 36"</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font face="Symbol">--&gt;</font> this was associated with the limit MAXS=36
+in several parameter statements in SPINV. On change to MAXS=72 the
+predictive calculation for CH2I2 went without hiccups up to J=9.
+Maximum dimension of hamiltonian=576,J=10 (@ HEAPLN=550000), calc.
+taking over 1 hour on 486/33+NDP Fortran. However J=10 was not
+calculated.</p>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font face="Symbol">--&gt;</font> this was caused by insufficient value of
+NDMX in SPINV. On change from NDMX=350 to NDMX=700 in SPINV and also on
+change in CALCAT.FOR from NDEGY=350 to NDEGY=700 and to HEAPLN=1500000
+then calculation for CH2I2 appeared possible up to at least J=18. </p>
+      <pre><font size="4">&nbsp;&nbsp;&nbsp;</font></pre>
+      <pre><font size="4">&nbsp;&nbsp;&nbsp;</font></pre>
+      <p><a name="app5"></a></p>
+      <div align="center">
+      <center>
+      <table width="100%" cellspacing="0" cellpadding="5" border="1">
+        <tbody>
+          <tr>
+            <td width="25%" bgcolor="#e0e0b1" valign="top"><strong>APPENDIX
+V</strong></td>
+            <td width="75%" bgcolor="#efefd6" valign="top">Useful
+modifications to FORTRAN versions distributed by HMP</td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+      </div>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </font><font face="Symbol">--&gt;</font> In routine FILGET in
+SLIB.FOR change</p>
+      <pre>         80  FIL='\SPECTRA\'//FNAME<br>   to    80  FIL='..\'//FNAME          for DOS or<br>   to    80  FIL='../'//FNAME          for UNIX</pre>
+      <p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>so
+that
+programs can be used by opening branches for molecules in the
+program catalogue and no other subdirs are necessary</p>
+      <hr>
+      <hr> </td>
+    </tr><tr>
+  <td valign="top"><br>
+  </td>
+</tr>
+<tr>
+  <td valign="top"><br>
+  </td>
+</tr>
+<tr>
+  <td valign="top"><br>
+  </td>
+</tr>
+<tr>
+  <td valign="top"><br>
+  </td>
+</tr>
+<tr>
+  <td valign="top"><br>
+  </td>
+</tr>
+
+  </tbody>
+</table>
+</center>
+</div>
+
+
+</body></html>
