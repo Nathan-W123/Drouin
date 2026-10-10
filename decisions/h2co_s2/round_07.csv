@@ -1,0 +1,4 @@
+kind,item,action,reason
+all,assign,defer,"remaining P>=0.5 candidates are grossly inconsistent in the joint fit (32(2,30)-31(4,27) z=+2073)"
+stop,stop,yes,"converged: no consistent candidate left, no parameter passes the release test"
+all,defaults,confirm,"-"

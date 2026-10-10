@@ -71,6 +71,9 @@ def official_params(cfg):
         if p.prior < 1e-30:  # parameters fixed in the official fit are not part of the model
             continue
         out[p.idpar] = (p.value, p.prior, p.label)
+    if cfg.get("official_sigma_var"):  # fitted uncertainties from a re-run of the official fit
+        sig = {q.idpar: q.prior for q in pk.read_par(rel(cfg["official_sigma_var"]), cfg["official_nopt"]).params}
+        out = {k: (v, sig.get(k, s), lab) for k, (v, s, lab) in out.items()}
     if cfg.get("official_symmetric_form"):
         x1, s1, _ = out.pop(1099)
         x2, s2, _ = out.pop(199)

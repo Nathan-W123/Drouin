@@ -1,0 +1,3 @@
+kind,item,action,reason
+outlier,174,keep,"48(11,37)-49(10,40) t=-7.2 is explained by the missing PK term: with PK released all |z|<=2.8 (what-if rms 1.19->0.92)"
+all,defaults,confirm,"release PK (dchi2 182, 13.5 sigma, 3.9x scale); PKKKJ/PKKJ held (PKKJ 12x its scale); 2 default accepts single-candidate |z|<1; other flagged lines kept (explained after PK)"

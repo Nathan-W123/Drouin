@@ -1,0 +1,16 @@
+kind,item,action,reason,source
+hyp,1,accept,AI: Best Z (24.3) and 5x the independent support (185 vs 35) of the runner-up; all anchors are low-freq Q-branch K-doublets so aliasing is possible -- monitor first refit,ai
+hyp,2,reject,"AI: Z 20.3 with support 35; places 9(4,5)-9(4,6) on peak 15 instead of 16, inconsistent with rank 1 and weaker",ai
+hyp,3,reject,"AI confirmed default (remaining lower-ranked clusters (Z<=18.8, support<=27) are weaker alternatives); default: Z=18.8 (28/45 matched, 2.1 by chance), support=27",ai-confirmed
+hyp,4,reject,"AI confirmed default (remaining lower-ranked clusters (Z<=18.8, support<=27) are weaker alternatives); default: Z=17.7 (27/45 matched, 2.2 by chance), support=8",ai-confirmed
+hyp,5,reject,"AI confirmed default (remaining lower-ranked clusters (Z<=18.8, support<=27) are weaker alternatives); default: Z=15.9 (24/45 matched, 2.1 by chance), support=2",ai-confirmed
+hyp,6,reject,"AI confirmed default (remaining lower-ranked clusters (Z<=18.8, support<=27) are weaker alternatives); default: Z=15.7 (26/55 matched, 2.4 by chance), support=1",ai-confirmed
+hyp,7,reject,"AI confirmed default (remaining lower-ranked clusters (Z<=18.8, support<=27) are weaker alternatives); default: Z=14.3 (22/45 matched, 2.1 by chance), support=3",ai-confirmed
+hyp,8,reject,"AI confirmed default (remaining lower-ranked clusters (Z<=18.8, support<=27) are weaker alternatives); default: Z=13.2 (19/41 matched, 1.8 by chance), support=1",ai-confirmed
+hyp,9,reject,"AI confirmed default (remaining lower-ranked clusters (Z<=18.8, support<=27) are weaker alternatives); default: Z=11.6 (19/52 matched, 2.3 by chance), support=4",ai-confirmed
+hyp,10,reject,"AI confirmed default (remaining lower-ranked clusters (Z<=18.8, support<=27) are weaker alternatives); default: Z=10.4 (18/55 matched, 2.4 by chance), support=1",ai-confirmed
+hyp,11,reject,"AI confirmed default (remaining lower-ranked clusters (Z<=18.8, support<=27) are weaker alternatives); default: Z=9.9 (17/52 matched, 2.4 by chance), support=2",ai-confirmed
+hyp,12,reject,"AI confirmed default (remaining lower-ranked clusters (Z<=18.8, support<=27) are weaker alternatives); default: Z=9.8 (17/55 matched, 2.4 by chance), support=2",ai-confirmed
+hyp,13,reject,"AI confirmed default (remaining lower-ranked clusters (Z<=18.8, support<=27) are weaker alternatives); default: Z=9.7 (17/55 matched, 2.4 by chance), support=1",ai-confirmed
+hyp,14,reject,"AI confirmed default (remaining lower-ranked clusters (Z<=18.8, support<=27) are weaker alternatives); default: Z=9.6 (16/52 matched, 2.2 by chance), support=1",ai-confirmed
+hyp,15,reject,"AI confirmed default (remaining lower-ranked clusters (Z<=18.8, support<=27) are weaker alternatives); default: Z=9.6 (16/52 matched, 2.2 by chance), support=1",ai-confirmed

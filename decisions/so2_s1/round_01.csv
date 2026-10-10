@@ -1,0 +1,3 @@
+kind,item,action,reason
+hyp,1,accept,"Z=7.8 (33/140 matched vs 9.7 by chance) with support 62 vs <=2 for every alternative; runner-ups share its anchors 3(1,3)-2(0,2)->161 and 4(1,3)-4(0,4)->93"
+all,defaults,confirm,"alternatives are weaker partial variants (Z<=6.4, support<=2)"

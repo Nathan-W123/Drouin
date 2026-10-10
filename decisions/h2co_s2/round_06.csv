@@ -1,0 +1,3 @@
+kind,item,action,reason
+param,60199,release,"l3: with all 42 default accepts the joint rms goes 1.25 -> 0.80 (all |z|<=2.4); needed in seed 1 as well"
+all,defaults,confirm,"42 default accepts jointly consistent (185 lines, rms 0.80 with l3); high-leverage lines kept"

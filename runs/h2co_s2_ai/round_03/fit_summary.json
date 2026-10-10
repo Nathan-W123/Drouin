@@ -1,0 +1,20 @@
+{
+ "n_accept": 38,
+ "n_reject": 0,
+ "released": [
+  "HK",
+  "HJK"
+ ],
+ "overrides": 60,
+ "p_have": 0.5088906085590735,
+ "n_candidates": 415,
+ "rms": 0.749723895479836,
+ "chi2": 39.346014361742206,
+ "fit_ok": true,
+ "relaxed": [],
+ "n_broke_fit": 0,
+ "round": 3,
+ "n_assigned": 70,
+ "n_lines": 80,
+ "n_float": 10
+}

@@ -74,5 +74,6 @@
     }
   ],
   "mass_amu": 64.06,
-  "temperature_K": 300.0
+  "temperature_K": 300.0,
+  "official_sigma_var": "data/SO2/SO2_official_refit.var"
 }

@@ -1,0 +1,9 @@
+kind,item,action,reason
+outlier,29,keep,"35(6,30)-34(7,27): residual 0.8 kHz on a sub-kHz line; explained by phiJK (z 5.1->2.6)"
+param,41100,release,"phiJK: 6.3 sigma, 0.0025x scale; rms 1.01->0.97 and explains peak 29"
+param,42199,release,"lKJ: 5.1 sigma, 0.75x scale; rms 0.97->0.92"
+assign,51 3 49 52 0 52@586,accept,"P=0.59 (rival 0.13 at z=+1.1); survives pruning, joint fit with it stays at rms 0.923"
+assign,71 5 67 72 2 70@620,defer,"J=71 frontier: survives |z|<4 pruning but raises the joint rms 0.92->1.19 together with 598; wait"
+assign,69 5 65 70 2 68@598,defer,"J=69 frontier, same as 620"
+all,assign,defer,"P<0.5 or inconsistent after pruning (e.g. 55(5,51)-55(4,52) z=+40)"
+all,defaults,confirm,"default accept 14(8,6)-15(7,9) (P>0.999, single candidate) consistent in the joint fit; other flagged lines kept"

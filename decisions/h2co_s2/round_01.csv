@@ -1,0 +1,3 @@
+kind,item,action,reason
+hyp,1,accept,"Z=18.7, support 142 vs <=30 for every alternative; RED FLAG: two anchors (4(3,1)-4(3,2), 16(5,11)-16(5,12)) share peak 15 -- verify both by leave-one-out once more lines are in"
+all,defaults,confirm,"alternatives weaker"

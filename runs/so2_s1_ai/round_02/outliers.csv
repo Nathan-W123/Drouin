@@ -1,0 +1,2 @@
+peak,keys,obs_freq,err,res,t,leverage,dI,round,how,default,reason
+161,3 1 3 2 0 2,104034,0.002828,-3.00001e-06,-0.0335462,1,-0.1086,1,bootstrap,keep,t=-0.0 h=1.00 (too few dof to test)

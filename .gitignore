@@ -1,4 +1,9 @@
-runs/
 external/pickett_src/
 __pycache__/
 *.pyc
+logs/
+scratch_test/
+runs/*
+!runs/*_ai/
+runs/*_ai/state.json
+runs/*_ai/state.json.tmp

@@ -1,0 +1,103 @@
+# AI-assisted rotational line assignment with SPFIT/SPCAT — proof of concept
+
+Nathan Ward (UC Davis), prepared for Dr. Brian Drouin (JPL Molecular Spectroscopy) as a first step
+toward a SURF@JPL 2027 proposal. Results and limitations: **[REPORT.md](REPORT.md)**.
+
+The prototype runs a scorable test of a human/AI-in-the-loop assignment workflow that drives Pickett's
+SPFIT/SPCAT. It starts from a line list with the quantum-number labels removed and constants about
+1% off, and compares four ways of assigning it:
+
+| arm | what decides |
+|---|---|
+| `greedy` | nothing — nearest prediction within 3σ, refit, repeat |
+| `rules` | full deterministic pipeline, every default applied automatically (accept if posterior P ≥ 0.95) |
+| `rules+` | `rules` plus the lessons codified from the H2CO AI session (series rule, multi-term release, no rejection while the model is incomplete, influence-based cleaning) |
+| `ai` | same pipeline, but every round stops for a decision file written by the decision-maker (here: Claude in a Claude Code session) with a one-line reason per decision |
+
+## Layout
+
+```
+assign/          Python package
+  pickett.py     .par/.lin/.int/.cat/.var I/O and SPFIT/SPCAT runners (fixed-width formats per spinv.pdf)
+  model.py       Hamiltonian parameters, perturbed starting constants, priors, magnitude scales
+  testcase.py    builds a label-free, scorable test case (hidden truth kept separately)
+  predict.py     SPCAT predictions + Jacobian + covariance -> line uncertainties (validated)
+  match.py       Bayesian candidate probabilities, bootstrap hypothesis search, greedy matcher
+  series.py      series-coherence diagnostic (Loomis-Wood analysis in numbers)
+  whatif.py      what-if refits for the decision-maker (drop/add lines, release terms, LOO, pruning)
+  engine.py      the round loop for all arms, decision files, outlier and parameter-release tests
+  plots.py       per-round Loomis-Wood and residual plots
+  score.py       scoring against the hidden truth (the only module that reads truth.csv)
+  figures.py     result figures
+cases/           molecule configurations (so2.json, h2co.json)
+data/            CDMS ground-truth files (SO2, H2CO) and isotopologue catalogs used as distractors
+testcases/       generated test cases (peaks.csv is what the loop sees; truth*.json/csv are hidden)
+decisions/       the AI arm's decision files, one per round (the audit trail)
+runs/            run directories (per-round proposals, plots, applied decisions); not committed except
+                 the AI-arm summaries, see REPORT.md
+results/         scores (JSON) per run
+figures/         result figures
+tests/           validation of uncertainty propagation (vs SPFIT and vs Monte Carlo refits)
+scripts/         setup, sanity check, batch runs
+docs/            spinv.pdf and Kisiel's crib
+```
+
+## Running it
+
+```bash
+scripts/setup.sh                    # download Pickett source + CDMS data + docs, build spfit/spcat
+pip install numpy matplotlib        # (pyckett optional; not required)
+scripts/sanity_check.sh             # SPFIT reproduces the official CDMS SO2 fit
+
+python3 -m assign.testcase so2 --seed 1          # build the test case (also: --drop_frac, --noise_scale, ...)
+python3 -m assign.engine so2 --arm greedy --fresh
+python3 -m assign.engine so2 --arm rules --fresh
+python3 -m assign.engine so2 --arm rules --tag _plus --plus --fresh
+python3 -m assign.engine so2 --arm ai             # stops each round and waits for decisions/so2_s1/round_NN.csv
+python3 -m assign.score runs/so2_s1_ai            # score against the hidden truth
+python3 -m assign.figures                         # figures/fig_rounds.png, figures/fig_seeds.png
+scripts/run_automated.sh "h2co so2" "1 2 3 4 5"   # automated arms over several seeds
+python3 tests/test_covariance.py; python3 tests/test_sigma_montecarlo.py so2
+```
+
+### The AI-in-the-loop round
+
+`python3 -m assign.engine <case> --arm ai` writes `runs/<case>_s1_ai/round_NN/` containing
+`summary.md` (overview), `proposal.csv` (all candidates with probabilities, flags and the rule-based
+default), `outliers.csv`, `param_release.csv`, `loomis_wood.png` and `residuals.png`, then stops.
+The decision-maker can investigate with
+
+```bash
+python3 -m assign.series runs/so2_s1_ai/round_05                       # coherent series
+python3 -m assign.whatif so2 1 ai --add-round runs/so2_s1_ai/round_05 --add-defaults --release 400,40300 --loo
+python3 -m assign.whatif so2 1 ai --add-round runs/so2_s1_ai/round_09 --add-p 0.6 --prune 4
+```
+
+and writes `decisions/<case>_s1/round_NN.csv`:
+
+```
+kind,item,action,reason
+assign,4 0 4 3 1 3@37,accept,"<one-line reason>"
+outlier,161,reject,"<reason>"          # reject = remove and blacklist; unassign = remove only
+param,3000,release,"<reason>"
+all,assign,defer,"<reason>"            # blanket action for all rows of a kind not listed
+all,defaults,confirm,"<reason>"        # required: confirms the remaining rule-based defaults
+stop,stop,yes,"<reason>"
+```
+
+Rerunning the command applies it, refits and prepares the next round. Every applied decision, with
+its reason and whether it overrides the default, is logged in `runs/.../round_NN/decisions_applied.csv`.
+Runs are deterministic, so the whole AI run can be replayed from the decision files
+(`--fresh`).
+
+## File-format notes (learned the hard way)
+
+* With one vibrational state (NVIB=1), `v` is omitted from the quantum numbers: 3 per state.
+* The .lin frequency starts in column 37; the QN field is 12 × I3.
+* A long .par title line crashes SPFIT ("stack smashing detected").
+* SPFIT overwrites the .par (old copy in .bak), so always run in a scratch copy.
+* ERPAR in the .par is a Gaussian prior *centred on the value in the file* (verified in calfit.c and
+  numerically); to keep a fixed prior centre across rounds, constrained parameters must be written
+  with their original centre value.
+* SPCAT prints uncertainties above ~100 MHz as 999.9999 and with 0.1 kHz resolution, so the loop
+  propagates large uncertainties itself and uses SPCAT's (with the full correlation matrix) otherwise.

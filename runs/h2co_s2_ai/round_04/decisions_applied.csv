@@ -1,0 +1,401 @@
+kind,item,action,reason,source
+assign,C0001,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0002,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0003,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0004,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0005,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0006,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0007,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0008,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0009,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0010,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0011,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0012,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0013,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0014,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0015,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0016,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0017,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0018,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0019,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0020,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0021,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0022,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0023,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0024,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0025,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0026,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0027,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0028,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0029,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0030,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0031,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0032,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0033,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0034,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0035,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0036,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0037,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0038,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0039,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0040,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0041,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0042,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0043,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0044,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0045,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0046,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0047,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0048,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0049,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0050,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0051,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0052,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0053,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0054,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0055,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0056,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0057,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0058,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0059,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0060,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0061,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0062,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0063,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0064,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0065,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0066,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0067,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0068,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0069,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0070,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0071,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0072,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0073,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0074,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0075,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0076,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0077,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0078,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0079,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0080,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0081,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0082,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0083,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0084,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0085,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0086,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0087,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0088,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0089,accept,"AI: R-branch / low-J (<=15) Q-branch default; jointly consistent with h3+h1 released (44 lines kept after |z|>4 pruning, rms 1.22)",ai
+assign,C0090,defer,AI override (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai-override
+assign,C0091,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0092,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0093,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0094,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0095,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0096,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0097,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0098,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0099,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0100,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0101,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0102,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0103,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0104,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0105,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0106,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0107,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0108,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0109,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0110,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0111,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0112,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0113,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0114,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0115,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0116,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0117,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0118,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0119,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0120,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0121,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0122,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0123,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0124,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0125,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0126,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0127,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0128,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0129,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0130,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0131,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0132,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0133,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0134,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0135,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0136,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0137,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0138,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0139,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0140,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0141,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0142,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0143,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0144,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0145,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0146,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0147,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0148,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0149,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0150,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0151,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0152,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0153,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0154,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0155,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0156,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0157,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0158,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0159,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0160,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0161,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0162,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0163,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0164,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0165,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0166,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0167,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0168,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0169,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0170,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0171,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0172,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0173,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0174,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0175,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0176,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0177,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0178,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0179,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0180,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0181,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0182,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0183,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0184,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0185,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0186,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0187,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0188,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0189,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0190,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0191,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0192,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0193,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0194,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0195,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0196,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0197,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0198,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0199,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0200,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0201,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0202,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0203,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0204,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0205,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0206,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0207,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0208,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0209,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0210,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0211,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0212,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0213,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0214,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0215,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0216,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0217,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0218,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0219,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0220,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0221,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0222,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0223,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0224,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0225,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0226,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0227,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0228,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0229,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0230,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0231,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0232,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0233,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0234,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0235,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0236,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0237,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0238,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0239,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0240,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0241,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0242,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0243,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0244,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0245,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0246,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0247,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0248,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0249,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0250,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0251,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0252,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0253,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0254,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0255,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0256,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0257,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0258,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0259,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0260,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0261,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0262,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0263,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0264,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0265,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0266,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0267,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0268,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0269,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0270,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0271,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0272,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0273,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0274,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0275,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0276,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0277,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0278,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0279,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0280,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0281,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0282,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0283,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0284,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0285,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0286,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0287,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0288,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0289,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0290,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0291,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0292,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0293,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0294,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0295,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0296,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0297,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0298,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0299,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0300,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0301,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0302,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0303,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0304,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0305,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0306,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0307,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0308,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0309,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0310,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0311,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0312,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0313,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0314,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0315,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0316,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0317,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0318,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0319,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0320,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0321,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0322,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0323,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0324,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0325,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0326,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0327,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0328,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0329,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0330,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0331,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0332,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0333,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0334,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0335,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0336,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0337,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0338,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0339,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0340,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0341,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0342,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0343,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0344,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0345,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0346,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0347,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0348,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0349,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0350,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0351,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0352,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0353,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0354,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0355,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0356,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0357,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0358,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0359,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0360,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0361,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0362,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0363,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0364,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0365,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0366,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0367,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0368,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0369,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0370,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0371,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0372,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0373,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0374,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0375,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0376,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0377,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0378,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0379,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0380,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0381,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0382,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0383,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0384,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0385,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+assign,C0386,defer,AI (blanket): Q-branch J>15 inconsistent (rms 4-6); 4 pruned lines with |z| 5-8 may be model effects -> revisit,ai
+outlier,120,keep,"AI confirmed default (LK etc. hold (not significant, >10x scale)); default: t=+0.2 h=1.00",ai-confirmed
+outlier,258,keep,"AI confirmed default (LK etc. hold (not significant, >10x scale)); default: t=+0.4 h=0.93",ai-confirmed
+param,4099,hold,"AI confirmed default (LK etc. hold (not significant, >10x scale)); default: dchi2=0.6 |v/s|=0.8 |v|/scale=27",ai-confirmed
+param,40299,release,AI override: h1: jointly with h3 (see above),ai-override
+param,60099,release,AI override: h3: K=3 doubling; with h1 brings R + low-J Q joint fit from rms 2.3 to 1.6 (needed in seed 1 too),ai-override
+param,60199,hold,"AI confirmed default (LK etc. hold (not significant, >10x scale)); default: dchi2=0.4 |v/s|=0.6 |v|/scale=14",ai-confirmed
+param,3199,hold,"AI confirmed default (LK etc. hold (not significant, >10x scale)); default: dchi2=0.3 |v/s|=0.6 |v|/scale=0.4",ai-confirmed
+param,1399,hold,"AI confirmed default (LK etc. hold (not significant, >10x scale)); default: dchi2=0.3 |v/s|=0.5 |v|/scale=32",ai-confirmed
+param,2199,hold,"AI confirmed default (LK etc. hold (not significant, >10x scale)); default: dchi2=0.3 |v/s|=0.5 |v|/scale=0.0061",ai-confirmed
+param,2299,hold,"AI confirmed default (LK etc. hold (not significant, >10x scale)); default: dchi2=0.2 |v/s|=0.5 |v|/scale=1.5",ai-confirmed
+param,70099,hold,"AI confirmed default (LK etc. hold (not significant, >10x scale)); default: dchi2=0.2 |v/s|=0.4 |v|/scale=9.9",ai-confirmed
+param,399,hold,"AI confirmed default (LK etc. hold (not significant, >10x scale)); default: dchi2=0.1 |v/s|=0.4 |v|/scale=0.019",ai-confirmed
+param,50299,hold,"AI confirmed default (LK etc. hold (not significant, >10x scale)); default: dchi2=0.1 |v/s|=0.3 |v|/scale=43",ai-confirmed
+param,50199,hold,"AI confirmed default (LK etc. hold (not significant, >10x scale)); default: dchi2=0.1 |v/s|=0.3 |v|/scale=0.022",ai-confirmed

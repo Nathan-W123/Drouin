@@ -9,6 +9,8 @@
    "n_true": 201,
    "n_pairs": 3,
    "n_correct": 2,
+   "n_degenerate_partner": 0,
+   "precision_phys": 0.6666666666666666,
    "coverage": 0.009950248756218905,
    "precision": 0.6666666666666666,
    "wrong_on_distractors": 0,
@@ -24,6 +26,8 @@
    "n_true": 201,
    "n_pairs": 66,
    "n_correct": 60,
+   "n_degenerate_partner": 0,
+   "precision_phys": 0.9090909090909091,
    "coverage": 0.2935323383084577,
    "precision": 0.9090909090909091,
    "wrong_on_distractors": 0,
@@ -39,6 +43,8 @@
    "n_true": 201,
    "n_pairs": 53,
    "n_correct": 53,
+   "n_degenerate_partner": 0,
+   "precision_phys": 1.0,
    "coverage": 0.263681592039801,
    "precision": 1.0,
    "wrong_on_distractors": 0,
@@ -54,6 +60,8 @@
    "n_true": 201,
    "n_pairs": 184,
    "n_correct": 178,
+   "n_degenerate_partner": 6,
+   "precision_phys": 1.0,
    "coverage": 0.8258706467661692,
    "precision": 0.967391304347826,
    "wrong_on_distractors": 0,
@@ -69,6 +77,8 @@
    "n_true": 201,
    "n_pairs": 184,
    "n_correct": 178,
+   "n_degenerate_partner": 6,
+   "precision_phys": 1.0,
    "coverage": 0.8258706467661692,
    "precision": 0.967391304347826,
    "wrong_on_distractors": 0,
@@ -84,6 +94,8 @@
    "n_true": 201,
    "n_pairs": 212,
    "n_correct": 206,
+   "n_degenerate_partner": 6,
+   "precision_phys": 1.0,
    "coverage": 0.9552238805970149,
    "precision": 0.9716981132075472,
    "wrong_on_distractors": 0,
@@ -99,6 +111,8 @@
    "n_true": 201,
    "n_pairs": 215,
    "n_correct": 209,
+   "n_degenerate_partner": 6,
+   "precision_phys": 1.0,
    "coverage": 0.9651741293532339,
    "precision": 0.9720930232558139,
    "wrong_on_distractors": 0,
@@ -114,6 +128,8 @@
    "n_true": 201,
    "n_pairs": 215,
    "n_correct": 209,
+   "n_degenerate_partner": 6,
+   "precision_phys": 1.0,
    "coverage": 0.9651741293532339,
    "precision": 0.9720930232558139,
    "wrong_on_distractors": 0,
@@ -130,6 +146,8 @@
   "n_true": 201,
   "n_pairs": 215,
   "n_correct": 209,
+  "n_degenerate_partner": 6,
+  "precision_phys": 1.0,
   "coverage": 0.9651741293532339,
   "precision": 0.9720930232558139,
   "wrong_on_distractors": 0,
@@ -151,9 +169,9 @@
    "official_sigma": 0.004055129974184557,
    "rel_dev": -3.6020453459700976e-08,
    "dev_in_sigma": -0.4968463582222394,
-   "oracle": 281970.5546055972,
+   "oracle": 281970.5546058804,
    "oracle_sigma": 0.0200360844,
-   "dev_from_oracle_sigma": 0.00031434453408382343
+   "dev_from_oracle_sigma": 0.00030435063674672284
   },
   {
    "idpar": 20000,
@@ -164,9 +182,9 @@
    "official_sigma": 0.00024517644540616925,
    "rel_dev": -2.5660660622000825e-08,
    "dev_in_sigma": -1.7331347678104385,
-   "oracle": 38833.98602583141,
+   "oracle": 38833.98602582649,
    "oracle_sigma": 0.000520078078,
-   "dev_from_oracle_sigma": -0.00011107299893834942
+   "dev_from_oracle_sigma": -0.00010438566840020156
   },
   {
    "idpar": 30000,
@@ -177,9 +195,9 @@
    "official_sigma": 0.00024517644540616925,
    "rel_dev": -3.136904015969499e-08,
    "dev_in_sigma": -1.9803744097217502,
-   "oracle": 34004.24246800556,
+   "oracle": 34004.24246799972,
    "oracle_sigma": 0.000479587201,
-   "dev_from_oracle_sigma": -0.001058180094637384
+   "dev_from_oracle_sigma": -0.0010495657534371223
   },
   {
    "idpar": 2099,
@@ -190,9 +208,9 @@
    "official_sigma": 0.000532483067,
    "rel_dev": 6.356124101093786e-05,
    "dev_in_sigma": -0.3751998862976511,
-   "oracle": -19.39259488337729,
+   "oracle": -19.39259492363296,
    "oracle_sigma": 0.00324156753,
-   "dev_from_oracle_sigma": -0.00031242858862171464
+   "dev_from_oracle_sigma": -0.000303647337582325
   },
   {
    "idpar": 1199,
@@ -203,9 +221,9 @@
    "official_sigma": 9.27316234e-06,
    "rel_dev": -8.550114522502571e-05,
    "dev_in_sigma": 5.232423759846814,
-   "oracle": -1.320994357703577,
+   "oracle": -1.320994357717682,
    "oracle_sigma": 1.94944608e-05,
-   "dev_from_oracle_sigma": 0.0001683351048946429
+   "dev_from_oracle_sigma": 0.0001688467203032798
   },
   {
    "idpar": 299,
@@ -216,9 +234,9 @@
    "official_sigma": 5.02220955e-07,
    "rel_dev": -4.4904378220189226e-05,
    "dev_in_sigma": 2.4743895108788547,
-   "oracle": -0.07031734811202209,
+   "oracle": -0.07031734809180054,
    "oracle_sigma": 1.17317444e-06,
-   "dev_from_oracle_sigma": 0.0008501701359515562
+   "dev_from_oracle_sigma": 0.0008379820170218509
   },
   {
    "idpar": 40199,
@@ -229,9 +247,9 @@
    "official_sigma": 4.71325276e-08,
    "rel_dev": -4.590499125495467e-05,
    "dev_in_sigma": 1.6313204689994156,
-   "oracle": -0.01043739787152843,
+   "oracle": -0.01043739787126996,
    "oracle_sigma": 2.89912474e-07,
-   "dev_from_oracle_sigma": -0.00031435622770712975
+   "dev_from_oracle_sigma": -0.0003149866451642512
   },
   {
    "idpar": 50099,
@@ -242,9 +260,9 @@
    "official_sigma": 3.33277826e-08,
    "rel_dev": -1.739709805041431e-05,
    "dev_in_sigma": 0.39701742161981224,
-   "oracle": -0.002501451635940428,
+   "oracle": -0.002501451635365424,
    "oracle_sigma": 1.044153e-07,
-   "dev_from_oracle_sigma": -0.0023724721318128966
+   "dev_from_oracle_sigma": -0.002376365916845248
   },
   {
    "idpar": 1299,
@@ -255,9 +273,9 @@
    "official_sigma": 1.57873935e-08,
    "rel_dev": -0.041765145047707584,
    "dev_in_sigma": -6.428530773145091,
-   "oracle": 7.152961422667695e-06,
+   "oracle": 7.152961164774732e-06,
    "oracle_sigma": 4.58541408e-08,
-   "dev_from_oracle_sigma": -0.0007520714367278669
+   "dev_from_oracle_sigma": -0.0007480945710856831
   },
   {
    "idpar": 2199,
@@ -268,9 +286,9 @@
    "official_sigma": 7.90069605e-08,
    "rel_dev": -0.060185065493911095,
    "dev_in_sigma": -4.426364680558347,
-   "oracle": 1.021145020477617e-05,
+   "oracle": 1.021145122464055e-05,
    "oracle_sigma": 1.24836677e-07,
-   "dev_from_oracle_sigma": 0.0005772290748830016
+   "dev_from_oracle_sigma": 0.0005714523116820367
   },
   {
    "idpar": 3099,
@@ -281,9 +299,9 @@
    "official_sigma": 2.22117152e-05,
    "rel_dev": 0.039225122726495004,
    "dev_in_sigma": 1.13239200196198,
-   "oracle": 0.004185043686370613,
+   "oracle": 0.00418504559941409,
    "oracle_sigma": 0.000137717325,
-   "dev_from_oracle_sigma": 0.00048373866288701725
+   "dev_from_oracle_sigma": 0.0004739162115554007
   },
   {
    "idpar": 40299,
@@ -294,9 +312,9 @@
    "official_sigma": 5.80981456e-11,
    "rel_dev": -0.03526915391614578,
    "dev_in_sigma": -4.0273193662499835,
-   "oracle": 3.113473499102523e-08,
+   "oracle": 3.113473135291201e-08,
    "oracle_sigma": 2.76565836e-10,
-   "dev_from_oracle_sigma": -0.002278311157717328
+   "dev_from_oracle_sigma": -0.0022690097841186743
   },
   {
    "idpar": 50199,
@@ -307,9 +325,9 @@
    "official_sigma": 7.41573902e-11,
    "rel_dev": 0.0007752069196145313,
    "dev_in_sigma": 0.14178706039651995,
-   "oracle": 4.797769199756558e-08,
+   "oracle": 4.79776932998372e-08,
    "oracle_sigma": 2.51366425e-10,
-   "dev_from_oracle_sigma": 0.003471949607517551
+   "dev_from_oracle_sigma": 0.0034682865524707407
   },
   {
    "idpar": 60099,
@@ -320,9 +338,9 @@
    "official_sigma": 1.51185931e-11,
    "rel_dev": -0.004744356937733553,
    "dev_in_sigma": -2.033706143537882,
-   "oracle": 1.589010566692626e-08,
+   "oracle": 1.589010538241585e-08,
    "oracle_sigma": 3.40390707e-11,
-   "dev_from_oracle_sigma": -0.0015392997872664775
+   "dev_from_oracle_sigma": -0.001533389583221434
   },
   {
    "idpar": 60199,
@@ -333,9 +351,9 @@
    "official_sigma": 1.86627438e-14,
    "rel_dev": 0.22965760490704037,
    "dev_in_sigma": -1.6354728695517404,
-   "oracle": -5.245754293717838e-13,
+   "oracle": -5.245758781808653e-13,
    "oracle_sigma": 5.69477324e-14,
-   "dev_from_oracle_sigma": -0.0039171105298994695
+   "dev_from_oracle_sigma": -0.003911538439295503
   },
   {
    "idpar": 70099,
@@ -346,9 +364,9 @@
    "official_sigma": 3.2308294e-15,
    "rel_dev": -0.2555918965171463,
    "dev_in_sigma": 2.6787191805052926,
-   "oracle": -1.132213022454775e-13,
+   "oracle": -1.132211127347849e-13,
    "oracle_sigma": 1.4133549e-14,
-   "dev_from_oracle_sigma": 0.004180397320039373
+   "dev_from_oracle_sigma": 0.004170917230284172
   }
  ],
  "ai_overrides": 286,

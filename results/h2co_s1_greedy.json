@@ -396,8 +396,8 @@
   "n_peaks_assigned": 35
  },
  "final_fit_ok": false,
- "final_rms": 9940.24976,
- "oracle_rms": 457.41007,
+ "final_rms": 8605.87872,
+ "oracle_rms": 0.72533,
  "n_free_params": 22,
  "constants": [],
  "ai_overrides": 0,

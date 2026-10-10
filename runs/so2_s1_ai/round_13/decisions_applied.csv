@@ -1,0 +1,13 @@
+kind,item,action,reason,source
+assign,C0001,defer,AI confirmed default (flagged lines kept); default: P=0.211 z=-2.45 dI=+0.68 n_win=1,ai-confirmed
+outlier,29,keep,AI confirmed default (flagged lines kept); default: t=+4.0 h=0.60,ai-confirmed
+outlier,89,keep,AI confirmed default (flagged lines kept); default: t=-3.1 h=0.00,ai-confirmed
+outlier,28,keep,AI confirmed default (flagged lines kept); default: t=+0.6 h=0.84,ai-confirmed
+outlier,31,keep,AI confirmed default (flagged lines kept); default: t=-0.2 h=0.86,ai-confirmed
+outlier,492,keep,"AI: 70(5,65)-71(4,68): leverage 1.00 -- the studentized residual is meaningless; raw residual 26 kHz",ai
+param,2300,hold,"AI override: PJJK 37x its magnitude scale: compensating, not physics",ai-override
+param,5100,hold,AI confirmed default (flagged lines kept); default: dchi2=25.9 |v/s|=5.1 |v|/scale=96,ai-confirmed
+param,6000,hold,AI confirmed default (flagged lines kept); default: dchi2=23.8 |v/s|=4.9 |v|/scale=34,ai-confirmed
+param,3200,hold,AI confirmed default (flagged lines kept); default: dchi2=20.7 |v/s|=4.5 |v|/scale=5,ai-confirmed
+param,41299,hold,AI confirmed default (flagged lines kept); default: dchi2=-0.0 |v/s|=0.4 |v|/scale=0.033,ai-confirmed
+stop,stop,yes,"AI: converged: one candidate left, nothing passes the consistency checks; remaining parameter candidates implausible (>=37x scale)",ai

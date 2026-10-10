@@ -179,6 +179,11 @@ class Run:
         rows = []
         for pid, ks in self.assign.items():
             if pid not in self.resid:
+                if pid in extra:  # e.g. the last fit failed: still allow an explicit decision on it
+                    rows.append(dict(peak=pid, keys=";".join(key_str(k) for k in ks), obs_freq=self.peak(pid)[0],
+                                     err=self.peak(pid)[1], res=float("nan"), t=float("nan"), leverage=float("nan"),
+                                     dI=float("nan"), round=self.assign_meta[pid]["round"],
+                                     how=self.assign_meta[pid]["how"]))
                 continue
             f, e, lg = self.peak(pid)
             ii = [pred.index[k] for k in ks if k in pred.index]
@@ -192,9 +197,11 @@ class Run:
             rows.append(dict(peak=pid, keys=";".join(key_str(k) for k in ks), obs_freq=f, err=e, res=res,
                              t=t, leverage=h, dI=lg - pl, round=self.assign_meta[pid]["round"],
                              how=self.assign_meta[pid]["how"]))
-        if len(self.assign) < len(self.model.floating()) + 5:
-            return [r for r in rows if r["peak"] in extra]  # too few dof for a statistical outlier test
-        rows.sort(key=lambda r: -abs(r["t"]) if r["leverage"] < 0.9 else 0)
+        if len(self.assign) < len(self.model.floating()) + 5:  # too few dof for a statistical outlier test
+            for r in rows:
+                r["default"], r["reason"] = "keep", f"t={r['t']:+.1f} h={r['leverage']:.2f} (too few dof to test)"
+            return [r for r in rows if r["peak"] in extra]
+        rows.sort(key=lambda r: -abs(r["t"]) if r["leverage"] < 0.9 else 0)  # nan rows sort last
         worst = rows[0] if rows and rows[0]["leverage"] < 0.9 else None
         for r in rows:
             r["default"] = "keep"

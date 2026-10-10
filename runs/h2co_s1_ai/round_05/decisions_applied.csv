@@ -1,0 +1,371 @@
+kind,item,action,reason,source
+assign,C0001,defer,AI override (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai-override
+assign,C0002,defer,AI override (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai-override
+assign,C0003,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0004,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0005,defer,AI override (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai-override
+assign,C0006,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0007,defer,AI override (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai-override
+assign,C0008,defer,AI override (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai-override
+assign,C0009,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0010,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0011,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0012,defer,AI override (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai-override
+assign,C0013,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0014,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0015,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0016,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0017,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0018,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0019,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0020,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0021,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0022,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0023,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0024,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0025,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0026,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0027,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0028,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0029,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0030,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0031,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0032,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0033,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0034,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0035,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0036,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0037,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0038,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0039,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0040,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0041,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0042,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0043,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0044,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0045,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0046,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0047,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0048,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0049,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0050,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0051,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0052,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0053,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0054,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0055,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0056,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0057,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0058,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0059,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0060,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0061,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0062,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0063,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0064,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0065,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0066,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0067,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0068,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0069,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0070,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0071,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0072,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0073,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0074,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0075,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0076,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0077,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0078,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0079,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0080,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0081,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0082,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0083,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0084,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0085,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0086,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0087,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0088,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0089,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0090,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0091,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0092,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0093,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0094,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0095,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0096,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0097,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0098,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0099,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0100,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0101,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0102,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0103,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0104,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0105,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0106,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0107,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0108,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0109,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0110,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0111,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0112,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0113,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0114,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0115,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0116,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0117,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0118,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0119,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0120,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0121,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0122,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0123,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0124,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0125,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0126,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0127,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0128,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0129,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0130,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0131,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0132,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0133,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0134,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0135,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0136,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0137,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0138,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0139,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0140,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0141,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0142,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0143,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0144,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0145,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0146,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0147,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0148,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0149,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0150,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0151,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0152,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0153,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0154,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0155,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0156,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0157,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0158,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0159,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0160,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0161,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0162,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0163,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0164,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0165,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0166,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0167,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0168,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0169,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0170,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0171,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0172,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0173,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0174,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0175,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0176,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0177,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0178,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0179,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0180,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0181,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0182,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0183,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0184,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0185,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0186,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0187,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0188,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0189,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0190,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0191,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0192,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0193,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0194,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0195,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0196,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0197,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0198,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0199,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0200,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0201,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0202,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0203,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0204,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0205,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0206,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0207,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0208,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0209,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0210,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0211,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0212,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0213,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0214,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0215,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0216,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0217,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0218,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0219,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0220,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0221,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0222,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0223,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0224,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0225,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0226,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0227,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0228,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0229,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0230,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0231,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0232,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0233,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0234,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0235,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0236,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0237,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0238,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0239,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0240,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0241,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0242,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0243,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0244,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0245,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0246,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0247,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0248,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0249,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+assign,C0250,defer,AI (blanket): predictions of this round come from an inadequate model (rms 23.6); re-evaluate after the extended model is fitted,ai
+outlier,291,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,87,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,134,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,63,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,125,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,166,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,215,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,33,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,31,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,67,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,93,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,83,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,28,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,60,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,273,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,180,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,192,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,97,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,257,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,111,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,283,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,62,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,235,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,221,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,289,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,140,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,145,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,50,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,280,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,119,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,89,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,220,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,132,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,80,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,256,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,88,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,170,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,47,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,142,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,96,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,227,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,222,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,259,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,258,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,175,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,43,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,199,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,94,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,288,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,265,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,98,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,290,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,117,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,86,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,106,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,75,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,79,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,81,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,239,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,157,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,82,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,35,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,36,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,146,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,254,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,74,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,292,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,42,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,198,keep,AI override (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai-override
+outlier,262,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,68,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,263,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,45,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,135,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,23,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,152,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,161,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,237,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,21,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,200,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,32,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,287,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,182,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,30,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,110,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,266,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,18,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,138,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,174,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,201,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,255,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,120,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,160,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,172,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,100,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,137,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,66,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,73,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,217,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,103,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,17,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,224,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,219,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,173,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,167,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,270,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+outlier,163,keep,AI (blanket): systematic residuals by series (Ka=1 Q-branch all -3.5..-5.8 MHz growing with J) = model inadequacy; after the joint release the worst |z| is 6.4,ai
+param,60099,release,"AI: h3: largest dchi2 (86000); what-if with h3+HK+HJK+h1+l4 gives rms 1.10 (from 23.6), value 0.01x its scale",ai
+param,3099,release,"AI override: HK: needed in the joint release (rms 2.36 without it vs 1.10 with); value -0.021 vs scale 0.022, plausible",ai-override
+param,70099,release,"AI override: l4 (octic): high-J Ka=5-6 Q-branch K-doublets (J up to 41) need it; rms 1.76->1.10, value 0.2x scale",ai-override
+param,4099,hold,AI confirmed default (other parameters held (HJ adds nothing: rms 1.763 vs 1.764)); default: dchi2=63638.7 |v/s|=252.4 |v|/scale=2.5e+02,ai-confirmed
+param,60199,hold,AI confirmed default (other parameters held (HJ adds nothing: rms 1.763 vs 1.764)); default: dchi2=62660.8 |v/s|=250.4 |v|/scale=4.6,ai-confirmed
+param,50299,hold,AI confirmed default (other parameters held (HJ adds nothing: rms 1.763 vs 1.764)); default: dchi2=24565.5 |v/s|=156.8 |v|/scale=13,ai-confirmed
+param,1299,release,"AI override: HJK: joint release; value 1.1e-5 vs scale 5e-5, plausible",ai-override
+param,40299,release,"AI override: h1: joint release brings rms 4.6->1.8; value 3.9e-8 vs scale 7.9e-7, plausible",ai-override
+param,399,hold,AI confirmed default (other parameters held (HJ adds nothing: rms 1.763 vs 1.764)); default: dchi2=1848.4 |v/s|=43.0 |v|/scale=1.7,ai-confirmed
+param,1399,hold,AI confirmed default (other parameters held (HJ adds nothing: rms 1.763 vs 1.764)); default: dchi2=1229.3 |v/s|=35.1 |v|/scale=27,ai-confirmed
+param,2299,hold,AI confirmed default (other parameters held (HJ adds nothing: rms 1.763 vs 1.764)); default: dchi2=564.7 |v/s|=23.8 |v|/scale=3.4,ai-confirmed
+param,3199,hold,AI confirmed default (other parameters held (HJ adds nothing: rms 1.763 vs 1.764)); default: dchi2=558.5 |v/s|=23.6 |v|/scale=0.28,ai-confirmed
+param,2199,hold,AI confirmed default (other parameters held (HJ adds nothing: rms 1.763 vs 1.764)); default: dchi2=64.9 |v/s|=8.0 |v|/scale=0.0014,ai-confirmed

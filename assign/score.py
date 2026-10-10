@@ -32,7 +32,29 @@ def load_truth(tc):
     return truth
 
 
-def score_assignments(assign, truth):
+_OFFCAT = {}
+
+
+def official_freqs(cfg):
+    """Official-constant frequencies of all ground-state transitions (cached)."""
+    if cfg["key"] not in _OFFCAT:
+        from .testcase import official_catalog_v
+        cat = official_catalog_v(cfg, None, 0)
+        _OFFCAT[cfg["key"]] = dict(zip(cat.keys(), cat.freq))
+    return _OFFCAT[cfg["key"]]
+
+
+def degenerate_partner(k, labels, cfg):
+    """True if transition k is predicted (official constants) within 0.1 Doppler FWHM of a true label of
+    the peak: an unresolved, physically present component that the expert .lin labels only once."""
+    from .testcase import doppler_fwhm
+    off = official_freqs(cfg)
+    if k not in off:
+        return False
+    return any(l in off and abs(off[k] - off[l]) < 0.1 * doppler_fwhm(off[l], cfg) for l in labels)
+
+
+def score_assignments(assign, truth, cfg=None):
     n_true = sum(1 for s, _ in truth.values() if s == "true")
     pairs = [(p, k) for p, ks in assign.items() for k in ks]
     correct = [(p, k) for p, k in pairs if truth[p][0] == "true" and k in truth[p][1]]
@@ -46,7 +68,12 @@ def score_assignments(assign, truth):
         else:
             wrong_dis[truth[p][0]] = wrong_dis.get(truth[p][0], 0) + 1
     covered = {p for p, k in correct}
-    return dict(n_true=n_true, n_pairs=len(pairs), n_correct=len(correct),
+    n_degen = 0
+    if cfg is not None:
+        n_degen = sum(1 for p, k in pairs if (p, k) not in correct and truth[p][0] == "true"
+                      and degenerate_partner(k, truth[p][1], cfg))
+    return dict(n_true=n_true, n_pairs=len(pairs), n_correct=len(correct), n_degenerate_partner=n_degen,
+                precision_phys=(len(correct) + n_degen) / len(pairs) if pairs else float("nan"),
                 coverage=len(covered) / n_true, precision=len(correct) / len(pairs) if pairs else float("nan"),
                 wrong_on_distractors=sum(wrong_dis.values()), wrong_by_source=wrong_dis,
                 wrong_label_on_true=wrong_label, n_peaks_assigned=len(assign))
@@ -64,16 +91,14 @@ def read_round_assign(rdir):
 
 def final_fit(run_dir, cfg, peaks, assign, from_start=False):
     """Unconstrained refit (priors removed) of an assignment set with the run's final Hamiltonian
-    terms.  from_start: start from the test case's perturbed starting constants (released terms at 0)
-    so that the fit converges independently of the run's own solution (used for the oracle)."""
+    terms.  from_start: start from the official constants instead of the run's own solution, so the
+    oracle fit converges independently (the least-squares optimum does not depend on the start)."""
     st = json.load(open(os.path.join(run_dir, "state.json")))
     model = Model.from_json(cfg, st["model"])
     if from_start:
-        name = os.path.basename(run_dir.rstrip("/"))
-        tc = os.path.join(pk.ROOT, "testcases", f"{name.split('_s')[0]}_s{name.split('_s')[1].split('_')[0]}")
-        start = {d["idpar"]: d["value"] for d in json.load(open(os.path.join(tc, "model.json")))}
+        off = official_params(cfg)
         for p in model.floating():
-            p.value = start.get(p.idpar, 0.0)
+            p.value = off[p.idpar][0] if p.idpar in off else 0.0
     for p in model.floating():
         p.prior = pk.FREE_ERR
     model_nitr = 50
@@ -117,13 +142,13 @@ def score_run(run_dir):
         a = read_round_assign(rdir)
         if a is None:
             continue
-        m = score_assignments(a, truth)
+        m = score_assignments(a, truth, cfg)
         m["round"] = int(rdir[-2:])
         h = next((x for x in st["history"] if x["round"] == m["round"]), {})
         m.update(rms=h.get("rms"), n_float=h.get("n_float"), overrides=h.get("overrides", 0))
         per_round.append(m)
     final_assign = {int(k): [tuple(x) for x in v] for k, v in st["assign"].items()}
-    fin = score_assignments(final_assign, truth)
+    fin = score_assignments(final_assign, truth, cfg)
     model, fit = final_fit(run_dir, cfg, peaks, final_assign) if final_assign else (None, None)
     # oracle: every true peak in the list with its true labels, same Hamiltonian terms
     oracle_assign = {p: sorted(l) for p, (s, l) in truth.items() if s == "true"}
@@ -147,7 +172,7 @@ def score_run(run_dir):
 def summary_line(s):
     f = s["final"]
     return (f"{s['run']:<26s} rounds {s['rounds']:2d}  coverage {100 * f['coverage']:5.1f}%  precision "
-            f"{100 * f['precision'] if f['n_pairs'] else float('nan'):5.1f}%  pairs {f['n_pairs']:4d} "
+            f"{100 * f['precision'] if f['n_pairs'] else float('nan'):5.1f}% (phys {100 * f['precision_phys'] if f['n_pairs'] else float('nan'):5.1f}%)  pairs {f['n_pairs']:4d} "
             f"wrong: distractors {f['wrong_on_distractors']:3d} {f['wrong_by_source']} wrong-label {f['wrong_label_on_true']:3d}  "
             f"final rms {s['final_rms'] if s['final_rms'] is not None else float('nan'):.3f}  overrides {s['ai_overrides']}")
 

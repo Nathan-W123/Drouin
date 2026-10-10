@@ -1,0 +1,18 @@
+kind,item,action,reason
+outlier,404,keep,"56(16,40)-57(15,43) t=-5.3 explained once LJK and PKKKJ are released (what-if |z|<2.6)"
+param,2200,release,"LJK: 4.9 sigma, 0.3x scale; with PKKKJ the joint fit incl. P>=0.9 additions goes rms 1.32->0.90"
+param,4100,release,"PKKKJ: 4.8 sigma; joint dchi2~190 with the P>=0.9 additions; value at 10x its magnitude scale (borderline -- SO2 K-dependence is stronger than the estimate, as for LK/LKKJ)"
+param,5100,hold,"SKKKJ value 250x its scale: compensating, not physics"
+assign,45 10 36 46 9 37@109,accept,"P>=0.9 uncontested; joint what-if with LJK+PKKKJ: 329 lines rms 0.90, all |z|<=3.1"
+assign,53 12 42 54 11 43@179,accept,"P>=0.9 uncontested; joint what-if with LJK+PKKKJ: 329 lines rms 0.90, all |z|<=3.1"
+assign,52 9 43 51 10 42@89,accept,"P>=0.9 uncontested; joint what-if with LJK+PKKKJ: 329 lines rms 0.90, all |z|<=3.1"
+assign,61 13 49 62 12 50@95,accept,"P>=0.9 uncontested; joint what-if with LJK+PKKKJ: 329 lines rms 0.90, all |z|<=3.1"
+assign,49 15 35 50 14 36@426,accept,"P>=0.9 uncontested; joint what-if with LJK+PKKKJ: 329 lines rms 0.90, all |z|<=3.1"
+assign,54 12 42 55 11 45@145,accept,"P>=0.9 uncontested; joint what-if with LJK+PKKKJ: 329 lines rms 0.90, all |z|<=3.1"
+assign,47 15 33 48 14 34@453,accept,"P>=0.9 uncontested; joint what-if with LJK+PKKKJ: 329 lines rms 0.90, all |z|<=3.1"
+assign,77 6 72 78 3 75@583,accept,"P>=0.9 uncontested; joint what-if with LJK+PKKKJ: 329 lines rms 0.90, all |z|<=3.1"
+assign,50 16 34 51 15 37@486,accept,"P>=0.9 uncontested; joint what-if with LJK+PKKKJ: 329 lines rms 0.90, all |z|<=3.1"
+assign,58 10 48 57 11 47@115,accept,"P>=0.9 uncontested; joint what-if with LJK+PKKKJ: 329 lines rms 0.90, all |z|<=3.1"
+assign,71 5 67 72 2 70@620,accept,"P>=0.9 uncontested; joint what-if with LJK+PKKKJ: 329 lines rms 0.90, all |z|<=3.1"
+all,assign,defer,P<0.9 tier inconsistent (adding P>=0.8 gives rms 306)
+all,defaults,confirm,"other flagged lines kept (|t|<=4.2, high leverage at the J/Ka frontier)"

@@ -1,0 +1,57 @@
+{
+ "run": "h2co_s3_rules",
+ "case": "h2co",
+ "seed": 3,
+ "arm": "rules",
+ "rounds": 2,
+ "per_round": [
+  {
+   "n_true": 199,
+   "n_pairs": 3,
+   "n_correct": 2,
+   "coverage": 0.010050251256281407,
+   "precision": 0.6666666666666666,
+   "wrong_on_distractors": 0,
+   "wrong_by_source": {},
+   "wrong_label_on_true": 1,
+   "n_peaks_assigned": 2,
+   "round": 1,
+   "rms": 0.11221515553767474,
+   "n_float": 8,
+   "overrides": 0
+  },
+  {
+   "n_true": 199,
+   "n_pairs": 3,
+   "n_correct": 2,
+   "coverage": 0.010050251256281407,
+   "precision": 0.6666666666666666,
+   "wrong_on_distractors": 0,
+   "wrong_by_source": {},
+   "wrong_label_on_true": 1,
+   "n_peaks_assigned": 2,
+   "round": 2,
+   "rms": 0.11221515553767474,
+   "n_float": 8,
+   "overrides": 0
+  }
+ ],
+ "final": {
+  "n_true": 199,
+  "n_pairs": 3,
+  "n_correct": 2,
+  "coverage": 0.010050251256281407,
+  "precision": 0.6666666666666666,
+  "wrong_on_distractors": 0,
+  "wrong_by_source": {},
+  "wrong_label_on_true": 1,
+  "n_peaks_assigned": 2
+ },
+ "final_fit_ok": false,
+ "final_rms": 0.0,
+ "oracle_rms": 267.02135,
+ "n_free_params": 8,
+ "constants": [],
+ "ai_overrides": 0,
+ "human_corrections": 0
+}

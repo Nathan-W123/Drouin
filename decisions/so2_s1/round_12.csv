@@ -1,0 +1,3 @@
+kind,item,action,reason
+param,2300,hold,"PJJK value 2.3e-15 is 52x its order-of-magnitude scale: compensating, not physics"
+all,defaults,confirm,"79 default accepts are jointly consistent (what-if: rms 0.957, no line with |z|>4); flagged lines kept (|t|<=3.4)"

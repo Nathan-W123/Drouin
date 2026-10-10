@@ -1,0 +1,5 @@
+kind,item,action,reason
+param,2300,hold,"PJJK 37x its magnitude scale: compensating, not physics"
+outlier,492,keep,"70(5,65)-71(4,68): leverage 1.00 -- the studentized residual is meaningless; raw residual 26 kHz"
+stop,stop,yes,"converged: one candidate left, nothing passes the consistency checks; remaining parameter candidates implausible (>=37x scale)"
+all,defaults,confirm,"flagged lines kept"
