@@ -1,0 +1,80 @@
+{
+  "name": "blind10",
+  "description": "blind test case",
+  "official_var": "data/SO2/SO2.par",
+  "official_nopt": 1,
+  "official_state_suffixes": [
+    0,
+    99
+  ],
+  "truth_lin": "data/SO2/SO2.lin",
+  "lin_layout": {
+    "up": [
+      0,
+      1,
+      2
+    ],
+    "vu": 3,
+    "lo": [
+      4,
+      5,
+      6
+    ],
+    "vl": 7
+  },
+  "option_line": "a    1    1   0  68   0   2   1   0         0     -1",
+  "int": {
+    "tag": 64502,
+    "qrot": 6408.3217,
+    "fend": 100,
+    "dipoles": [
+      [
+        2,
+        1.63308
+      ]
+    ]
+  },
+  "rot_ids": {
+    "A": 10000,
+    "B": 20000,
+    "C": 30000
+  },
+  "start_params": [
+    10000,
+    20000,
+    30000,
+    2000,
+    1100,
+    200,
+    41000,
+    40100
+  ],
+  "fmin_mhz": 0.0,
+  "fmax_mhz": 1000000.0,
+  "distractors": [
+    {
+      "kind": "lin_state",
+      "label": "SO2 v2=1 (measured)",
+      "v": 1,
+      "int_file": "data/SO2/SO2v.int",
+      "abundance": 1.0,
+      "frac": 0.25
+    },
+    {
+      "kind": "catalog",
+      "label": "34SO2",
+      "path": "data/distractors/c066501.cat",
+      "abundance": 0.0425,
+      "frac": 0.25
+    },
+    {
+      "kind": "random",
+      "label": "random",
+      "frac": 0.1
+    }
+  ],
+  "mass_amu": 64.06,
+  "temperature_K": 300.0,
+  "official_sigma_var": "data/SO2/SO2_official_refit.var",
+  "blind_truth": "testcases/blind10_s1/truth_blind.json"
+}

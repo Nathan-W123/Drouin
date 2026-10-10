@@ -1,6 +1,6 @@
 """Build blind test cases. Molecule order, overall scale factor and the data/perturbation seed are drawn
 from OS randomness and written only to hidden files (testcases/<case>_s1/truth_blind.json); nothing
-secret is printed.  Usage: python3 scripts/make_blind.py 3 3   (n_so2 n_h2co)"""
+secret is printed.  Usage: python3 scripts/make_blind.py 3 3 [first_index]   (n_so2 n_h2co; default first index 1)"""
 import json
 import os
 import random
@@ -13,7 +13,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 rng = random.SystemRandom()
 mols = ["so2"] * int(sys.argv[1]) + ["h2co"] * int(sys.argv[2])
 rng.shuffle(mols)
-for i, mol in enumerate(mols, 1):
+first = int(sys.argv[3]) if len(sys.argv) > 3 else 1
+for i, mol in enumerate(mols, first):
     name = f"blind{i}"
     cfg = json.load(open(os.path.join(ROOT, "cases", f"{mol}.json")))
     hidden = f"testcases/{name}_s1/truth_blind.json"

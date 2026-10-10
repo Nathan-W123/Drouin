@@ -1,0 +1,79 @@
+{
+  "name": "blind9",
+  "description": "blind test case",
+  "official_var": "data/H2CO/H2CO.var",
+  "official_nopt": 1,
+  "official_state_suffixes": [
+    0,
+    99
+  ],
+  "official_symmetric_form": true,
+  "truth_lin": "data/H2CO/alle.lin",
+  "lin_layout": {
+    "up": [
+      0,
+      1,
+      2
+    ],
+    "vu": 3,
+    "lo": [
+      6,
+      7,
+      8
+    ],
+    "vl": 9
+  },
+  "option_line": "s   1   1   0  25   0   1   1   3         0     -1",
+  "int": {
+    "tag": 30501,
+    "qrot": 2883.0163,
+    "fend": 80,
+    "dipoles": [
+      [
+        1,
+        2.3317
+      ]
+    ]
+  },
+  "rot_ids": {
+    "A": 10000,
+    "B": 20000,
+    "C": 30000
+  },
+  "start_params": [
+    10000,
+    20000,
+    30000,
+    2099,
+    1199,
+    299,
+    40199,
+    50099
+  ],
+  "fmin_mhz": 0.0,
+  "fmax_mhz": 1000000.0,
+  "distractors": [
+    {
+      "kind": "catalog",
+      "label": "H2(13)CO",
+      "path": "data/distractors/c031503.cat",
+      "abundance": 0.0107,
+      "frac": 0.25
+    },
+    {
+      "kind": "catalog",
+      "label": "H2C(18)O",
+      "path": "data/distractors/c032503.cat",
+      "abundance": 0.00205,
+      "frac": 0.15
+    },
+    {
+      "kind": "random",
+      "label": "random",
+      "frac": 0.1
+    }
+  ],
+  "mass_amu": 30.03,
+  "temperature_K": 300.0,
+  "blind_truth": "testcases/blind9_s1/truth_blind.json"
+}
