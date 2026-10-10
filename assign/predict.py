@@ -25,7 +25,7 @@ class Prediction:
 
 
 class Predictor:
-    def __init__(self, cfg, fmin, fmax, target_shift=3000.0):
+    def __init__(self, cfg, fmin, fmax, target_shift=300.0):
         self.cfg, self.fmin, self.fmax = cfg, fmin, fmax
         self.int = int_text(cfg, fmax_ghz=fmax * 1.02 / 1000.0)
         self.steps = {}

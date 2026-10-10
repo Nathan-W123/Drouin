@@ -78,7 +78,10 @@ class Run:
         self.peaks = Peaks.load(os.path.join(self.tc, "peaks.csv"))
         self.dir = os.path.join(pk.ROOT, "runs", f"{self.case}_s{seed}_{arm}{tag}")
         self.dec_dir = os.path.join(pk.ROOT, "decisions", f"{self.case}_s{seed}{tag}")
-        self.pred_ = Predictor(self.cfg, self.cfg["fmin_mhz"], self.cfg["fmax_mhz"])
+        # finite-difference step (target 99th-percentile line shift, MHz). 300 is the validated value; the
+        # runs reported in REPORT.md were made with 3000 (see REPORT.md section 5), replay with --fd-step 3000
+        self.pred_ = Predictor(self.cfg, self.cfg["fmin_mhz"], self.cfg["fmax_mhz"],
+                               target_shift=self.s.get("fd_step", 300.0))
         self.state_path = os.path.join(self.dir, "state.json")
         if os.path.exists(self.state_path):
             st = json.load(open(self.state_path))
@@ -651,11 +654,15 @@ if __name__ == "__main__":
     ap.add_argument("--tag", default="")
     ap.add_argument("--fresh", action="store_true")
     ap.add_argument("--p-accept", type=float, default=None)
+    ap.add_argument("--fd-step", type=float, default=None, help="finite-difference target shift in MHz "
+                    "(default 300; the reported runs used 3000)")
     ap.add_argument("--series-rule", action="store_true", help="ablation: automated series-coherence acceptance")
     ap.add_argument("--plus", action="store_true", help="rules+: series rule + multi-term forward selection + "
                     "no rejection while a release is pending + magnitude plausibility")
     a = ap.parse_args()
     st = {}
+    if a.fd_step is not None:
+        st["fd_step"] = a.fd_step
     if a.p_accept is not None:
         st["p_accept"] = a.p_accept
     if a.series_rule:
