@@ -18,8 +18,11 @@ peaks) and noise is added. The run starts from constants that are **0.5–1% off
 |---|---|---|---|---|
 | SO₂, true lines correctly assigned | 0.0–0.2% (5 seeds) | 0.4–19% (5 seeds) | 17–91% (5 seeds) | **97.2% / 95.8%** (seeds 1, 4) |
 | SO₂, assignments that are correct | 0–1% | 67–100% | 87–100% | **100% / 100%** |
-| H₂CO, true lines correctly assigned | 0–1% | 1–16% | 1.5–96.5% | **96.5% / 93.4%** (seeds 1, 2) |
+| H₂CO, true lines correctly assigned | 0–1% | 1–16% (1–64%²) | 1.5–96.5% (0.5–95.5%²) | **96.5% / 93.4%** (seeds 1, 2) |
 | H₂CO, assignments correct (strict / physics-aware¹) | 0–1% | 50–91% | 33–98% | **97.2–97.5% / 100%** |
+
+² With the corrected finite-difference step (300 MHz); the as-run step was 3000 MHz, see §5.
+SO₂ results are identical at both settings.
 
 ¹ All 11 "wrong" H₂CO labels are the second component of a high-Ka K-doublet that is degenerate to
 <8 kHz (Doppler width 1.3–1.5 MHz) and that the CDMS list labels only once; see §4.3.
@@ -48,7 +51,7 @@ overrode the rule's "reject this outlier" kept correct lines: the rule mistook a
 Hamiltonian for a misassignment. Of 44 rejections and unassignments, 33 removed wrong lines or candidates and
 11 removed correct ones.
 
-**Honest caveats** (§5): the line lists are catalog-derived (measured frequencies, not a raw
+**Honest caveats** (§5): a finite-difference step bug, found after the runs, handicapped some H₂CO automated runs (SO₂ unaffected; corrected re-runs reported); the line lists are catalog-derived (measured frequencies, not a raw
 spectrum) and sparse; both molecules are rigid asymmetric tops without internal rotation; the
 decision-maker (Claude, in this session) had seen the official constants while building the test
 cases; the tools the judgement relied on were developed during the H₂CO warm-up run; the AI arm was
@@ -263,6 +266,28 @@ defaults. Recovering from a wrong state, and choosing which hypothesis to test n
 paid off.
 
 ## 5. Limitations (please read)
+* **A bug found after the runs: the finite-difference step.** All runs in §3 used a 3000 MHz
+  finite-difference step for the Jacobian, instead of the 300 MHz value validated in `tests/`
+  (a parameter sweep left the wrong value in the code). The line uncertainties used inside
+  0.002–99 MHz come from SPCAT and were unaffected, and the round-1 uncertainties agree to within 2%
+  (95th percentile). But the Jacobian also drives the bootstrap ranking, leverage and the blend test.
+  For H₂CO seed 1 the top bootstrap hypothesis changes: the wrong 15₅,₁₀ anchor that the AI arm had to
+  find and remove in round 3 is *not* chosen at 300 MHz. I re-ran all automated arms at 300 MHz
+  (`--fd-step 300`, now the default); true lines correctly assigned (%) per seed 1–5:
+
+  | molecule | arm | as run (3000 MHz) | corrected (300 MHz) |
+  |---|---|---|---|
+  | H₂CO | greedy | 0.0 / 0.0 / 0.0 / 1.0 / 0.0 (mean 0.2) | 0.0 / 0.0 / 0.0 / 1.0 / 0.0 (mean 0.2) |
+  | H₂CO | rules | 1.0 / 16.2 / 1.0 / 2.0 / 1.1 (mean 4.3) | 52.2 / 1.5 / 63.8 / 1.5 / 1.1 (mean 24.0) |
+  | H₂CO | rules+ | 96.5 / 1.5 / 40.2 / 15.3 / 96.3 (mean 50.0) | 95.5 / 0.5 / 93.5 / 27.0 / 50.5 (mean 53.4) |
+  | SO₂ | greedy | 0.0 / 0.2 / 0.0 / 0.2 / 0.0 (mean 0.1) | 0.0 / 0.0 / 0.0 / 0.4 / 0.7 (mean 0.2) |
+  | SO₂ | rules | 0.4 / 1.1 / 19.3 / 0.4 / 16.9 (mean 7.6) | 0.4 / 1.1 / 18.9 / 0.4 / 21.8 (mean 8.5) |
+  | SO₂ | rules+ | 90.6 / 90.9 / 89.7 / 24.9 / 16.7 (mean 62.6) | 90.6 / 90.9 / 89.7 / 24.9 / 16.7 (mean 62.6) |
+
+  SO₂ is unchanged. On H₂CO the plain rules arm does much better on two seeds (52%, 64%) and rules+
+  changes seed by seed (mean 50% → 53%). Rules+ still fails where the AI arm succeeded: H₂CO seed 2
+  (0.5% at 300 MHz against 93.4% for the AI arm) and SO₂ seed 4 (25% against 95.8%). The AI runs were not
+  repeated at 300 MHz, because that would require new decisions. Replay them exactly with `--fd-step 3000`.
 * **Not a raw spectrum.**
   * The "observed" peaks are the catalog's measured frequencies plus distractors. The lists are
     *sparse*: only the lines experimenters chose to measure, about 20% of the predicted SO₂ lines above

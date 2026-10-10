@@ -1,0 +1,110 @@
+{
+ "run": "so2_s4_rules_fd300",
+ "case": "so2",
+ "seed": 4,
+ "arm": "rules_fd300",
+ "rounds": 4,
+ "per_round": [
+  {
+   "n_true": 453,
+   "n_pairs": 3,
+   "n_correct": 3,
+   "n_covered": 3,
+   "n_degenerate_partner": 0,
+   "precision_phys": 1.0,
+   "coverage": 0.006622516556291391,
+   "precision": 1.0,
+   "wrong_on_distractors": 0,
+   "wrong_by_source": {},
+   "wrong_label_on_true": 0,
+   "n_peaks_assigned": 3,
+   "round": 1,
+   "rms": 0.00032677324202953436,
+   "n_float": 8,
+   "overrides": 0
+  },
+  {
+   "n_true": 453,
+   "n_pairs": 26,
+   "n_correct": 25,
+   "n_covered": 25,
+   "n_degenerate_partner": 0,
+   "precision_phys": 0.9615384615384616,
+   "coverage": 0.05518763796909492,
+   "precision": 0.9615384615384616,
+   "wrong_on_distractors": 1,
+   "wrong_by_source": {
+    "random": 1
+   },
+   "wrong_label_on_true": 0,
+   "n_peaks_assigned": 26,
+   "round": 2,
+   "rms": 217.94438451430028,
+   "n_float": 8,
+   "overrides": 0
+  },
+  {
+   "n_true": 453,
+   "n_pairs": 3,
+   "n_correct": 2,
+   "n_covered": 2,
+   "n_degenerate_partner": 0,
+   "precision_phys": 0.6666666666666666,
+   "coverage": 0.004415011037527594,
+   "precision": 0.6666666666666666,
+   "wrong_on_distractors": 1,
+   "wrong_by_source": {
+    "random": 1
+   },
+   "wrong_label_on_true": 0,
+   "n_peaks_assigned": 3,
+   "round": 3,
+   "rms": -0.0,
+   "n_float": 9,
+   "overrides": 0
+  },
+  {
+   "n_true": 453,
+   "n_pairs": 3,
+   "n_correct": 2,
+   "n_covered": 2,
+   "n_degenerate_partner": 0,
+   "precision_phys": 0.6666666666666666,
+   "coverage": 0.004415011037527594,
+   "precision": 0.6666666666666666,
+   "wrong_on_distractors": 1,
+   "wrong_by_source": {
+    "random": 1
+   },
+   "wrong_label_on_true": 0,
+   "n_peaks_assigned": 3,
+   "round": 4,
+   "rms": -0.0,
+   "n_float": 9,
+   "overrides": 0
+  }
+ ],
+ "final": {
+  "n_true": 453,
+  "n_pairs": 3,
+  "n_correct": 2,
+  "n_covered": 2,
+  "n_degenerate_partner": 0,
+  "precision_phys": 0.6666666666666666,
+  "coverage": 0.004415011037527594,
+  "precision": 0.6666666666666666,
+  "wrong_on_distractors": 1,
+  "wrong_by_source": {
+   "random": 1
+  },
+  "wrong_label_on_true": 0,
+  "n_peaks_assigned": 3
+ },
+ "final_fit_ok": false,
+ "final_rms": -0.0,
+ "oracle_rms": 5096.47452,
+ "n_free_params": 9,
+ "constants": [],
+ "ai_overrides": 0,
+ "human_corrections": 0
+}
