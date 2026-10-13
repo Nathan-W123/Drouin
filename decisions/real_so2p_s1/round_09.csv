@@ -1,0 +1,5 @@
+kind,item,action,reason
+assign,14 5 9 15 4 12@1326,accept,jointly consistent with the 79-line model
+assign,20 7 13 21 6 16@2370,accept,jointly consistent with the 79-line model
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

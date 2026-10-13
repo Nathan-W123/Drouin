@@ -46,6 +46,21 @@ prior-only state, releasing five terms on too few lines, then misreading misassi
 term), where rules+ reached 98.6% (§3.3). Where the AI arm finished (11 of 12), fitted constants agree with the
 oracle fit to ≤ 0.65σ. No human corrections. Details and limits of this blinding in §3.3.
 
+**Real spectrum (added last).** A public telescope spectrum, TIMASSS IRAM-30m of the protostar
+IRAS 16293-2422 (80–281 GHz, 2681 peaks found at ≥ 4σ, about 70 molecules). SO₂ accounts for 3% of the peaks and
+H₂CO for 0.5%. Scored against the CDMS reference positions (§3.4):
+
+| real spectrum | greedy | rules | rules+ | **AI-in-the-loop** |
+|---|---|---|---|---|
+| SO₂, constants 0.5–1% off | 0% | 0% | 0% | 0% (cannot start) |
+| SO₂, constants 0.05–0.1% off | 2.3% | 75.9% | 75.9% | **92.0%** (80/87; 98.8% correct) |
+| H₂CO, constants 0.5–1% off | 0% | 0% | 0% | 0% (cannot start) |
+| H₂CO, constants 0.05–0.1% off | 0% | 0% | 0% | **92.9%** (13/14; 100% correct) |
+
+With 1% starting errors, **nothing** can start on a real spectrum this dense (13 lines/GHz). With a 0.1% prior
+the AI loop beats the automated arms. On H₂CO, the automatic hypothesis search has too few lines to score,
+and only hand-picked anchors got it started.
+
 ![per-round results](figures/fig_rounds.png)
 
 *Figure 1. Seed 1: percentage of the true lines in the list correctly assigned (top) and percentage of
@@ -355,6 +370,86 @@ below uses the replayed run.
 * The AI arm was strongest on SO₂ (6/6 at ≥ 99.8%) and weaker on H₂CO (31–99.4%). There, rules+ was
   as good or better on 4 of 6 cases.
 
+### 3.4 Real spectrum: TIMASSS survey of IRAS 16293-2422
+
+**Data.** The public, fully reduced IRAM-30m spectrum of the TIMASSS survey (Caux et al. 2011,
+A&A 532, A23; CDS J/A+A/532/A23; `data/TIMASSS/`). It covers 80–115.5, 129–177.5 and 198–281.5 GHz,
+with 0.31 MHz channels, noise about 12 mK, and frequencies in the source rest frame (VLSR 3.8 km/s). This is a real spectrum:
+baseline ripples, two velocity components (the protostar is a binary), line widths around 6 km/s
+(about 4 MHz at 200 GHz), opacity, and about 13 detected lines per GHz from about 70 species.
+
+**Pipeline** (`assign/realspec.py`; cases `real_so2`, `real_so2p`, `real_h2co`, `real_h2cop`):
+* *Peaks.* Noise is a sigma-clipped MAD in 200 MHz blocks. Every local maximum ≥ 4σ gets a Gaussian fit.
+  This gives 2681 peaks.
+* *Uncertainty.* err² = (FWHM/2·SNR)² + (ν·0.25 km/s / c)² + channel²/12.
+* *Intensity.* Converted to the loop's log scale as lgint = log₁₀(T_A*·ν) + C, with predictions at
+  80 K. That is the optically thin, Rayleigh-Jeans relation.
+* *Reference ("truth"), hidden from the loop.* A peak carries a label of the molecule when a CDMS reference line
+  lies within max(3 err, FWHM/2) and the predicted intensity is within −1.0…+0.7 dex of the peak. That
+  gives 87 SO₂ peaks and 14 H₂CO peaks.
+
+**Calibration that used the reference** (disclose when citing). Four global numbers were set from
+reference matches of the target molecule, before any run:
+* the velocity error floor (0.25 km/s; the scatter of SO₂ matches was 0.26 km/s);
+* the line width (6 km/s);
+* the intensity offset C (SO₂ −7.98, H₂CO −8.12; scatter 0.23 and 0.13 dex);
+* the temperature (80 K; the scatter is flat from 60 to 100 K).
+
+An astronomer would get these from a rotational diagram of known lines. No frequencies or labels were used.
+
+**Code changes needed for dense, real spectra:**
+* intensity temperature and line width set per case;
+* only observed frequency windows are predicted (the spectrum has gaps);
+* two hypothesis-search settings exposed for dense spectra: candidates per anchor (15 → 40) and the
+  maximum expected chance rate of a scored line (0.15 → 0.5);
+* a hand-picked `anchor` decision for the bootstrap round;
+* two bug fixes: `stop` is now honoured in a bootstrap round, and the round limit now also applies to repeated bootstrap rounds
+  (the automated arms had looped 70–352 times with no hypothesis).
+
+**Results.**
+
+| case | arm | true lines correctly assigned | correct among assignments | notes |
+|---|---|---|---|---|
+| SO₂, 1% | all four | 0 / 87 | – | no hypothesis exists: every strong prediction has a ±1–2 GHz window holding 12–300 peaks; greedy assigned 34 peaks, 33 of them wrong |
+| SO₂, 0.1% | greedy | 2 / 87 (2.3%) | 3.6% | 51 of 55 on other molecules |
+| SO₂, 0.1% | rules | 66 / 87 (75.9%) | 98.5% | constants ≤ 4.1σ from oracle |
+| SO₂, 0.1% | rules+ | 66 / 87 (75.9%) | 97.1% | |
+| SO₂, 0.1% | **AI** | **80 / 87 (92.0%)** | **98.8%** | constants ≤ 0.92σ from oracle; A, B, C within 1×10⁻⁶ of CDMS |
+| H₂CO, 1% | all four | 0 / 14 | – | no hypothesis |
+| H₂CO, 0.1% | greedy / rules / rules+ | 0 / 14 | – | too few H₂CO lines in range for the hypothesis search to score (needs ≥ 10) |
+| H₂CO, 0.1% | **AI** | **13 / 14 (92.9%)** | **100%** | started from three hand-picked anchors |
+
+(The H₂CO 1% rules+ run was stopped after 3 rounds, at 0 lines, once the missing bootstrap hypothesis was clear.)
+
+**What the judgement did here.**
+* *Conservative growth in a 97%-distractor spectrum.* Early on, accept only P ≥ 0.9, then only
+  sharply predicted lines (σ < 10 MHz), Ka level by Ka level. This is the lesson from blind7.
+* *A coincidence argument for the Ka = 4–5 lines.* They were predicted ±20 MHz wide, yet each fell within
+  about 2 MHz of the centre. In this spectrum that has about a 2% chance per line, so seven together were accepted.
+* *H₂CO.* With too few lines to score hypotheses, three Ka = 1 lines with a single
+  intensity-consistent candidate each were picked by hand. The run then grew along the Ka = 1 Q-branch ladder.
+
+**The AI run's misses and its one "error" (SO₂, 0.1%).**
+* *The "error".* The one wrong label (15₂,₁₄–15₁,₁₅) sits 0.06 MHz from the reference line. The reference rule excluded
+  it only because the peak is 0.714 dex fainter than predicted, against a cut of 0.700, probably opacity. It is almost certainly real
+  SO₂. The score is kept as computed: the rule was not changed after the fact.
+* *The misses.* Of the 7, two peaks are one line that the peak finder split in two (0.12 MHz apart, likely a
+  self-absorbed profile). The others include 7₁,₇–6₀,₆ and four J = 18–32 lines that were left
+  undecided at the end.
+
+**Limits of this test.**
+* It is an astronomical, not a laboratory, spectrum. The lines are 4 MHz wide, against the kHz-level lab accuracy
+  this project is aimed at.
+* The 0.1% starting accuracy is easier than the 1% used elsewhere. It corresponds to having a previous
+  lower-precision study or a good isotopologue scaling, not a pure quantum-chemistry estimate.
+* The truth is a reference rule, not an expert assignment: blends with other species and the intensity cut can mislabel a
+  few peaks either way.
+* One seed per case, and H₂CO is a small test (14 lines).
+
+**The main real-data finding.** Line density, not noise, is what breaks the method. With 1% starting errors,
+no arm, the AI included, can start on a spectrum with 13 lines/GHz. That is the case to design for in
+the summer project: more anchors, intensity patterns, or a wider search, rather than better decisions after the start.
+
 ## 4. What the judgement step contributed
 
 ### 4.1 Where automation fails, concretely
@@ -457,7 +552,7 @@ paid off.
   (0.5% at 300 MHz against 93.4% for the AI arm) and SO₂ seed 4 (25% against 95.8%). The original four
   AI runs were not repeated at 300 MHz, because that would require new decisions; replay them exactly
   with `--fd-step 3000`. The twelve blind AI runs (§3.3) use 300 MHz, the same code as every automated arm.
-* **Not a raw spectrum.**
+* **Mostly not a raw spectrum.** (§3.4 adds one real astronomical spectrum, with its own limits.)
   * The "observed" peaks are the catalog's measured frequencies plus distractors. The lists are
     *sparse*: only the lines experimenters chose to measure, about 20% of the predicted SO₂ lines above
     the detection limit.

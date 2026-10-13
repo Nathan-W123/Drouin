@@ -13,6 +13,7 @@ Final:
 import csv
 import glob
 import json
+import re
 import math
 import os
 
@@ -131,7 +132,7 @@ def compare_constants(cfg, fit, oracle):
 
 def score_run(run_dir):
     name = os.path.basename(run_dir.rstrip("/"))
-    case, seed = name.split("_s")[0], int(name.split("_s")[1].split("_")[0])
+    case, seed = re.match(r"(.+)_s(\d+)_", name).group(1), int(re.match(r"(.+)_s(\d+)_", name).group(2))
     cfg = load_case(case)
     tc = os.path.join(pk.ROOT, "testcases", f"{case}_s{seed}")
     truth = load_truth(tc)
@@ -159,7 +160,7 @@ def score_run(run_dir):
     n_human = 0
     for f in glob.glob(os.path.join(run_dir, "round_*", "decisions_applied.csv")):
         n_human += sum(1 for r in csv.DictReader(open(f)) if r.get("source") == "human")
-    out = dict(run=name, case=case, seed=seed, arm=name.split("_", 2)[2], rounds=len(per_round), per_round=per_round,
+    out = dict(run=name, case=case, seed=seed, arm=re.match(r"(.+)_s(\d+)_(.+)", name).group(3), rounds=len(per_round), per_round=per_round,
                final=fin, final_fit_ok=bool(fit and fit.ok), final_rms=fit.rms if fit else None,
                oracle_rms=ofit.rms if ofit else None, n_free_params=len(model.floating()) if model else 0,
                constants=consts, ai_overrides=n_ai_override, human_corrections=n_human)

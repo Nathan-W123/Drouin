@@ -1,0 +1,172 @@
+{
+ "run": "real_h2co_s1_greedy",
+ "case": "real_h2co",
+ "seed": 1,
+ "arm": "greedy",
+ "rounds": 7,
+ "per_round": [
+  {
+   "n_true": 14,
+   "n_pairs": 16,
+   "n_correct": 0,
+   "n_covered": 0,
+   "n_degenerate_partner": 0,
+   "precision_phys": 0.0,
+   "coverage": 0.0,
+   "precision": 0.0,
+   "wrong_on_distractors": 15,
+   "wrong_by_source": {
+    "other": 15
+   },
+   "wrong_label_on_true": 1,
+   "n_peaks_assigned": 16,
+   "round": 1,
+   "rms": 129.3820141968914,
+   "n_float": 8,
+   "overrides": 0
+  },
+  {
+   "n_true": 14,
+   "n_pairs": 5,
+   "n_correct": 0,
+   "n_covered": 0,
+   "n_degenerate_partner": 0,
+   "precision_phys": 0.0,
+   "coverage": 0.0,
+   "precision": 0.0,
+   "wrong_on_distractors": 5,
+   "wrong_by_source": {
+    "other": 5
+   },
+   "wrong_label_on_true": 0,
+   "n_peaks_assigned": 5,
+   "round": 2,
+   "rms": 0.004881177908382798,
+   "n_float": 8,
+   "overrides": 0
+  },
+  {
+   "n_true": 14,
+   "n_pairs": 14,
+   "n_correct": 0,
+   "n_covered": 0,
+   "n_degenerate_partner": 0,
+   "precision_phys": 0.0,
+   "coverage": 0.0,
+   "precision": 0.0,
+   "wrong_on_distractors": 14,
+   "wrong_by_source": {
+    "other": 14
+   },
+   "wrong_label_on_true": 0,
+   "n_peaks_assigned": 14,
+   "round": 3,
+   "rms": 75.50660130411636,
+   "n_float": 8,
+   "overrides": 0
+  },
+  {
+   "n_true": 14,
+   "n_pairs": 7,
+   "n_correct": 0,
+   "n_covered": 0,
+   "n_degenerate_partner": 0,
+   "precision_phys": 0.0,
+   "coverage": 0.0,
+   "precision": 0.0,
+   "wrong_on_distractors": 7,
+   "wrong_by_source": {
+    "other": 7
+   },
+   "wrong_label_on_true": 0,
+   "n_peaks_assigned": 7,
+   "round": 4,
+   "rms": 0.07287369382866454,
+   "n_float": 8,
+   "overrides": 0
+  },
+  {
+   "n_true": 14,
+   "n_pairs": 9,
+   "n_correct": 0,
+   "n_covered": 0,
+   "n_degenerate_partner": 0,
+   "precision_phys": 0.0,
+   "coverage": 0.0,
+   "precision": 0.0,
+   "wrong_on_distractors": 9,
+   "wrong_by_source": {
+    "other": 9
+   },
+   "wrong_label_on_true": 0,
+   "n_peaks_assigned": 9,
+   "round": 5,
+   "rms": 1.7333042113597916,
+   "n_float": 8,
+   "overrides": 0
+  },
+  {
+   "n_true": 14,
+   "n_pairs": 8,
+   "n_correct": 0,
+   "n_covered": 0,
+   "n_degenerate_partner": 0,
+   "precision_phys": 0.0,
+   "coverage": 0.0,
+   "precision": 0.0,
+   "wrong_on_distractors": 8,
+   "wrong_by_source": {
+    "other": 8
+   },
+   "wrong_label_on_true": 0,
+   "n_peaks_assigned": 8,
+   "round": 6,
+   "rms": 0.28752256897530015,
+   "n_float": 8,
+   "overrides": 0
+  },
+  {
+   "n_true": 14,
+   "n_pairs": 8,
+   "n_correct": 0,
+   "n_covered": 0,
+   "n_degenerate_partner": 0,
+   "precision_phys": 0.0,
+   "coverage": 0.0,
+   "precision": 0.0,
+   "wrong_on_distractors": 8,
+   "wrong_by_source": {
+    "other": 8
+   },
+   "wrong_label_on_true": 0,
+   "n_peaks_assigned": 8,
+   "round": 7,
+   "rms": 0.28752256897530015,
+   "n_float": 8,
+   "overrides": 0
+  }
+ ],
+ "final": {
+  "n_true": 14,
+  "n_pairs": 8,
+  "n_correct": 0,
+  "n_covered": 0,
+  "n_degenerate_partner": 0,
+  "precision_phys": 0.0,
+  "coverage": 0.0,
+  "precision": 0.0,
+  "wrong_on_distractors": 8,
+  "wrong_by_source": {
+   "other": 8
+  },
+  "wrong_label_on_true": 0,
+  "n_peaks_assigned": 8
+ },
+ "final_fit_ok": false,
+ "final_rms": -0.0,
+ "oracle_rms": 0.74088,
+ "n_free_params": 8,
+ "constants": [],
+ "ai_overrides": 0,
+ "human_corrections": 0
+}

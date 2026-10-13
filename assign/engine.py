@@ -74,7 +74,9 @@ class Run:
         self.tc = os.path.join(pk.ROOT, "testcases", f"{self.case}_s{seed}")
         meta = json.load(open(os.path.join(self.tc, "testcase.json")))
         self.s["i_det"] = meta["detection_limit_lgint"]
-        self.s["fwhm_factor"] = 7.162e-7 * math.sqrt(self.cfg.get("temperature_K", 300.0) / self.cfg["mass_amu"])
+        self.s["fwhm_factor"] = (self.cfg["fwhm_kms"] / 299792.458 if "fwhm_kms" in self.cfg else
+                                 7.162e-7 * math.sqrt(self.cfg.get("temperature_K", 300.0) / self.cfg["mass_amu"]))
+        self.s.update(self.cfg.get("settings", {}))  # case-specific overrides (e.g. sigma_I for real spectra)
         self.peaks = Peaks.load(os.path.join(self.tc, "peaks.csv"))
         self.s.setdefault("i_det_match", float(self.peaks.lgint.min()) - 0.3)
         self.dir = os.path.join(pk.ROOT, "runs", f"{self.case}_s{seed}_{arm}{tag}")
@@ -325,9 +327,10 @@ class Run:
                     blanket[item] = (action, reason)
                 continue
             kind, item = alias.get((kind, item), (kind, item))
-            if (kind, item) not in out and kind not in ("stop", "boot"):
+            if (kind, item) not in out and kind not in ("stop", "boot", "anchor"):
                 raise ValueError(f"decision for unknown item {kind} {item} in {path}")
-            if kind in ("stop", "boot"):  # boot,restart,yes: rerun the hypothesis search next round
+            if kind in ("stop", "boot", "anchor"):  # boot,restart,yes: rerun the hypothesis search next round;
+                # anchor,<key>@<peak>,accept: a hand-picked anchor in the bootstrap round
                 out[(kind, item)] = (action, "AI: " + reason, "ai")
                 continue
             if action != out[(kind, item)][0]:
@@ -442,7 +445,16 @@ class Run:
             acc = [r for r in hrows if dec[("hyp", str(r["rank"]))][0] == "accept"]
             log = [dict(kind="hyp", item=r["rank"], action=dec[("hyp", str(r["rank"]))][0],
                         reason=dec[("hyp", str(r["rank"]))][1], source=dec[("hyp", str(r["rank"]))][2]) for r in hrows]
+            log += [dict(kind=k[0], item=k[1], action=v[0], reason=v[1], source=v[2]) for k, v in dec.items()
+                    if k[0] in ("anchor", "stop")]
             _w(os.path.join(rdir, "decisions_applied.csv"), log, ["kind", "item", "action", "reason", "source"])
+            manual = [k[1] for k, v in dec.items() if k[0] == "anchor" and v[0] == "accept"]
+            for m in manual:  # hand-picked anchors (e.g. too few lines for the automatic search to score)
+                k, p = m.split("@")
+                self.assign.setdefault(int(p), [])
+                if parse_key(k) not in self.assign[int(p)]:
+                    self.assign[int(p)].append(parse_key(k))
+                self.assign_meta[int(p)] = dict(round=self.round, how="anchor")
             for r in acc[:1]:
                 for a in r["anchors"].split(";"):
                     k, p = a.split("->")
@@ -450,7 +462,9 @@ class Run:
                     if parse_key(k) not in self.assign[int(p)]:
                         self.assign[int(p)].append(parse_key(k))
                     self.assign_meta[int(p)] = dict(round=self.round, how="bootstrap")
-            self.boot = bool(acc)
+            self.boot = bool(acc) or bool(manual)
+            if dec.get(("stop", "stop"), ("no",))[0] == "yes" or self.round >= self.s["max_rounds"]:
+                self.done = True
             fit = self._fit_and_update()
             self._record(rdir, dict(n_accept=sum(len(r["anchors"].split(";")) for r in acc[:1]), n_reject=0,
                                     released=[], overrides=n_over, bootstrap=True, **fit))

@@ -1,0 +1,8 @@
+kind,item,action,reason,source
+assign,C0001,defer,AI (blanket): insufficient evidence,ai
+assign,C0002,defer,AI (blanket): insufficient evidence,ai
+assign,C0003,defer,AI (blanket): insufficient evidence,ai
+assign,C0004,defer,AI (blanket): insufficient evidence,ai
+assign,C0005,defer,AI (blanket): insufficient evidence,ai
+assign,C0006,defer,AI (blanket): insufficient evidence,ai
+stop,stop,yes,"AI: only candidate left is 13(2,11), a single line in a +-90 MHz window of a 13 lines/GHz spectrum - not enough evidence; converged",ai

@@ -45,7 +45,10 @@ DEFAULTS = dict(
 
 
 def doppler_fwhm(f_mhz, cfg):
-    """Doppler FWHM (MHz) = 7.162e-7 * nu * sqrt(T/M)."""
+    """Doppler FWHM (MHz) = 7.162e-7 * nu * sqrt(T/M); for astronomical spectra the observed
+    (kinematic) line width `fwhm_kms` is used instead."""
+    if "fwhm_kms" in cfg:
+        return f_mhz * cfg["fwhm_kms"] / 299792.458
     return 7.162e-7 * f_mhz * np.sqrt(cfg.get("temperature_K", 300.0) / cfg["mass_amu"])
 
 
@@ -88,7 +91,7 @@ def group_blends(rows):
 def int_text(cfg, dipoles=None, fmax_ghz=None, tag=None):
     i = cfg["int"]
     dips = dipoles or i["dipoles"]
-    s = f"{cfg['name']}\n0 {tag or i['tag']} {i['qrot']} 0 {i['fend']} -30.0 -30.0 {fmax_ghz or 3500.0} 300.0\n"
+    s = f"{cfg['name']}\n0 {tag or i['tag']} {i['qrot']} 0 {i['fend']} -30.0 -30.0 {fmax_ghz or 3500.0} {cfg.get('int_temperature_K', 300.0)}\n"
     return s + "".join(f" {d} {m}\n" for d, m in dips)
 
 

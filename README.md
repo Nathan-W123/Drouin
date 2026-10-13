@@ -21,6 +21,7 @@ assign/          Python package
   pickett.py     .par/.lin/.int/.cat/.var I/O and SPFIT/SPCAT runners (fixed-width formats per spinv.pdf)
   model.py       Hamiltonian parameters, perturbed starting constants, priors, magnitude scales
   testcase.py    builds a label-free, scorable test case (hidden truth kept separately)
+  realspec.py    real-spectrum test case: peaks from the public TIMASSS spectrum of IRAS 16293-2422
   predict.py     SPCAT predictions + Jacobian + covariance -> line uncertainties (validated)
   match.py       Bayesian candidate probabilities, bootstrap hypothesis search, greedy matcher
   series.py      series-coherence diagnostic (Loomis-Wood analysis in numbers)
@@ -93,6 +94,7 @@ param,3000,release,"<reason>"
 all,assign,defer,"<reason>"            # blanket action for all rows of a kind not listed
 all,defaults,confirm,"<reason>"        # required: confirms the remaining rule-based defaults
 boot,restart,yes,"<reason>"            # with no lines assigned: rerun the bootstrap hypothesis search
+anchor,3 1 3 2 1 2@1640,accept,"<reason>"  # bootstrap round: a hand-picked anchor
 stop,stop,yes,"<reason>"
 ```
 
@@ -101,6 +103,13 @@ its reason and whether it overrides the default, is logged in `runs/.../round_NN
 Runs are deterministic, so the whole AI run can be replayed from the decision files
 (`--fresh`; the original four AI runs need `--fd-step 3000`). Note: `all,defaults,confirm` also
 applies the default parameter releases, so hold any release you do not want explicitly.
+
+### Real spectrum
+
+`python3 -m assign.realspec real_so2p` (or `real_so2`, `real_h2co`, `real_h2cop`) extracts peaks from
+`data/TIMASSS/TIMASSS_IRAM.fits` (needs `pip install astropy scipy`) and writes the test case; then run the
+arms as usual. `--calibrate` prints the reference-match diagnostics used to set the error floor and intensity
+scale. See REPORT §3.4.
 
 ### Blind cases
 

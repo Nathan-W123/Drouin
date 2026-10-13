@@ -1,0 +1,11 @@
+kind,item,action,reason
+assign,26 4 22 26 3 23@2679,accept,jointly consistent with phiK released; each lies within ~2 MHz of a 20 MHz-wide prediction (chance ~2% each in this spectrum)
+assign,17 5 13 18 4 14@431,accept,jointly consistent with phiK released; each lies within ~2 MHz of a 20 MHz-wide prediction (chance ~2% each in this spectrum)
+assign,26 3 23 25 4 22@2228,accept,jointly consistent with phiK released; each lies within ~2 MHz of a 20 MHz-wide prediction (chance ~2% each in this spectrum)
+assign,11 5 7 12 4 8@1987,accept,jointly consistent with phiK released; each lies within ~2 MHz of a 20 MHz-wide prediction (chance ~2% each in this spectrum)
+assign,28 3 25 28 2 26@2066,accept,jointly consistent with phiK released; each lies within ~2 MHz of a 20 MHz-wide prediction (chance ~2% each in this spectrum)
+assign,15 5 11 16 4 12@957,accept,jointly consistent with phiK released; each lies within ~2 MHz of a 20 MHz-wide prediction (chance ~2% each in this spectrum)
+assign,18 5 13 19 4 16@174,accept,jointly consistent with phiK released; each lies within ~2 MHz of a 20 MHz-wide prediction (chance ~2% each in this spectrum)
+param,42000,release,phiK: dchi2 11 at 1.2x its scale
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

@@ -2,6 +2,7 @@
 import csv
 import glob
 import json
+import re
 import os
 import sys
 from collections import Counter
@@ -12,7 +13,7 @@ from .model import load_case
 
 
 def audit(run):
-    case, seed = run.split("_s")[0], int(run.split("_s")[1].split("_")[0])
+    case, seed = re.match(r"(.+)_s(\d+)_", run).group(1), int(re.match(r"(.+)_s(\d+)_", run).group(2))
     cfg = load_case(case)
     truth = score.load_truth(f"testcases/{case}_s{seed}")
     ok = lambda p, k: truth[p][0] == "true" and (k in truth[p][1] or score.degenerate_partner(k, truth[p][1], cfg))

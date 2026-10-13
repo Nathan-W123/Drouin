@@ -1,0 +1,36 @@
+# real_so2p seed 1 arm ai -- round 5
+
+assigned peaks 64, floating params 8, last rms (weighted) 0.672
+predictions considered 60, with candidates 51, unresolvable windows 5, p_have=0.95 (from 31 sharp predictions)
+candidate rows 143: default accept 5 (of which flagged 0), deferred with P>=0.5: 12
+
+OUTLIERS (top 8):
+
+RELEASE forward selection (<=10x scale): none
+  other trials: [('phiK', np.float64(2.4), '1.3x'), ('PhiJK', np.float64(1.7), '0.2x'), ('PhiJ', np.float64(1.1), '1.3x'), ('PhiK', np.float64(0.5), '0.1x'), ('phiJ', np.float64(0.2), '0.12x'), ('PhiKJ', np.float64(0.1), '0.1x')]
+  current 64 lines: rms 0.672 with releases (without: 0.672)
+
+JOINT defaults: 5 added -> kept 4, removed 1, rms 0.823
+   removed 2252 10 5 5 11 4 8          z=-7.7
+
+JOINT defaults+P>=0.9: 8 added -> kept 7, removed 1, rms 0.926
+   removed 2252 10 5 5 11 4 8          z=-7.7
+
+JOINT defaults+P>=0.5: 17 added -> kept 12, removed 5, rms 1.000
+   removed 2252 10 5 5 11 4 8          z=-7.7
+   removed 2454 4 4 0 5 3 3            z=+11.8
+   removed 2387 30 4 26 30 3 27        z=-11.6
+   removed 1325 14 5 9 15 4 12         z=-7.0
+   removed 1623 12 5 7 13 4 10         z=-4.6
+
+JOINT-RELEASE defaults: releases [('phiK', np.float64(9.5), '1.2x')] -> kept 4, removed 1, rms 0.777
+   RELEASE_IDS 42000
+   removed 2252 10 5 5 11 4 8          z=-7.6
+
+JOINT-RELEASE defaults+P>=0.9: releases [('phiK', np.float64(11.2), '1.2x')] -> kept 7, removed 1, rms 0.884
+   RELEASE_IDS 42000
+   removed 2252 10 5 5 11 4 8          z=-7.6
+
+SERIES (top 6):
+series dJ=0 Ka'=4 Ka"=3 parity=0,0: 5 coherent members, r0=+0.000000 tol=9.0e-06, expected by chance 0.29, P(chance)=1.3e-05
+series dJ=-1 Ka'=5 Ka"=4 parity=1,0: 4 coherent members, r0=+0.000004 tol=1.3e-05, expected by chance 0.20, P(chance)=5.5e-05

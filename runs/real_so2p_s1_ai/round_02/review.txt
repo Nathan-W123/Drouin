@@ -1,0 +1,26 @@
+# real_so2p seed 1 arm ai -- round 2
+
+assigned peaks 3, floating params 8, last rms (weighted) 0.005
+predictions considered 121, with candidates 68, unresolvable windows 53, p_have=0.50 (from 5 sharp predictions)
+candidate rows 263: default accept 6 (of which flagged 0), deferred with P>=0.5: 30
+
+OUTLIERS (top 8):
+
+RELEASE forward selection (<=10x scale): none
+  other trials: []
+  current 3 lines: rms 0.005 with releases (without: 0.005)
+
+JOINT defaults: 6 added -> kept 6, removed 0, rms 0.300
+
+JOINT defaults+P>=0.9: 11 added -> kept 11, removed 0, rms 0.260
+
+JOINT defaults+P>=0.5: 33 added -> kept 33, removed 0, rms 0.311
+
+JOINT-RELEASE defaults: releases [] -> kept 6, removed 0, rms 0.300
+   RELEASE_IDS 
+
+JOINT-RELEASE defaults+P>=0.9: releases [] -> kept 11, removed 0, rms 0.260
+   RELEASE_IDS 
+
+SERIES (top 6):
+series dJ=0 Ka'=3 Ka"=2 parity=0,0: 5 coherent members, r0=+0.000477 tol=1.5e-05, expected by chance 0.41, P(chance)=7.1e-05

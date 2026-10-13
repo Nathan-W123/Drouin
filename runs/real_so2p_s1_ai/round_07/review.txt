@@ -1,0 +1,39 @@
+# real_so2p seed 1 arm ai -- round 7
+
+assigned peaks 76, floating params 9, last rms (weighted) 0.958
+predictions considered 48, with candidates 38, unresolvable windows 5, p_have=0.95 (from 32 sharp predictions)
+candidate rows 119: default accept 1 (of which flagged 0), deferred with P>=0.5: 4
+
+OUTLIERS (top 8):
+  peak 1068 20 6 14 21 5 17              t=+3.6 h=0.10 default=keep
+  peak 2200 5 4 2 6 3 3                  t=-3.1 h=0.02 default=keep
+  peak 1987 11 5 7 12 4 8                t=+3.1 h=0.09 default=keep
+  peak  163 25 3 23 24 4 20              t=-0.3 h=0.93 default=keep
+
+RELEASE forward selection (<=10x scale): [('PhiK', np.float64(13.9), '0.12x'), ('PhiKJ', np.float64(0.0), '0.019x')]
+  other trials: [('LK', np.float64(14.9), '37x'), ('LKKJ', np.float64(3.3), '67x'), ('LJJK', np.float64(1.2), '3.2e+02x'), ('lJK', np.float64(0.8), '1.6e+02x'), ('phiJK', np.float64(0.8), '0.16x'), ('phiJ', np.float64(0.4), '0.056x')]
+  current 76 lines: rms 0.726 with releases (without: 0.958)
+
+JOINT defaults: 1 added -> kept 0, removed 1, rms 0.726
+   removed 2252 10 5 5 11 4 8          z=-9.4
+
+JOINT defaults+P>=0.9: 1 added -> kept 0, removed 1, rms 0.726
+   removed 2252 10 5 5 11 4 8          z=-9.4
+
+JOINT defaults+P>=0.5: 5 added -> kept 0, removed 5, rms 0.726
+   removed 2252 10 5 5 11 4 8          z=-9.4
+   removed 2454 4 4 0 5 3 3            z=+11.4
+   removed 2387 30 4 26 30 3 27        z=-9.0
+   removed 1325 14 5 9 15 4 12         z=-7.6
+   removed 1623 12 5 7 13 4 10         z=-5.1
+
+JOINT-RELEASE defaults: releases [('PhiK', np.float64(10.3), '0.1x')] -> kept 0, removed 1, rms 0.857
+   RELEASE_IDS 3000
+   removed 2252 10 5 5 11 4 8          z=-9.5
+
+JOINT-RELEASE defaults+P>=0.9: releases [('PhiK', np.float64(10.3), '0.1x')] -> kept 0, removed 1, rms 0.857
+   RELEASE_IDS 3000
+   removed 2252 10 5 5 11 4 8          z=-9.5
+
+SERIES (top 6):
+series dJ=0 Ka'=4 Ka"=3 parity=0,0: 4 coherent members, r0=+0.000008 tol=5.7e-06, expected by chance 0.17, P(chance)=2.8e-05

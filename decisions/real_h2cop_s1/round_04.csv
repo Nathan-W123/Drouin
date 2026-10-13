@@ -1,0 +1,6 @@
+kind,item,action,reason
+assign,8 1 7 8 1 8@1372,accept,"continues the Ka=1 Q-branch ladder (J=8-10), each |z|<0.06 at sigma 2-6 MHz; jointly consistent"
+assign,9 1 8 9 1 9@1740,accept,"continues the Ka=1 Q-branch ladder (J=8-10), each |z|<0.06 at sigma 2-6 MHz; jointly consistent"
+assign,10 1 9 10 1 10@2501,accept,"continues the Ka=1 Q-branch ladder (J=8-10), each |z|<0.06 at sigma 2-6 MHz; jointly consistent"
+all,assign,defer,"13(2,11) still +-92 MHz wide; wait"
+all,defaults,confirm,remaining rule defaults reviewed

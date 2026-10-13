@@ -1,0 +1,19 @@
+{
+ "n_accept": 3,
+ "n_reject": 0,
+ "released": [
+  "PhiKJ"
+ ],
+ "overrides": 3,
+ "p_have": 0.95,
+ "n_candidates": 65,
+ "rms": 0.7218029463914851,
+ "chi2": 41.158959980134895,
+ "fit_ok": true,
+ "relaxed": [],
+ "n_broke_fit": 0,
+ "round": 8,
+ "n_assigned": 79,
+ "n_lines": 79,
+ "n_float": 11
+}

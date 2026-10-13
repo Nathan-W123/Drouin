@@ -1,0 +1,48 @@
+{
+ "run": "real_so2_s1_ai",
+ "case": "real_so2",
+ "seed": 1,
+ "arm": "ai",
+ "rounds": 1,
+ "per_round": [
+  {
+   "n_true": 87,
+   "n_pairs": 0,
+   "n_correct": 0,
+   "n_covered": 0,
+   "n_degenerate_partner": 0,
+   "precision_phys": NaN,
+   "coverage": 0.0,
+   "precision": NaN,
+   "wrong_on_distractors": 0,
+   "wrong_by_source": {},
+   "wrong_label_on_true": 0,
+   "n_peaks_assigned": 0,
+   "round": 1,
+   "rms": NaN,
+   "n_float": 8,
+   "overrides": 0
+  }
+ ],
+ "final": {
+  "n_true": 87,
+  "n_pairs": 0,
+  "n_correct": 0,
+  "n_covered": 0,
+  "n_degenerate_partner": 0,
+  "precision_phys": NaN,
+  "coverage": 0.0,
+  "precision": NaN,
+  "wrong_on_distractors": 0,
+  "wrong_by_source": {},
+  "wrong_label_on_true": 0,
+  "n_peaks_assigned": 0
+ },
+ "final_fit_ok": false,
+ "final_rms": null,
+ "oracle_rms": 1.63173,
+ "n_free_params": 0,
+ "constants": [],
+ "ai_overrides": 0,
+ "human_corrections": 0
+}

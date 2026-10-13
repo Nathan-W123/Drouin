@@ -1,0 +1,30 @@
+# real_so2p seed 1 arm ai -- round 10
+
+assigned peaks 81, floating params 11, last rms (weighted) 0.718
+predictions considered 43, with candidates 33, unresolvable windows 0, p_have=0.90 (from 61 sharp predictions)
+candidate rows 49: default accept 0 (of which flagged 0), deferred with P>=0.5: 2
+
+OUTLIERS (top 8):
+  peak 2200 5 4 2 6 3 3                  t=-3.2 h=0.03 default=keep
+  peak  163 25 3 23 24 4 20              t=-1.7 h=0.93 default=keep
+
+RELEASE forward selection (<=10x scale): none
+  other trials: [('LJJK', np.float64(4.7), '7e+02x'), ('lK', np.float64(3.4), '6.6e+02x'), ('LJK', np.float64(3.0), '2e+02x'), ('PhiJK', np.float64(2.2), '0.46x'), ('phiJK', np.float64(2.0), '0.25x'), ('lJK', np.float64(1.6), '2.3e+02x')]
+  current 81 lines: rms 0.718 with releases (without: 0.718)
+
+JOINT defaults: nothing to add
+
+JOINT defaults+P>=0.9: nothing to add
+
+JOINT defaults+P>=0.5: 2 added -> kept 0, removed 2, rms 0.718
+   removed 1785 22 7 15 23 6 18        z=-5.1
+   removed 2387 30 4 26 30 3 27        z=-9.0
+
+JOINT-RELEASE defaults: releases [] -> kept 0, removed 0, rms 0.718
+   RELEASE_IDS 
+
+JOINT-RELEASE defaults+P>=0.9: releases [] -> kept 0, removed 0, rms 0.718
+   RELEASE_IDS 
+
+SERIES (top 6):
+series dJ=0 Ka'=4 Ka"=3 parity=0,0: 4 coherent members, r0=+0.000004 tol=9.0e-06, expected by chance 0.26, P(chance)=1.6e-04

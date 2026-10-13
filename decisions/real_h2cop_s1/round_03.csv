@@ -1,0 +1,6 @@
+kind,item,action,reason
+assign,2 1 1 1 1 0@961,accept,"strong, sharp, or on the Ka=1 K-doublet Q-branch ladder that the anchors established; jointly consistent (rms 0.84 with all 11)"
+assign,6 1 5 6 1 6@339,accept,"strong, sharp, or on the Ka=1 K-doublet Q-branch ladder that the anchors established; jointly consistent (rms 0.84 with all 11)"
+assign,7 1 6 7 1 7@626,accept,"strong, sharp, or on the Ka=1 K-doublet Q-branch ladder that the anchors established; jointly consistent (rms 0.84 with all 11)"
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

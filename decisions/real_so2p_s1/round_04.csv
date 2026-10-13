@@ -1,0 +1,16 @@
+kind,item,action,reason
+assign,6 3 3 6 2 4@2314,accept,"P>=0.9 and sharply predicted (sigma<10 MHz), jointly consistent (13 lines, rms 0.67); Ka=5 lines (sigma~20 MHz) wait until Ka=4 pins the K structure"
+assign,4 3 1 5 2 4@1151,accept,"P>=0.9 and sharply predicted (sigma<10 MHz), jointly consistent (13 lines, rms 0.67); Ka=5 lines (sigma~20 MHz) wait until Ka=4 pins the K structure"
+assign,24 3 21 24 2 22@1452,accept,"P>=0.9 and sharply predicted (sigma<10 MHz), jointly consistent (13 lines, rms 0.67); Ka=5 lines (sigma~20 MHz) wait until Ka=4 pins the K structure"
+assign,20 2 18 19 3 17@1882,accept,"P>=0.9 and sharply predicted (sigma<10 MHz), jointly consistent (13 lines, rms 0.67); Ka=5 lines (sigma~20 MHz) wait until Ka=4 pins the K structure"
+assign,7 4 4 8 3 5@1504,accept,"P>=0.9 and sharply predicted (sigma<10 MHz), jointly consistent (13 lines, rms 0.67); Ka=5 lines (sigma~20 MHz) wait until Ka=4 pins the K structure"
+assign,9 4 6 10 3 7@1232,accept,"P>=0.9 and sharply predicted (sigma<10 MHz), jointly consistent (13 lines, rms 0.67); Ka=5 lines (sigma~20 MHz) wait until Ka=4 pins the K structure"
+assign,6 4 2 7 3 5@1877,accept,"P>=0.9 and sharply predicted (sigma<10 MHz), jointly consistent (13 lines, rms 0.67); Ka=5 lines (sigma~20 MHz) wait until Ka=4 pins the K structure"
+assign,5 4 2 6 3 3@2200,accept,"P>=0.9 and sharply predicted (sigma<10 MHz), jointly consistent (13 lines, rms 0.67); Ka=5 lines (sigma~20 MHz) wait until Ka=4 pins the K structure"
+assign,10 4 6 11 3 9@845,accept,"P>=0.9 and sharply predicted (sigma<10 MHz), jointly consistent (13 lines, rms 0.67); Ka=5 lines (sigma~20 MHz) wait until Ka=4 pins the K structure"
+assign,3 3 1 3 2 2@2330,accept,"P>=0.9 and sharply predicted (sigma<10 MHz), jointly consistent (13 lines, rms 0.67); Ka=5 lines (sigma~20 MHz) wait until Ka=4 pins the K structure"
+assign,4 3 1 4 2 2@2329,accept,"P>=0.9 and sharply predicted (sigma<10 MHz), jointly consistent (13 lines, rms 0.67); Ka=5 lines (sigma~20 MHz) wait until Ka=4 pins the K structure"
+assign,15 2 14 15 1 15@2248,accept,"P>=0.9 and sharply predicted (sigma<10 MHz), jointly consistent (13 lines, rms 0.67); Ka=5 lines (sigma~20 MHz) wait until Ka=4 pins the K structure"
+assign,16 2 14 15 3 13@377,accept,"P>=0.9 and sharply predicted (sigma<10 MHz), jointly consistent (13 lines, rms 0.67); Ka=5 lines (sigma~20 MHz) wait until Ka=4 pins the K structure"
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

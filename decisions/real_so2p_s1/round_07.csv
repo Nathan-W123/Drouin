@@ -1,0 +1,5 @@
+kind,item,action,reason
+param,3000,release,PhiK: dchi2 13.9 on the assigned lines at 0.12x its scale
+param,4000,hold,LK 37x scale - implausible
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

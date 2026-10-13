@@ -1,0 +1,26 @@
+# real_h2cop seed 1 arm ai -- round 3
+
+assigned peaks 7, floating params 8, last rms (weighted) 0.214
+predictions considered 9, with candidates 7, unresolvable windows 2, p_have=0.50 (from 8 sharp predictions)
+candidate rows 26: default accept 1 (of which flagged 0), deferred with P>=0.5: 3
+
+OUTLIERS (top 8):
+
+RELEASE forward selection (<=10x scale): none
+  other trials: []
+  current 7 lines: rms 0.214 with releases (without: 0.214)
+
+JOINT defaults: 1 added -> kept 1, removed 0, rms 0.223
+
+JOINT defaults+P>=0.9: 1 added -> kept 1, removed 0, rms 0.223
+
+JOINT defaults+P>=0.5: 4 added -> kept 4, removed 0, rms 0.841
+
+JOINT-RELEASE defaults: releases [] -> kept 1, removed 0, rms 0.223
+   RELEASE_IDS 
+
+JOINT-RELEASE defaults+P>=0.9: releases [] -> kept 1, removed 0, rms 0.223
+   RELEASE_IDS 
+
+SERIES (top 6):
+series dJ=0 Ka'=1 Ka"=1 parity=0,1: 4 coherent members, r0=-0.000046 tol=5.4e-06, expected by chance 0.14, P(chance)=1.6e-05

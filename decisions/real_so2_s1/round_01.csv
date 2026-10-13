@@ -1,0 +1,3 @@
+kind,item,action,reason
+stop,stop,yes,"no bootstrap hypothesis exists: with constants ~1% off, every strong prediction has a +-1-2 GHz window holding 12-300 peaks of this 13 lines/GHz spectrum; only one anchor qualifies. Cannot start without a better prior"
+all,defaults,confirm,"nothing to confirm"

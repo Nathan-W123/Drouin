@@ -204,6 +204,7 @@ def bootstrap(pred, peaks, settings, n_anchor=8, max_cand=15, n_top=15):
     idx = usable(pred, settings)
     free = np.ones(len(peaks.id), bool)
     med_err = float(np.median(peaks.err))
+    max_cand = settings.get("boot_max_cand", max_cand)  # dense (real) spectra need more candidates per anchor
     # anchors: the best-predicted lines that are comfortably above the detection limit
     strong = idx[pred.lgint[idx] >= settings["i_det"] + 1.0]
     strong = strong[np.argsort(pred.sigma[strong])]
@@ -233,7 +234,7 @@ def bootstrap(pred, peaks, settings, n_anchor=8, max_cand=15, n_top=15):
         P1 = P0 - K @ Ja @ P0
         sS = np.sqrt(np.maximum(np.einsum("ij,jk,ik->i", JS, P1, JS), 0) + pred.sig_model[score_idx] ** 2 + med_err ** 2)
         lam = rhoI * 5 * sS
-        use = lam < 0.15
+        use = lam < settings.get("boot_lam_max", 0.15)  # dense spectra: scored lines may have a higher chance rate
         if use.sum() < 10:
             continue
         e = 1 - np.exp(-lam[use])

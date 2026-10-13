@@ -1,0 +1,119 @@
+J/A+A/532/A23       TIMASSS. I. IRAS 16293-2422 spectra            (Caux+, 2011)
+================================================================================
+TIMASSS: the IRAS 16293-2422 millimeter and submillimeter spectral survey.
+I. Observations, calibration, and analysis of the line  kinematics.
+    Caux E., Kahane C., Castets A., Coutens A., Ceccarelli C., Bacmann A.,
+    Bisschop S., Bottinelli S., Comito C., Helmich F.P., Lefloch B., Parise B.,
+    Schilke P., Tielens A.G.G.M., Van Dishoeck E., Vastel C., Wakelam V.,
+    Walters A.
+   <Astron. Astrophys., 532, A23 (2011)>
+   =2011A&A...532A..23C    (SIMBAD/NED BibCode)
+================================================================================
+ADC_Keywords: Infrared sources ; Spectra, infrared
+Keywords: stars: protostars - molecular data - line: identification -
+          astrochemistry
+
+Abstract:
+    Unbiased spectral surveys are powerful tools to study the chemistry
+    and the physics of star forming regions, because they can provide a
+    complete census of the molecular content and the observed lines probe
+    the physical structure of the source.
+
+    While unbiased surveys at the millimeter and sub-millimeter
+    wavelengths observable from ground-based telescopes have previously
+    been performed towards several high mass protostars, very little
+    exists on low mass protostars, which are believed to resemble our own
+    Sun's progenitor. To help fill up this gap in our understanding, we
+    carried out a complete spectral survey of the bands at 3, 2, 1, and
+    0.9mm towards the solar type protostar IRAS 16293-2422.
+
+    The observations covered a range of about 200GHz and were obtained
+    with the IRAM-30m and JCMT-15m telescopes during about 300h of
+    observations. Particular attention was devoted to the
+    inter-calibration of the acquired spectra with previous observations.
+    All the lines detected with more than 3-sigma confidence-interval
+    certainty and free from obvious blending effects were fitted with
+    Gaussians to estimate their basic kinematic properties.
+
+    More than 4000 lines were detected (with sigma>=3) and identified,
+    yielding a line density of approximatively 20 lines per GHz,
+    comparable to previous surveys in massive hot cores. The vast majority
+    (about two-thirds) of the lines are weak and produced by complex
+    organic molecules. The analysis of the profiles of more than 1000
+    lines belonging to 70 species firmly establishes the presence of two
+    distinct velocity components associated with he two objects, A and B,
+    forming the IRAS 16293-2422 binary system. In the source A, the line
+    widths of several species increase with the upper level energy of the
+    transition, a behavior compatible with gas infalling towards a
+    ~1M_{sun}_ object. The source B, which does not show this effect,
+    might have a much lower central mass of ~0.1M_{sun}_. The difference
+    in the rest velocities of both objects is consistent with the
+    hypothesis that the source B rotates around he source A. Conclusions.
+    This spectral survey, although obtained with single-dish telescopes at
+    a low spatial resolution, allows us to separate the emission from two
+    different components, thanks to the large number of lines detected.
+
+Description:
+    We provide the fully reduced and concatenated observations into a single
+    spectrum per observatory. The spectra are provided as fits 'BINTABLE'.
+    The intensities are in T_A* ; the covered frequency ranges are :
+    - IRAM-30m : 80-115.5 GHz ; 129-177.5 GHz ; 198-281.5 GHz
+    - JCMT-15m : 328-366 GHz
+    For the IRAM-30m, the spectrum was produced using only the
+    1MHz-FilterBanks backend.
+
+    TIMASSS_IRAM.fits:
+    BINTABLE containing the spectrum of IRAS 16293-2422 observed with the
+    IRAM-30m telescope over the frequency ranges 80-115.5GHz; 129-177.5GHz;
+    198-281.5 GHz. Intensities are in T_A_* [K].
+
+    TIMASSS_JCMT.fits:
+    BINTABLE containing the spectrum of IRAS 16293-2422 observed with the
+    JCMT over the frequency range 328-366 GHz. Intensities are in T_A_* [K].
+
+Objects:
+    ----------------------------------------------------------------------
+     RA   (2000)   DE         Designation(s)
+    ----------------------------------------------------------------------
+    16 32 22.56  -24 28 31.8  IRAS 16293-2422 = WISE J163222.62-242833.6
+    ----------------------------------------------------------------------
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName      Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe            80        .   This file
+list.dat         120        2   List of fits spectra
+fits/*             .        2   Individual fits spectra
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: list.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1-  2  I2    h       RAh       Right ascension (J2000)
+   4-  5  I2    min     RAm       Right ascension (J2000)
+   7- 11  F5.2  s       RAs       Right ascension (J2000)
+      12  A1    ---     DE-       Declination sign (J2000)
+  13- 14  I2    deg     DEd       Declination (J2000)
+  16- 17  I2    arcmin  DEm       Declination (J2000)
+  19- 22  F4.1  arcsec  DEs       Declination (J2000)
+  24- 25  I2    ---     Nx        Number of pixels along X-axis
+  27- 32  I6    ---     Ny        Number of pixels along Y-axis
+  34- 37  I4    Kibyte  size      Size of FITS file
+  39- 55  A17   ---     FileName  Name of FITS file, in subdirectory fits
+  57-120  A64   ---     Title     Title of the FITS file
+--------------------------------------------------------------------------------
+
+Acknowledgements:
+    From Sandrine Bottinelli. sandrine.bottinelli(at)utoulouse.fr
+
+    The fits files were generated from GILDAS/CLASS files with the CASSIS
+    software and the headers were further edited with Python by S. Bottinelli.
+
+References:
+    https://cassis.irap.omp.eu
+    https://www.iram.fr/IRAMFR/GILDAS/
+
+================================================================================
+(End)   S. Bottinelli [IRAP, Toulouse, France], P. Vannier [CDS]     07-Dec-2025

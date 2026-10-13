@@ -1,0 +1,14 @@
+kind,item,action,reason
+assign,5 2 4 4 1 3@2171,accept,jointly consistent with the bootstrap solution (P>=0.9; conservative growth in a spectrum where 97% of peaks are other species)
+assign,2 2 0 2 1 1@988,accept,jointly consistent with the bootstrap solution (P>=0.9; conservative growth in a spectrum where 97% of peaks are other species)
+assign,2 2 0 3 1 3@334,accept,jointly consistent with the bootstrap solution (P>=0.9; conservative growth in a spectrum where 97% of peaks are other species)
+assign,5 2 4 5 1 5@1233,accept,jointly consistent with the bootstrap solution (P>=0.9; conservative growth in a spectrum where 97% of peaks are other species)
+assign,4 2 2 4 1 3@848,accept,jointly consistent with the bootstrap solution (P>=0.9; conservative growth in a spectrum where 97% of peaks are other species)
+assign,5 1 5 4 0 4@642,accept,jointly consistent with the bootstrap solution (P>=0.9; conservative growth in a spectrum where 97% of peaks are other species)
+assign,6 2 4 6 1 5@699,accept,jointly consistent with the bootstrap solution (P>=0.9; conservative growth in a spectrum where 97% of peaks are other species)
+assign,11 1 11 10 0 10@1838,accept,jointly consistent with the bootstrap solution (P>=0.9; conservative growth in a spectrum where 97% of peaks are other species)
+assign,10 0 10 9 1 9@1161,accept,jointly consistent with the bootstrap solution (P>=0.9; conservative growth in a spectrum where 97% of peaks are other species)
+assign,10 2 8 10 1 9@532,accept,jointly consistent with the bootstrap solution (P>=0.9; conservative growth in a spectrum where 97% of peaks are other species)
+assign,11 2 10 11 1 11@1536,accept,jointly consistent with the bootstrap solution (P>=0.9; conservative growth in a spectrum where 97% of peaks are other species)
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

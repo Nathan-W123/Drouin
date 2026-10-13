@@ -1,0 +1,10 @@
+kind,item,action,reason,source
+assign,C0001,accept,"AI: continues the Ka=1 Q-branch ladder (J=8-10), each |z|<0.06 at sigma 2-6 MHz; jointly consistent",ai
+assign,C0002,accept,"AI override: continues the Ka=1 Q-branch ladder (J=8-10), each |z|<0.06 at sigma 2-6 MHz; jointly consistent",ai-override
+assign,C0003,accept,"AI override: continues the Ka=1 Q-branch ladder (J=8-10), each |z|<0.06 at sigma 2-6 MHz; jointly consistent",ai-override
+assign,C0004,defer,"AI (blanket): 13(2,11) still +-92 MHz wide; wait",ai
+assign,C0005,defer,"AI (blanket): 13(2,11) still +-92 MHz wide; wait",ai
+assign,C0006,defer,"AI (blanket): 13(2,11) still +-92 MHz wide; wait",ai
+assign,C0007,defer,"AI (blanket): 13(2,11) still +-92 MHz wide; wait",ai
+assign,C0008,defer,"AI (blanket): 13(2,11) still +-92 MHz wide; wait",ai
+assign,C0009,defer,"AI (blanket): 13(2,11) still +-92 MHz wide; wait",ai

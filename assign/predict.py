@@ -35,6 +35,11 @@ class Predictor:
     def _cat(self, model, extra=None):
         cat = pk.spcat(model.current_parfile(extra), self.int)
         m = (cat.freq >= self.fmin) & (cat.freq <= self.fmax)
+        if self.cfg.get("coverage"):  # real spectra: only frequencies actually observed
+            cov = np.zeros(len(cat.freq), bool)
+            for lo, hi in self.cfg["coverage"]:
+                cov |= (cat.freq >= lo) & (cat.freq <= hi)
+            m &= cov
         return {k: (f, li) for k, f, li, mm in zip(cat.keys(), cat.freq, cat.lgint, m) if mm}
 
     def _shift(self, base, model, idp, h):

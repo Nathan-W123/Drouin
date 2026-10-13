@@ -1,0 +1,4 @@
+kind,item,action,reason
+stop,stop,yes,nothing jointly consistent left; no supported release; converged at 81 peaks
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

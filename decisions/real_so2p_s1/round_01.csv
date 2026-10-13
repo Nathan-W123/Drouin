@@ -1,0 +1,3 @@
+kind,item,action,reason
+hyp,1,accept,"Z 7.0, all 13 scored predictions matched, support 25 - far ahead of rank 2 (Z 4.4, support 3)"
+all,defaults,confirm,"other hypotheses weaker; anchors checked by leave-one-out next round"

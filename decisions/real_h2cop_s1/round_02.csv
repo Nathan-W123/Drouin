@@ -1,0 +1,7 @@
+kind,item,action,reason
+assign,3 0 3 2 0 2@1766,accept,"jointly consistent with the anchor solution (P>=0.9, rms 0.21); the P>=0.5 set quadruples the rms"
+assign,2 0 2 1 0 1@827,accept,"jointly consistent with the anchor solution (P>=0.9, rms 0.21); the P>=0.5 set quadruples the rms"
+assign,3 2 1 2 2 0@1778,accept,"jointly consistent with the anchor solution (P>=0.9, rms 0.21); the P>=0.5 set quadruples the rms"
+assign,3 2 2 2 2 1@1774,accept,"jointly consistent with the anchor solution (P>=0.9, rms 0.21); the P>=0.5 set quadruples the rms"
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed

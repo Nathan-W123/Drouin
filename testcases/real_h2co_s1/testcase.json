@@ -1,0 +1,21 @@
+{
+ "case": "real_h2co",
+ "settings": {
+  "seed": 1,
+  "abc_lo": 0.005,
+  "abc_hi": 0.01,
+  "abc_prior": 0.01,
+  "q_lo": 0.1,
+  "q_hi": 0.3,
+  "q_prior": 0.5,
+  "absent_factor": 10.0
+ },
+ "spectrum": "data/TIMASSS/TIMASSS_IRAM.fits",
+ "detection_limit_lgint": -4.699607768813728,
+ "n_peaks": 2681,
+ "n_true": 14,
+ "n_distractors": 2667,
+ "log": [
+  "2681 peaks >= 4.0 sigma; 14 carry a reference label"
+ ]
+}

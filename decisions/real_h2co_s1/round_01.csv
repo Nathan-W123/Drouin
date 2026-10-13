@@ -1,0 +1,3 @@
+kind,item,action,reason
+stop,stop,yes,"no bootstrap hypothesis exists with constants ~1% off in this 13 lines/GHz spectrum; cannot start"
+all,defaults,confirm,"nothing to confirm"

@@ -1,0 +1,7 @@
+kind,item,action,reason
+assign,14 6 8 15 5 11@2614,accept,jointly consistent with PhiKJ released
+assign,16 6 10 17 5 13@2068,accept,jointly consistent with PhiKJ released
+assign,17 6 12 18 5 13@1714,accept,jointly consistent with PhiKJ released
+param,2100,release,"PhiKJ: dchi2 15.8 on the assigned lines (63.6 with candidates), 0.7-1x its scale"
+all,assign,defer,not in the jointly consistent set
+all,defaults,confirm,remaining rule defaults reviewed
