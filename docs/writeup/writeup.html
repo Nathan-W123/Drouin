@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AI-in-the-loop rotational line assignment with SPFIT/SPCAT</title>
+<style>
+  @page { size: Letter; margin: 0.6in 0.65in; }
+  html, body { background: #fff; }
+  body { font-family: "Liberation Serif", "Times New Roman", Times, serif; color: #000;
+         font-size: 9.3pt; line-height: 1.2; margin: 0; text-align: justify; hyphens: auto; }
+  .title { text-align: center; font-size: 15pt; font-weight: 700; line-height: 1.2; margin: 0 0 5pt; }
+  .authors { text-align: center; font-size: 10pt; margin-bottom: 1pt; }
+  .affil { text-align: center; font-size: 8.8pt; font-style: italic; margin-bottom: 8pt; }
+  .abstract { margin: 0 0.3in 6pt; font-size: 8.8pt; }
+  .abstract b.lbl { display: block; text-align: center; font-size: 9.5pt; margin-bottom: 2pt; }
+  .kw { margin: 3pt 0 0; font-size: 8.6pt; }
+  .cols { column-count: 2; column-gap: 0.25in; }
+  h2 { font-size: 10pt; font-weight: 700; margin: 5pt 0 2pt; text-align: left; break-after: avoid; }
+  h3 { font-size: 9.6pt; font-weight: 700; font-style: italic; margin: 4pt 0 1.5pt; }
+  p { margin: 0 0 3.5pt; text-indent: 0; }
+  p + p { text-indent: 12pt; }
+  figure { margin: 3pt 0 5pt; break-inside: avoid; text-align: center; }
+  figure img { width: 100%; }
+  figcaption { font-size: 8.3pt; text-align: justify; margin-top: 2pt; }
+  table { border-collapse: collapse; width: 100%; font-size: 8.4pt; margin: 2pt 0 2pt;
+          border-top: 1.2pt solid #000; border-bottom: 1.2pt solid #000; break-inside: avoid; }
+  th { border-bottom: 0.6pt solid #000; font-weight: 700; }
+  th, td { padding: 1.4pt 3pt; text-align: left; }
+  td.n, th.n { text-align: right; }
+  .tcap { font-size: 8.3pt; margin: 3pt 0 1pt; text-align: justify; }
+</style>
+</head>
+<body>
+
+<div class="title">AI-in-the-Loop Rotational Line Assignment<br>with SPFIT/SPCAT: A Scorable Proof of Concept</div>
+<div class="authors">Nathan Ward</div>
+<div class="affil">University of California, Davis &nbsp;&middot;&nbsp; ncward@ucdavis.edu &nbsp;&middot;&nbsp;
+  github.com/Nathan-W123/Drouin</div>
+
+<div class="abstract">
+  <b class="lbl">Abstract</b>
+  Assigning quantum numbers to measured lines, not measuring them, is the bottleneck in rotational
+  spectroscopy. This prototype puts a judgement step inside Pickett's SPFIT/SPCAT loop and scores
+  it against known assignments. Starting from constants 0.5–1% off, on contaminated, label-free line
+  lists built from CDMS data for SO<sub>2</sub> and H<sub>2</sub>CO, an AI-in-the-loop decision-maker
+  assigned 95.7% of the true lines (99.2% of its assignments correct) across 12 blind test cases,
+  against 71.3% for the best rule-based pipeline. On a real, public telescope spectrum (IRAS 16293-2422)
+  with a 0.1% starting prior, it assigned 92% of SO<sub>2</sub> and 93% of H<sub>2</sub>CO lines, where
+  automation reached 76% and 0%. With a 1% prior, no method could start on the real spectrum: line
+  density, not noise, is the open problem.
+  <div class="kw"><i>Keywords:</i> rotational spectroscopy, line assignment, SPFIT/SPCAT, human/AI in
+    the loop, blind evaluation.</div>
+</div>
+
+<div class="cols">
+  <h2>1&nbsp;&nbsp;Introduction</h2>
+  <p>A new molecule's spectrum is fitted by guessing constants (often from quantum chemistry, about
+  1% off), predicting lines, matching them to peaks, refitting and repeating. The matching is done
+  by an expert because the list is crowded with other species, vibrational satellites and
+  isotopologues, and a few wrong assignments derail the fit. The question here: does a reasoning
+  step in that loop make assignment work where automation alone fails, and can that be measured?</p>
+
+  <h2>2&nbsp;&nbsp;Method</h2>
+  <h3>2.1&nbsp;&nbsp;Scorable test cases</h3>
+  <p>Expert CDMS line lists are stripped of labels; 15% of lines are dropped, 33–37% distractor peaks
+  (isotopologues, a vibrational state, random) and noise are added. Each of A, B, C starts
+  0.5–1% off in a random direction, quartic constants 10–30% off, and all higher-order terms are
+  removed. Blind cases also hide the molecule order, the data seed and an overall frequency scale.
+  The true labels are read only by the scorer.</p>
+  <h3>2.2&nbsp;&nbsp;Assignment loop</h3>
+  <p>Each round: SPCAT predicts lines with uncertainties validated against Monte Carlo refits; a
+  Bayesian matcher scores every prediction–peak pair against the local density of unrelated peaks;
+  a decision step accepts, rejects or defers candidates and releases Hamiltonian terms; SPFIT
+  refits. A hypothesis search (AUTOFIT-like) provides the first three lines. Four arms share
+  this code: greedy matching, rules (accept at P&nbsp;&ge;&nbsp;0.95), rules+ (the lessons of early
+  AI runs written as rules), and AI-in-the-loop, where an LLM (Claude) writes a decision file each
+  round with a reason per decision, using what-if refits, series coherence and joint-consistency
+  checks.</p>
+
+  <h2>3&nbsp;&nbsp;Results</h2>
+  <div class="tcap"><b>Table 1.</b> True lines correctly assigned (%). Real spectrum: TIMASSS
+    IRAM-30m survey, 80–281 GHz, 2681 peaks from ~70 species.</div>
+  <table>
+    <tr><th>Test</th><th class="n">Greedy</th><th class="n">Rules</th><th class="n">Rules+</th><th class="n">AI</th></tr>
+    <tr><td>12 blind cases, pooled</td><td class="n">0.7</td><td class="n">17.3</td><td class="n">71.3</td><td class="n"><b>95.7</b></td></tr>
+    <tr><td>&nbsp;&nbsp;cases &ge; 92%</td><td class="n">0/12</td><td class="n">0/12</td><td class="n">7/12</td><td class="n"><b>11/12</b></td></tr>
+    <tr><td>&nbsp;&nbsp;assignments correct</td><td class="n">0.6</td><td class="n">97.2</td><td class="n">98.5</td><td class="n"><b>99.2</b></td></tr>
+    <tr><td>Real SO<sub>2</sub>, 0.1% prior</td><td class="n">2.3</td><td class="n">75.9</td><td class="n">75.9</td><td class="n"><b>92.0</b></td></tr>
+    <tr><td>Real H<sub>2</sub>CO, 0.1% prior</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n"><b>92.9</b></td></tr>
+    <tr><td>Real spectrum, 1% prior</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">0</td></tr>
+  </table>
+  <figure>
+    <img src="fig_headline.png" alt="True lines correctly assigned by method">
+    <figcaption><b>Figure 1.</b> True lines correctly assigned, by method. On the real spectrum
+      the automatic hypothesis search had too few H<sub>2</sub>CO lines to score; the AI arm started
+      from three hand-picked anchors.</figcaption>
+  </figure>
+  <p>Where the AI arm converged (11 of 12 blind cases), every fitted constant agrees with an oracle
+  fit (all true labels, same Hamiltonian) to &le;&nbsp;0.65&sigma;; on the real SO<sub>2</sub> spectrum,
+  to &le;&nbsp;0.92&sigma;. Scored afterwards, 665 of its 676 accepts that went beyond the rule default were
+  correct, and 28 of 29 decisions to keep a line the rules would reject were correct: the rules
+  mistake an incomplete Hamiltonian for a misassignment. Judgement paid off in recovering from a
+  wrong start (rules+ stalled at 0–1.3% in two such cases) and in deciding when a missing term, not a wrong
+  label, explains a residual. It failed once: in one blind case my own errors stalled the run at 31%,
+  where rules+ reached 98.6%.</p>
+
+  <h2>4&nbsp;&nbsp;Limitations</h2>
+  <p>Most tests use catalog line lists, not raw spectra; the real spectrum is astronomical (4 MHz
+  lines, not kHz lab accuracy) and was scored against CDMS positions. Its intensity scale and error
+  model used four numbers calibrated on reference lines. Only two rigid molecules were tested, with
+  one seed per blind case; the molecule identity was not hidden; the decision-maker was one LLM in
+  an interactive session, not a standalone agent, and the decision aids changed during the runs.</p>
+
+  <h2>5&nbsp;&nbsp;Future Work</h2>
+  <p>Test on partly assigned JPL laboratory spectra; solve the start on dense spectra from a 1%
+  prior (more anchors, intensity patterns, a wider search); add a molecule with internal rotation;
+  turn the decision step into an API agent with a fixed toolset, and measure cost per round and how
+  often a spectroscopist disagrees with it.</p>
+</div>
+
+</body>
+</html>
